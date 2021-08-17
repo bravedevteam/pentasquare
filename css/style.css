@@ -267,7 +267,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .boxDetailHistory .list {  }
 .section.section--detail .boxDetailHistory .list li { height:88px; padding:0 48px 0 30px; display:flex; align-items:center; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); border-radius:8px; }
 .section.section--detail .boxDetailHistory .list li+li { margin-top:16px; }
-.section.section--detail .boxDetailHistory .list li .status { width:80px; padding-left:30px; position:relative; background-repeat:no-repeat; background-size:24px auto; background-position:left center; font-size:18px; font-weight:500; }
+.section.section--detail .boxDetailHistory .list li .status { width:100px; padding-left:30px; position:relative; background-repeat:no-repeat; background-size:24px auto; background-position:left center; font-size:18px; font-weight:500; }
 .section.section--detail .boxDetailHistory .list li .status.bid { background-image:url('../images/content/iconHistoryBid.png'); color:#1b44ef; }
 .section.section--detail .boxDetailHistory .list li .status.new { background-image:url('../images/content/iconHistoryNew.png'); }
 .section.section--detail .boxDetailHistory .list li .thumb { width:56px; height:56px; margin-left:20px; border-radius:50%; overflow:hidden; }
