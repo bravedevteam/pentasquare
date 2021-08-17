@@ -36,13 +36,61 @@ body.page--auction { background:#f4f6f9; }
 #header h1 { width:186px; height:40px; margin-left:27px; float:left; background:url('../images/common/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #header .search { float:left; margin-left:82px; }
 #header .search .txtSearch { width:220px; height:40px; padding:0 20px 0 42px; background:url('../images/common/iconSearch.png') 10px center no-repeat #e8e8f1; background-size:24px auto; border-radius:40px; font-size:14px; }
-#header .opt { position:absolute; right:22px; top:0; overflow:hidden; }
-#header .opt a { height:40px; float:left; border-radius:40px; color:#fff; line-height:40px; text-align:center; font-size:15px; }
-#header .opt a+a { margin-left:10px; }
-#header .opt a.btnMypage { width:40px; height:40px; overflow:hidden; border-radius:50%; }
-#header .opt a.btnMypage img { width:100%; position:relative; top:50%; transform: translateY(-50%); }
-#header .opt a.btnConnect { width:160px; background:#000; }
-#header .opt a.btnCreat { width:96px; background-image: linear-gradient(to right, #ff00ba, #ff0080); }
+#header .opt { position:absolute; right:22px; top:0; }
+#header .opt:after { content:''; display:block; clear:both; visibility:visible; }
+#header .opt>a { height:40px; float:left; border-radius:40px; color:#fff; line-height:40px; text-align:center; font-size:15px; }
+#header .opt>a+a { margin-left:10px; }
+#header .opt>a.btnMypage { width:40px; height:40px; overflow:hidden; border-radius:50%; }
+#header .opt>a.btnMypage img { width:100%; position:relative; top:50%; transform: translateY(-50%); }
+#header .opt>a.btnConnect { width:160px; background:#000; }
+#header .opt>a.btnCreat { width:96px; background-image: linear-gradient(to right, #ff00ba, #ff0080); }
+
+#header .opt .boxWallet { width:324px; display:none; position:absolute; padding:23px 0 0; right:102px; top:80px; background:#fff; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16); border-radius:10px; }
+#header .opt .boxWallet:before { content:''; width:14px; height:10px; position:absolute; right:50px; top:-10px; background:url('../images/content/iconWalletEdge.png') center bottom no-repeat; background-size:100% auto; }
+#header .opt .boxWallet .topArea { margin:0 17px 24px; position:relative; }
+#header .opt .boxWallet .topArea .title { margin-bottom:5px; font-size:23px; color:#000c2d; font-weight:600; }
+#header .opt .boxWallet .topArea .subject { font-size:13px; color:#000c2d; }
+#header .opt .boxWallet .topArea .linkWallet { max-width:50%; height:auto; position:absolute; right:0; top:0; float:none; padding-right:26px; background:url('../images/content/iconWallet.png') right 8px no-repeat; background-size:17px auto; font-size:13px; color:#adadad; line-height:32px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#header .opt .boxWallet .inWallet { padding:0 17px 38px; border-bottom:1px solid #adadad; }
+#header .opt .boxWallet .inWallet .wallet { width:100%; height:165px; display:flex; border:1px dashed #707070; background:#f0f7ff; border-radius:13px; align-items:center; justify-content:center; font-size:15px; color:#500; color:#3f3f53; flex-direction:column; }
+#header .opt .boxWallet .inWallet .wallet:before { content:''; width:64px; height:59px; margin-bottom:10px; display:inline-block; background:url('../images/content/imgNoWallet.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .opt .boxWallet .boxInsta { padding:24px 17px 24px; }
+#header .opt .boxWallet .boxInsta .title { margin-bottom:6px; font-size:16px; font-weight:600; color:#000c2d; }
+#header .opt .boxWallet .boxInsta .subject { margin-bottom:14px; font-size:13px; color:#adadad; }
+#header .opt .boxWallet .boxInsta>a { height:56px; display:block; margin-bottom:6px; border-radius:13px; background-image: linear-gradient(100deg, #ff00ba 2%, #ff0080 100%); line-height:56px; font-size:20px; color:#fff; text-align:center; }
+#header .opt .boxWallet .boxInsta>a:before { content:''; width:24px; height:24px; display:inline-block; margin-right:8px; background:url('../images/content/iconInsta_white.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+
+#header .opt .boxWallet.type--login { right:70px; }
+#header .opt .boxWallet.type--login .inWallet { padding-bottom:5px; }
+#header .opt .boxWallet.type--login .inWallet .wallet { height:auto; padding:18px 18px 20px; display:block; border:0; background:#000c2d; }
+#header .opt .boxWallet.type--login .inWallet .wallet:before { display:none; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin {  }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin { display:flex; align-items:center; position:relative; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .mark { width:40px; height:40px; margin-right:15px; background-repeat:no-repeat; background-position:center center; border-radius:40px; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .mark.bg1 { background-color:#3f83f4; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .mark.bg2 { background-color:#b820ff; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .mark.mark--eth { background-image:url('../images/common/iconCoin_ETH.png'); background-size:11px auto; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin+.coin { margin-top:8px; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .value { display:flex; justify-content:center; flex-direction:column; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .value .name { font-size:13px; color:#adadad; font-weight:500; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .value .price { font-size:16px; color:#fff; font-weight:600; }
+#header .opt .boxWallet.type--login .inWallet .walletCoin .coin .btnChange { width:32px; height:32px; position:absolute; right:0; top:50%; background:url('../images/content/btnChange.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; transform:translateY(-50%); }
+#header .opt .boxWallet.type--login .inWallet .btnAddFund { height:40px; margin-top:12px; display:block; line-height:40px; text-align:center; background:#fff; border-radius:40px; }
+#header .opt .boxWallet.type--login .inWallet .btnAddFund:after { content:''; width:64px; height:14px; display:inline-block; margin-left:11px; background:url('../images/content/imgAddFund.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .opt .boxWallet.type--login .inWallet .disconnect { height:auto; display:block; padding:14px 0; border-radius:0; text-align:center; font-size:15px; color:#adadad; line-height:1; }
+#header .opt .boxWallet.type--login .boxInsta .infoUser { width:100%; height:78px; padding:0 20px; display:flex; align-items:center; border:1px solid #d4d4d4; border-radius:13px; }
+#header .opt .boxWallet.type--login .boxInsta .infoUser .thumb { width:42px; height:42px; border-radius:50%; overflow:hidden; }
+#header .opt .boxWallet.type--login .boxInsta .infoUser .thumb img { width:100%; position:relative; top:50%; transform:translateY(-50%); }
+#header .opt .boxWallet.type--login .boxInsta .infoUser .name { margin-left:12px; font-size:16px; color:#000; font-weight:500; }
+#header .opt .boxWallet.type--login .boxInsta .infoUser .name span { display:block; padding-left:16px; background:url('../images/content/iconInsta_gray.png') left center no-repeat; background-size:12px auto; font-size:11px; font-weight:400; color:#62668c; }
+#header .opt .boxWallet.type--login .boxInsta .userLink { padding:14px 8px 0; }
+#header .opt .boxWallet.type--login .boxInsta .userLink>a { position:relative; display:block; font-size:16px; font-weight:600; color:#000c2d; }
+#header .opt .boxWallet.type--login .boxInsta .userLink>a+a { margin-top:8px; }
+#header .opt .boxWallet.type--login .boxInsta .userLink>a.depth:after { content:''; width:9px; height:6px; position:absolute; right:-2px; top:50%; margin-top:-3px; background:url('../images/content/iconWalletArrow.png') center center no-repeat; background-size:100% auto; transition:all .3s; }
+#header .opt .boxWallet.type--login .boxInsta .userLink>a.depth.on:after { transform:rotate(180deg); }
+#header .opt .boxWallet.type--login .boxInsta .listDepth { margin-top:5px; overflow:hidden; }
+#header .opt .boxWallet.type--login .boxInsta .listDepth li a { padding:0 4px; font-size:13px; color:#adadad; line-height:28px; }
+
 
 #header.type--white { background:#fff; box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16); }
 #header.type--white h1 { background-image:url('../images/common/logo_black.png'); }
@@ -153,8 +201,58 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .leftArea .boxQuick .list li a.token { background-image:url('../images/content/iconQuick_token.png'); background-size:13px auto; }
 .section.section--detail .leftArea .boxQuick .list li a.metadata { background-image:url('../images/content/iconQuick_metadata.png'); background-size:12px auto; }
 .section.section--detail .leftArea .boxQuick .list li a:after { content:''; width:15px; height:15px; position:absolute; right:32px; top:50%; background:url('../images/common/iconLink.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
-.section.section--detail .rightArea { width:610px; height:784px; position:relative; margin-left:655px; margin-bottom:118px; border:1px solid #c0c9d4; background:#fff; border-radius:20px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; }
-.section.section--detail .rightArea .pidArea { width:100%; height:80px; position:absolute; left:0; bottom:0; background:#000c2d; text-align:center; line-height:80px; font-size:27px; color:#fff; }
+.section.section--detail .leftArea .boxBidUser {  }
+.section.section--detail .leftArea .boxBidUser .company { position:relative; padding:18px 0; border-bottom:1px solid #c0c9d4; overflow:hidden; }
+.section.section--detail .leftArea .boxBidUser .user { position:relative; padding:23px 0; overflow:hidden; }
+.section.section--detail .leftArea .boxBidUser .thumb { width:56px; height:56px; float:left; border-radius:50%; overflow:hidden; }
+.section.section--detail .leftArea .boxBidUser .name { padding-top:4px; margin-left:73px; font-size:23px; font-weight:500; color:#000; }
+.section.section--detail .leftArea .boxBidUser .name span { display:block; font-size:16px; font-weight:400; color:#62668c }
+.section.section--detail .leftArea .boxBidUser .name span.icon { padding-left:24px; background-repeat:no-repeat; background-position:left center; }
+.section.section--detail .leftArea .boxBidUser .name span.icon.icon--insta { background-image:url('../images/content/iconInsta_gray.png'); background-size:16px auto; }
+.section.section--detail .leftArea .boxBidUser .user .cont { margin-top:6px; margin-left:73px; font-size:14px; coloR:#9ea0b4; }
+.section.section--detail .leftArea .boxBidUser .user .sns { position:absolute; right:0; top:36px; overflow:hidden; }
+.section.section--detail .leftArea .boxBidUser .user .sns a { width:40px; height:25px; float:left; background-repeat:no-repeat; background-position:center center; background-size:auto 25px; font-size:0; text-indent:-99999px; }
+.section.section--detail .leftArea .boxBidUser .user .sns a+a { margin-left:16px; }
+.section.section--detail .leftArea .boxBidUser .user .sns a.twitter { background-image:url('../images/content/iconSocial_twitter.png'); }
+.section.section--detail .leftArea .boxBidUser .user .sns a.insta { background-image:url('../images/content/iconSocial_insta.png'); }
+
+.section.section--detail .rightArea { width:610px; padding:40px 30px 0 28px; position:relative; margin-left:655px; margin-bottom:118px; border:1px solid #c0c9d4; background:#fff; border-radius:20px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; }
+.section.section--detail .rightArea .topArea { margin-bottom:20px; position:relative; }
+.section.section--detail .rightArea .topArea .title { height:28px; padding-left:45px; background:url('../images/content/iconAuction_off.png') left center no-repeat; background-size:37px auto; font-size:20px; font-weight:600; color:#021343; line-height:28px; }
+.section.section--detail .rightArea .topArea .title.live { background-image:url('../images/content/iconAuction_live.png'); color:#ff00af; }
+.section.section--detail .rightArea .topArea .opt { position:absolute; right:0; top:0; }
+.section.section--detail .rightArea .topArea .opt:after { content:''; display:block; clear:both; visibility:visible; }
+.section.section--detail .rightArea .topArea .opt a { float:left; height:28px; line-height:28px; }
+.section.section--detail .rightArea .topArea .opt a.like { padding-left:24px; background:url('../images/content/iconAuctionLike.png') left center no-repeat; background-size:18px auto; font-size:16px; color:#9ea0b4; }
+.section.section--detail .rightArea .topArea .opt a.more { width:29px; margin-left:15px; margin-right:-13px; background:url('../images/common/btnDetail.png') center center no-repeat; background-size:3px auto; font-size:0; text-indent:-99999px; }
+.section.section--detail .rightArea .timeArea { padding:30px 0; display:flex; border-bottom:1px solid #c0c9d4; font-size:17px; color:#62668c; font-weight:600; line-height:45px; text-align:center; }
+.section.section--detail .rightArea .timeArea span { display:inline-block; margin:0 8px; color:#000; font-size:40px; }
+.section.section--detail .rightArea .timeArea span.col { margin-left:16px; }
+.section.section--detail .rightArea .timeArea .day { width:184px; border-right:1px solid #c0c9d4; }
+.section.section--detail .rightArea .timeArea .time { flex:1; }
+.section.section--detail .rightArea .bidArea { padding:27px 9px 32px 6px; }
+.section.section--detail .rightArea .bidArea .title { margin-bottom:24px; font-size:20px; font-weight:600; color:#000; }
+.section.section--detail .rightArea .bidArea .cont { display:flex; }
+.section.section--detail .rightArea .bidArea .thumb { width:56px; height:56px; border-radius:50%; overflow:hidden; }
+.section.section--detail .rightArea .bidArea .name { flex:1; display:flex; flex-direction:column; justify-content:center; margin-left:8px; font-size:23px; font-weight:500; color:#000; }
+.section.section--detail .rightArea .bidArea .name span { display:block; font-size:16px; font-weight:400; color:#62668c }
+.section.section--detail .rightArea .bidArea .name span.icon { padding-left:24px; background-repeat:no-repeat; background-position:left center; }
+.section.section--detail .rightArea .bidArea .name span.icon.icon--insta { background-image:url('../images/content/iconInsta_gray.png'); background-size:16px auto; }
+.section.section--detail .rightArea .bidArea .coin { text-align:right; display:flex; flex-direction:column; justify-content:center; }
+.section.section--detail .rightArea .bidArea .coin .type { padding-left:34px; background-repeat:no-repeat; background-position:left center; font-size:35px; font-weight:600; color:#000; line-height:30px; }
+.section.section--detail .rightArea .bidArea .coin .type.eth { background-image:url('../images/content/iconBid_eth.png'); background-size:17px auto; }
+.section.section--detail .rightArea .bidArea .coin .dollar { font-size:16px; color:#62668c; }
+.section.section--detail .rightArea .bidArea.current { padding:34px 9px 140px 6px; }
+.section.section--detail .rightArea .balanceArea { padding:73px 0 80px; border-top:1px solid #c0c9d4; text-align:center; }
+.section.section--detail .rightArea .balanceArea .title { margin-bottom:20px; font-size:25px; font-weight:600; color:#000; }
+.section.section--detail .rightArea .balanceArea .balance { height:96px; padding:0 30px 0 64px; border:4px solid #000; border-radius:96px; background:#f4f4f4; overflow:hidden; line-height:88px; }
+.section.section--detail .rightArea .balanceArea .balance .input { width:220px; float:left; height:88px; }
+.section.section--detail .rightArea .balanceArea .balance input { width:100%; height:88px; padding:0 8px; background:transparent; border:0; font-size:32px; font-weight:600; color:#000; }
+.section.section--detail .rightArea .balanceArea .balance .type { width:80px; float:left; font-size:32px; font-weight:600; color:#000; text-align:center; }
+.section.section--detail .rightArea .balanceArea .balance .dollar { float:left; margin-left:30px; font-size:23px; color:#adadad; font-weight:500; }
+.section.section--detail .rightArea .balanceArea .guide { margin-top:20px; margin-bottom:73px; color:#000; font-size:18px; font-weight:500; font-style: italic; }
+.section.section--detail .rightArea .pidArea { width:100%; height:80px; position:absolute; left:0; bottom:0; background:#c0c9d4; text-align:center; line-height:80px; font-size:27px; color:#fff; }
+.section.section--detail .rightArea .pidArea.active { background:#000c2d; }
 .section.section--detail .rightArea .pidArea:after { content:''; width:18px; height:14px; margin-left:8px; display:inline-block; vertical-align:middle; background:url('../images/content/iconPidCheck.png') center center no-repeat; background-size:100% auto; }
 .section.section--detail .tabList { display:block; clear:both; }
 .section.section--detail .tabList .tab { overflow:hidden; }
@@ -163,6 +261,21 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .tabList .tab a.on { background:#021343; border-color:#021343; color:#fff; font-weight:700; }
 .section.section--detail .tabList .cont { display:none; }
 .section.section--detail .tabList .cont.active { display:block; }
+
+.section.section--detail .boxDetailHistory { clear:both; }
+.section.section--detail .boxDetailHistory .title { height:40px; margin-bottom:48px; display:inline-block; padding:0 30px; background:#021343; border-radius:40px; color:#fff; line-height:40px; font-weight:700; font-size:16px; }
+.section.section--detail .boxDetailHistory .list {  }
+.section.section--detail .boxDetailHistory .list li { height:88px; padding:0 48px 0 30px; display:flex; align-items:center; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); border-radius:8px; }
+.section.section--detail .boxDetailHistory .list li .status { width:80px; padding-left:30px; background-repeat:no-repeat; background-size:24px 0; background-position:left center; font-size:18px; font-weight:500; }
+.section.section--detail .boxDetailHistory .list li .status.bid { background-image:url('../images/content/iconHistoryBid.png'); color:#1b44ef; }
+.section.section--detail .boxDetailHistory .list li .status.new { background-image:url('../images/content/iconHistoryNew.png'); }
+.section.section--detail .boxDetailHistory .list li .thumb { width:56px; height:56px; margin-left:20px; border-radius:50%; overflow:hidden; }
+.section.section--detail .boxDetailHistory .list li .thumb img { width:100%; position:relative; top:50%; transform:translateY(-50%); }
+.section.section--detail .boxDetailHistory .list li .name { width:200px; margin-left:25px; font-size:18px; color:#000; font-weight:500; }
+.section.section--detail .boxDetailHistory .list li .name span { display:block; color:#adadad; }
+.section.section--detail .boxDetailHistory .list li .token { width:250px; margin-left:20px; text-align:right; font-size:25px; font-weight:600; color:#000; }
+.section.section--detail .boxDetailHistory .list li .dollar { margin-left:50px; font-size:15px; font-weight:500; color:#adadad; }
+.section.section--detail .boxDetailHistory .list li .date { flex:1; font-size:15px; color:#adadad; font-weight:500; text-align:right; }
 
 #footer { position:relative; padding:36px 26px 32px; background:#62668c; }
 #footer h2 { width:141px; height:26px; display:block; background:url('../images/common/logo_f.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
@@ -174,3 +287,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 #footer .sns a.polymath { width:42px; background-image:url('../images/common/iconSNS_polymath.png'); background-size:24px auto; }
 #footer .sns a.twitter { width:51px; background-image:url('../images/common/iconSNS_twitter.png'); background-size:33px auto; }
 #footer .sns a.kakaotalk { width:41px; background-image:url('../images/common/iconSNS_kakaotalk.png'); background-size:23px auto; }
+
+@media screen and (max-width:767px) {
+	
+}
