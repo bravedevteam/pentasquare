@@ -1,4 +1,30 @@
 $(function(){
+  var winW = $(window).width();
+
+  if(767 < winW){
+    pcEvent();
+  }else if(winW < 768){
+    mobileEvent();
+  }
+
+  // PC
+  function pcEvent(){
+    $(".boxWallet").on("mouseleave", function(){
+      $(".boxWallet").fadeOut(500);
+    });
+
+    if($(".boxGnb_mo").css("display") == "block"){
+      $(".boxGnb_mo").css("display","none");
+    }
+  }
+
+  //Mobile
+  function mobileEvent(){
+    if($(".boxWallet").css("display") == "none"){
+      $(".boxWallet").css("display","block");
+    }
+  }
+
 	$(".btnConnect").click(function(){
     $(".boxWallet").fadeIn(500);
   });
@@ -13,7 +39,25 @@ $(function(){
     $(".userLink .listDepth").slideToggle(300);
   });
 
-  $(".boxWallet").on("mouseleave", function(){
-    $(".boxWallet").fadeOut(500);
+  $(".btnGnb_mo").click(function(e){
+    e.preventDefault();
+    $("body").css("overflow", "hidden");
+    $(".boxGnb_mo").fadeIn(300);
+  });
+
+  $(".boxGnb_mo .close").click(function(e){
+    e.preventDefault();
+    $("body").css("overflow", "auto");
+    $(".boxGnb_mo").fadeOut(300);
+  });
+
+  $(window).resize(function(){
+    winW = $(window).width();
+
+    if(767 < winW){
+      pcEvent();
+    }else if(winW < 768){
+      mobileEvent();
+    }
   });
 });
