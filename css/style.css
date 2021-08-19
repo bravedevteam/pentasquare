@@ -372,6 +372,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	#container { padding-top:68px; }
 	.boxAuctionVisual .swiper-wrapper { padding-bottom:0; }
+	.boxAuctionVisual .swiper-slide .img img { width:100%; }
 	.boxAuctionVisual .swiper-slide.item1 { background-image:url('../images/content/bgAuctionBG1_mo.png'); }
 	.boxAuctionVisual .swiper-slide.item1 .inBox { width:auto; height:auto; padding:45px 16px 0 16px; box-shadow:none; border-radius:0; margin:0; background:transparent; }
 	.boxAuctionVisual .swiper-slide.item1 .img { width:auto; height:auto; float:none; margin:0 16px 30px 14px; border-radius:20px; overflow:hidden; }
