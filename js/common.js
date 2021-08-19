@@ -1,5 +1,5 @@
 $(function(){
-  var winW = $(window).width();
+  var winW = $(window).outerWidth();
 
   if(767 < winW){
     pcEvent();
@@ -15,6 +15,10 @@ $(function(){
 
     if($(".boxGnb_mo").css("display") == "block"){
       $(".boxGnb_mo").css("display","none");
+    }
+
+    if($(".boxWallet").css("display") == "block"){
+      $(".boxWallet").css("display","none");
     }
   }
 
@@ -52,7 +56,7 @@ $(function(){
   });
 
   $(window).resize(function(){
-    winW = $(window).width();
+    winW = $(window).outerWidth();
 
     if(767 < winW){
       pcEvent();
