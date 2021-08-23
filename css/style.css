@@ -409,6 +409,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	#container { padding-top:68px; }
 	.boxAuctionVisual .swiper-wrapper { padding-bottom:0; }
+	.boxAuctionVisual .swiper-slide { padding-bottom:50px; }
 	.boxAuctionVisual .swiper-slide .img img { width:100%; }
 	.boxAuctionVisual .swiper-slide.item1 { background-image:url('../images/content/bgAuctionBG1_mo.png'); }
 	.boxAuctionVisual .swiper-slide.item1 .inBox { width:auto; height:auto; padding:45px 16px 0 16px; box-shadow:none; border-radius:0; margin:0; background:transparent; }
@@ -416,17 +417,16 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxAuctionVisual .swiper-slide.item1 .cont { margin:0; padding:0; }
 	.boxAuctionVisual .swiper-slide.item1 .txt1 { font-size:24px; color:#021343; }
 	.boxAuctionVisual .swiper-slide.item1 .txt3 { margin-top:16px; }
-	.boxAuctionVisual .swiper-slide.item1 a { margin-top:28px; }
+	.boxAuctionVisual .swiper-slide.item1 a { margin-top:0; position:absolute; right:16px; bottom:56px; }
 	.boxAuctionVisual .swiper-slide.item2 { background-image:url('../images/content/bgAuctionBG2_mo.png'); background-position:left top; }
 	.boxAuctionVisual .swiper-slide.item2 .inBox { width:auto; padding:44px 16px 0; }
 	.boxAuctionVisual .swiper-slide.item2 .img { width:auto; padding:0 28px 30px; position:relative; top:auto; }
 	.boxAuctionVisual .swiper-slide.item2 .txt1 { width:auto; margin-bottom:10px; line-height:1.2; font-size:24px; }
 	.boxAuctionVisual .swiper-slide.item2 .txt2 { width:270px; font-size:11px; line-height:19px; }
-	.boxAuctionVisual .swiper-slide.item2 .more { margin-top:30px; }
-
+	.boxAuctionVisual .swiper-slide.item2 .more { width:auto; height:auto; margin-top:0; margin-left:15px; display:inline-block; background:transparent; line-height:1.2; vertical-align:middle; color:#2A51F0; font-size:11px; }
 	.boxAuctionVisual .swiper-container-horizontal>.swiper-pagination-bullets,
 	.boxAuctionVisual .swiper-pagination-custom,
-	.boxAuctionVisual .swiper-pagination-fraction { width:auto; bottom:0; left:auto; right:16px; }
+	.boxAuctionVisual .swiper-pagination-fraction { bottom:0; }
 
 	h3.title { margin:0 16px 20px; font-size:17px; }
 	h3.title.icon { padding-left:32px; }
