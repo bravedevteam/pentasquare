@@ -257,7 +257,8 @@
         </div>
       </div>
 			<div class="section section--detail">
-				<div class="inner">
+				<!-- PC -->
+				<div class="inner pc">
           <div class="leftArea">
             <div class="titleArea">
               <div class="category">Category : Art</div>
@@ -292,6 +293,7 @@
           </div>
           <div class="rightArea">
 						<!-- Live Auction -->
+						<!--
 						<div class="topArea">
 							<div class="title live">Live Auction</div>
 							<div class="opt">
@@ -326,6 +328,7 @@
 							<div class="guide">you must bid least 1.0 ETH</div>
 						</div>
             <div class="pidArea active">Place a bid</div>
+						-->
 						<!-- //Live Auction -->
 
 						<!-- Current Price -->
@@ -352,7 +355,7 @@
 						<!-- //Current Price -->
 
 						<!-- Current Price Buy -->
-						<!--
+						
 						<div class="topArea">
 							<div class="title live">Current Price</div>
 							<div class="opt">
@@ -370,8 +373,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="pidArea active">Buy now</div>
-						-->
+						<div class="pidArea active popup--open" data-pop="popBidding">Buy now</div>
+						
 						<!-- //Current Price Buy -->
           </div>
 					<div class="boxDetailHistory">
@@ -396,6 +399,127 @@
 						</ul>
 					</div>
         </div>
+				<!-- //PC -->
+
+				<!-- Mobile -->
+				<div class="inner mo">
+					<div class="boxDetail">
+						<!-- Auction Time -->
+						<!--
+						<div class="boxAuctionTime">
+							<div class="title">Auction Ending in</div>
+							<div class="timeArea">
+								<div class="day"><span>100</span> d</div>
+								<div class="time"><span>10</span> h <span class="col">:</span> <span>45</span> m <span class="col">:</span> <span>06</span> s</div>
+							</div>
+						</div>
+						-->
+						<!-- //Auction Time -->
+
+						<div class="detailArea type--off">
+							<div class="top">
+								<div class="count">Edition Of <strong>1 / 10</strong></div>
+								<div class="opt">
+									<a href="#" class="like">30</a>
+									<a href="#" class="btnShare">share</a>
+								</div>
+							</div>
+							<div class="title">Steve Jobs’ Job Application (1973)</div>
+							<div class="statusPrice icon icon--live">Current Price</div><!-- icon 필요한 경우, 클래스 icon 추가 / off시 클래스 icon--off 추가 / live시 클래스 icon--live 추가 -->
+							<div class="coin">
+								<div class="type eth">0.56 ETH</div>
+								<div class="dollar">$941.50</div>
+							</div>
+						</div>
+					</div>
+					<div class="inBox">
+						<div class="boxDescript">
+							<div class="title">Description</div>
+							<div class="cont">The four troublemakers reunited. They are wondering that tonight go to be a falling stars</div>
+						</div>
+						<div class="boxInfoTab">
+							<div class="tab">
+								<a href="#" class="active" data-tab="tabInformation">Information</a>
+								<a href="#" data-tab="tabBidding">Bidding Status</a>
+							</div>
+							<div id="tabInformation" class="cont active">
+								<div class="row">
+									<div class="boxCreator">
+										<div class="title">Creator</div>
+										<div class="user">
+											<div class="thumb"><img src="./images/content/imgBidThumb.png" alt=""></div>
+											<div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+										</div>
+										<div class="txt">
+											Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="boxQuick">
+										<div class="title">10% Of Sales Will Go To Creator (Royalty)</div>
+										<ul class="list">
+											<li><a href="#" class="contract">Contract Address</a></li>
+											<li><a href="#" class="token">Toekn ID</a></li>
+											<li><a href="#" class="metadata">Metadata</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="tabBidding" class="cont">
+								<div class="row">
+									<div class="boxBidding">
+										<div class="title bid">Bid</div>
+										<div class="item">
+											<div class="info">
+												<div class="thumb"><img src="./images/content/imgBidThumb.png" alt=""></div>
+												<div class="name">Bid placed by<span>@karmalarma</span></div>
+											</div>
+											<div class="token">0.56 ETH</div>
+											<div class="dollar">$ 2,158.80</div>
+											<div class="date">Jul 7, 2021 At 5:28am</div>
+											<a href="#" class="link">link</a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="boxBidding">
+										<div class="title new">New</div>
+										<div class="item">
+											<div class="info">
+												<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt=""></div>
+												<div class="name">Bid placed by<span>@karmalarma</span></div>
+											</div>
+											<div class="token">0.56 ETH</div>
+											<div class="dollar">$ 2,158.80</div>
+											<div class="date">Jul 7, 2021 At 5:28am</div>
+											<a href="#" class="link">link</a>
+										</div>
+										<div class="item">
+											<div class="info">
+												<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt=""></div>
+												<div class="name">Bid placed by<span>@karmalarma</span></div>
+											</div>
+											<div class="token">0.56 ETH</div>
+											<div class="dollar">$ 2,158.80</div>
+											<div class="date">Jul 7, 2021 At 5:28am</div>
+											<a href="#" class="link">link</a>
+										</div>
+										<a href="#" class="btnMore">More View</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<!--
+							<a href="#">Not for sale</a>
+							-->
+							<a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a>
+							
+						</div>
+					</div>
+				</div>
+				<!-- //Mobile -->
 			</div>
 		</div>
 		<footer id="footer">
@@ -417,6 +541,55 @@
 	</section>
 </body>
 
+<div id="popBidding" class="popBasic">
+	<div class="popCont">
+		<div class="balanceArea">
+			<div class="title">Your bidding balance</div>
+			<div class="balance">
+				<div class="input">
+					<input type="text" value="1.0" placeholder="1.0" />
+				</div>
+				<div class="type">ETH</div>
+				<div class="dollar">$320.00</div>
+			</div>
+			<div class="guide">you must bid least 1.0 ETH</div>
+			<div class="detailArea">
+				<div class="row">
+					<div class="itemTitle">Your bidding balance</div>
+					<div class="value">1.0 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Your balance</div>
+					<div class="value">4.4 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Service fees</div>
+					<div class="value">0.00147 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Paying Result</div>
+					<div class="value">0.00833 ETH</div>
+				</div>
+			</div>
+		</div>
+		<div class="bidArea">
+			<div class="title">Highest Bid</div>
+			<div class="cont">
+				<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+				<div class="name">high-test bib by<span>@Terrabyte</span></div>
+				<div class="coin">
+					<div class="type eth">0.56 ETH</div>
+					<div class="dollar">$941.50</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btnBid">Place a bid</a>
+	</div>
+	<a href="#" class="close">close</a>
+</div>
+
+<div id="dim"></div>
+
 <script type="text/javascript">
 	var swiper = new Swiper('.boxAuctionVisual .swiper-container', {
 		loop: true,
@@ -424,6 +597,22 @@
 			el: '.boxAuctionVisual .swiper-pagination',
 			clickable: true
 		},
+	});
+
+	$(function(){
+		$(".boxInfoTab .tab a").click(function(e){
+			e.preventDefault();
+			var target = $(this).attr("data-tab");
+
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".boxInfoTab .cont").removeClass("active");
+			$("#"+target).addClass("active");
+		});
+	});
+
+	$(".like").click(function(e){
+		e.preventDefault();
+		$(this).toggleClass("on");
 	});
 </script>
 </html>

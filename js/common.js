@@ -64,4 +64,29 @@ $(function(){
       mobileEvent();
     }
   });
+
+  $(".popup--open").click(function(e){
+    e.preventDefault();
+    var target = $(this).attr("data-pop");
+    $("#"+target).fadeIn(300);
+
+    dim_open();
+  });
+
+  $(".popBasic .close").click(function(e){
+    e.preventDefault();
+    $(this).parent().fadeOut(300);
+
+    dim_close();
+  });
+
+  function dim_open(){
+    $("#dim").fadeIn(300);
+    $("body").css("overflow", "hidden");
+  }
+
+  function dim_close(){
+    $("#dim").fadeOut(300);
+    $("body").css("overflow", "auto");
+  }
 });
