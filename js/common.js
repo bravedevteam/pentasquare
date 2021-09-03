@@ -29,6 +29,18 @@ $(function(){
     }
   }
 
+  $(".tabArea a").click(function(e){
+    e.preventDefault();
+    var target = $(this).attr("data-tab");
+    $(this).addClass("active").siblings().removeClass("active");
+    $("#"+target).addClass("active").siblings().removeClass("active");
+  });
+
+  $(".inputTab").change(function(){
+    var target = $(this).attr("data-tab");
+    $("#"+target).addClass("active").siblings().removeClass("active");
+  });
+
 	$(".btnConnect").click(function(){
     $(".boxWallet").fadeIn(500);
   });
