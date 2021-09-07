@@ -632,7 +632,7 @@
 	var cateSwiper = undefined;
 	
 	function mainSwiper(){
-		var winW = $(window).width();
+		var winW = $(window).outerWidth();
 
 		if(winW < 768 && auctionSwiper == undefined){
 			auctionSwiper = new Swiper('#liveSwiper .swiper-container', {
