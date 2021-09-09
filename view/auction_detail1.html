@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>PENTASQUARE</title>
+  <link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body>
+	<section id="wrap">
+		<header id="header" class="type--white">
+			<div class="inner">
+				<h1>PENTASQUARE</h1>
+        <div class="search pc">
+          <input type="text" class="txtSearch" placeholder="Search..." />
+        </div>
+				<ul id="gnb">
+					<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
+					<li><a href="./market.html">Square Market</a></li>
+				</ul>
+				<div class="opt pc">
+					<!-- 로그인 전 -->
+					<!--
+					<a href="#" class="btnConnect">Connect Wallet</a>
+					-->
+					<!-- //로그인 전 -->
+					<!-- 로그인 후 -->
+					<a href="#" class="btnMypage"><img src="./images/content/imgUserThumb2.png" alt="" /></a>
+					<!-- //로그인 후 -->					
+					<a href="#" class="btnCreat">Creat</a>
+
+					<!-- 로그인 전 -->
+					<!--
+					<div class="boxWallet">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">Connect your wallet and join the Bid!</div>
+						</div>
+						<div class="inWallet">
+							<div class="wallet">Metamask Wallet</div>
+						</div>
+						<div class="boxInsta">
+							<div class="title">Sign-In</div>
+							<div class="subject">Login via social media account is required to act as a creator.</div>
+							<a href="#">Instagram</a>
+						</div>
+					</div>
+					-->
+					<!-- //로그인 전 -->
+
+					<!-- 로그인 후 -->
+					<div class="boxWallet type--login">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<a href="#" class="linkWallet">0x1effsa0x1effsa0x1effsa</a>
+						</div>
+						<div class="inWallet">
+							<div class="wallet">
+								<div class="walletCoin">
+									<div class="coin">
+										<div class="mark bg1 mark--eth"></div>
+										<div class="value">
+											<div class="name">Balance</div>
+											<div class="price">0 ETH 0</div>
+										</div>
+									</div>
+									<div class="coin">
+										<div class="mark bg2 mark--eth"></div>
+										<div class="value">
+											<div class="name">Bidding Balance</div>
+											<div class="price">0 WETH 0</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								<a href="#" class="btnAddFund">Add Fund with</a>
+							</div>
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+						<!-- SNS 연결 전 -->
+						<div class="boxInsta">
+							<div class="title">Sign-In</div>
+							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
+							<a href="#">Instagram</a>
+						</div>
+						<!-- //SNS 연결 전 -->
+
+						<!-- SNS 연결 후 -->
+						<!--
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>Linda0980</span></div>
+							</div>
+							<div class="userLink">
+								<a href="#">My Profile</a>
+								<a href="#" class="depth">My Item</a>
+								<ul class="listDepth">
+									<li><a href="#">My Owened (00)</a></li>
+									<li><a href="#">My Created (00)</a></li>
+									<li><a href="#">My Favorit (00)</a></li>
+									<li><a href="#">My Display (00)</a></li>
+									<li><a href="#">My Bid (00)</a></li>
+								</ul>
+							</div>
+						</div>
+						-->
+						<!-- //SNS 연결 후 -->
+					</div>
+					<!-- //로그인 후 -->
+				</div>
+
+				<!-- Mobile -->
+				<div class="opt mo">
+					<a href="#" class="btnSearch_mo">search</a>
+					<a href="#" class="btnGnb_mo">GNB</a>
+				</div>
+
+				<div class="boxGnb_mo">
+					<div class="section_gnb">
+						<div class="topArea">
+							<!-- 로그인 전 -->
+							<!--
+							<div class="thumb"><img src="./images/common/iconConnect_mo.png" alt="" /></div>
+							<div class="info">
+								Connect Wallet
+							</div>
+							-->
+							<!-- //로그인 전 -->
+
+							<!-- 로그인 후 -->
+							<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+							<div class="info">
+								<div class="name">Account 1</div>
+								<a href="#">0x1effsa0x1effsa0x1effsa</a>
+							</div>
+							<!-- //로그인 후 -->
+						</div>
+						<ul class="list">
+							<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
+							<li><a href="./market.html">Square Market</a></li>
+						</ul>
+						<!-- 로그인 전 -->
+						<!--
+						<div class="btn">
+							<a href="#" class="connect">Connect Wallet</a>
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 전 -->
+
+						<!-- 로그인 후 -->
+						<div class="btn type--single">
+							<a href="#" class="creat">Creat</a>
+						</div>
+						<!-- //로그인 후 -->
+					</div>
+
+					<!-- 로그인 전 -->
+					<!--
+					<div class="boxWallet">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">Connect your wallet and join the Bid!</div>
+						</div>
+						<div class="inWallet">
+							<div class="wallet">Metamask Wallet</div>
+						</div>
+						<div class="boxInsta">
+							<div class="title">Sign-In</div>
+							<div class="subject">Login via social media account is required to act as a creator.</div>
+							<a href="#">Instagram</a>
+						</div>
+					</div>
+					-->
+					<!-- //로그인 전 -->
+
+					<!-- 로그인 후 -->
+					<div class="boxWallet type--login">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">Connect your wallet and join the Bid!</div>
+						</div>
+						<div class="inWallet">
+							<div class="wallet">
+								<div class="walletCoin">
+									<div class="coin">
+										<div class="mark bg1 mark--eth"></div>
+										<div class="value">
+											<div class="name">Balance</div>
+											<div class="price">0 ETH 0</div>
+										</div>
+									</div>
+									<div class="coin">
+										<div class="mark bg2 mark--eth"></div>
+										<div class="value">
+											<div class="name">Bidding Balance</div>
+											<div class="price">0 WETH 0</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								<a href="#" class="btnAddFund">Add Fund with</a>
+							</div>
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+						<!-- SNS 연결 전 -->
+						<!--
+						<div class="boxInsta">
+							<div class="title">Sign-In</div>
+							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
+							<a href="#">Instagram</a>
+						</div>
+						-->
+						<!-- //SNS 연결 전 -->
+
+						<!-- SNS 연결 후 -->
+						
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>Linda0980</span></div>
+							</div>
+							<div class="userLink">
+								<a href="#">My Profile</a>
+								<a href="#" class="depth">My Item</a>
+								<ul class="listDepth">
+									<li><a href="#">My Owened (00)</a></li>
+									<li><a href="#">My Created (00)</a></li>
+									<li><a href="#">My Favorit (00)</a></li>
+									<li><a href="#">My Display (00)</a></li>
+									<li><a href="#">My Bid (00)</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- //SNS 연결 후 -->
+					</div>
+					<!-- //로그인 후 -->
+					
+					<a href="#" class="close">close</a>
+				</div>
+				<!-- //Mobile -->
+			</div>
+		</header>
+		<div id="container">
+      <div class="boxDetailTop">
+        <div class="inner">
+          <div class="cont"><img src="./images/content/imgDetail.png" alt="" /></div>
+          <a href="#" class="btnTerm">Term</a>
+          <a href="#" class="btnShare">Share</a>
+        </div>
+      </div>
+			<div class="section section--detail">
+				<!-- PC -->
+				<div class="inner pc">
+          <div class="leftArea">
+            <div class="titleArea">
+              <div class="category">Category : Art</div>
+              <h4 class="title">Terrabyte Sksdj239 Wd</h4>
+              <div class="subject">Visual Therapy 04 By Pai Lactobacillus 2560X1140px / 12 Sec</div>
+            </div>
+            <div class="boxQuick">
+              <div class="title">10% Of Sales Will Go To Creator (Royalty)</div>
+              <ul class="list">
+                <li><a href="#" class="contract">Contract Address</a></li>
+                <li><a href="#" class="token">Toekn ID</a></li>
+                <li><a href="#" class="metadata">Metadata</a></li>
+              </ul>
+            </div>
+            <div class="boxBidUser">
+              <div class="company">
+                <div class="thumb"><img src="./images/content/imgBraveThumb.png" alt="" /></div>
+                <div class="name">Brave<span>Linda0980</span></div>
+              </div>
+              <div class="user">
+                <div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+                <div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+                <div class="cont">
+                  Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.
+                </div>
+                <div class="sns">
+                  <a href="#" class="twitter">twitter</a>
+                  <a href="#" class="insta">insta</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightArea">
+						<!-- Live Auction -->
+						<div class="topArea">
+							<div class="title live">Live Auction</div>
+							<div class="opt">
+								<a href="#" class="like">13567</a>
+								<a href="#" class="more"></a>
+							</div>
+						</div>
+						<div class="timeArea">
+							<div class="day"><span>100</span> days</div>
+							<div class="time"><span>10</span> h <span class="col">:</span> <span>45</span> m <span class="col">:</span> <span>06</span> s</div>
+						</div>
+						<div class="bidArea">
+							<div class="title">Highest Bid</div>
+							<div class="cont">
+								<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+								<div class="coin">
+									<div class="type eth">0.56 ETH</div>
+									<div class="dollar">$941.50</div>
+								</div>
+							</div>
+						</div>
+						<div class="balanceArea">
+							<div class="title">Your bidding balance</div>
+							<div class="balance">
+								<div class="input">
+									<input type="text" value="1.0" placeholder="1.0" />
+								</div>
+								<div class="type">ETH</div>
+								<div class="dollar">$320.00</div>
+							</div>
+							<div class="guide">you must bid least 1.0 ETH</div>
+						</div>
+            <div class="pidArea active">Place a bid</div>
+						<!-- //Live Auction -->
+
+						<!-- Current Price -->
+						<!--
+						<div class="topArea">
+							<div class="title">Current Price</div>
+							<div class="opt">
+								<a href="#" class="like">0</a>
+								<a href="#" class="more"></a>
+							</div>
+						</div>
+						<div class="bidArea current">
+							<div class="cont">
+								<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+								<div class="coin">
+									<div class="type eth">0.56 ETH</div>
+									<div class="dollar">$941.50</div>
+								</div>
+							</div>
+						</div>
+						<div class="pidArea">Not for sale</div>
+						-->
+						<!-- //Current Price -->
+
+						<!-- Current Price Buy -->
+						<!--
+						<div class="topArea">
+							<div class="title live">Current Price</div>
+							<div class="opt">
+								<a href="#" class="like">13567</a>
+								<a href="#" class="more"></a>
+							</div>
+						</div>
+						<div class="bidArea current">
+							<div class="cont">
+								<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+								<div class="coin">
+									<div class="type eth">0.56 ETH</div>
+									<div class="dollar">$941.50</div>
+								</div>
+							</div>
+						</div>
+						<div class="pidArea active popup--open" data-pop="popBidding">Buy now</div>
+						-->
+						<!-- //Current Price Buy -->
+          </div>
+					<div class="boxDetailHistory">
+						<div class="title">History</div>
+						<ul class="list">
+							<li>
+								<div class="status bid">Bid</div>
+								<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+								<div class="name">Bid placed by<span>@karmalarma</span></div>
+								<div class="token">0.56 ETH</div>
+								<div class="dollar">$ 2,158.80</div>
+								<div class="date">Jul 7, 2021 at 5:28am</div>
+							</li>
+							<li>
+								<div class="status new">New</div>
+								<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt="" /></div>
+								<div class="name">Bid placed by<span>@mad dog jones</span></div>
+								<div class="token">0.54 ETH</div>
+								<div class="dollar">$ 2,158.80</div>
+								<div class="date">Jul 6, 2021 at 3:20am</div>
+							</li>
+						</ul>
+					</div>
+        </div>
+				<!-- //PC -->
+
+				<!-- Mobile -->
+				<div class="inner mo">
+					<div class="boxDetail">
+						<!-- Auction Time -->
+						<div class="boxAuctionTime">
+							<div class="title">Auction Ending in</div>
+							<div class="timeArea">
+								<div class="day"><span>100</span> d</div>
+								<div class="time"><span>10</span> h <span class="col">:</span> <span>45</span> m <span class="col">:</span> <span>06</span> s</div>
+							</div>
+						</div>
+						<!-- //Auction Time -->
+
+						<div class="detailArea type--off">
+							<div class="top">
+								<div class="count">Edition Of <strong>1 / 10</strong></div>
+								<div class="opt">
+									<a href="#" class="like">30</a>
+									<a href="#" class="btnShare">share</a>
+								</div>
+							</div>
+							<div class="title">Steve Jobs’ Job Application (1973)</div>
+							<div class="statusPrice">Current Price</div><!-- icon 필요한 경우, 클래스 icon 추가 / off시 클래스 icon--off 추가 / live시 클래스 icon--live 추가 -->
+							<div class="coin">
+								<div class="type eth">0.56 ETH</div>
+								<div class="dollar">$941.50</div>
+							</div>
+						</div>
+					</div>
+					<div class="inBox">
+						<div class="boxDescript">
+							<div class="title">Description</div>
+							<div class="cont">The four troublemakers reunited. They are wondering that tonight go to be a falling stars</div>
+						</div>
+						<div class="boxInfoTab">
+							<div class="tab">
+								<a href="#" class="active" data-tab="tabInformation">Information</a>
+								<a href="#" data-tab="tabBidding">Bidding Status</a>
+							</div>
+							<div id="tabInformation" class="cont active">
+								<div class="row">
+									<div class="boxCreator">
+										<div class="title">Creator</div>
+										<div class="user">
+											<div class="thumb"><img src="./images/content/imgBidThumb.png" alt=""></div>
+											<div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+										</div>
+										<div class="txt">
+											Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="boxQuick">
+										<div class="title">10% Of Sales Will Go To Creator (Royalty)</div>
+										<ul class="list">
+											<li><a href="#" class="contract">Contract Address</a></li>
+											<li><a href="#" class="token">Toekn ID</a></li>
+											<li><a href="#" class="metadata">Metadata</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div id="tabBidding" class="cont">
+								<div class="row">
+									<div class="boxBidding">
+										<div class="title bid">Bid</div>
+										<div class="item">
+											<div class="info">
+												<div class="thumb"><img src="./images/content/imgBidThumb.png" alt=""></div>
+												<div class="name">Bid placed by<span>@karmalarma</span></div>
+											</div>
+											<div class="token">0.56 ETH</div>
+											<div class="dollar">$ 2,158.80</div>
+											<div class="date">Jul 7, 2021 At 5:28am</div>
+											<a href="#" class="link">link</a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="boxBidding">
+										<div class="title new">New</div>
+										<div class="item">
+											<div class="info">
+												<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt=""></div>
+												<div class="name">Bid placed by<span>@karmalarma</span></div>
+											</div>
+											<div class="token">0.56 ETH</div>
+											<div class="dollar">$ 2,158.80</div>
+											<div class="date">Jul 7, 2021 At 5:28am</div>
+											<a href="#" class="link">link</a>
+										</div>
+										<div class="item">
+											<div class="info">
+												<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt=""></div>
+												<div class="name">Bid placed by<span>@karmalarma</span></div>
+											</div>
+											<div class="token">0.56 ETH</div>
+											<div class="dollar">$ 2,158.80</div>
+											<div class="date">Jul 7, 2021 At 5:28am</div>
+											<a href="#" class="link">link</a>
+										</div>
+										<a href="#" class="btnMore">More View</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<!--
+							<a href="#">Not for sale</a>
+							-->
+							<a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a>
+							
+						</div>
+					</div>
+				</div>
+				<!-- //Mobile -->
+			</div>
+		</div>
+		<footer id="footer">
+      <div class="inner">
+        <h2>PENTASQUARE</h2>
+        <div class="copyright">
+          Copyright 2021 Pentasquare.io<br />
+          All rights Reserved.
+        </div>
+        <div class="sns">
+          <a href="#" class="facebook">facebook</a>
+          <a href="#" class="telegram">telegram</a>
+          <a href="#" class="polymath">polymath</a>
+          <a href="#" class="twitter">twitter</a>
+          <a href="#" class="kakaotalk">kakaotalk</a>
+        </div>
+      </div>
+		</footer>
+	</section>
+</body>
+
+<div id="popBidding" class="popBasic">
+	<div class="popCont">
+		<div class="balanceArea">
+			<div class="title">Your bidding balance</div>
+			<div class="balance">
+				<div class="input">
+					<input type="text" value="1.0" placeholder="1.0" />
+				</div>
+				<div class="type">ETH</div>
+				<div class="dollar">$320.00</div>
+			</div>
+			<div class="guide">you must bid least 1.0 ETH</div>
+			<div class="detailArea">
+				<div class="row">
+					<div class="itemTitle">Your bidding balance</div>
+					<div class="value">1.0 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Your balance</div>
+					<div class="value">4.4 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Service fees</div>
+					<div class="value">0.00147 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Paying Result</div>
+					<div class="value">0.00833 ETH</div>
+				</div>
+			</div>
+		</div>
+		<div class="bidArea">
+			<div class="title">Highest Bid</div>
+			<div class="cont">
+				<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+				<div class="name">high-test bib by<span>@Terrabyte</span></div>
+				<div class="coin">
+					<div class="type eth">0.56 ETH</div>
+					<div class="dollar">$941.50</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btnBid">Place a bid</a>
+	</div>
+	<a href="#" class="close">close</a>
+</div>
+
+<div id="dim"></div>
+
+<script type="text/javascript">
+	var swiper = new Swiper('.boxAuctionVisual .swiper-container', {
+		loop: true,
+		pagination: {
+			el: '.boxAuctionVisual .swiper-pagination',
+			clickable: true
+		},
+	});
+
+	$(function(){
+		$(".boxInfoTab .tab a").click(function(e){
+			e.preventDefault();
+			var target = $(this).attr("data-tab");
+
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".boxInfoTab .cont").removeClass("active");
+			$("#"+target).addClass("active");
+		});
+	});
+
+	$(".like").click(function(e){
+		e.preventDefault();
+		$(this).toggleClass("on");
+	});
+</script>
+</html>
