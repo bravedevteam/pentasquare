@@ -35,7 +35,6 @@
 					<a href="#" class="btnCreat">Creat</a>
 
 					<!-- 로그인 전 -->
-					<!--
 					<div class="boxWallet">
 						<div class="topArea">
 							<div class="title">Wallet</div>
@@ -50,10 +49,10 @@
 							<a href="#">Instagram</a>
 						</div>
 					</div>
-					-->
 					<!-- //로그인 전 -->
 
 					<!-- 로그인 후 -->
+					<!--
 					<div class="boxWallet type--login">
 						<div class="topArea">
 							<div class="title">Wallet</div>
@@ -63,55 +62,76 @@
 							<div class="wallet">
 								<div class="walletCoin">
 									<div class="coin">
-										<div class="mark bg1 mark--eth"></div>
 										<div class="value">
-											<div class="name">Balance</div>
-											<div class="price">0 ETH 0</div>
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
 										</div>
 									</div>
 									<div class="coin">
-										<div class="mark bg2 mark--eth"></div>
 										<div class="value">
-											<div class="name">Bidding Balance</div>
-											<div class="price">0 WETH 0</div>
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
 										</div>
-										<a href="#" class="btnChange">change</a>
+									</div>
+									<a href="#" class="btnChange">change</a>
+								</div>
+								< !--
+								<div class="walletCoin type--write">
+									<div class="max">Max amount is <span>50.356</span> ETH</div>
+									<div class="input">
+										<input type="text" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
 									</div>
 								</div>
-								<a href="#" class="btnAddFund">Add Fund with</a>
+								-- >
+								<div class="btnArea">
+									<a href="#">Convert Balance</a>
+									< !--
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+									-- >
+								</div>
 							</div>
 							<a href="#" class="disconnect">Disconnect Wallet</a>
 						</div>
-						<!-- SNS 연결 전 -->
+						< !-- SNS 연결 전 -->
+						<!--
 						<div class="boxInsta">
 							<div class="title">Sign-In</div>
 							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
 							<a href="#">Instagram</a>
 						</div>
-						<!-- //SNS 연결 전 -->
+						-->
+						<!-- //SNS 연결 전 -- >
 
-						<!-- SNS 연결 후 -->
-						<!--
+						< !-- SNS 연결 후 -- >
 						<div class="boxInsta">
+							<div class="infoTop">
+								<div class="title">My</div>
+								<a href="#" class="edit">Edit</a>
+							</div>
 							<div class="infoUser">
 								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
 								<div class="name">Linda Dounia<span>Linda0980</span></div>
 							</div>
 							<div class="userLink">
-								<a href="#">My Profile</a>
-								<a href="#" class="depth">My Item</a>
-								<ul class="listDepth">
-									<li><a href="#">My Owened (00)</a></li>
-									<li><a href="#">My Created (00)</a></li>
-									<li><a href="#">My Favorit (00)</a></li>
-									<li><a href="#">My Display (00)</a></li>
-									<li><a href="#">My Bid (00)</a></li>
+								<ul>
+									<li><a href="#">Owened (00)</a></li>
+									<li>
+										<a href="#" class="depth">Created (00)</a>
+										<ul class="listDepth">
+											<li><a href="#">Pre created (00)</a></li>
+										</ul>
+									</li>
+									<li><a href="#">My Sale (00)</a></li>
+									<li><a href="#">Favorit (00)</a></li>
 								</ul>
 							</div>
 						</div>
-						-->
-						<!-- //SNS 연결 후 -->
+						< !-- //SNS 연결 후 -- >
 					</div>
+					-->
 					<!-- //로그인 후 -->
 				</div>
 
@@ -250,11 +270,14 @@
 		</header>
 		<div id="container">
       <div class="boxDetailTop">
-        <div class="inner">
-          <div class="cont"><img src="./images/content/imgDetail.png" alt="" /></div>
-          <a href="#" class="btnTerm">Term</a>
-          <a href="#" class="btnShare">Share</a>
-        </div>
+				<div class="cont"><img src="./images/content/imgDetail.png" alt="" /></div>
+				<div class="btnArea left">
+					<a href="#" class="btnTerm">Term</a>
+				</div>
+				<div class="btnArea right">
+					<a href="#" class="btnLike">Term</a>
+					<a href="#" class="btnShare">Share</a>
+				</div>
       </div>
 			<div class="section section--detail">
 				<!-- PC -->
@@ -274,21 +297,15 @@
               </ul>
             </div>
             <div class="boxBidUser">
-              <div class="company">
-                <div class="thumb"><img src="./images/content/imgBraveThumb.png" alt="" /></div>
-                <div class="name">Brave<span>Linda0980</span></div>
-              </div>
-              <div class="user">
-                <div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
-                <div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
-                <div class="cont">
-                  Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.
-                </div>
-                <div class="sns">
-                  <a href="#" class="twitter">twitter</a>
-                  <a href="#" class="insta">insta</a>
-                </div>
-              </div>
+							<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+							<div class="name">Linda Dounia<span class="icon icon--insta">Linda0980</span></div>
+							<div class="cont">
+								Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.
+							</div>
+							<div class="sns">
+								<a href="#" class="twitter">twitter</a>
+								<a href="#" class="insta">insta</a>
+							</div>
             </div>
           </div>
           <div class="rightArea">
@@ -297,7 +314,7 @@
 						<div class="topArea">
 							<div class="title live">Live Auction</div>
 							<div class="opt">
-								<a href="#" class="like">13567</a>
+								<div class="count">Sales Amount <span class="num">36</span>/100</div>
 								<a href="#" class="more"></a>
 							</div>
 						</div>
@@ -336,7 +353,7 @@
 						<div class="topArea">
 							<div class="title">Current Price</div>
 							<div class="opt">
-								<a href="#" class="like">0</a>
+								<div class="count">Sales Amount <span class="num">36</span>/100</div>
 								<a href="#" class="more"></a>
 							</div>
 						</div>
@@ -359,7 +376,7 @@
 						<div class="topArea">
 							<div class="title live">Current Price</div>
 							<div class="opt">
-								<a href="#" class="like">13567</a>
+								<div class="count">Sales Amount <span class="num">36</span>/100</div>
 								<a href="#" class="more"></a>
 							</div>
 						</div>
@@ -380,6 +397,22 @@
 					<div class="boxDetailHistory">
 						<div class="title">History</div>
 						<ul class="list">
+							<li>
+								<div class="status move">transfer</div>
+								<div class="thumb noname"></div>
+								<div class="name">No name</div>
+								<div class="token">0.56 ETH</div>
+								<div class="dollar">$ 2,158.80</div>
+								<div class="date">Jul 7, 2021 at 5:28am</div>
+							</li>
+							<li>
+								<div class="status make">Sold</div>
+								<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+								<div class="name">Kevin<span>@dynamicsoso</span></div>
+								<div class="token">0.40 ETH</div>
+								<div class="dollar">$ 2,158.80</div>
+								<div class="date">Jul 7, 2021 at 5:28am</div>
+							</li>
 							<li>
 								<div class="status bid">Bid</div>
 								<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>

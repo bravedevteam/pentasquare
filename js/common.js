@@ -92,6 +92,16 @@ $(function(){
     dim_close();
   });
 
+  $(".walletCoin .trans").click(function(){
+		if($(this).hasClass("eth")){
+			$(this).removeClass("on");
+			$(this).siblings(".weth").addClass("on");
+		}else if($(this).hasClass("weth")){
+			$(this).removeClass("on");
+			$(this).siblings(".eth").addClass("on");
+		}
+	});
+
   function dim_open(){
     $("#dim").fadeIn(300);
     $("body").css("overflow", "hidden");

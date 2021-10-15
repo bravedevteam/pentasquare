@@ -276,12 +276,17 @@
 		<div id="container">
 			<div class="section">
 				<div class="boxMypageTop">
-					<div class="visual" style="background-image:url('./images/content/bgMypage.png');"></div>
+					<div class="visual" style="background-image:url('./images/content/bgMypage.png');">
+            <a href="#" class="edit">Banner Edit</a>
+          </div>
 					<div class="info">
-						<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt="" /></div>
-						<div class="name">Kevin</div>
+						<div class="thumb">
+              <img src="./images/content/imgBraveThumb.png" alt="" />
+              <a href="#" class="edit">edit</a>
+            </div>
+						<div class="name">James</div>
 						<!-- <div class="subject">Millions of companies of all sizes—from startups to Fortune 500s</div> -->
-						<!-- <div class="subject">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s<br />software and APIs to accept payments, send payouts, and manage their  businesses online.</div> -->
+						<div class="subject">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s<br />software and APIs to accept payments, send payouts, and manage their  businesses online.</div>
 						<div class="key"><a href="#">0x1eff3eifa77886xa67e87in12ef</a></div>
 					</div>
 					<div class="btn">
@@ -302,116 +307,49 @@
 			<div class="section">
 				<div class="inner typeA">
 					<div class="topArea">
-						<h3 class="title">Create item</h3>
-						<div class="subject">Select “Single” if you want to sell as a unique product, or select “Multiple” if you want to sell one product multiple times.</div>
+						<h3 class="title">Edit profile</h3>
+						<div class="subject">You can set preferred display name, create your personal settings</div>
 					</div>
-					<div class="boxCreate">
-						<div class="tabArea">
-							<a href="#" class="active" data-tab="tab1">Single Type (Erc-721)</a>
-							<a href="#" data-tab="tab2">Multi Type (Erc-1155)</a>
-						</div>
-						<div id="tab1" class="boxWhite tabCont active">
+					<div class="boxCreate type--profile">
+						<div class="boxWhite">
 							<ul class="listTable">
 								<li>
-									<div class="th">Title</div>
-									<div class="td"><input type="text" placeholder="Input a title" /></div>
+									<div class="th">Name</div>
+									<div class="td"><input type="text" placeholder="Enter your name" /></div>
 								</li>
-								<li class="row_img">
-									<div class="th mo">image</div>
+								<li>
+									<div class="th">self<br />introduction</div>
 									<div class="td">
-										<div class="fileArea">
-											<button type="button" class="fileAdd">Add</button>
-											<p>Upload File<br />PNG, GIF, WEBP, MP4 or MP3, Max 100mb.</p>
-										</div>
-									</div>
-								</li>
-								<li class="row_sub">
-									<div class="th">description</div>
-									<div class="td">
-										<textarea placeholder="Sample Text"></textarea>
+										<textarea placeholder="Tell about yourself"></textarea>
+                    <div class="wordCount">0/400</div>
 									</div>
 								</li>
 								<li>
-									<div class="th">category</div>
-									<div class="td">
-										<select>
-											<option>Movie</option>
-										</select>
-									</div>
+									<div class="th">Instagram ID</div>
+									<div class="td"><input type="text" placeholder="Enter your instagram ID." /></div>
 								</li>
 								<li>
-									<div class="th">Number of tokens</div>
-									<div class="td">
-										<div class="input_etc">
-											<input type="text" disabled="disabled" value="1" class="input--size2" />
-											<span class="etcValue">token</span>
-										</div>
-									</div>
+									<div class="th">Instagram link</div>
+									<div class="td"><input type="text" placeholder="Enter your instagram link." /></div>
 								</li>
 							</ul>
 						</div>
-						<div id="tab2" class="boxWhite tabCont">
-							<ul class="listTable">
+            <div class="boxWhite typeB">
+              <ul class="listTable">
 								<li>
-									<div class="th">Title</div>
-									<div class="td"><input type="text" placeholder="Input a title" /></div>
-								</li>
-								<li class="row_img">
-									<div class="th mo">image</div>
+									<div class="th">Email*</div>
 									<div class="td">
-										<div class="fileArea">
-											<button type="button" class="fileAdd">Add</button>
-											<p>Upload File<br />PNG, GIF, WEBP, MP4 or MP3, Max 100mb.</p>
-										</div>
-									</div>
+                    <div class="boxConfirm">
+                      <input type="text" placeholder="Enter your email" />
+                      <button type="button">CONFIRM</button>
+                    </div>
+                    <div class="ps">* your email for marketplace notifications</div>
+                  </div>
 								</li>
-								<li class="row_sub">
-									<div class="th">description</div>
-									<div class="td">
-										<textarea placeholder="Sample Text"></textarea>
-									</div>
-								</li>
-								<li>
-									<div class="th">category</div>
-									<div class="td">
-										<select>
-											<option>Movie</option>
-										</select>
-									</div>
-								</li>
-								<li>
-									<div class="th">Number of tokens</div>
-									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="50" class="input--size2" />
-											<span class="etcValue">token</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="th">Maximum Issuance</div>
-									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="100" class="input--size2" />
-											<span class="etcValue">token</span>
-										</div>
-										<span>Please enter the maximum token quantity that can be issued further!</span>
-									</div>
-								</li>
-							</ul>
-						</div>
+              </ul>
+            </div>
 					</div>
-					<div class="topArea type--setting">
-						<h3 class="title">sales setting</h3>
-						<div class="chk">
-							<input type="radio" id="chkAuction_1" name="chkAuction" checked="checked" />
-							<label for="chkAuction_1">Yes</label>
-							<input type="radio" id="chkAuction_2" name="chkAuction" />
-							<label for="chkAuction_2">No</label>
-							<span>After Issuing Tokens, You Can Set Up A Sale</span>
-						</div>
-					</div>
-					<div class="btnArea type--line">
+					<div class="btnArea">
 						<div class="rightArea">
 							<button type="button" class="btnBasic">CENCEL</button>
 							<button type="button" class="btnBasic submit">CONFIRM</button>

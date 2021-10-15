@@ -5,17 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	<title>PENTASQUARE</title>
   <link rel="stylesheet" href="css/swiper.min.css" />
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-	<link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/jquery-ui-timepicker-addon.js"></script>
   <script src="js/swiper.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 
-<body class="page--auction">
+<body>
 	<section id="wrap">
 		<header id="header" class="type--white">
 			<div class="inner">
@@ -58,7 +54,6 @@
 					<!-- //로그인 전 -->
 
 					<!-- 로그인 후 -->
-					
 					<div class="boxWallet type--login">
 						<div class="topArea">
 							<div class="title">Wallet</div>
@@ -66,6 +61,7 @@
 						</div>
 						<div class="inWallet">
 							<div class="wallet">
+								<!--
 								<div class="walletCoin">
 									<div class="coin">
 										<div class="value">
@@ -81,7 +77,7 @@
 									</div>
 									<a href="#" class="btnChange">change</a>
 								</div>
-								<!--
+								-->
 								<div class="walletCoin type--write">
 									<div class="max">Max amount is <span>50.356</span> ETH</div>
 									<div class="input">
@@ -90,7 +86,6 @@
 										<button type="button" class="trans weth">WETH</button>
 									</div>
 								</div>
-								-->
 								<div class="btnArea">
 									<a href="#">Convert Balance</a>
 									<!--
@@ -275,168 +270,34 @@
 		</header>
 		<div id="container">
 			<div class="section">
-				<div class="boxMypageTop">
-					<div class="visual" style="background-image:url('./images/content/bgMypage.png');"></div>
-					<div class="info">
-						<div class="thumb"><img src="./images/content/imgBraveThumb.png" alt="" /></div>
-						<div class="name">Kevin</div>
-						<!-- <div class="subject">Millions of companies of all sizes—from startups to Fortune 500s</div> -->
-						<!-- <div class="subject">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s<br />software and APIs to accept payments, send payouts, and manage their  businesses online.</div> -->
-						<div class="key"><a href="#">0x1eff3eifa77886xa67e87in12ef</a></div>
+				<div class="boxLoginConnect">
+					<!-- Instagram -->
+					<!--
+					<div class="title">Sign in to your SNS</div>
+					<div class="subject">Login via social media account is required to act as a creator.</div>
+					<div class="snsLogo type--insta"><img src="./images/common/imgLogoInsta.png" alt="instagram" /></div>
+					<div class="btn">
+						<a href="#">Connect <span><img src="./images/common/imgLoginInsta.png" alt="instagram" /></span></a>
+					</div>
+					-->
+					<!-- //Instagram -->
+
+					<!-- Metamask -->
+					
+					<div class="title">Sign in to your wallet.</div>
+					<div class="snsLogo">
+						<img src="./images/common/imgLogoMeta.png" alt="instagram" />
+						<span>METAMASK</span>
 					</div>
 					<div class="btn">
-						<a href="#" class="share">share</a>
-						<a href="#" class="edit">Profile Edit</a>
+						<a href="#">Connect Metamask</a>
 					</div>
-				</div>
-				<div class="boxMyCategory">
-					<ul>
-						<li><a href="#">Owened(69)</a></li>
-						<li><a href="#">My Sale(79)</a></li>
-						<li><a href="#">Pre Created(4)</a></li>
-						<li><a href="#">Favorited(909)</a></li>
-						<li><a href="#">Bidding(3)</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="section">
-				<div class="inner typeA">
-					<div class="topArea">
-						<h3 class="title">Create item</h3>
-						<div class="subject">Select “Single” if you want to sell as a unique product, or select “Multiple” if you want to sell one product multiple times.</div>
-					</div>
-					<div class="boxCreate">
-						<div class="tabArea">
-							<a href="#" class="active" data-tab="tab1">Single Type (Erc-721)</a>
-							<a href="#" data-tab="tab2">Multi Type (Erc-1155)</a>
-						</div>
-						<div id="tab1" class="boxWhite tabCont active">
-							<ul class="listTable">
-								<li>
-									<div class="th">Title</div>
-									<div class="td"><input type="text" placeholder="Input a title" /></div>
-								</li>
-								<li class="row_img">
-									<div class="th mo">image</div>
-									<div class="td">
-										<div class="fileArea">
-											<button type="button" class="fileAdd">Add</button>
-											<p>Upload File<br />PNG, GIF, WEBP, MP4 or MP3, Max 100mb.</p>
-										</div>
-									</div>
-								</li>
-								<li class="row_sub">
-									<div class="th">description</div>
-									<div class="td">
-										<textarea placeholder="Sample Text"></textarea>
-									</div>
-								</li>
-								<li>
-									<div class="th">category</div>
-									<div class="td">
-										<select>
-											<option>Movie</option>
-										</select>
-									</div>
-								</li>
-								<li>
-									<div class="th">Number of tokens</div>
-									<div class="td">
-										<div class="input_etc">
-											<input type="text" disabled="disabled" value="1" class="input--size2" />
-											<span class="etcValue">token</span>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div id="tab2" class="boxWhite tabCont">
-							<ul class="listTable">
-								<li>
-									<div class="th">Title</div>
-									<div class="td"><input type="text" placeholder="Input a title" /></div>
-								</li>
-								<li class="row_img">
-									<div class="th mo">image</div>
-									<div class="td">
-										<div class="fileArea">
-											<button type="button" class="fileAdd">Add</button>
-											<p>Upload File<br />PNG, GIF, WEBP, MP4 or MP3, Max 100mb.</p>
-										</div>
-									</div>
-								</li>
-								<li class="row_sub">
-									<div class="th">description</div>
-									<div class="td">
-										<textarea placeholder="Sample Text"></textarea>
-									</div>
-								</li>
-								<li>
-									<div class="th">category</div>
-									<div class="td">
-										<select>
-											<option>Movie</option>
-										</select>
-									</div>
-								</li>
-								<li>
-									<div class="th">Number of tokens</div>
-									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="50" class="input--size2" />
-											<span class="etcValue">token</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="th">Maximum Issuance</div>
-									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="100" class="input--size2" />
-											<span class="etcValue">token</span>
-										</div>
-										<span>Please enter the maximum token quantity that can be issued further!</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="topArea type--setting">
-						<h3 class="title">sales setting</h3>
-						<div class="chk">
-							<input type="radio" id="chkAuction_1" name="chkAuction" checked="checked" />
-							<label for="chkAuction_1">Yes</label>
-							<input type="radio" id="chkAuction_2" name="chkAuction" />
-							<label for="chkAuction_2">No</label>
-							<span>After Issuing Tokens, You Can Set Up A Sale</span>
-						</div>
-					</div>
-					<div class="btnArea type--line">
-						<div class="rightArea">
-							<button type="button" class="btnBasic">CENCEL</button>
-							<button type="button" class="btnBasic submit">CONFIRM</button>
-						</div>
-					</div>
+					
+					<!-- //Metamask -->
 				</div>
 			</div>
 		</div>
-		<footer id="footer">
-			<div class="inner">
-				<h2>PENTASQUARE</h2>
-				<div class="copyright">
-					Copyright 2021 Pentasquare.io<br />
-					All rights Reserved.
-				</div>
-				<div class="sns">
-					<a href="#" class="facebook">facebook</a>
-					<a href="#" class="telegram">telegram</a>
-					<a href="#" class="polymath">polymath</a>
-					<a href="#" class="twitter">twitter</a>
-					<a href="#" class="kakaotalk">kakaotalk</a>
-				</div>
-			</div>
-		</footer>
+		
 	</section>
 </body>
-
 </html>

@@ -58,6 +58,7 @@
 					<!-- //로그인 전 -->
 
 					<!-- 로그인 후 -->
+					
 					<div class="boxWallet type--login">
 						<div class="topArea">
 							<div class="title">Wallet</div>
@@ -67,22 +68,36 @@
 							<div class="wallet">
 								<div class="walletCoin">
 									<div class="coin">
-										<div class="mark bg1 mark--eth"></div>
 										<div class="value">
-											<div class="name">Balance</div>
-											<div class="price">0 ETH 0</div>
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
 										</div>
 									</div>
 									<div class="coin">
-										<div class="mark bg2 mark--eth"></div>
 										<div class="value">
-											<div class="name">Bidding Balance</div>
-											<div class="price">0 WETH 0</div>
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
 										</div>
-										<a href="#" class="btnChange">change</a>
+									</div>
+									<a href="#" class="btnChange">change</a>
+								</div>
+								<!--
+								<div class="walletCoin type--write">
+									<div class="max">Max amount is <span>50.356</span> ETH</div>
+									<div class="input">
+										<input type="text" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
 									</div>
 								</div>
-								<a href="#" class="btnAddFund">Add Fund with</a>
+								-->
+								<div class="btnArea">
+									<a href="#">Convert Balance</a>
+									<!--
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+									-->
+								</div>
 							</div>
 							<a href="#" class="disconnect">Disconnect Wallet</a>
 						</div>
@@ -97,19 +112,25 @@
 						<!-- SNS 연결 후 -->
 						<!--
 						<div class="boxInsta">
+							<div class="infoTop">
+								<div class="title">My</div>
+								<a href="#" class="edit">Edit</a>
+							</div>
 							<div class="infoUser">
 								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
 								<div class="name">Linda Dounia<span>Linda0980</span></div>
 							</div>
 							<div class="userLink">
-								<a href="#">My Profile</a>
-								<a href="#" class="depth">My Item</a>
-								<ul class="listDepth">
-									<li><a href="#">My Owened (00)</a></li>
-									<li><a href="#">My Created (00)</a></li>
-									<li><a href="#">My Favorit (00)</a></li>
-									<li><a href="#">My Display (00)</a></li>
-									<li><a href="#">My Bid (00)</a></li>
+								<ul>
+									<li><a href="#">Owened (00)</a></li>
+									<li>
+										<a href="#" class="depth">Created (00)</a>
+										<ul class="listDepth">
+											<li><a href="#">Pre created (00)</a></li>
+										</ul>
+									</li>
+									<li><a href="#">My Sale (00)</a></li>
+									<li><a href="#">Favorit (00)</a></li>
 								</ul>
 							</div>
 						</div>
@@ -263,44 +284,42 @@
 					</div>
 					<div class="btn">
 						<a href="#" class="share">share</a>
-						<a href="#" class="edit">edit</a>
+						<a href="#" class="edit">Profile Edit</a>
 					</div>
 				</div>
 				<div class="boxMyCategory">
 					<ul>
-						<li class="cateAdd"><a href="#" class="add active">만들기</a></li>
-						<li><a href="#" class="owened">내 소유(69)</a></li>
-						<li><a href="#" class="created">내가 만든(79)</a></li>
-						<li><a href="#" class="display">판매중(27)</a></li>
-						<li><a href="#" class="bid">참여중(2)</a></li>
-						<li><a href="#" class="cart">임시발행(2)</a></li>
-						<li><a href="#" class="favorited">좋아요(909)</a></li>
+						<li><a href="#">Owened(69)</a></li>
+						<li><a href="#">My Sale(79)</a></li>
+						<li><a href="#">Pre Created(4)</a></li>
+						<li><a href="#">Favorited(909)</a></li>
+						<li><a href="#">Bidding(3)</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="section">
 				<div class="inner typeA">
 					<div class="topArea">
-						<h3 class="title">나의 작품 만들기</h3>
-						<div class="subject">한번만 판매하기 위해서는 <strong>single Type</strong> 선택 / 하나의 상품을 여러번 판매하고자 할 경우 <strong>Multi Type</strong>선택</div>
+						<h3 class="title">Create item</h3>
+						<div class="subject">Select “Single” if you want to sell as a unique product, or select “Multiple” if you want to sell one product multiple times.</div>
 					</div>
 					<div class="boxCreate type--view">
 						<div class="tabArea">
-							<a href="#" class="active" data-tab="tab1">싱글 타입(Erc-721)</a>
-							<a href="#" data-tab="tab2">멀티 타입(Erc-1155)</a>
+							<a href="#" class="active" data-tab="tab1">Single Type (Erc-721)</a>
+							<a href="#" data-tab="tab2">Multi Type (Erc-1155)</a>
 						</div>
 						<div id="tab1" class="boxWhite tabCont active">
 							<ul class="listTable">
 								<li class="area1">
-									<div class="th">제목</div>
+									<div class="th">Title</div>
 									<div class="td">Steve Jobs’ Job Application (1973)</div>
 								</li>
 								<li class="area1">
-									<div class="th mo">이미지</div>
+									<div class="th mo">image</div>
 									<div class="td"><img src="./images/content/imgCreatView.png" alt="" /></div>
 								</li>
 								<li>
-									<div class="th">작품 설명</div>
+									<div class="th">description</div>
 									<div class="td">
 										<div class="boxSubscript">The Steve Jobs’ Job Application from 1973 is a unique piece of history from the exact moment that a dreamer changed the world. It’s a snapshot into the mind of a future genius at a moment where any small deviation from the path ahead, would have meant a very different world today.
 
@@ -309,31 +328,31 @@ This NFT listing is part of the world’s first Physical vs NFT auction.
 The physical application has already been to auction 3 times since it first went on sale with Bonhams, New York and has seen an approximate 1,200% increase in value over the past 4 years.
 
 It is now going to auction alongside its digital (NFT) counterpart in 2 separate lots.</div>
-                    <a href="#" class="more">+ 더 보기</a>
+                    <a href="#" class="more">+ Read more</a>
 									</div>
 								</li>
 								<li class="line area2">
-									<div class="th">카테고리</div>
-									<div class="td">MOVIE</div>
+									<div class="th">category</div>
+									<div class="td">Movie</div>
 								</li>
 								<li class="area2">
-									<div class="th">토큰 발행 수</div>
-									<div class="td">1 개</div>
+									<div class="th">Number of tokens</div>
+									<div class="td">1 token</div>
 								</li>
 							</ul>
 						</div>
 						<div id="tab2" class="boxWhite tabCont">
 							<ul class="listTable">
 								<li class="area1">
-									<div class="th">제목</div>
+									<div class="th">Title</div>
 									<div class="td">Steve Jobs’ Job Application (1973)</div>
 								</li>
 								<li class="area1">
-									<div class="th mo">이미지</div>
+									<div class="th mo">image</div>
 									<div class="td"><img src="./images/content/imgCreatView.png" alt="" /></div>
 								</li>
 								<li>
-									<div class="th">작품 설명</div>
+									<div class="th">description</div>
 									<div class="td">
 										<div class="boxSubscript">The Steve Jobs’ Job Application from 1973 is a unique piece of history from the exact moment that a dreamer changed the world. It’s a snapshot into the mind of a future genius at a moment where any small deviation from the path ahead, would have meant a very different world today.
 
@@ -342,88 +361,184 @@ This NFT listing is part of the world’s first Physical vs NFT auction.
 The physical application has already been to auction 3 times since it first went on sale with Bonhams, New York and has seen an approximate 1,200% increase in value over the past 4 years.
 
 It is now going to auction alongside its digital (NFT) counterpart in 2 separate lots.</div>
-                    <a href="#" class="more">+ 더 보기</a>
+                    <a href="#" class="more">+ Read more</a>
 									</div>
 								</li>
 								<li class="line area2">
-									<div class="th">카테고리</div>
+									<div class="th">category</div>
 									<div class="td">MOVIE</div>
 								</li>
 								<li class="area2">
-									<div class="th">토큰 발행 수</div>
-									<div class="td">1 개</div>
+									<div class="th">Number of tokens</div>
+									<div class="td">1 token</div>
 								</li>
 								<li class="area2">
-									<div class="th">최대 발행 수</div>
-									<div class="td">100 개</div>
+									<div class="th">Maximum Issuance</div>
+									<div class="td">1 token</div>
 								</li>
 							</ul>
 						</div>
 					</div>
+					<!--
+					<div class="topArea type--setting">
+						<h3 class="title">Market Display</h3>
+						<div class="chk">
+							<input type="radio" id="chkAuction_1" name="chkAuction" checked="checked" />
+							<label for="chkAuction_1">Yes</label>
+							<input type="radio" id="chkAuction_2" name="chkAuction" />
+							<label for="chkAuction_2">No</label>
+							<span>After the freeze, market exposure is possible in My > Pre created.</span>
+						</div>
+					</div>
+					-->
 					<div class="topArea">
-						<h3 class="title">판매 설정</h3>
+						<h3 class="title">sales setting</h3>
 					</div>
 					<div class="boxWhite typeA">
-						<ul class="listTable type--large">
-							<li class="area2">
-								<div class="th">판매 방식</div>
+						<ul class="listTable type--large chkMarket">
+							<li>
+								<div class="th">Put on maketplace</div>
 								<div class="td">
-									<div class="chkVal">경매</div>
+									<input type="radio" id="chkSell_1" class="inputTab" data-tab="tabSell1" name="chkSellSet" />
+									<label for="chkSell_1">Fixed Price</label>
+									<input type="radio" id="chkSell_2" class="inputTab" data-tab="tabSell2" name="chkSellSet" checked="checked" />
+									<label for="chkSell_2">Timed auction</label>
 								</div>
 							</li>
 						</ul>
 						<div class="boxSellSetup">
-							<ul class="listTable">
-								<li class="area2">
-									<div class="th">경매수량</div>
-									<div class="td">1</div>
-								</li>
-								<li class="area2">
-									<div class="th">경매 시작 가격</div>
-									<div class="td">10 ETH</div>
-								</li>
-								<li class="dayPick opt_td">
-									<div class="th">경매 기간</div>
+							<ul id="tabSell1" class="tabCont listTable">
+								<li>
+									<div class="th">Auction quantity</div>
 									<div class="td">
-										<div class="boxPicker_select">2020-10-08 09:00 ~ 2020-10-08 09:00
-											<span class="pos_opt day">14 day</span>
+										<div class="input_etc">
+											<input type="text" disabled="disabled" value="1" class="input--size2" />
+											<span class="etcValue">token</span>
+										</div>
+										<div class="count">(1/1)</div>
+									</div>
+								</li>
+								<li>
+									<div class="th">Auction Start Price</div>
+									<div class="td">
+										<div class="price">
+											<input type="text" value="10" class="input--size3" />
+											<select class="size--coin">
+												<option>ETH</option>
+											</select>
 										</div>
 									</div>
 								</li>
-								<li class="opt_td">
-									<div class="th"><span class="loyal">로열티</span></div>
+								<li>
+									<div class="th"><span class="loyal">Royalties</span></div>
 									<div class="td">
-										<div class="pos_opt loyalVal">10%</div>
-										<span>창작자에게 지급될 로열티를 설정하세요!<br />아이템이 거래될 때마다 원저작자에게 로열티가 지급됩니다.</span>
+										<div class="input_etc">
+											<input type="text" value="10" class="input--size3" />
+											<span class="etcValue">%</span>
+										</div>
+										<span>Set the Royalty to be paid to creators! Every time an item is traded,<br />a Royalty is paid to the original author.</span>
 									</div>
 								</li>
-								<li class="area2">
-									<div class="th">서비스 요금(%)</div>
-									<div class="td">2.5 %</div>
+								<li>
+									<div class="th">Service fees(%)</div>
+									<div class="td">
+										<div class="input_etc">
+											<input type="text" disabled="disabled" value="2.5" class="input--size3" />
+											<span class="etcValue">%</span>
+										</div>
+									</div>
 								</li>
-								<li class="area2">
-									<div class="th">예산 정산 금액</div>
+								<li>
+									<div class="th">You will receive</div>
+									<div class="td">9.75ETH / ￦ 21,155.46</div>
+								</li>
+							</ul>
+							<ul id="tabSell2" class="tabCont active listTable">
+								<li>
+									<div class="th">Auction quantity</div>
+									<div class="td">
+										<div class="input_etc">
+											<input type="text" disabled="disabled" value="1" class="input--size2" />
+											<span class="etcValue">token</span>
+										</div>
+										<div class="count">(1/1)</div>
+									</div>
+								</li>
+								<li>
+									<div class="th">Auction Start Price</div>
+									<div class="td">
+										<div class="price">
+											<input type="text" value="10" class="input--size3" />
+											<select class="size--coin">
+												<option>ETH</option>
+											</select>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="th">auction period</div>
+									<div class="td">
+										<div class="boxPicker">
+											<input type="text" id="arr_date" class="datepicker input--size3" />
+											<span class="between">~</span>
+											<input type="text" id="dep_date" class="datepicker input--size3" />
+											<input type="text" id="date_day" value="" class="inputDay" />
+											<span class="txt">day</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="th"><span class="loyal">Royalties</span></div>
+									<div class="td">
+										<div class="input_etc">
+											<input type="text" value="10" class="input--size3" />
+											<span class="etcValue">%</span>
+										</div>
+										<span>Set the Royalty to be paid to creators! Every time an item is traded,<br />a Royalty is paid to the original author.</span>
+									</div>
+								</li>
+								<li>
+									<div class="th">service fees(%)</div>
+									<div class="td">
+										<div class="input_etc">
+											<input type="text" disabled="disabled" value="2.5" class="input--size3" />
+											<span class="etcValue">%</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="th">You will receive</div>
 									<div class="td">9.75ETH / ￦ 21,155.46</div>
 								</li>
 							</ul>
 						</div>
 						<ul class="listTable type--large">
-							<li class="area2">
-								<div class="th">경매 시작</div>
+							<li>
+								<div class="th">Start of auction<span class="mo">If you select Yes, you will be exposed to the market and auction will proceed as soon as it is issued.</span></div>
 								<div class="td">
-									<div class="chkVal">yes</div>
+									<input type="radio" id="chkAuction_1" name="chkAuction" checked="checked" />
+									<label for="chkAuction_1">Yes</label>
+									<input type="radio" id="chkAuction_2" name="chkAuction" />
+									<label for="chkAuction_2">No</label>
+									<span class="pc">If you select Yes, you will be exposed to the market and auction will proceed as soon as it is issued.</span>
 								</div>
 							</li>
 						</ul>
 					</div>
-					<div class="btnArea">
-						<div class="leftArea">
-							<p>임시저장을 누르면 실제 발행이 되지 않고, <a href="#" class="link">마이페이지 > 임시발행</a> 탭에서 확인이 가능하며,<br />최종 자산발행까지 수정이 가능합니다.</p>
+					<div class="btnArea type--line">
+						<!-- <div class="leftArea imp">
+							<p>If you freeze, you cannot edit it, and you can check it in My > Pre created.</p>
+						</div> -->
+						<div class="leftArea chk">
+							<input type="checkbox" id="chkSetting" />
+							<label for="chkSetting">Penta Square does not have your private key and does not have access to assets without the consent of the customer.</label>
 						</div>
 						<div class="rightArea is--active">
-							<button type="button" class="btnBasic">취소</button>
-							<button type="button" class="btnBasic save">임시 저장</button>
-							<button type="button" class="btnBasic active">토큰 발행</button>
+							<!-- <button type="button" class="btnBasic">EDIT</button> -->
+							<button type="button" class="btnBasic">CANCEL</button>
+							<!-- <button type="button" class="btnBasic submit freez">NFT FREEZ</button> -->
+							<!-- <button type="button" class="btnBasic submit create">NFT CREATE</button> -->
+							<button type="button" class="btnBasic submit">CONFIRM</button>
 						</div>
 					</div>
 				</div>
@@ -450,12 +565,12 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 	<script>
 	function showDays(){
 		var start = $('#arr_date').datepicker('getDate');
-    var end   = $('#dep_date').datepicker('getDate');
-    if(!start || !end)
-        return;
-    var days = (end - start)/1000/60/60/24;
+		var end   = $('#dep_date').datepicker('getDate');
+		if(!start || !end)
+				return;
+		var days = (end - start)/1000/60/60/24;
 		days = Math.floor(days);
-    $('#date_day').val(days);  
+		$('#date_day').val(days);  
 	}
 	
 	$("#arr_date").datetimepicker({
@@ -464,7 +579,7 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 		timeFormat:'HH:mm',
 		controlType:'select',
 		oneLine:true,
-
+	
 		onSelect: showDays
 	});
 	$("#dep_date").datetimepicker({
@@ -473,10 +588,9 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 		timeFormat:'HH:mm',
 		controlType:'select',
 		oneLine:true,
-
+	
 		onSelect: showDays
 	});
 	</script>
 </body>
-
 </html>
