@@ -415,10 +415,11 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .leftArea .boxBidUser .sns a.twitter { background-image:url('../images/content/iconSocial_twitter.png'); }
 .section.section--detail .leftArea .boxBidUser .sns a.insta { background-image:url('../images/content/iconSocial_insta.png'); }
 
-.section.section--detail .rightArea { width:609px; padding:40px 30px 0 28px; position:relative; margin-left:655px; border:1px solid #c0c9d4; background:#fff; border-radius:20px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; }
+.section.section--detail .rightArea { width:609px; padding:40px 30px 100px 28px; position:relative; margin-left:655px; border:1px solid #c0c9d4; background:#fff; border-radius:20px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; }
 .section.section--detail .rightArea .topArea { margin-bottom:20px; position:relative; }
-.section.section--detail .rightArea .topArea .title { height:28px; padding-left:45px; background:url('../images/content/iconAuction_off.png') left center no-repeat; background-size:37px auto; font-size:20px; font-weight:600; color:#021343; line-height:28px; }
-.section.section--detail .rightArea .topArea .title.live { background-image:url('../images/content/iconAuction_live.png'); color:#ff00af; }
+.section.section--detail .rightArea .topArea .title { height:28px; background-position:left center; background-repeat:no-repeat; background-size:37px auto; font-size:20px; font-weight:600; color:#021343; line-height:28px; }
+.section.section--detail .rightArea .topArea .title.off { padding-left:45px; background-image:url('../images/content/iconAuction_off.png'); }
+.section.section--detail .rightArea .topArea .title.live { padding-left:45px; background-image:url('../images/content/iconAuction_live.png'); color:#ff00af; }
 .section.section--detail .rightArea .topArea .opt { position:absolute; right:0; top:0; }
 .section.section--detail .rightArea .topArea .opt:after { content:''; display:block; clear:both; visibility:visible; }
 .section.section--detail .rightArea .topArea .opt .count { float:left; font-size:16px; line-height:28px; color:#9ea0b4; font-family:'SpoqaHanSansNeo'; }
@@ -444,21 +445,21 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .rightArea .bidArea .coin .type.eth { background-image:url('../images/content/iconBid_eth.png'); background-size:17px auto; }
 .section.section--detail .rightArea .bidArea .coin .dollar { font-size:16px; color:#62668c; }
 .section.section--detail .rightArea .bidArea.current { padding:34px 9px 140px 6px; }
-.section.section--detail .rightArea .balanceArea { padding:73px 0 80px; border-top:1px solid #c0c9d4; text-align:center; }
+.section.section--detail .rightArea .balanceArea { padding:73px 0 53px; border-top:1px solid #c0c9d4; text-align:center; }
 .section.section--detail .rightArea .balanceArea .title { margin-bottom:20px; font-size:25px; font-weight:600; color:#000; }
 .section.section--detail .rightArea .balanceArea .balance { height:96px; padding:0 30px 0 64px; border:4px solid #000; border-radius:96px; background:#f4f4f4; overflow:hidden; line-height:88px; }
 .section.section--detail .rightArea .balanceArea .balance .input { width:220px; float:left; height:88px; }
 .section.section--detail .rightArea .balanceArea .balance input { width:100%; height:88px; padding:0 8px; background:transparent; border:0; font-size:32px; font-weight:600; color:#000; }
 .section.section--detail .rightArea .balanceArea .balance .type { width:80px; float:left; font-size:32px; font-weight:600; color:#000; text-align:center; }
 .section.section--detail .rightArea .balanceArea .balance .dollar { float:left; margin-left:30px; font-size:23px; color:#adadad; font-weight:500; font-family:'Poppins'; }
-.section.section--detail .rightArea .balanceArea .guide { margin-top:20px; margin-bottom:73px; color:#000; font-size:18px; font-weight:500; }
+.section.section--detail .rightArea .balanceArea .guide { margin-top:20px; color:#000; font-size:18px; font-weight:500; font-style: italic; }
 .section.section--detail .rightArea .balanceArea .guide em { font-style: italic; margin-right:4px; }
 .section.section--detail .rightArea .pidArea { width:100%; height:80px; position:absolute; left:0; bottom:0; display:flex; align-items:center; }
 .section.section--detail .rightArea .pidArea button { height:100%; flex:1; display:flex; align-items:center; justify-content:center; background:#c0c9d4; text-align:center; font-size:27px; color:#fff; }
+.section.section--detail .rightArea .pidArea button:after { content:''; width:18px; height:14px; margin-left:8px; display:inline-block; vertical-align:middle; background:url('../images/content/iconPidCheck.png') center center no-repeat; background-size:100% auto; }
 .section.section--detail .rightArea .pidArea button.active { background:#000c2d; }
-.section.section--detail .rightArea .pidArea button.active:after { content:''; width:18px; height:14px; 
-	margin-left:8px; display:inline-block; vertical-align:middle; background:url('../images/content/iconPidCheck.png') center center no-repeat; background-size:100% auto; }
-	.section.section--detail .rightArea .pidArea button.end { background:#fff; border-top:1px solid #c0c9d4; color:#62668c; }
+.section.section--detail .rightArea .pidArea button.end { background:#fff; border-top:1px solid #c0c9d4; color:#62668c; }
+.section.section--detail .rightArea .pidArea button.end:after { display:none; }
 .section.section--detail .tabList { display:block; clear:both; }
 .section.section--detail .tabList .tab { overflow:hidden; }
 .section.section--detail .tabList .tab a { float:left; display:block; height:40px; padding:0 28px; border:1px solid #c4c4c4; background:#fff; border-radius:40px; font-size:16px; color:#62668c; line-height:38px; }
