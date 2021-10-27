@@ -834,7 +834,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxAuctionVisual .swiper-pagination-fraction { bottom:0; }
 
 	h3.title { font-size:17px; }
-	h3.title.icon { padding-left:32px; }
+	h3.title.icon { padding-left:32px; margin-left:16px; }
 	h3.title.icon:before { left:0; }
 	h3.title.icon.icon--auction:before { width:20px; height:18px; }
 	h3.title.icon.icon--bid:before { width:19px; height:26px; }
@@ -938,6 +938,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.topArea .sortCategory .selectValue:after { content:''; width:8px; height:5px; position:absolute; right:0; top:50%; margin-top:-2px; background:url('../images/common/iconCateArrow.png') center center no-repeat; background-size:100% auto; transition:all .5s; }
 	.topArea .sortCategory select { height:24px; display:block; position:absolute; right:0; top:0; opacity:0; z-index:10; padding:0 10px; }
 	.topArea .sortCategory ul { display:none; }
+	.topArea .opt select { height:23px; padding-right:22px; border:0; background-color:transparent; background-position:right center; }
 
 	.boxDetailTop { height:504px; }
 	
