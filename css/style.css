@@ -635,8 +635,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 .popup--open { cursor:pointer; }
 .popBasic { width:820px; display:none; position:fixed; left:50%; top:50%; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; border-radius:20px; transform:translate(-50%, -50%); z-index:22; }
-.popBasic .popCont { background:#fff; overflow:auto; }
-.popBasic .balanceArea { padding:54px 34px 0; text-align:center; }
+.popBasic .popCont { overflow:auto; }
+.popBasic .balanceArea { padding:54px 34px 0; text-align:center; background:#fff; }
 .popBasic .balanceArea .title { margin-bottom:20px; font-size:25px; font-weight:600; color:#000; }
 .popBasic .balanceArea .balance { width:535px; height:96px; display:flex; margin:0 auto; padding:0 30px 0 45px; border:6px solid #000; border-radius:96px; background:#f4f4f4; overflow:hidden; line-height:88px; }
 .popBasic .balanceArea .balance .input { width:220px; display:flex; align-items:center; }
@@ -644,7 +644,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .popBasic .balanceArea .balance .type { width:80px; font-size:32px; font-weight:600; color:#707a83; text-align:center; }
 .popBasic .balanceArea .balance .dollar { margin-left:30px; font-size:28px; color:#707a83; font-weight:600; }
 .popBasic .balanceArea .guide { margin-top:17px; margin-bottom:44px; color:#000; font-size:20px; font-weight:500; font-style: italic; }
-.popBasic .balanceArea .detailArea { padding:38px 0 42px; border-top:1px solid #adadad; }
+.popBasic .balanceArea .detailArea { padding:38px 0 42px; border-top:1px solid rgba(172, 175, 198, 0.2); }
 .popBasic .balanceArea .detailArea .row { width:512px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; font-size:20px; color:#000; }
 .popBasic .balanceArea .detailArea .row+.row { margin-top:12px; }
 .popBasic .balanceArea .detailArea .row .itemTitle { font-style:italic; font-weight:500; }
