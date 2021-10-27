@@ -359,13 +359,14 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .listHistory>ul>li .item .coin { font-size:25px; font-weight:600; color:#000; }
 .listHistory>ul>li .item .date { margin-left:34px; font-size:15px; color:#adadad; font-weight:500; }
 .listHistory>ul>li .sub { padding:35px 196px; position:relative; background:#f7f8ff; }
-.listHistory>ul>li .sub>ul { display:flex; flex-wrap:wrap; }
-.listHistory>ul>li .sub>ul>li { width:50%; padding:5px 0; display:flex; align-items:center; font-size:14px; color:#3f3f53; }
-.listHistory>ul>li .sub>ul>li .inTitle { width:132px; position:relative; font-weight:700; }
-.listHistory>ul>li .sub>ul>li .inTitle:after { content:':'; position:absolute; right:0; top:0; color:#3f3f53; font-weight:400; }
-.listHistory>ul>li .sub>ul>li .inCont { padding:0 25px; }
-.listHistory>ul>li .sub>ul>li .inTitle.typeA,
-.listHistory>ul>li .sub>ul>li .inCont.typeA { color:#1b44ef; }
+.listHistory>ul>li .sub .group { display:flex; flex-wrap:wrap; }
+.listHistory>ul>li .sub .group>ul { width:50%; display:flex; flex-direction:column; }
+.listHistory>ul>li .sub .group>ul>li { display:flex; padding:5px 0; font-size:14px; color:#3f3f53; }
+.listHistory>ul>li .sub .group>ul>li .inTitle { width:132px; position:relative; font-weight:700; }
+.listHistory>ul>li .sub .group>ul>li .inTitle:after { content:':'; position:absolute; right:0; top:0; color:#3f3f53; font-weight:400; }
+.listHistory>ul>li .sub .group>ul>li .inCont { padding:0 25px; }
+.listHistory>ul>li .sub .group>ul>li .inTitle.typeA,
+.listHistory>ul>li .sub .group>ul>li .inCont.typeA { color:#1b44ef; }
 .listHistory>ul>li .sub .btnPage { width:138px; height:44px; position:absolute; right:40px; bottom:40px; background:#fff; border:1px solid #acafc6; color:#acafc6; font-size:14px; font-weight:700; text-align:center; line-height:42px; }
 
 .listHistory.type--creation>ul>li .item:after { transform:rotate(-90deg); }
@@ -519,9 +520,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxMyCategory ul li a.active { color:#021343; font-weight:700; }
 .boxMyCategory ul li:first-child a { padding-left:0; }
 
-
 .boxCreate { margin-top:35px; margin-bottom:35px; }
 .boxCreate.type--profile { margin-bottom:30px; }
+.boxCreate.type--profile .boxWhite { padding-right:102px; }
+.boxCreate.type--profile .listTable>li>.th { padding-right:40px; }
 
 .tabArea { display:flex; }
 .tabArea a { width:236px; height:60px; display:flex; position:relative; border-top-left-radius:30px; border-top-right-radius:30px; align-items:center; justify-content:center; font-size:18px; font-weight:700; color:rgba(2,19,67,.5); }
@@ -534,7 +536,6 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxWhite { padding:48px 42px 58px; background:#fff; border-radius:30px; overflow:hidden; }
 .boxWhite.typeA { padding:35px 42px; }
 .boxWhite.typeB { padding:30px 42px; }
-.boxCreate.type--profile .boxWhite { padding-right:102px; }
 
 .boxWhite+.boxWhite { margin-top:20px; }
 .boxWhite+.boxWhite.tabCont { margin-top:0; }
@@ -593,7 +594,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .btnArea>div.leftArea.chk input[type="checkbox"]:checked + label { color:#1b44ef; }
 .btnArea>div.leftArea.chk input[type="checkbox"]:checked + label:before { background-image:url('../images/common/iconCheckBlue.png'); }
 
-.btnArea.type--line { padding-top:50px; border-top:1px solid #acafc6; }
+.btnArea.type--line { padding-top:35px; border-top:1px solid #acafc6; }
 .topArea.type--setting + .btnArea.type--line { margin-top:0; }
 
 .btnBasic { height:54px; padding:0 30px; background:#fff; border:1px solid #62668c; border-radius:54px; font-size:15px; color:#62668c; text-align:center; font-family:'SpoqaHanSansNeo',sans-serif; }
@@ -799,9 +800,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxWallet.type--login .inWallet .walletCoin .coin+.coin { margin-top:13px; }
 	#header .boxWallet.type--login .inWallet .walletCoin .btnChange { top:auto; bottom:0; }
 	#header .boxWallet.type--login .inWallet .walletCoin.type--write .input input { font-weight:700; font-size:18px; }
-
 	#header .boxWallet.type--login .inWallet .disconnect { padding:24px 0 19px; }
-
 	#header .boxWallet.type--login .boxInsta .userLink { padding:24px 16px 10px; }
 
 	#header .close { width:16px; height:16px; position:absolute; right:16px; top:28px; background:url('../images/common/btnClose.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
@@ -841,24 +840,37 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	h3.title.icon.icon--bid:before { width:19px; height:26px; }
 	h3.title.icon.icon--category:before { width:19px; height:26px; }
 	
-	.boxList+.topArea { margin-top:56px; }
+	.boxList+.topArea { margin-top:50px; }
 
-	.boxList .list li { width:calc(50% - 5px); margin-bottom:11px; }
+	.boxList .list { justify-content:space-between; }
+	.boxList .list li { width:calc(50% - 5px); margin-bottom:11px; margin-left:0; }
 	.boxList .list li .thumb { height:164px; }
+	.boxList .list li .thumb .bedgeArea.type--chk { width:100%; }
 	.boxList .list li .thumb .bedge.bedge--live { width:36px; height:28px; top:6px; }
 	.boxList .list li .thumb .bedge.bedge--bid { width:25px; height:34px; top:10px; right:11px; }
 	.boxList .list li .thumb .bedge.type--buy { height:24px; padding:0 7px; right:8px; top:8px; line-height:24px; font-size:10px; }
 	.boxList .list li .thumb .bedge.type--buy:after { width:6px; height:5px; margin-left:4px; }
-	.boxList .list li .cont { padding:10px 8px 11px; }
+	.boxList .list li .thumb .bedge.type--freeze { width:64px; height:25px; padding:0 22px 0 8px; margin:8px 0 0 8px; float:left; font-size:10px; }
+	.boxList .list li .thumb .bedge.type--freeze:after { width:9px; height:10px; right:8px; }
+	.boxList .list li .thumb .chkItem { float:right; margin-top:8px; margin-right:8px; }
+	.boxList .list li .thumb .chkItem label { width:48px; height:25px; padding-right:20px; line-height:25px; font-size:10px; }
+	.boxList .list li .thumb .chkItem label:after { width:9px; height:7px; margin-top:-1px; right:6px; background-size:100% auto; }
+	.boxList .list li .thumb .timer { height:25px; padding:0 11px; right:8px; top:8px; font-size:10px; }
+	.boxList .list li .cont { min-height:160px; padding:9px 9px 54px; }
 	.boxList .list li .title { margin-bottom:4px; font-size:15px; }
 	.boxList .list li .user .user_thumb { width:24px; height:24px; }
 	.boxList .list li .user .user_name { margin-left:30px; font-size:12px; line-height:24px; }
 	.boxList .list li .bid_tit { font-size:10px; }
-	.boxList .list li .bid { margin-bottom:10px; font-size:13px; }
+	.boxList .list li .bid { margin-bottom:0; font-size:13px; }
 	.boxList .list li .bid span { margin-left:3px; font-size:10px; }
-	.boxList .list li .btn { padding:0 2px; }
+	.boxList .list li .btn { left:9px; right:9px; bottom:10px; }
 	.boxList .list li .btn button { height:34px; border-radius:9px; font-size:11px; }
-	.boxList .list li .detail { width:15px; height:20px; right:6px; top:17px; background-size:3px auto; }
+	.boxList .list li .detail { width:15px; height:20px; right:6px; top:9px; background-size:3px auto; }
+	.boxList .list li .like { margin-bottom:5px; padding-left:22px; font-size:13px; background-size:18px auto; }
+
+	.boxList .list li .btn.col2 button:first-child { border-top-right-radius:0; border-bottom-right-radius:0; }
+	.boxList .list li .btn.col2 button:last-child { border-top-left-radius:0; border-bottom-left-radius:0; }
+	.boxList .list li .btn.col2 button+button { margin-left:0; }
 
 	.boxList .swiper-wrapper { display:flex; }
 	.boxList .swiper-slide { width:230px !important; padding-left:16px; margin-left:0; }
@@ -876,6 +888,26 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxList .swiper-slide .btn button { border-radius:9px; }
 	.boxList .swiper-slide .detail { width:15px; height:20px; right:6px; top:17px; background-size:3px auto; }
 	.boxList .more { width:158px; height:48px; margin-top:32px; border-color:rgba(112,112,112,0.3); font-size:13px; line-height:46px; }
+
+	.listHistory { padding:0; }
+	.listHistory>ul>li .item { padding:9px; display:block; overflow:hidden; }
+	.listHistory>ul>li .item:after { width:20px; height:20px; top:13px; right:13px; margin:0; }
+	.listHistory>ul>li .item .thumb { width:87px; height:87px; float:left; border-radius:10px; }
+	.listHistory>ul>li .item .thumb img { max-width:none; height:100%; }
+	.listHistory>ul>li .item .info { margin:0 35px 0 102px; padding-top:4px; padding-bottom:24px; }
+	.listHistory>ul>li .item .info .title { font-size:15px; color:#131523; }
+	.listHistory>ul>li .item .info .name { font-size:12px; }
+	.listHistory>ul>li .item .coin { float:left; margin-left:13px; font-size:13px; }
+	.listHistory>ul>li .item .date { float:right; margin:2px 3px 0 0; font-size:10px; }
+	.listHistory>ul>li .sub { padding:22px 24px 68px; }
+	.listHistory>ul>li .sub .group>ul { width:auto; display:block; }
+	.listHistory>ul>li .sub .group>ul>li { font-size:13px; }
+	.listHistory>ul>li .sub .group>ul>li .inTitle { width:120px; }
+	.listHistory>ul>li .sub .group>ul>li .inCont { padding:0 0 0 10px; }
+	.listHistory>ul>li .sub .btnPage { width:100%; height:46px; right:0; bottom:0; border-bottom-left-radius:8px; border-bottom-right-radius:8px; line-height:44px; }
+	
+	.listHistory.type--creation>ul>li .item:after { top:50%; margin-top:-6px; }
+	.listHistory.type--creation>ul>li .item .date { float:left; margin-left:13px; }
 
 	#bidSwiper.boxList .swiper-slide { width:100% !important; padding:0 16px; }
 	#bidSwiper.boxList .swiper-slide .inBox { padding:49px 13px 24px; background:#131523; }
@@ -914,6 +946,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxDetailTop .cont img { width:auto; max-width:none; height:100%; }
 	.boxDetailTop .btnArea { display:none; }
 	
+	.section:last-child { padding-bottom:50px; }
 	.section.section--detail:last-child { padding-bottom:0; }
 	.section.section--detail .inner { padding:0; position:relative; background:#f4f6f9; }
 	
@@ -929,16 +962,16 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	.section.section--detail .detailArea { padding:30px 16px; overflow:hidden; }
 	.section.section--detail .detailArea .top { position:relative; }
-	.section.section--detail .detailArea .top .count { font-size:13px; color:#000; }
+	.section.section--detail .detailArea .top .count { font-size:13px; color:#707a83; }
 	.section.section--detail .detailArea .top .count strong { margin-left:2px; font-weight:600; }
 	.section.section--detail .detailArea .top .count strong span { color:#1b44ef; }
 	.section.section--detail .detailArea .top .opt { position:absolute; right:0; top:0; overflow:hidden; }
 	.section.section--detail .detailArea .top .opt .like { padding-left:16px; float:left; background:url('../images/content/iconAuctionLike.png') left 4px no-repeat; background-size:10px auto; font-size:13px; color:#707a83; }
 	.section.section--detail .detailArea .top .opt .like.on { background-image:url('../images/content/iconAuctionLike_on.png'); }
 	.section.section--detail .detailArea .top .opt .btnShare { width:12px; height:14px; margin-top:2px; margin-left:15px; float:left; background:url('../images/common/iconShare.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-	.section.section--detail .detailArea .title { margin-top:28px; margin-bottom:15px; font-size:21px; font-weight:600; color:#000; letter-spacing:-.05em; }
+	.section.section--detail .detailArea .title { margin-top:22px; margin-bottom:38px; font-size:21px; font-weight:600; color:#000; letter-spacing:-.05em; }
 	.section.section--detail .detailArea .statusPrice { float:left; font-size:15px; line-height:30px; }
-	.section.section--detail .detailArea .statusPrice.icon { padding:10px 0 4px 66px; background-repeat:no-repeat; background-size:56px auto; background-position:left center; }
+	.section.section--detail .detailArea .statusPrice.icon { float:none; padding:8px 0 6px 66px; background-repeat:no-repeat; background-size:56px auto; background-position:left center; }
 	.section.section--detail .detailArea .statusPrice.icon--live { background-image:url('../images/content/iconAuction_live.png'); }
 	.section.section--detail .detailArea .statusPrice.icon--off { background-image:url('../images/content/iconAuction_off.png'); }
 	.section.section--detail .detailArea .coin { float:right; text-align:right; }
@@ -1009,59 +1042,75 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail a.btnMore { width:158px; height:48px; display:block; margin:34px auto 0; border:1px solid rgba(112,112,112,.3); border-radius:48px; text-align:center; font-size:13px; font-weight:500; color:#62668c; line-height:46px; }
 	.section.section--detail a.btnMore:after { content:''; width:8px; height:8px; margin-left:12px; display:inline-block; background:url('../images/common/iconMore.png') center center no-repeat; background-size:8px auto; vertical-align:middle; }
 	.section.section--detail .btn { margin-top:20px; display:flex; }
+	.section.section--detail .btn.col2 a:first-child { border-top-right-radius:0; border-bottom-right-radius:0; }
+	.section.section--detail .btn.col2 a:last-child { border-top-left-radius:0; border-bottom-left-radius:0; }
 	.section.section--detail .btn a { height:64px; display:flex; flex:1; align-items:center; justify-content:center; background:#c0c9d4; border-radius:6px; font-size:23px; color:#fff; }
 	.section.section--detail .btn a.active { background:#021343; }
+	.section.section--detail .btn a.end { background:#fff; border:1px solid #c0c9d4; color:#c0c9d4; }
 
-	.boxMypageTop { margin-bottom:32px; }
-	.boxMypageTop .info .name { margin-top:20px; font-size:24px; line-height:34px; }
+	.boxMypageTop { margin-bottom:22px; }
+	.boxMypageTop .visual { height:185px; }
+	.boxMypageTop .info { margin-top:-53px; }
+	.boxMypageTop .info .thumb { width:106px; height:106px; }
+	.boxMypageTop .info .thumb a.edit:after { width:20px; height:15px; }
+	.boxMypageTop .info .name { margin-top:6px; margin-bottom:5px; font-size:24px; line-height:34px; }
 	.boxMypageTop .info .key a { font-size:13px; }
 	.boxMypageTop .info .key a:after { width:16px; height:15px; }
-	.boxMypageTop .btn { top:182px; right:16px; }
-	.boxMypageTop .btn a { width:24px; height:24px; background-size:7px auto; }
+	.boxMypageTop .btn { top:145px; right:9px; }
+	.boxMypageTop .btn a { width:24px; height:24px; background-size:9px auto; }
 	.boxMypageTop .btn a+a { margin-left:5px; }	
 	.boxMypageTop .btn a.share:hover:before,
 	.boxMypageTop .btn a.share:hover:after { display:none; }
+	.boxMypageTop .btn a.edit { padding:0 20px 0 8px; font-size:10px; background-position:64px center; line-height:24px; }
 
-	.boxMyCategory { margin-bottom:30px; }
-	.boxMyCategory ul { display:flex; flex-wrap:wrap; justify-content:space-between; }
-	.boxMyCategory ul li { width:33.3%; margin-bottom:10px; }
-	.boxMyCategory ul li.cateAdd { width:100%; }
-	.boxMyCategory ul li:nth-child(3n+2) { padding-right:5px; }
-	.boxMyCategory ul li:nth-child(3n+3) { padding:0 5px; }
-	.boxMyCategory ul li:nth-child(3n+4) { padding-left:5px; }
-	.boxMyCategory ul li a { height:58px; padding-top:34px; font-size:10px; }
-	.boxMyCategory ul li a:before { width:18px; height:18px; top:13px; }
-	.boxMyCategory ul li a.add { display:flex; padding-top:0; font-size:15px; justify-content:center; align-items:center; }
-	.boxMyCategory ul li a.add:before { position:relative; left:0; top:0; transform:none; margin-right:8px; }
-	.boxMyCategory ul li+li { margin-left:0; }
+	.boxMyCategory { margin-bottom:50px; padding:0; overflow-x:auto; }
+	.boxMyCategory ul { padding:0 8px; }
+	.boxMyCategory ul li { height:auto; }
+	.boxMyCategory ul li a { position:relative; padding:12px 8px; font-size:15px; white-space:nowrap }
+	.boxMyCategory ul li a.active:after { content:''; height:3px; position:absolute; left:8px; right:8px; bottom:0; background:#021343; }
+	.boxMyCategory ul li:first-child a { padding-left:8px; }
+	.boxMyCategory ul li:last-child { padding-right:8px; }
 
-	.topArea { margin-bottom:16px; padding:0 16px; }
+	.topArea { margin-bottom:20px; }
+	.topArea.typeA { margin:48px 0 30px; }
 
 	.boxCreate { margin-top:20px; margin-bottom:38px; }
+	.boxCreate.type--profile .boxWhite { padding:20px 14px 46px; }
+	.boxCreate.type--profile .boxWhite.typeB { padding:15px 14px 22px; }
+	.boxCreate.type--profile .listTable>li>.th { padding-right:0; }
 
 	.tabArea a { flex:1; height:50px; border-top-left-radius:17px; border-top-right-radius:17px; font-size:15px; }
+	.tabArea a span { padding-top:6px; margin-left:3px; font-size:10px; }
 
-	.boxWhite { padding:22px 14px 40px; border-radius:17px; }
+	.boxWhite { padding:22px 14px 16px; border-radius:17px; }
 	.boxWhite.typeA { padding:22px 14px 24px; }
 
 	.input_etc { display:block; }
 
+	.listTable>li.row_img { margin:13px 0 0; }
+	.listTable>li+li { margin-top:13px; }
+	.listTable>li.row_sub { margin-bottom:0; padding-bottom:20px; border-bottom:2px solid #eff1e4; }
 	.listTable>li.line { padding-top:30px; border-top:1px solid rgba(192,201,212,0.5); }
-	.listTable>li>.th { width:auto; margin-bottom:10px; padding:8px 0; float:none; line-height:1.2; font-size:15px; }
+	.listTable>li>.th { width:auto; padding:8px 0; float:none; line-height:1.2; font-size:15px; }
 	.listTable>li>.th .loyal { height:22px; line-height:22px; font-weight:500; font-size:15px; }
 	.listTable>li>.th>span { margin-top:3px; font-size:11px; color:#c4c4c4; font-weight:400; }
+	.listTable>li>.th.mo_typeA { padding:8px 0; margin-bottom:8px; line-height:1.4; font-weight:700; color:#62668c; }
 	.listTable>li>.td { margin-left:0; line-height:1.4; font-size:13px; }
 	.listTable>li>.td .input_etc { margin-right:0; }
-	.listTable>li>.td .count { position:absolute; right:0; top:-24px; line-height:1.2; }
 	.listTable>li>.td .price { display:flex; }
 	.listTable>li>.td .price input { flex:1; }
 	.listTable>li>.td .price select { margin-left:6px; }
 	.listTable>li>.td .loyalVal { margin-right:0; }
-	.listTable>li>.td>span { padding:0 6px; font-size:12px; }
+	.listTable>li>.td>span { padding:8px 0; font-size:14px; }
 	.listTable>li>.td>span.pc { display:none !important; }
 	.listTable>li>.td a.more { display:none; }
 	.listTable>li>.td .chkVal { display:inline-block; padding-left:23px; position:relative; }
 	.listTable>li>.td .chkVal:before { content:''; width:8px; height:8px; border-radius:50%; position:absolute; left:0; top:50%; margin-top:-4px; background:#021343; }
+
+	.listTable>li>.td.typeA { padding-left:15px; padding-top:10px; }
+
+	.listTable>li>.td.etc { display:flex; align-items:center; }
+	.listTable>li>.td.etc .input_etc { flex:1; margin-right:15px; }
 
 	.listTable>li.area1 { display:flex; }
 	.listTable>li.area1>.th { width:76px; }
@@ -1074,6 +1123,15 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.listTable>li.opt_td .pos_opt { position:absolute; right:0; top:-36px; }
 	.listTable>li.dayPick .day { font-size:14px; font-weight:700; }
 
+	.listTable>li.preview>.th { float:none; }
+	.listTable>li.preview>.td { margin:0; }
+	.listTable>li.preview>.td .btn { display:flex; align-items:center; }
+	.listTable>li.preview>.td .btn .btnBasic { flex:1; }
+
+	.listTable.chkMarket>li>.th { width:auto; }
+	.listTable.chkMarket>li>.td { display:flex; align-items:center; padding:13px 0 5px; margin-left:0; }
+	.listTable.chkMarket>li>.td input[type="radio"]+label { margin-left:10px; margin-right:10px; }
+
 	.listTable.type--large>li>.th { font-size:15px; }
 	.listTable.type--large>li>.td { font-size:14px; font-weight:500; }
 
@@ -1085,27 +1143,37 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.fileArea button.fileAdd { width:40px; height:40px; background-size:8px auto; }
 	.fileArea p { margin-top:10px; font-size:10px; line-height:1.4; }
 
-	.boxSellSetup { margin:15px 0; padding:15px 0; }
+	.boxSellSetup { margin-top:15px; padding-top:15px; }
 
 	.boxPicker .between { display:none; }
 	.boxPicker .inputDay { width:50px; padding:0; text-align:center; }
 	.boxPicker .datepicker:first-child { margin-bottom:3px; }
 	.boxPicker .datepicker:nth-of-type(2) { width:calc(100% - 95px) !important; }
 
-	.btnBasic { border-radius:6px; }
+	.btnBasic { min-width:100px; padding:0 16px; border-radius:6px; }
 	.btnBasic.submit { background:#021343; border-color:#021343; }
+	.btnBasic.submit:before { margin-right:6px; }
 	.btnBasic.save { background:#fff; border-color:#62668c; color:#021343; }
 	.btnBasic.save:before { content:''; width:24px; height:24px; margin-right:10px; display:inline-block; background:url('../images/content/iconSave.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+	.btnBasic.preview { width:auto; height:auto; padding:30px 30px 14px; line-height:1.2; }
+	.btnBasic.preview:before { left:50%; top:12px; margin-top:0; margin-left:-6px; }
 
 	.btnArea { margin-top:20px; }
 	.btnArea p { font-size:14px; }
+	
+	.btnArea.type--line { padding-top:30px; flex-direction:column; }
 
-	.btnArea>div.rightArea { margin-top:20px; }
+	.btnArea>div.rightArea { width:100%; margin-top:20px; }
 	.btnArea>div.rightArea .btnBasic.submit,
 	.btnArea>div.rightArea .btnBasic.save { flex:1; }
 
 	.btnArea>div.rightArea.is--active { padding-top:62px; }
 	.btnArea>div.rightArea.is--active .btnBasic.active { width:100%; position:absolute; left:0; top:0; margin-left:0; background-color:#000c2d; }
+
+	.ps { font-size:10px; }
+
+	.boxConfirm>button { width:92px; font-size:11px; }
+	.boxConfirm+.ps { margin-top:3px; }
 
 	#footer { padding:27px 0 40px; }
 	#footer .sns { display:none; }
@@ -1132,4 +1200,28 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.popBasic .bidArea .coin .dollar { display:none; }
 	.popBasic .close { right:16px; top:28px; }
 	.btnBid { height:64px; margin:30px 16px; border-radius:6px; line-height:64px; font-size:23px; }
+
+	.popBasic.type--card { width:160px; height:auto; left:50%; top:50%; background:transparent; transform:translate(-50%, -50%); }
+	.popBasic.type--card .popCont { border-radius:15px; }
+	.popBasic.type--card .popCont .thumb { height:auto; }
+	.popBasic.type--card .popCont .cont { padding:10px 9px 54px; }
+	.popBasic.type--card .popCont .title { font-size:15px; }
+	.popBasic.type--card .popCont .user .user_thumb { width:24px; height:24px; }
+	.popBasic.type--card .popCont .user .user_name { margin-left:27px; font-size:12px; line-height:24px; }
+	.popBasic.type--card .popCont .bid_tit { font-size:10px; }
+	.popBasic.type--card .popCont .bid { margin-bottom:0; font-size:13px; }
+	.popBasic.type--card .popCont .bid span { margin-left:3px; font-size:10px; }
+	.popBasic.type--card .popCont .btn { left:9px; right:9px; bottom:10px; }
+	.popBasic.type--card .popCont .btn button { height:34px; border-radius:9px; font-size:11px; }
+	.popBasic.type--card .popCont .detail { height:20px; right:0; top:10px; background-size:3px auto; }
+	.popBasic.type--card .close { width:16px; height:16px; top:-30px; }
+
+	.popBasic.type--preview { padding:42px 16px; background:transparent; }
+	.popBasic.type--preview .popCont { width:auto; border-radius:0; background:transparent; }
+	.popBasic.type--preview .boxDetailTop .cont { height:504px; position:relative; top:0; }
+	.popBasic.type--preview .boxDetailTop .cont img { max-height:none; }
+	.popBasic.type--preview .close { width:16px; height:16px; right:24px; top:13px; margin-right:0; }
+
+	.popBasic.type--preview .section.section--detail .inner.mo { background:transparent; }
+	.popBasic.type--preview .section.section--detail .boxDetail { top:0; margin-top:-112px; }
 }

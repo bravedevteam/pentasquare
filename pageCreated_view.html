@@ -332,8 +332,8 @@
 					</div>
 					<div class="boxCreate type--view">
 						<div class="tabArea">
-							<a href="#" class="active" data-tab="tab1">Single Type (Erc-721)</a>
-							<a href="#" data-tab="tab2">Multi Type (Erc-1155)</a>
+							<a href="#" class="active" data-tab="tab1">Single Type <span>(Erc-721)</span></a>
+							<a href="#" data-tab="tab2">Multi Type <span>(Erc-1155)</span></a>
 						</div>
 						<div id="tab1" class="boxWhite tabCont active">
 							<ul class="listTable">
@@ -433,7 +433,6 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 						</div>
 					</div>
 					
-					
 					<div class="topArea typeA">
 						<h3 class="title">sales setting</h3>
 					</div>
@@ -453,7 +452,7 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 							<ul id="tabSell1" class="tabCont listTable">
 								<li>
 									<div class="th">Sales quantity</div>
-									<div class="td">
+									<div class="td etc">
 										<div class="input_etc">
 											<input type="text" disabled="disabled" value="1" class="input--size2" />
 											<span class="etcValue">token</span>
@@ -505,13 +504,13 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 								</li>
 								<li>
 									<div class="th">You will receive</div>
-									<div class="td">9.75ETH / ￦ 21,155.46</div>
+									<div class="td typeA">9.75ETH / ￦ 21,155.46</div>
 								</li>
 							</ul>
 							<ul id="tabSell2" class="tabCont active listTable">
 								<li>
 									<div class="th">Auction quantity</div>
-									<div class="td">
+									<div class="td etc">
 										<div class="input_etc">
 											<input type="text" disabled="disabled" value="1" class="input--size2" />
 											<span class="etcValue">token</span>
@@ -563,32 +562,31 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 								</li>
 								<li>
 									<div class="th">You will receive</div>
-									<div class="td">9.75ETH / ￦ 21,155.46</div>
+									<div class="td typeA">9.75ETH / ￦ 21,155.46</div>
 								</li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class="btnArea type--line">
-						<!--
+						
 						<div class="leftArea imp">
 							<p>If you freeze, you cannot edit it, and you can check it in My > Pre created.</p>
 						</div>
-						-->
 						
 						<!--
 						<div class="leftArea chk">
 							<input type="checkbox" id="chkSetting" />
 							<label for="chkSetting">Penta Square does not have your private key and does not have access to assets without the consent of the customer.</label>
 						</div>
-						-->
+						-->						
 						
 						<div class="rightArea">
 							<!-- <button type="button" class="btnBasic">EDIT</button> -->
 							<button type="button" class="btnBasic">CANCEL</button>
-							<!-- <button type="button" class="btnBasic submit freez">NFT FREEZ</button> -->
+							<button type="button" class="btnBasic submit freez">NFT FREEZ</button>
 							<!-- <button type="button" class="btnBasic submit create">NFT CREATE</button> -->
-							<button type="button" class="btnBasic submit">CONFIRM</button>
+							<!-- <button type="button" class="btnBasic submit">CONFIRM</button> -->
 						</div>
 					</div>
 				</div>
@@ -711,6 +709,40 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
           </div>
         </div>
 				<!-- //PC -->
+
+				<!-- Mobile -->
+				<div class="inner mo">
+					<div class="boxDetail">
+						<!-- Auction Time -->
+						
+						<div class="boxAuctionTime">
+							<div class="title">Auction Ending in</div>
+							<div class="timeArea">
+								<div class="day"><span>100</span> day</div>
+								<div class="time"><div><span>10</span>&nbsp;h</div><span class="col">:</span><div><span>45</span>&nbsp;m</div><span class="col">:</span><div><span>06</span></div></div>
+							</div>
+						</div>
+						
+						<!-- //Auction Time -->
+
+						<div class="detailArea"><!-- 옥션 타임 종료 후 type--off 클래스 추가 -->
+							<div class="top">
+								<div class="count">Sales Amount <strong><span>1</span> / 10</strong></div>
+								<div class="opt">
+									<a href="#" class="like">30</a>
+									<a href="#" class="btnShare">share</a>
+								</div>
+							</div>
+							<div class="title">Steve Jobs’ Job artistic collabo Application (1973)</div>
+							<div class="statusPrice icon icon--live">Current Price</div><!-- icon 필요한 경우, 클래스 icon 추가 / off시 클래스 icon--off 추가 / live시 클래스 icon--live 추가 -->
+							<div class="coin">
+								<div class="type eth">0.56 ETH</div>
+								<div class="dollar">$941.50</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Mobile -->
 			</div>
 		</div>
 		<a href="#" class="close">close</a>
