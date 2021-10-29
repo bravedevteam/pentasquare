@@ -474,6 +474,29 @@
 			</div>
 		</footer>
 	</section>
+	<div id="confirmLoading" class="boxConfirmLoading">
+		<div class="bar"></div>
+		<div class="cont">
+			<div class="proccess">Item Freezing···</div>
+			<a href="#" class="btnCancel">CANCEL</a>
+		</div>
+	</div>
 </body>
+
+<script type="text/javascript">
+$(function(){
+	$("#confirmLoading").slideUp(0);
+	$(".btnBasic.submit").click(function(){
+		$("#confirmLoading").css("z-index", "100").slideDown(300);
+	});
+
+	$("#confirmLoading .btnCancel").click(function(e){
+		e.preventDefault();
+		$("#confirmLoading").slideUp(300, function(){
+			$(this).css("z-index", "-1");
+		});
+	});
+});
+</script>
 
 </html>

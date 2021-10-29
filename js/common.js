@@ -46,7 +46,11 @@ $(function(){
   });
 
   $(".btnMypage").click(function(){
-    $(".boxWallet").fadeIn(500);
+    if($(".boxWallet").css("display") == "block"){
+      $(".boxWallet").fadeOut(500);
+    }else{
+      $(".boxWallet").fadeIn(500);
+    }
     $(".userLink .listDepth").slideUp(0);
   });
 
@@ -83,6 +87,26 @@ $(function(){
       }
     });
   }
+
+  function loadingAction(){
+    var pos = $(this).scrollTop();
+    var winH = $(window).outerHeight();
+    var target = $("body").outerHeight();
+    var footer = $("#footer").outerHeight();
+    var footer_pos = (target - (winH + footer));
+
+    if(footer_pos <= pos){
+      var pos_t = pos - footer_pos;
+      $("#confirmLoading").css("bottom", pos_t);
+    }else{
+      $("#confirmLoading").css("bottom", 0);
+    }
+  }
+  loadingAction();
+
+  $(window).scroll(function(){
+    loadingAction();
+  });
   
 
   $(window).resize(function(){
