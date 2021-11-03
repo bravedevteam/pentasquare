@@ -7,12 +7,17 @@ $(function(){
     mobileEvent();
   }
 
+  $("body").click(function(event){
+    var target = $(event.target);
+    if(!target.parents().hasClass("boxWallet") && !target.parents().hasClass("btnMypage")){
+      if($(".boxWallet").css("display") == "block"){
+        $(".boxWallet").fadeOut(500);
+      }
+    }
+  });
+
   // PC
   function pcEvent(){
-    $(".boxWallet").on("mouseleave", function(){
-      $(".boxWallet").fadeOut(500);
-    });
-
     if($(".boxGnb_mo").css("display") == "block"){
       $(".boxGnb_mo").css("display","none");
     }
