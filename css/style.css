@@ -383,17 +383,20 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxDetailTop .btnArea.right { right:38px; }
 .boxDetailTop .btnArea a { height:48px; float:left; padding:0 24px; border:2px solid #e5e5e6; border-radius:48px; background:#fff; font-weight:500; font-size:16px; line-height:44px; }
 .boxDetailTop .btnArea a+a { margin-left:5px; }
-.boxDetailTop .btnArea a.btnLike:before { content:''; width:18px; height:16px; display:inline-block; margin-right:5px; margin-top:-4px; background:url('../images/content/iconAuctionLike.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
-.boxDetailTop .btnArea a.btnLike.on { color:#ff00af; }
-.boxDetailTop .btnArea a.btnLike.on:before { background-image:url('../images/content/iconAuctionLike_on.png'); }
-.boxDetailTop .btnArea a.btnShare:before { content:''; width:19px; height:21px; display:inline-block; margin-right:10px; margin-top:-4px; background:url('../images/common/iconShare.png') left center no-repeat; background-size:100% auto; vertical-align:middle; }
+.boxDetailTop .btnArea a.btnLike { width:76px; background:url('../images/common/iconLikeBlack.png') center center no-repeat #fff; background-size:17px auto; font-size:0; text-indent:-99999px; }
+.boxDetailTop .btnArea a.btnLike:hover,
+.boxDetailTop .btnArea a.btnLike.on { background-image:url('../images/common/iconLikeBlack_on.png'); }
+.boxDetailTop .btnArea a.btnShare { width:76px; background:url('../images/common/iconShareBlack.png') center center no-repeat #fff; background-size:19px auto; font-size:0; text-indent:-99999px; }
+.boxDetailTop .btnArea a.btnShare:hover,
+.boxDetailTop .btnArea a.btnShare.on { background-image:url('../images/common/iconShareBlack_on.png'); }
 
-.section.section--detail .inner { padding:62px 62px 122px 70px; }
+.section.section--detail .inner { padding:62px 21px 122px 22px; }
 .section.section--detail .leftArea { width:552px; float:left; }
-.section.section--detail .leftArea .titleArea { margin-bottom:70px; }
+.section.section--detail .leftArea .titleArea { margin-bottom:50px; }
 .section.section--detail .leftArea .titleArea .category { font-size:20px; color:#62668c; font-weight:600; }
 .section.section--detail .leftArea .titleArea h4.title { margin-bottom:6px; font-size:36px; font-weight:600; color:#021343; }
 .section.section--detail .leftArea .titleArea .subject { font-size:14px; color:#021434; }
+.section.section--detail .leftArea .titleArea a { display:inline-block; margin-top:30px; font-size:16px; color:#9ea0b4; }
 .section.section--detail .leftArea .boxQuick { margin-bottom:85px; }
 .section.section--detail .leftArea .boxQuick .title { margin-bottom:22px; position:relative; padding-left:34px; background:url('../images/content/iconQuickSale.png') left center no-repeat; background-size:23px auto; line-height:25px; font-size:16px; color:#8358f9; }
 .section.section--detail .leftArea .boxQuick .list li { background:#fff; border-radius:8px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); }
@@ -1010,9 +1013,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .boxDetailCont { margin-top:-112px; }
 
 	.section.section--detail .inBox { padding:30px 16px 88px; }
-	.section.section--detail .inBox .boxDescript { margin-bottom:50px; }
+	.section.section--detail .inBox .boxDescript { margin-bottom:35px; }
 	.section.section--detail .inBox .boxDescript .title { padding-left:24px; background:url('../images/content/iconDescript.png') left center no-repeat; background-size:18px auto; font-size:15px; color:#000; font-weight:600; line-height:24px; }
 	.section.section--detail .inBox .boxDescript .cont { margin-top:20px; font-size:14px; color:#000; line-height:21px; }
+	.section.section--detail .inBox .boxDescript a { display:inline-block; margin-top:20px; font-size:16px; color:#9ea0b4; }
 
 	.section.section--detail .boxInfoTab .tab { display:flex; }
 	.section.section--detail .boxInfoTab .tab a { height:50px; flex:1; display:flex; align-items:center; justify-content:center; font-size:15px; color:#8089a1; font-weight:700; }
