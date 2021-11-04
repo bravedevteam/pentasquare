@@ -1075,7 +1075,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .btn a.end { background:#fff; border:1px solid #c0c9d4; color:#c0c9d4; }
 
 	.boxDetailCont { margin-top:0px; padding:30px 16px 0; border-top:0; }
-	.boxDetailCont .title { margin-bottom:15px; font-size:16px; }
+	.boxDetailCont .title { margin-bottom:15px; font-size:15px; }
 
 	.boxMypageTop { margin-bottom:22px; }
 	.boxMypageTop .visual { height:185px; }
