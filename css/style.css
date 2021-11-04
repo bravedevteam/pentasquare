@@ -469,7 +469,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .tabList .cont { display:none; }
 .section.section--detail .tabList .cont.active { display:block; }
 
-.section.section--detail .boxDetailHistory { clear:both; padding-top:118px; }
+.section.section--detail .boxDetailHistory { clear:both; padding-top:120px; }
 .section.section--detail .boxDetailHistory .title { height:40px; margin-bottom:48px; display:inline-block; padding:0 30px; background:#021343; border-radius:40px; color:#fff; line-height:40px; font-weight:700; font-size:16px; }
 .section.section--detail .boxDetailHistory .list {  }
 .section.section--detail .boxDetailHistory .list li { height:88px; padding:0 48px 0 30px; display:flex; align-items:center; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); border-radius:8px; }
@@ -487,6 +487,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--detail .boxDetailHistory .list li .token { width:250px; margin-left:20px; text-align:right; font-size:25px; font-weight:600; color:#000; }
 .section.section--detail .boxDetailHistory .list li .dollar { margin-left:50px; font-size:15px; font-weight:500; color:#adadad; }
 .section.section--detail .boxDetailHistory .list li .date { flex:1; font-size:15px; color:#adadad; font-weight:500; text-align:right; }
+
+.boxDetailCont { margin-top:120px; border-top:1px solid #acafc6; padding-top:65px; }
+.boxDetailCont .title { margin-bottom:25px; padding-left:5px; font-size:20px; font-weight:600; color:#62668c; }
+.boxDetailCont .cont { text-align:center; }
 
 .boxMypageTop { margin-bottom:36px; position:relative; text-align:center; }
 .boxMypageTop .visual { height:228px; position:relative; background-size:cover; background-image: linear-gradient(to bottom, #1b44ef, #0022b1); overflow:hidden; z-index:1; }
@@ -1003,7 +1007,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .detailArea.type--off .title { margin-top:22px; margin-bottom:38px; }
 	.section.section--detail .detailArea.type--off .statusPrice { float:none; }
 
-	.section.section--detail .inBox { margin-top:-112px; padding:30px 16px 88px; }
+	.section.section--detail .boxDetailCont { margin-top:-112px; }
+
+	.section.section--detail .inBox { padding:30px 16px 88px; }
 	.section.section--detail .inBox .boxDescript { margin-bottom:50px; }
 	.section.section--detail .inBox .boxDescript .title { padding-left:24px; background:url('../images/content/iconDescript.png') left center no-repeat; background-size:18px auto; font-size:15px; color:#000; font-weight:600; line-height:24px; }
 	.section.section--detail .inBox .boxDescript .cont { margin-top:20px; font-size:14px; color:#000; line-height:21px; }
@@ -1067,6 +1073,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .btn a { height:64px; display:flex; flex:1; align-items:center; justify-content:center; background:#c0c9d4; border-radius:6px; font-size:23px; color:#fff; }
 	.section.section--detail .btn a.active { background:#021343; }
 	.section.section--detail .btn a.end { background:#fff; border:1px solid #c0c9d4; color:#c0c9d4; }
+
+	.boxDetailCont { margin-top:0px; padding:30px 16px 0; border-top:0; }
+	.boxDetailCont .title { margin-bottom:15px; font-size:16px; }
 
 	.boxMypageTop { margin-bottom:22px; }
 	.boxMypageTop .visual { height:185px; }
