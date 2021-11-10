@@ -30,7 +30,10 @@
 					-->
 					<!-- //로그인 전 -->
 					<!-- 로그인 후 -->
-					<a href="#" class="btnMypage"><img src="./images/content/imgUserThumb2.png" alt="" /></a>
+					<a href="#" class="btnMypage"><!-- 신규 알림시 is--new 클래스 추가 -->
+						<!-- <img src="./images/common/iconNoname_white.png" alt="" /> -->
+						<img src="./images/content/imgUserThumb2.png" alt="" />
+					</a>
 					<!-- //로그인 후 -->					
 					<a href="#" class="btnCreat">Creat</a>
 
@@ -40,14 +43,22 @@
 							<div class="title">Wallet</div>
 							<div class="subject">Connect your wallet and join the Bid!</div>
 						</div>
+						<!--
 						<div class="inWallet">
 							<div class="wallet">Metamask Wallet</div>
 						</div>
+						-->
+						
+						<div class="inWallet type--install">
+							<div class="wallet">Metamask must be installed.<span>Non-installed customers move MetaMask to the installation page.</span></div>
+						</div>
+						<!--
 						<div class="boxInsta">
 							<div class="title">Sign-In</div>
-							<div class="subject">Login via social media account is required to act as a creator.</div>
-							<a href="#">Instagram</a>
+							<a href="#" class="btnSocial google">Google Login</a>
+							<a href="#" class="btnSocial kakao">Kakao Login</a>
 						</div>
+						-->
 					</div>
 					<!-- //로그인 전 -->
 
@@ -58,6 +69,7 @@
 							<div class="title">Wallet</div>
 							<a href="#" class="linkWallet">0x1effsa0x1effsa0x1effsa</a>
 						</div>
+						< !--
 						<div class="inWallet">
 							<div class="wallet">
 								<div class="walletCoin">
@@ -95,17 +107,45 @@
 							</div>
 							<a href="#" class="disconnect">Disconnect Wallet</a>
 						</div>
-						< !-- SNS 연결 전 -->
-						<!--
+						-- >
+						
+						<div class="inWallet typeA">
+							<div class="wallet">
+								<div class="walletCoin">
+									<div class="coin mark mark--eth">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin mark mark--weth">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+						< !-- SNS 연결 전 -- >
+						< !--
 						<div class="boxInsta">
 							<div class="title">Sign-In</div>
 							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
 							<a href="#">Instagram</a>
 						</div>
-						-->
-						<!-- //SNS 연결 전 -- >
+						-- >
+						< !-- //SNS 연결 전 -- >
 
 						< !-- SNS 연결 후 -- >
+						
 						<div class="boxInsta">
 							<div class="infoTop">
 								<div class="title">My</div>
@@ -117,15 +157,17 @@
 							</div>
 							<div class="userLink">
 								<ul>
-									<li><a href="#">Owened (00)</a></li>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
 									<li>
-										<a href="#" class="depth">Created (00)</a>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
 										<ul class="listDepth">
-											<li><a href="#">Pre created (00)</a></li>
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
 										</ul>
 									</li>
-									<li><a href="#">My Sale (00)</a></li>
-									<li><a href="#">Favorit (00)</a></li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num on">15</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -253,11 +295,13 @@
 							<a href="#" class="disconnect">Disconnect Wallet</a>
 						</div>
 						<!-- SNS 연결 전 -->
+						<!--
 						<div class="boxInsta">
 							<div class="title">Sign-In</div>
 							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
 							<a href="#">Instagram</a>
 						</div>
+						-->
 						<!-- //SNS 연결 전 -->
 
 						<!-- SNS 연결 후 -->
@@ -668,20 +712,25 @@
 			</div>
 		</div>
 		<footer id="footer">
-			<div class="inner">
-				<h2>PENTASQUARE</h2>
-				<div class="copyright">
-					Copyright 2021 Pentasquare.io<br />
-					All rights Reserved.
+      <div class="inner">
+				<div class="agreement">
+					<a href="#">이용약관</a>
+					<a href="#">개인정보처리방침</a>
 				</div>
-				<div class="sns">
-					<a href="#" class="facebook">facebook</a>
-					<a href="#" class="telegram">telegram</a>
-					<a href="#" class="polymath">polymath</a>
-					<a href="#" class="twitter">twitter</a>
-					<a href="#" class="kakaotalk">kakaotalk</a>
-				</div>
-			</div>
+        <h2>PENTASQUARE</h2>
+        <div class="copyright">
+          (주)엑스프라임 인터내셔널<br />
+					대표 : 소현중<br />
+					주소 : 서울특별시 강남구 테헤란로 501 브이플렉스<br />
+					사업자 번호 : 660-86-02202<br />
+					Xprime international Inc. All Rights Reserved.
+        </div>
+        <div class="sns">
+          <a href="#" class="kakao">kakao</a>
+          <a href="#" class="telegram">telegram</a>
+          <a href="#" class="polymath">polymath</a>
+        </div>
+      </div>
 		</footer>
 	</section>
 </body>
