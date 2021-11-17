@@ -100,8 +100,13 @@ $(function(){
     $(".boxGnb_mo").scrollTop(0);
   });
   $(".close--sendNFT").click(function(){
-    $(".boxSendNFT").fadeOut(300);
-    $(".boxWallet").fadeIn(300);
+    if($("#pageNFTSend_mo").css("display") == "block"){
+      $("#pageNFTSend_mo").fadeOut(300);
+      $("#pageSendNFT_mo").fadeIn(300);
+    }else{
+      $(".boxSendNFT").fadeOut(300);
+      $(".boxWallet").fadeIn(300);
+    }
     $(".boxGnb_mo").scrollTop(0);
   });
 
