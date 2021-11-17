@@ -1107,6 +1107,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .inner { padding:0; position:relative; background:#f4f6f9; }
 	
 	.section.section--detail .boxDetail { position:relative; top:-112px; background:#fff; border-top-left-radius:20px; border-top-right-radius:20px; z-index:10; box-shadow: 0 -8px 13px 0 rgba(0, 0, 0, 0.09); overflow:hidden; }
+	.section.section--detail .boxDetail.type--noBid { padding-bottom:48px; }
 	.section.section--detail .boxDescript { padding:25px 16px 20px; }
 	.section.section--detail .boxDescript .title { margin-bottom:20px; font-size:21px; color:#000; font-weight:600; }
 	.section.section--detail .boxDescript .cont { font-size:14px; color:#9ea0b4; }
