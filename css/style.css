@@ -1032,12 +1032,17 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxList .swiper-slide .detail { width:15px; height:20px; right:6px; top:17px; background-size:3px auto; }
 	.boxList .more { width:158px; height:48px; margin-top:32px; border-color:rgba(112,112,112,0.3); font-size:13px; line-height:46px; }
 
-	.bnCreator .title { font-size:28px; }
-	.bnCreator .subject { margin-top:15px; font-size:15px; font-weight:300; }
-	.bnCreator a { margin-top:50px; }
+	.bnCreator { height:auto; margin:80px 16px 0; }
+	.bnCreator .inBox { padding:50px 0; text-align:center; }
+	.bnCreator .title { font-size:22px; }
+	.bnCreator .subject { margin-top:10px; font-size:14px; }
+	.bnCreator a { height:52px; font-size:15px; line-height:52px; }
 
 	.bnCreator.posTop { display:flex; align-items:center; justify-content:center; background-image:url('../images/content/imgCreator_mo.png'); }
 	.bnCreator.posTop .inBox { width:238px; padding:0; text-align:center; }
+	.bnCreator.posTop .title { font-size:28px; }
+	.bnCreator.posTop .subject { margin-top:15px; font-size:15px; font-weight:300; }
+	.bnCreator.posTop a { height:68px; margin-top:50px; line-height:68px; font-size:18px; }
 
 	.listHistory { padding:0; }
 	.listHistory>ul>li .item { padding:9px; display:block; overflow:hidden; }
