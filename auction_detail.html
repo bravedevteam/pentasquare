@@ -725,7 +725,7 @@
 						
 						<div class="btn"><!-- 2단으로 나뉘어 사용할때는 col2 클래스 추가 -->
 							<!-- <a href="#">Not for sale</a> -->
-							<a href="#" class="active">Buy now</a>
+							<a href="#" class="active open--alarm">Buy now</a>
 							<!-- <a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a> -->
 							<!-- <a href="#" class="active">Accept</a> -->
 							<!-- <a href="#" class="end">End of Sale</a> -->
@@ -928,6 +928,8 @@
 
 <div id="dim"></div>
 
+<div id="popAlarm" class="popAlarm">주소가 복사되었습니다.</div>
+
 <script type="text/javascript">
 	var swiper = new Swiper('.boxAuctionVisual .swiper-container', {
 		loop: true,
@@ -945,6 +947,14 @@
 			$(this).addClass("active").siblings().removeClass("active");
 			$(".boxInfoTab .cont").removeClass("active");
 			$("#"+target).addClass("active");
+		});
+
+		$(".open--alarm").click(function(e){
+			e.preventDefault();
+			$("#popAlarm").fadeIn(500);
+			setTimeout(function(){
+				$("#popAlarm").fadeOut(500);
+			}, 1500);
 		});
 	});
 
