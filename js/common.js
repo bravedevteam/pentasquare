@@ -9,13 +9,13 @@ $(function(){
 
   $("body").click(function(event){
     var target = $(event.target);
-    if(!target.parents().hasClass("boxWallet") && !target.parents().hasClass("btnMypage")){
-      if($(".boxWallet").css("display") == "block"){
+    if(!target.parents().hasClass("boxWallet") && !target.parents().hasClass("btnMypage") && !target.hasClass("back") && !target.parents().hasClass("boxSendNFT")){
+      if(767 < winW && $(".boxWallet").css("display") == "block" || 767 < winW && $(".boxSendNFT").css("display") == "block"){
         $(".boxWallet").fadeOut(500);
+        $(".boxSendNFT").fadeOut(500);
       }
     }
   });
-
   // PC
   function pcEvent(){
     if($(".boxGnb_mo").css("display") == "block"){
@@ -33,6 +33,11 @@ $(function(){
       $(".boxWallet").css("display","block");
     }
   }
+
+  $("#btnSendNFT").click(function(){
+    $("#pageSendNFT").fadeOut(500);
+    $("#pageNFTSend").fadeIn(500);
+  });
 
   $(".tabArea a").click(function(e){
     e.preventDefault();
@@ -59,6 +64,20 @@ $(function(){
     $(".userLink .listDepth").slideUp(0);
   });
 
+  $("#btnNFTSend").click(function(){
+    $(".boxWallet").fadeOut(500);
+    $("#pageSendNFT").fadeIn(500);
+  });
+
+  $("#pageSendNFT .back").click(function(){
+    $(".boxWallet").fadeIn(500);
+    $("#pageSendNFT").fadeOut(500);
+  });
+  $("#pageNFTSend .close").click(function(){
+    $("#pageNFTSend").fadeOut(500);
+    $("#pageSendNFT").fadeIn(500);
+  });
+
   $(".userLink .depth").click(function(){
     $(this).toggleClass("on");
     $(".userLink .listDepth").slideToggle(300);
@@ -68,6 +87,22 @@ $(function(){
     e.preventDefault();
     $("body").css("overflow", "hidden");
     $(".boxGnb_mo").fadeIn(300);
+    $(".boxWallet").css("display","block");
+  });
+
+  $(".open--sendNFT").click(function(){
+    var target = $(this).attr("data-page");
+    $(".boxWallet").fadeOut(300);
+    if(target == "pageNFTSend_mo"){
+      $(".boxSendNFT").fadeOut(300);
+    }
+    $("#"+target).fadeIn(300);
+    $(".boxGnb_mo").scrollTop(0);
+  });
+  $(".close--sendNFT").click(function(){
+    $(".boxSendNFT").fadeOut(300);
+    $(".boxWallet").fadeIn(300);
+    $(".boxGnb_mo").scrollTop(0);
   });
 
   $(".boxGnb_mo .close").click(function(e){

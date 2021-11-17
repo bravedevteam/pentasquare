@@ -38,79 +38,40 @@
 					<a href="#" class="btnCreat">Creat</a>
 
 					<!-- 로그인 전 -->
+					<!--
 					<div class="boxWallet">
 						<div class="topArea">
 							<div class="title">Wallet</div>
 							<div class="subject">Connect your wallet and join the Bid!</div>
-						</div>
-						<!--
-						<div class="inWallet">
-							<div class="wallet">Metamask Wallet</div>
-						</div>
-						-->
+						</div>						
 						
-						<div class="inWallet type--install">
-							<div class="wallet">Metamask must be installed.<span>Non-installed customers move MetaMask to the installation page.</span></div>
+						<div class="inWallet">
+							<div class="wallet"><strong>Metamask Wallet</strong>Metamask must be installed.<span>Non-installed customers move MetaMask to the installation page.</span></div>
+							<a href="#" class="linkMetaGuide">Metamask Guide</a>
 						</div>
-						<!--
+						
+						< !--
 						<div class="boxInsta">
 							<div class="title">Sign-In</div>
 							<a href="#" class="btnSocial google">Google Login</a>
 							<a href="#" class="btnSocial kakao">Kakao Login</a>
 						</div>
-						-->
+						-- >
 					</div>
+					-->
 					<!-- //로그인 전 -->
 
 					<!-- 로그인 후 -->
-					<!--
+					
 					<div class="boxWallet type--login">
 						<div class="topArea">
 							<div class="title">Wallet</div>
 							<a href="#" class="linkWallet">0x1effsa0x1effsa0x1effsa</a>
 						</div>
-						< !--
-						<div class="inWallet">
-							<div class="wallet">
-								<div class="walletCoin">
-									<div class="coin">
-										<div class="value">
-											<div class="name">Your Balance</div>
-											<div class="price">0 ETH</div>
-										</div>
-									</div>
-									<div class="coin">
-										<div class="value">
-											<div class="name">Your Bidding Balance</div>
-											<div class="price">0 WETH</div>
-										</div>
-									</div>
-									<a href="#" class="btnChange">change</a>
-								</div>
-								< !--
-								<div class="walletCoin type--write">
-									<div class="max">Max amount is <span>50.356</span> ETH</div>
-									<div class="input">
-										<input type="text" placeholder="Enter an amount" />
-										<button type="button" class="trans eth on">ETH</button>
-										<button type="button" class="trans weth">WETH</button>
-									</div>
-								</div>
-								-- >
-								<div class="btnArea">
-									<a href="#">Convert Balance</a>
-									< !--
-									<a href="#" class="convert">Convert</a>
-									<a href="#" class="cancel">Cancel</a>
-									-- >
-								</div>
-							</div>
-							<a href="#" class="disconnect">Disconnect Wallet</a>
-						</div>
-						-- >
 						
 						<div class="inWallet typeA">
 							<div class="wallet">
+								<!--
 								<div class="walletCoin">
 									<div class="coin mark mark--eth">
 										<div class="value">
@@ -127,6 +88,21 @@
 										<a href="#" class="btnChange">change</a>
 									</div>
 								</div>
+								-->
+								
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH)</div>
+									<div class="input">
+										<input type="text" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+								</div>
+								<div class="btnArea">
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+								</div>
+								
 							</div>
 							<a href="#" class="btnPairing">
 								<span>Pre-pairing</span>
@@ -134,17 +110,292 @@
 							</a>
 							<a href="#" class="disconnect">Disconnect Wallet</a>
 						</div>
-						< !-- SNS 연결 전 -- >
-						< !--
+						
+						<!-- SNS 연결 전 -->
+						<!--
 						<div class="boxInsta">
 							<div class="title">Sign-In</div>
 							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
 							<a href="#">Instagram</a>
 						</div>
-						-- >
-						< !-- //SNS 연결 전 -- >
+						-->
+						<!-- //SNS 연결 전 -->
 
-						< !-- SNS 연결 후 -- >
+						<!-- SNS 연결 후 -->
+						<div class="boxInsta">
+							<div class="infoTop">
+								<div class="title">My</div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>Linda0980</span></div>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num on">15</span></a></li>
+								</ul>
+							</div>
+							<div class="btnBottom">
+								<a href="#" id="btnNFTSend">Send NFT</a>
+							</div>
+						</div>
+						<!-- //SNS 연결 후 -->
+					</div>
+					<!-- //로그인 후 -->
+
+					<!-- Send NFT -->
+					<div id="pageSendNFT" class="boxSendNFT">
+						<div class="topArea">
+							<a href="#" class="back">prev</a>
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="boxForm">
+							<div class="row">
+								<div class="title">From</div>
+								<div class="input">
+									<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+									<div class="user">Account 1</div>
+									<div class="key">0x1effsa…a67e</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="title">To</div>
+								<div class="input"><input type="text" placeholder="받을 지갑 주소(0x)를 입력해 주세요!" /></div>
+							</div>
+							<div class="row">
+								<div class="title">Amount</div>
+								<div class="input"><input type="text" placeholder="전송할 자산의 주량을 입력해 주세요!" /></div>
+								<div class="ps">(Max 10,000)</div>
+							</div>
+						</div>
+						<div class="boxList">
+							<div class="infoTop">
+								<div class="title">Select NFT</div>
+							</div>
+							<div class="listNFT">
+								<ul>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_1" />
+										<label for="chk_nft_1"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" checked="checked" name="chk_nft" id="chk_nft_2" />
+										<label for="chk_nft_2"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_3" />
+										<label for="chk_nft_3"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_4" />
+										<label for="chk_nft_4"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_5" />
+										<label for="chk_nft_5"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_6" />
+										<label for="chk_nft_6"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_7" />
+										<label for="chk_nft_7"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_8" />
+										<label for="chk_nft_8"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnBottom">
+							<a href="#" id="btnSendNFT" class="active">Send NFT</a>
+						</div>
+					</div>
+					<!-- //Send NFT -->
+
+					<!-- NFT Send List -->
+					<div id="pageNFTSend" class="boxSendNFT">
+						<div class="topArea">
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="listSendNFT">
+							<div class="title">Successful</div>
+							<dl>
+								<dt>From</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>To</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl class="amount">
+								<dt>Amount</dt>
+								<dd> : 10,500</dd>
+							</dl>
+							<dl>
+								<dt>Contract Address</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>Token ID</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="close active">Close</a>
+						</div>
+					</div>
+					<!-- //NFT Send List -->
+				</div>
+
+				<!-- Mobile -->
+				<div class="opt mo">
+					<a href="#" class="btnSearch_mo">search</a>
+					<a href="#" class="btnGnb_mo">GNB</a>
+				</div>
+
+				<div class="boxGnb_mo is--login"><!-- 로그인 전 is--login 클래스 추가 -->
+					<div class="section_gnb">
+						<div class="topArea">
+							<!-- 로그인 전 -->
+							<!--
+							<div class="thumb"><img src="./images/common/iconConnect_mo.png" alt="" /></div>
+							< !--
+							<div class="info">
+								Connect Wallet
+							</div>
+							-- >
+							-->
+							<!-- //로그인 전 -->
+
+							<!-- 로그인 후 -->
+							
+							<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+							<div class="info">
+								<div class="name">Account 1</div>
+								<a href="#">0x1effsa0x1effsa0x1effsa</a>
+							</div>
+							
+							<!-- //로그인 후 -->
+						</div>
+						<!--
+						<ul class="list">
+							<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
+							<li><a href="./market.html">Square Market</a></li>
+						</ul>
+						-->
+						<!-- 로그인 전 -->
+						<!--
+						<div class="btn">
+							<a href="#" class="connect">Connect Wallet</a>
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 전 -->
+
+						<!-- 로그인 후 -->
+						<!--
+						<div class="btn type--single">
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 후 -->
+					</div>
+
+					<!-- 로그인 전 -->
+					<!--
+					<div class="boxWallet">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">Connect your wallet and join the Bid!</div>
+						</div>
+						<div class="inWallet">
+							<div class="wallet"><strong>Metamask Wallet</strong>Metamask must be installed.<span>Non-installed customers move MetaMask to the installation page.</span></div>
+							<a href="#" class="linkMetaGuide">Metamask Guide</a>
+						</div>
+						< !--
+						<div class="boxInsta">
+							<div class="title">Sign-In</div>
+							<div class="subject">Login via social media account is required to act as a creator.</div>
+							<a href="#">Instagram</a>
+						</div>
+						-- >
+					</div>
+					-->
+					<!-- //로그인 전 -->
+
+					<!-- 로그인 후 -->
+					
+					<div class="boxWallet type--login">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">Connect your wallet and join the Bid!</div>
+						</div>
+						<div class="inWallet">
+							<div class="wallet">
+								
+								<div class="walletCoin">
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								
+								<!--
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
+									<div class="input">
+										<input type="text" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+								</div>
+								<div class="btnArea">
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+								</div>
+								-->
+							</div>
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+						<!-- SNS 연결 전 -->
+						<!--
+						<div class="boxInsta">
+							<div class="title">Sign-In</div>
+							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
+							<a href="#">Instagram</a>
+						</div>
+						-->
+						<!-- //SNS 연결 전 -->
+
+						<!-- SNS 연결 후 -->
 						
 						<div class="boxInsta">
 							<div class="infoTop">
@@ -170,170 +421,122 @@
 									<li><a href="#"><span class="name">Notifications</span><span class="num on">15</span></a></li>
 								</ul>
 							</div>
-						</div>
-						< !-- //SNS 연결 후 -- >
-					</div>
-					-->
-					<!-- //로그인 후 -->
-				</div>
-
-				<!-- Mobile -->
-				<div class="opt mo">
-					<a href="#" class="btnSearch_mo">search</a>
-					<a href="#" class="btnGnb_mo">GNB</a>
-				</div>
-
-				<div class="boxGnb_mo">
-					<div class="section_gnb">
-						<div class="topArea">
-							<!-- 로그인 전 -->
-							<!--
-							<div class="thumb"><img src="./images/common/iconConnect_mo.png" alt="" /></div>
-							<div class="info">
-								Connect Wallet
+							<div class="btnBottom">
+								<a href="#" class="creat">Creat NFT</a>
+								<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
 							</div>
-							-->
-							<!-- //로그인 전 -->
-
-							<!-- 로그인 후 -->
-							
-							<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
-							<div class="info">
-								<div class="name">Account 1</div>
-								<a href="#">0x1effsa0x1effsa0x1effsa</a>
-							</div>
-							
-							<!-- //로그인 후 -->
-						</div>
-						<ul class="list">
-							<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
-							<li><a href="./market.html">Square Market</a></li>
-						</ul>
-						<!-- 로그인 전 -->
-						<!--
-						<div class="btn">
-							<a href="#" class="connect">Connect Wallet</a>
-							<a href="#" class="creat">Creat</a>
-						</div>
-						-->
-						<!-- //로그인 전 -->
-
-						<!-- 로그인 후 -->
-						
-						<div class="btn type--single">
-							<a href="#" class="creat">Creat</a>
 						</div>
 						
-						<!-- //로그인 후 -->
-					</div>
-
-					<!-- 로그인 전 -->
-					<!--
-					<div class="boxWallet">
-						<div class="topArea">
-							<div class="title">Wallet</div>
-							<div class="subject">Connect your wallet and join the Bid!</div>
-						</div>
-						<div class="inWallet">
-							<div class="wallet">Metamask Wallet</div>
-						</div>
-						<div class="boxInsta">
-							<div class="title">Sign-In</div>
-							<div class="subject">Login via social media account is required to act as a creator.</div>
-							<a href="#">Instagram</a>
-						</div>
-					</div>
-					-->
-					<!-- //로그인 전 -->
-
-					<!-- 로그인 후 -->
-					
-					<div class="boxWallet type--login">
-						<div class="topArea">
-							<div class="title">Wallet</div>
-							<div class="subject">Connect your wallet and join the Bid!</div>
-						</div>
-						<div class="inWallet">
-							<div class="wallet">
-								
-								<div class="walletCoin">
-									<div class="coin">
-										<div class="value">
-											<div class="name">Your Balance</div>
-											<div class="price">0 ETH</div>
-										</div>
-									</div>
-									<div class="coin">
-										<div class="value">
-											<div class="name">Your Bidding Balance</div>
-											<div class="price">0 WETH</div>
-										</div>
-									</div>
-									<a href="#" class="btnChange">change</a>
-								</div>
-								
-								<!--
-								<div class="walletCoin type--write">
-									<div class="max">Max amount is <span>50.356</span> ETH</div>
-									<div class="input">
-										<input type="text" placeholder="Enter an amount" />
-										<button type="button" class="trans eth on">ETH</button>
-										<button type="button" class="trans weth">WETH</button>
-									</div>
-								</div>
-								-->
-								
-								<div class="btnArea">
-									<a href="#">Convert Balance</a>
-									<!--
-									<a href="#" class="convert">Convert</a>
-									<a href="#" class="cancel">Cancel</a>
-									-->
-								</div>
-								
-							</div>
-							<a href="#" class="disconnect">Disconnect Wallet</a>
-						</div>
-						<!-- SNS 연결 전 -->
-						<!--
-						<div class="boxInsta">
-							<div class="title">Sign-In</div>
-							<div class="subject">Login via social media account is<br />required to act as a creator.</div>
-							<a href="#">Instagram</a>
-						</div>
-						-->
-						<!-- //SNS 연결 전 -->
-
-						<!-- SNS 연결 후 -->
-						<!--
-						<div class="boxInsta">
-							<div class="infoTop">
-								<div class="title">My</div>
-								<a href="#" class="edit">Edit</a>
-							</div>
-							<div class="infoUser">
-								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
-								<div class="name">Linda Dounia<span>Linda0980</span></div>
-							</div>
-							<div class="userLink">
-								<ul>
-									<li><a href="#">Owened (00)</a></li>
-									<li>
-										<a href="#" class="depth">Created (00)</a>
-										<ul class="listDepth">
-											<li><a href="#">Pre created (00)</a></li>
-										</ul>
-									</li>
-									<li><a href="#">My Sale (00)</a></li>
-									<li><a href="#">Favorit (00)</a></li>
-								</ul>
-							</div>
-						</div>
-						-->
 						<!-- //SNS 연결 후 -->
 					</div>
 					
 					<!-- //로그인 후 -->
+
+					<!-- Send NFT -->
+					<div id="pageSendNFT_mo" class="boxSendNFT">
+						<div class="topArea">
+							<a href="#" class="back close--sendNFT">prev</a>
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="boxForm">
+							<div class="row">
+								<div class="title">From</div>
+								<div class="input">
+									<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+									<div class="user">Account 1</div>
+									<div class="key">0x1effsa…a67e</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="title">To</div>
+								<div class="input"><input type="text" placeholder="받을 지갑 주소(0x)를 입력해 주세요!" /></div>
+							</div>
+							<div class="row">
+								<div class="title">Amount</div>
+								<div class="input"><input type="text" placeholder="전송할 자산의 주량을 입력해 주세요!" /></div>
+								<div class="ps">(Max 10,000)</div>
+							</div>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="active open--sendNFT" data-page="pageNFTSend_mo">Send NFT</a>
+						</div>
+						<div class="boxList">
+							<div class="infoTop">
+								<div class="title">Select NFT</div>
+							</div>
+							<div class="listNFT">
+								<ul>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_1" />
+										<label for="chk_nft_1"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" checked="checked" name="chk_nft" id="chk_nft_2" />
+										<label for="chk_nft_2"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_3" />
+										<label for="chk_nft_3"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_4" />
+										<label for="chk_nft_4"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_5" />
+										<label for="chk_nft_5"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_6" />
+										<label for="chk_nft_6"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_7" />
+										<label for="chk_nft_7"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_8" />
+										<label for="chk_nft_8"><img src="./images/content/imgThumb_nft.png" alt="" /></label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //Send NFT -->
+
+					<!-- NFT Send List -->
+					<div id="pageNFTSend_mo" class="boxSendNFT">
+						<div class="topArea">
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="listSendNFT">
+							<div class="title">Successful</div>
+							<dl>
+								<dt>From</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>To</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl class="amount">
+								<dt>Amount</dt>
+								<dd> : 10,500</dd>
+							</dl>
+							<dl>
+								<dt>Contract Address</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>Token ID</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="active close--sendNFT">Close</a>
+						</div>
+					</div>
+					<!-- //NFT Send List -->
 					
 					<a href="#" class="close">close</a>
 				</div>
@@ -363,6 +566,7 @@
 						<li><a href="#">Pre Created(4)</a></li>
 						<li><a href="#">Favorited(909)</a></li>
 						<li><a href="#">Bidding(3)</a></li>
+						<li><a href="#">Notifications</a></li>
 					</ul>
 				</div>
 			</div>
@@ -529,20 +733,25 @@
 			</div>
 		</div>
 		<footer id="footer">
-			<div class="inner">
-				<h2>PENTASQUARE</h2>
-				<div class="copyright">
-					Copyright 2021 Pentasquare.io<br />
-					All rights Reserved.
+      <div class="inner">
+				<div class="agreement">
+					<a href="#">이용약관</a>
+					<a href="#">개인정보처리방침</a>
 				</div>
-				<div class="sns">
-					<a href="#" class="facebook">facebook</a>
-					<a href="#" class="telegram">telegram</a>
-					<a href="#" class="polymath">polymath</a>
-					<a href="#" class="twitter">twitter</a>
-					<a href="#" class="kakaotalk">kakaotalk</a>
-				</div>
-			</div>
+        <div class="sns">
+          <a href="#" class="kakao">kakao</a>
+          <a href="#" class="telegram">telegram</a>
+          <a href="#" class="polymath">polymath</a>
+        </div>
+        <h2>PENTASQUARE</h2>
+        <div class="copyright">
+          (주)엑스프라임 인터내셔널<br />
+					대표 : 소현중<br />
+					주소 : 서울특별시 강남구 테헤란로 501 브이플렉스<br />
+					사업자 번호 : 660-86-02202<br />
+					Xprime international Inc. All Rights Reserved.
+        </div>
+      </div>
 		</footer>
 	</section>
 </body>
