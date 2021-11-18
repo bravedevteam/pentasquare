@@ -956,6 +956,15 @@
 				$("#popAlarm").fadeOut(500);
 			}, 1500);
 		});
+
+		var img_w = $(".boxDetailTop .cont img").width();
+		var img_h = $(".boxDetailTop .cont img").height();
+
+		if(img_w < img_h){
+			$(".boxDetailTop .cont").addClass("is--horizontal");
+		}else{
+			$(".boxDetailTop .cont").removeClass("is--horizontal");		
+		}
 	});
 
 	$(".like").click(function(e){
