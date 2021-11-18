@@ -271,6 +271,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section1:before { content:''; width:100%; height:594px; position:absolute; left:0; top:0; background:#021343; z-index:1; }
 .section.section2 { background:#eaeef2; text-align:center; }
 .section.section3 { padding-bottom:0; background:#eaeef2; border-top:1px solid #c0c9d4; text-align:center; }
+.section.section4 { background:#eaeef2; text-align:center; }
 .section.section--auction { margin-top:80px; padding-bottom:180px; }
 .section.section--profile { margin-top:30px; }
 
