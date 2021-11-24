@@ -847,8 +847,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 #dim { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:rgba(0,0,0,0.5); z-index:20; }
 
-.popKeyboard { width:100%; height:100%; display:none; position:fixed; left:0; top:0; z-index:999; }
-.popKeyboard.active { display:block; }
+.popKeyboard { width:100%; height:0; position:fixed; left:0; bottom:0; z-index:999; transition:all .5s; }
+.popKeyboard.active { height:100%; }
 .popKeyboard .number { width:100%; position:fixed; left:0; bottom:-100%; display:flex; flex-wrap:wrap; padding:15px 0 16px; background:#fff; border-top-left-radius:15px; border-top-right-radius:15px; box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.1); overflow:hidden; transition:all .5s; }
 .popKeyboard.active .number { bottom:0; }
 .popKeyboard .number button { width:33.3%; height:70px; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:500; color:#010d2d; }
