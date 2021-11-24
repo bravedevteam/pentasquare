@@ -335,7 +335,7 @@
 							<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
 							<div class="info">
 								<div class="name">Account 1</div>
-								<a href="#">0x1effsa0x1effsa0x1effsa</a>
+								<a href="#" class="open--alarm">0x1effsa0x1effsa0x1effsa</a>
 							</div>
 							
 							<!-- //로그인 후 -->
@@ -740,12 +740,12 @@
 						<!-- //고정가 -->
 
             <div class="pidArea">
-							<button type="button" class="active">Place a bid</button>
+							<!-- <button type="button" class="active popup--open" data-pop="popBidding">Place a bid</button> -->
 							<!-- <button type="button">Not for sale</button> -->
 							<!-- <button type="button">waiting for bid</button> -->
 							<!-- <button type="button">Comming soon</button> -->
 							<!-- <button type="button">End of sale</button> -->
-							<!-- <button type="button" class="active">Buy now</button> -->
+							<button type="button" class="active popup--open" data-pop="popQuantity">Buy now</button>
 							<!-- <button type="button" class="accept">Accept</button> -->
 							<!-- <button type="button" class="cancel">Cancel</button> -->
 						</div>
@@ -823,7 +823,7 @@
 						
 						<div class="btn"><!-- 2단으로 나뉘어 사용할때는 col2 클래스 추가 -->
 							<!-- <a href="#">Not for sale</a> -->
-							<a href="#" class="active open--alarm">Buy now</a>
+							<a href="#" class="active popup--open" data-pop="popQuantity">Buy now</a>
 							<!-- <a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a> -->
 							<!-- <a href="#" class="active">Accept</a> -->
 							<!-- <a href="#" class="end">End of Sale</a> -->
@@ -994,6 +994,58 @@
 	</div>
 </div>
 
+<div id="popQuantity" class="popBasic type--quantity">
+	<div class="popCont">
+		<div class="balanceArea">
+			<div class="title">Input Quantity</div>
+			<div class="balance">
+				<div class="input">
+					<input type="text" value="" placeholder="You enter at least 1." />
+				</div>
+				<div class="dollar">/ 10,000</div>
+			</div>
+			<div class="boxPrice">
+				<div class="row">
+					<div class="priceTitle">Current Price</div>
+					<div class="price">
+						<div class="left">0.56 ETH</div>
+						<div class="right">$941.50</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="priceTitle">Current Price</div>
+					<div class="price">
+						<div class="left">0.56 ETH</div>
+						<div class="right">$941.50</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bidArea">
+			<div class="detailArea">
+				<div class="row">
+					<div class="itemTitle">Your bidding balance</div>
+					<div class="value">1.0 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Your Quantity price</div>
+					<div class="value">32.234 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Service fees</div>
+					<div class="value">0.00147 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Paying Result</div>
+					<div class="value">0.00833 ETH</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btnBid">Buy now</a>
+	</div>
+	<a href="#" class="close">close</a>
+</div>
+
 <div id="popBidding" class="popBasic">
 	<div class="popCont">
 		<div class="balanceArea">
@@ -1064,13 +1116,7 @@
 			$("#"+target).addClass("active");
 		});
 
-		$(".open--alarm").click(function(e){
-			e.preventDefault();
-			$("#popAlarm").fadeIn(500);
-			setTimeout(function(){
-				$("#popAlarm").fadeOut(500);
-			}, 1500);
-		});
+		
 
 		var img_w = $(".boxDetailTop .cont img").width();
 		var img_h = $(".boxDetailTop .cont img").height();

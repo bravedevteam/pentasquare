@@ -138,6 +138,14 @@ $(function(){
     $(".boxGnb_mo").scrollTop(0);
   });
 
+  $(".open--alarm").click(function(e){
+    e.preventDefault();
+    $("#popAlarm").fadeIn(500);
+    setTimeout(function(){
+      $("#popAlarm").fadeOut(500);
+    }, 1500);
+  });
+
   $(".boxGnb_mo .close").click(function(e){
     e.preventDefault();
     $("body").css("overflow", "auto");

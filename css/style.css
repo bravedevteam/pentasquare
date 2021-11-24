@@ -752,11 +752,11 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .popBasic .balanceArea .balance .type { width:80px; font-size:32px; font-weight:600; color:#707a83; text-align:center; }
 .popBasic .balanceArea .balance .dollar { margin-left:30px; font-size:28px; color:#707a83; font-weight:600; }
 .popBasic .balanceArea .guide { margin-top:17px; margin-bottom:44px; color:#000; font-size:20px; font-weight:500; font-style: italic; }
-.popBasic .balanceArea .detailArea { padding:38px 0 42px; border-top:1px solid rgba(172, 175, 198, 0.2); }
-.popBasic .balanceArea .detailArea .row { width:512px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; font-size:20px; color:#000; }
-.popBasic .balanceArea .detailArea .row+.row { margin-top:12px; }
-.popBasic .balanceArea .detailArea .row .itemTitle { font-style:italic; font-weight:500; }
-.popBasic .balanceArea .detailArea .row .value { text-align:right; font-weight:600; }
+.popBasic .detailArea { padding:38px 0 42px; border-top:1px solid rgba(172, 175, 198, 0.2); }
+.popBasic .detailArea .row { width:512px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; font-size:20px; color:#000; }
+.popBasic .detailArea .row+.row { margin-top:12px; }
+.popBasic .detailArea .row .itemTitle { font-style:italic; font-weight:500; }
+.popBasic .detailArea .row .value { text-align:right; font-weight:600; }
 .popBasic .bidArea { padding:65px 38px 60px 32px; background:#f4f6f9; }
 .popBasic .bidArea .title { margin-bottom:24px; font-size:20px; font-weight:600; color:#000; }
 .popBasic .bidArea .cont { display:flex; }
@@ -827,6 +827,23 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .popBasic.type--preview .close { width:32px; height:32px; right:50%; top:48px; margin-right:-556px; background-image:url('../images/common/btnClose_white.png'); background-size:100% auto; }
 
 .btnBid { display:block; height:80px; background:#000c2d; line-height:80px; text-align:center; color:#fff; font-size:27px; }
+
+.popBasic .boxPrice { width:512px; margin:12px auto 0; }
+.popBasic .boxPrice .row { padding:13px 0; }
+.popBasic .boxPrice .row+.row { border-top:1px solid rgba(172,175,198,0.2); }
+.popBasic .boxPrice .priceTitle { height:56px; padding-left:70px; background:url('../images/common/iconQuantity_eth.png') 5px center no-repeat; background-size:56px auto; line-height:56px; font-size:23px; font-weight:500; color:#000; text-align:left; }
+.popBasic .boxPrice .price { padding:0 21px 0 75px; display:flex; justify-content:space-between; }
+.popBasic .boxPrice .price .left { font-size:23px; font-weight:600; color:#000; }
+.popBasic .boxPrice .price .right { font-size:23px; color:#62668c; opacity:.5; }
+
+.popBasic.type--quantity .balanceArea { padding:68px 31px 22px; }
+.popBasic.type--quantity .balanceArea .balance { padding:0 0 0 35px; border-color:#000; }
+.popBasic.type--quantity .balanceArea .balance .input { flex:1; width:auto; padding-left:0; }
+.popBasic.type--quantity .balanceArea .balance .input input { font-weight:700; color:#1b44ef; }
+.popBasic.type--quantity .balanceArea .balance .input input::placeholder { font-size:28px; color:#acafc6; font-weight:400; }
+.popBasic.type--quantity .balanceArea .balance .dollar { padding:0; margin-right:20px; color:#62668c; font-weight:500; opacity:0.5; }
+.popBasic.type--quantity .bidArea { padding:0 16px; }
+.popBasic.type--quantity .detailArea { padding:35px 20px; border-top:0; }
 
 #dim { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:rgba(0,0,0,0.5); z-index:20; }
 
@@ -1162,7 +1179,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .boxInfoTab .boxDetailCont .title { margin-bottom:15px; color:#000; font-size:15px; font-weight:500; }
 	.section.section--detail .boxInfoTab .boxDetailCont .cont { display:block; border-radius:0; }
 
-	.section.section--detail .inBox { padding:50px 16px 88px; margin-top:-112px; }
+	.section.section--detail .inBox { padding:50px 16px 88px; margin-top:-20px; }
 	.section.section--detail .boxInfoTab .tab { display:flex; }
 	.section.section--detail .boxInfoTab .tab a { height:50px; flex:1; display:flex; align-items:center; justify-content:center; font-size:15px; color:#8089a1; font-weight:700; }
 	.section.section--detail .boxInfoTab .tab a.active { background:#fff; border-top-left-radius:18px; border-top-right-radius:18px; color:#021343; }
@@ -1377,9 +1394,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.popBasic .balanceArea .balance .type { position:absolute; left:0; top:0; background:#1b44ef; color:#fff; font-size:20px; }
 	.popBasic .balanceArea .balance .dollar { margin-left:0; padding-top:2px; padding-right:24px; font-size:13px; color:#adadad; }
 	.popBasic .balanceArea .guide { margin-top:13px; margin-bottom:25px; font-size:13px; color:#acafc6; font-weight:400; font-style:normal; }
-	.popBasic .balanceArea .detailArea { padding:30px 20px; }
-	.popBasic .balanceArea .detailArea .row { width:auto; font-size:13px; color:#6e7984; }
-	.popBasic .balanceArea .detailArea .row+.row { margin-top:4px; }
+	.popBasic .detailArea { padding:30px 20px; }
+	.popBasic .detailArea .row { width:auto; font-size:13px; color:#6e7984; }
+	.popBasic .detailArea .row+.row { margin-top:4px; }
 	.popBasic .bidArea { padding:30px 16px; }
 	.popBasic .bidArea .title { font-size:15px; }
 	.popBasic .bidArea .thumb { width:40px; height:40px; }
@@ -1390,6 +1407,14 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.popBasic .bidArea .coin .dollar { display:none; }
 	.popBasic .close { right:16px; top:28px; }
 	.btnBid { height:64px; margin:30px 16px; border-radius:6px; line-height:64px; font-size:23px; }
+
+	.popBasic .boxPrice { width:auto; }
+	.popBasic .boxPrice .priceTitle { height:28px; padding-left:40px; font-size:13px; background-size:28px auto; line-height:28px; }
+	.popBasic .boxPrice .price { padding-left:43px; }
+	.popBasic .boxPrice .price .left { font-size:13px; }
+	.popBasic .boxPrice .price .right { font-size:13px; }
+
+	.popBasic.type--quantity .balanceArea .balance .input input::placeholder { font-size:13px; }
 
 	.popBasic.type--card { width:160px; height:auto; left:50%; top:50%; background:transparent; transform:translate(-50%, -50%); }
 	.popBasic.type--card .popCont { border-radius:15px; }
