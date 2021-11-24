@@ -25,14 +25,42 @@ $(function(){
     if($(".boxWallet").css("display") == "block"){
       $(".boxWallet").css("display","none");
     }
+
+    $(".call--keyboard input[type='text']").attr("readonly", false);
   }
+
+  var input_target;
+  var input_val = "";
 
   //Mobile
   function mobileEvent(){
     if($(".boxWallet").css("display") == "none"){
       $(".boxWallet").css("display","block");
     }
+        
+    $(".call--keyboard input[type='text']").attr("readonly", true);
   }
+
+  $(".call--keyboard input[type='text']").click(function(){
+    $("#popKeyboard").addClass("active");
+    input_target = $(this).attr("id");
+  });
+  $("#popKeyboard .number button").click(function(){
+    var _val = $(this).html();
+    if(_val == "remove"){
+      input_val = input_val.slice(0, -1);
+    }else{
+      input_val = input_val+_val;
+    }
+    $("#"+input_target).val(input_val);
+  });
+
+  $("#popKeyboard").click(function(event){
+    var target = $(event.target).attr("id");
+    if(target == "popKeyboard"){
+      $("#popKeyboard").removeClass("active");
+    }
+  });
 
   $("#btnSendNFT").click(function(){
     $("#pageSendNFT").fadeOut(500);
