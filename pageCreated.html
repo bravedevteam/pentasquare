@@ -339,7 +339,7 @@
 							<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
 							<div class="info">
 								<div class="name">Account 1</div>
-								<a href="#">0x1effsa0x1effsa0x1effsa</a>
+								<a href="#" class="open--alarm">0x1effsa0x1effsa0x1effsa</a>
 							</div>
 							
 							<!-- //로그인 후 -->
@@ -420,8 +420,8 @@
 								
 								<div class="walletCoin type--write">
 									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
-									<div class="input">
-										<input type="text" placeholder="Enter an amount" />
+									<div class="input call--keyboard">
+										<input type="text" id="input_1" placeholder="Enter an amount" />
 										<button type="button" class="trans eth on">ETH</button>
 										<button type="button" class="trans weth">WETH</button>
 									</div>
@@ -746,8 +746,8 @@
 								<li>
 									<div class="th royal">Royalties</div>
 									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="10" class="input--size2" />
+										<div class="input_etc call--keyboard">
+											<input type="text" id="input_2" value="10" class="input--size2" />
 											<span class="etcValue">%</span>
 										</div>
 										<span>* 창작자에게 지급될 로열티를 설정하세요! 아이템이 거래될 때마다 원저작자에게 로열티가 지급됩니다.</span>
@@ -796,8 +796,8 @@
 								<li>
 									<div class="th mo_typeA">Quantity</div>
 									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="1" class="input--size2" />
+										<div class="input_etc call--keyboard">
+											<input type="text" id="input_3" value="1" class="input--size2" />
 											<span class="etcValue">token</span>
 										</div>
 									</div>
@@ -805,8 +805,8 @@
 								<li>
 									<div class="th mo_typeA">Quantity(Max)</div>
 									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="100" class="input--size2" />
+										<div class="input_etc call--keyboard">
+											<input type="text" id="input_4" value="100" class="input--size2" />
 											<span class="etcValue">token</span>
 										</div>
 										<span>Please enter the maximum token quantity that can be issued further!</span>
@@ -815,8 +815,8 @@
 								<li>
 									<div class="th royal">Royalties</div>
 									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="10" class="input--size2" />
+										<div class="input_etc call--keyboard">
+											<input type="text" id="input_5" value="10" class="input--size2" />
 											<span class="etcValue">%</span>
 										</div>
 										<span>* 창작자에게 지급될 로열티를 설정하세요! 아이템이 거래될 때마다 원저작자에게 로열티가 지급됩니다.</span>
@@ -864,6 +864,23 @@
 		</div>
 	</div>
 </body>
+
+<div id="popKeyboard" class="popKeyboard"><!-- 디자인 키보드 호출 시 active 클래스 추가 -->
+	<div class="number">
+		<button type="button">1</button>
+		<button type="button">2</button>
+		<button type="button">3</button>
+		<button type="button">4</button>
+		<button type="button">5</button>
+		<button type="button">6</button>
+		<button type="button">7</button>
+		<button type="button">8</button>
+		<button type="button">9</button>
+		<button type="button">.</button>
+		<button type="button">0</button>
+		<button type="button" class="remove">remove</button>
+	</div>
+</div>
 
 <script type="text/javascript">
 $(function(){

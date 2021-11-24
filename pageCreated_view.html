@@ -339,7 +339,7 @@
 							<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
 							<div class="info">
 								<div class="name">Account 1</div>
-								<a href="#">0x1effsa0x1effsa0x1effsa</a>
+								<a href="#" class="open--alarm">0x1effsa0x1effsa0x1effsa</a>
 							</div>
 							
 							<!-- //로그인 후 -->
@@ -420,8 +420,8 @@
 								
 								<div class="walletCoin type--write">
 									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
-									<div class="input">
-										<input type="text" placeholder="Enter an amount" />
+									<div class="input call--keyboard">
+										<input type="text" id="input_1" placeholder="Enter an amount" />
 										<button type="button" class="trans eth on">ETH</button>
 										<button type="button" class="trans weth">WETH</button>
 									</div>
@@ -838,8 +838,8 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 								<li>
 									<div class="th">Selling price</div>
 									<div class="td">
-										<div class="price">
-											<input type="text" value="10" class="input--size3" />
+										<div class="price call--keyboard">
+											<input type="text" id="input_2" value="10" class="input--size3" />
 											<select class="size--coin">
 												<option>ETH</option>
 											</select>
@@ -861,8 +861,8 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 								<li>
 									<div class="th royal">Royalties</div>
 									<div class="td">
-										<div class="input_etc">
-											<input type="text" value="10" class="input--size3" />
+										<div class="input_etc call--keyboard">
+											<input type="text" id="input_3" value="10" class="input--size3" />
 											<span class="etcValue">%</span>
 										</div>
 										<span>Whenever an item is traded, royalties are paid to the original author.</span>
@@ -896,8 +896,8 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
 								<li>
 									<div class="th">Auction Start Price</div>
 									<div class="td">
-										<div class="price">
-											<input type="text" value="10" class="input--size3" />
+										<div class="price call--keyboard">
+											<input type="text" id="input_4" value="10" class="input--size3" />
 											<select class="size--coin">
 												<option>ETH</option>
 											</select>
@@ -990,196 +990,213 @@ It is now going to auction alongside its digital (NFT) counterpart in 2 separate
       </div>
 		</footer>
 	</section>
+</body>
 
-	<div id="popCard" class="popBasic type--card">
-		<div class="popCont">
-			<div class="thumb">
-				<img src="./images/content/imgCreatView.png" alt="">
-			</div>
-			<div class="cont">
-				<div class="title">Terrabyte</div>
-				<div class="user">
-					<div class="user_thumb"><img src="./images/content/imgUserThumb.png" alt=""></div>
-					<div class="user_name">@Kevin</div>
-				</div>
-				<div class="bid_tit">Highest Bid</div>
-				<div class="bid">0.00456 ETH <span>1 / 100</span></div>
-				<!-- <a href="#" class="detail">detail</a> -->
-			</div>
-			<div class="btn">
-				<button type="button">Sales Setting</button>
-			</div>
-		</div>
-		<a href="#" class="close">close</a>
+<div id="popKeyboard" class="popKeyboard"><!-- 디자인 키보드 호출 시 active 클래스 추가 -->
+	<div class="number">
+		<button type="button">1</button>
+		<button type="button">2</button>
+		<button type="button">3</button>
+		<button type="button">4</button>
+		<button type="button">5</button>
+		<button type="button">6</button>
+		<button type="button">7</button>
+		<button type="button">8</button>
+		<button type="button">9</button>
+		<button type="button">.</button>
+		<button type="button">0</button>
+		<button type="button" class="remove">remove</button>
 	</div>
+</div>
 
-	<div id="popPreview" class="popBasic type--preview">
-		<div class="popCont">
-			<div class="boxDetailTop">
-				<div class="cont"><img src="./images/content/imgCreatView.png" alt=""></div>
-      </div>
-			<div class="section section--detail">
-				<!-- PC -->
-				<div class="inner pc">
-          <div class="leftArea">
-            <div class="titleArea">
-              <div class="category">Category : Art</div>
-              <h4 class="title">Steve Jobs’ Job Application (1973)</h4>
-              <div class="subject">The Steve Jobs’ Job Application from 1973 is a unique piece of history from the exact moment that a dreamer changed the world. It’s a snapshot into the mind of a future genius at a moment where any small deviation from the path ahead, would have meant a very different world today.<br /><br />
-							This NFT listing is part of the world’s first Physical vs NFT auction.<br /><br />
-							The physical application has already been to auction 3 times since it first went on sale with Bonhams, New York and has seen an approximate 1,200% increase in value over the past 4 years.</div>
-            </div>
-            <div class="boxQuick">
-              <div class="title">10% Of Sales Will Go To Creator (Royalty)</div>
-              <ul class="list">
-                <li><a href="#" class="contract">Contract Address</a></li>
-                <li><a href="#" class="token">Toekn ID</a></li>
-                <li><a href="#" class="metadata">Metadata</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="rightArea">
-						<!-- 경매 -->
-						<div class="row">
-							<div class="title">Time</div>
-							<div class="timeArea">
-								<div class="day"><span>100</span> days</div>
-								<div class="time">10 : 45 : 06</div>
-							</div>
-						</div>
-						<div class="row bidArea">
-							<div class="title">Highest Bid</div>
-							<div class="coin">
-								<div class="type eth">0.56 ETH</div>
-								<div class="dollar">$941.50</div>
-							</div>
-						</div>
-						<div class="row balanceArea">
-							<div class="topArea">
-								<div class="title">Bidding</div>
-								<div class="opt">You can bid over <span>0.56</span> ETH</div>
-							</div>
-							<div class="balance">
-								<input type="text" value="1.0" placeholder="" />
-								<div class="type">ETH</div>
-							</div>
-						</div>
-						<!-- //경매 -->
+<div id="popCard" class="popBasic type--card">
+	<div class="popCont">
+		<div class="thumb">
+			<img src="./images/content/imgCreatView.png" alt="">
+		</div>
+		<div class="cont">
+			<div class="title">Terrabyte</div>
+			<div class="user">
+				<div class="user_thumb"><img src="./images/content/imgUserThumb.png" alt=""></div>
+				<div class="user_name">@Kevin</div>
+			</div>
+			<div class="bid_tit">Highest Bid</div>
+			<div class="bid">0.00456 ETH <span>1 / 100</span></div>
+			<!-- <a href="#" class="detail">detail</a> -->
+		</div>
+		<div class="btn">
+			<button type="button">Sales Setting</button>
+		</div>
+	</div>
+	<a href="#" class="close">close</a>
+</div>
 
-						<!-- 고정가 -->
-						<!--
-						<div class="row">
-							<div class="title">Time</div>
-							<div class="timeArea">
-								<div class="day"><span>100</span> days</div>
-								<div class="time">10 : 45 : 06</div>
-							</div>
-						</div>
-						<div class="row bidArea">
-							<div class="title">Price</div>
-							<div class="coin">
-								<div class="type eth">0.56 ETH</div>
-								<div class="dollar">$941.50</div>
-							</div>
-						</div>
-						<div class="row balanceArea">
-							<div class="topArea">
-								<div class="title">Quantity</div>
-								<div class="opt count">구매가능수량 (<span>30</span>/100)</div>
-							</div>
-							<div class="balance">
-								<input type="text" value="3" placeholder="" />
-								<div class="type dis">1.68 ETH</div>
-							</div>
-						</div>
-						-->
-						<!-- //고정가 -->
-
-            <div class="pidArea">
-							<button type="button" class="active">Place a bid</button>
-							<!-- <button type="button">Not for sale</button> -->
-							<!-- <button type="button">waiting for bid</button> -->
-							<!-- <button type="button">Comming soon</button> -->
-							<!-- <button type="button">End of sale</button> -->
-							<!-- <button type="button" class="active">Buy now</button> -->
-							<!-- <button type="button" class="accept">Accept</button> -->
-							<!-- <button type="button" class="cancel">Cancel</button> -->
-						</div>
-          </div>
-        </div>
-				<!-- //PC -->
-
-				<!-- Mobile -->
-				<div class="inner mo">
-					<div class="boxDetail">
-						<div class="boxDescript">
-							<div class="title">Steve Jobs’ Job artistic collabo Application (1973)</div>
-							<div class="cont">Pai Is Bangkok Based Visionary Artist. His Distinct Digital Psychedelic Style Has Seen Him Invited To Work On Large Music Festivals And Collaborate With A Host Of International Brands In Thailand.Pai Is Bangkok Based Visionary Artist. His Distinct Digital Psychedelic Style Has Seen Him Invited To Work On Large Music Festivals And Collaborate With A Host Of International Brands In Thailandsdfdfdfff</div>
-							<a href="#">www.naver.com</a>
-						</div>
-						<div class="btnShare">
-							<a href="#" class="like on">like</a>
-							<a href="#" class="share">share</a>
-						</div>
-						<div class="boxBidArea">
-							<div class="row">
-								<div class="title">Time</div>
-								<div class="cont">
-									<div class="day"><span>100</span> days</div>
-									<div class="time">10:45:06</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="title">Highest bid</div>
-								<div class="coin type--eth">0.56</div>
-							</div>
-						</div>
-						<div class="btn"><!-- 2단으로 나뉘어 사용할때는 col2 클래스 추가 -->
-							<!-- <a href="#">Not for sale</a> -->
-							<a href="#" class="active">Buy now</a>
-							<!-- <a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a> -->
-							<!-- <a href="#" class="active">Accept</a> -->
-							<!-- <a href="#" class="end">End of Sale</a> -->
-						</div>
+<div id="popPreview" class="popBasic type--preview">
+	<div class="popCont">
+		<div class="boxDetailTop">
+			<div class="cont"><img src="./images/content/imgCreatView.png" alt=""></div>
+		</div>
+		<div class="section section--detail">
+			<!-- PC -->
+			<div class="inner pc">
+				<div class="leftArea">
+					<div class="titleArea">
+						<div class="category">Category : Art</div>
+						<h4 class="title">Steve Jobs’ Job Application (1973)</h4>
+						<div class="subject">The Steve Jobs’ Job Application from 1973 is a unique piece of history from the exact moment that a dreamer changed the world. It’s a snapshot into the mind of a future genius at a moment where any small deviation from the path ahead, would have meant a very different world today.<br /><br />
+						This NFT listing is part of the world’s first Physical vs NFT auction.<br /><br />
+						The physical application has already been to auction 3 times since it first went on sale with Bonhams, New York and has seen an approximate 1,200% increase in value over the past 4 years.</div>
+					</div>
+					<div class="boxQuick">
+						<div class="title">10% Of Sales Will Go To Creator (Royalty)</div>
+						<ul class="list">
+							<li><a href="#" class="contract">Contract Address</a></li>
+							<li><a href="#" class="token">Toekn ID</a></li>
+							<li><a href="#" class="metadata">Metadata</a></li>
+						</ul>
 					</div>
 				</div>
-				<!-- Mobile -->
-			</div>
-		</div>
-		<a href="#" class="close">close</a>
-	</div>
-	
-	<div id="dim"></div>
+				<div class="rightArea">
+					<!-- 경매 -->
+					<div class="row">
+						<div class="title">Time</div>
+						<div class="timeArea">
+							<div class="day"><span>100</span> days</div>
+							<div class="time">10 : 45 : 06</div>
+						</div>
+					</div>
+					<div class="row bidArea">
+						<div class="title">Highest Bid</div>
+						<div class="coin">
+							<div class="type eth">0.56 ETH</div>
+							<div class="dollar">$941.50</div>
+						</div>
+					</div>
+					<div class="row balanceArea">
+						<div class="topArea">
+							<div class="title">Bidding</div>
+							<div class="opt">You can bid over <span>0.56</span> ETH</div>
+						</div>
+						<div class="balance">
+							<input type="text" value="1.0" placeholder="" />
+							<div class="type">ETH</div>
+						</div>
+					</div>
+					<!-- //경매 -->
 
-	<script>
-	function showDays(){
-		var start = $('#arr_date').datepicker('getDate');
-		var end   = $('#dep_date').datepicker('getDate');
-		if(!start || !end)
-				return;
-		var days = (end - start)/1000/60/60/24;
-		days = Math.floor(days);
-		$('#date_day').val(days);  
-	}
-	
-	$("#arr_date").datetimepicker({
-		dateFormat : "yy-mm-dd",
-		// timepicker 설정
-		timeFormat:'HH:mm',
-		controlType:'select',
-		oneLine:true,
-	
-		onSelect: showDays
-	});
-	$("#dep_date").datetimepicker({
-		dateFormat : "yy-mm-dd",
-		// timepicker 설정
-		timeFormat:'HH:mm',
-		controlType:'select',
-		oneLine:true,
-	
-		onSelect: showDays
-	});
-	</script>
-</body>
+					<!-- 고정가 -->
+					<!--
+					<div class="row">
+						<div class="title">Time</div>
+						<div class="timeArea">
+							<div class="day"><span>100</span> days</div>
+							<div class="time">10 : 45 : 06</div>
+						</div>
+					</div>
+					<div class="row bidArea">
+						<div class="title">Price</div>
+						<div class="coin">
+							<div class="type eth">0.56 ETH</div>
+							<div class="dollar">$941.50</div>
+						</div>
+					</div>
+					<div class="row balanceArea">
+						<div class="topArea">
+							<div class="title">Quantity</div>
+							<div class="opt count">구매가능수량 (<span>30</span>/100)</div>
+						</div>
+						<div class="balance">
+							<input type="text" value="3" placeholder="" />
+							<div class="type dis">1.68 ETH</div>
+						</div>
+					</div>
+					-->
+					<!-- //고정가 -->
+
+					<div class="pidArea">
+						<button type="button" class="active">Place a bid</button>
+						<!-- <button type="button">Not for sale</button> -->
+						<!-- <button type="button">waiting for bid</button> -->
+						<!-- <button type="button">Comming soon</button> -->
+						<!-- <button type="button">End of sale</button> -->
+						<!-- <button type="button" class="active">Buy now</button> -->
+						<!-- <button type="button" class="accept">Accept</button> -->
+						<!-- <button type="button" class="cancel">Cancel</button> -->
+					</div>
+				</div>
+			</div>
+			<!-- //PC -->
+
+			<!-- Mobile -->
+			<div class="inner mo">
+				<div class="boxDetail">
+					<div class="boxDescript">
+						<div class="title">Steve Jobs’ Job artistic collabo Application (1973)</div>
+						<div class="cont">Pai Is Bangkok Based Visionary Artist. His Distinct Digital Psychedelic Style Has Seen Him Invited To Work On Large Music Festivals And Collaborate With A Host Of International Brands In Thailand.Pai Is Bangkok Based Visionary Artist. His Distinct Digital Psychedelic Style Has Seen Him Invited To Work On Large Music Festivals And Collaborate With A Host Of International Brands In Thailandsdfdfdfff</div>
+						<a href="#">www.naver.com</a>
+					</div>
+					<div class="btnShare">
+						<a href="#" class="like on">like</a>
+						<a href="#" class="share">share</a>
+					</div>
+					<div class="boxBidArea">
+						<div class="row">
+							<div class="title">Time</div>
+							<div class="cont">
+								<div class="day"><span>100</span> days</div>
+								<div class="time">10:45:06</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="title">Highest bid</div>
+							<div class="coin type--eth">0.56</div>
+						</div>
+					</div>
+					<div class="btn"><!-- 2단으로 나뉘어 사용할때는 col2 클래스 추가 -->
+						<!-- <a href="#">Not for sale</a> -->
+						<a href="#" class="active">Buy now</a>
+						<!-- <a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a> -->
+						<!-- <a href="#" class="active">Accept</a> -->
+						<!-- <a href="#" class="end">End of Sale</a> -->
+					</div>
+				</div>
+			</div>
+			<!-- Mobile -->
+		</div>
+	</div>
+	<a href="#" class="close">close</a>
+</div>
+
+<div id="dim"></div>
+
+<script>
+function showDays(){
+	var start = $('#arr_date').datepicker('getDate');
+	var end   = $('#dep_date').datepicker('getDate');
+	if(!start || !end)
+			return;
+	var days = (end - start)/1000/60/60/24;
+	days = Math.floor(days);
+	$('#date_day').val(days);  
+}
+
+$("#arr_date").datetimepicker({
+	dateFormat : "yy-mm-dd",
+	// timepicker 설정
+	timeFormat:'HH:mm',
+	controlType:'select',
+	oneLine:true,
+
+	onSelect: showDays
+});
+$("#dep_date").datetimepicker({
+	dateFormat : "yy-mm-dd",
+	// timepicker 설정
+	timeFormat:'HH:mm',
+	controlType:'select',
+	oneLine:true,
+
+	onSelect: showDays
+});
+</script>
 </html>

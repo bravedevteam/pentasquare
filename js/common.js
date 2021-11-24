@@ -39,12 +39,13 @@ $(function(){
     }
         
     $(".call--keyboard input[type='text']").attr("readonly", true);
+
+    $(".call--keyboard input[type='text']").click(function(){
+      $("#popKeyboard").addClass("active");
+      input_target = $(this).attr("id");
+    });
   }
 
-  $(".call--keyboard input[type='text']").click(function(){
-    $("#popKeyboard").addClass("active");
-    input_target = $(this).attr("id");
-  });
   $("#popKeyboard .number button").click(function(){
     var _val = $(this).html();
     if(_val == "remove"){
