@@ -861,6 +861,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxConfirmLoading .cont { height:90px; padding:0 40px; justify-content:flex-end; display:flex; align-items:center; font-size:18px; color:#021343; }
 .boxConfirmLoading .btnCancel { width:100px; height:42px; margin-left:26px; border-radius:4px; border:1px solid #dadce0; font-size:15px; color:#62668c; text-align:center; line-height:40px; }
 
+.popAlarm { min-width:250px; max-width:90%; display:none; padding:24px; position:fixed; left:50%; top:50%; background:rgba(0,0,0,0.7); border-radius:17px; color:#fff; transform:translate(-50%, -50%); text-align:center; font-size:16px; z-index:30; }
+
 @keyframes loadingBar {
 	0%{background-position:0% 50%}
 	50%{background-position:100% 50%}
@@ -1444,5 +1446,5 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxConfirmLoading .cont { height:50px; padding:0 20px; font-size:15px; }
 	.boxConfirmLoading .btnCancel { width:80px; height:32px; margin-left:12px; font-size:12px; line-height:30px; }
 
-	.popAlarm { min-width:250px; max-width:90%; display:none; padding:24px; position:fixed; left:50%; top:50%; background:rgba(0,0,0,0.7); border-radius:17px; color:#fff; transform:translate(-50%, -50%); text-align:center; font-size:16px; z-index:30; }
+	
 }
