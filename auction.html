@@ -653,7 +653,7 @@
 										<꿈꾸는 사람들 <span>Face series</span>>를 소개합니다.<br />
 										경매에 참여하시고 첫번째 에디션의 소유자가 되어보세요!
 									</div>
-									<a href="#" class="link">경매 참여하기</a>
+									<a href="#" class="link"><span>경매 참여하기</span></a>
 								</div>
               </div>
               <div class="swiper-slide item2">
@@ -672,7 +672,8 @@
 										혜정문화재단이 소장중인 광개토태왕비 원석탁본(혜정본)의<br />
 										첫번째 디지털 NFT의 옥션에 참여하세요!
 									</div>
-									<a href="#" class="link">경매 참여하기</a>
+									<div class="img"><img src="./images/content/imgVisualItem3.png" alt="" /></div>
+									<a href="#" class="link"><span>경매 참여하기</span></a>
 								</div>
               </div>
 							<div class="swiper-slide item4">
@@ -682,7 +683,8 @@
 										간송문화재단에서 발행한 훈민정음 해례본의 28번째 NFT가<br />
 										처음으로 펜타스퀘어에서 거래 됩니다.
 									</div>
-									<a href="#" class="link">경매 참여하기</a>
+									<div class="img"><img src="./images/content/imgVisualItem4.png" alt="" /></div>
+									<a href="#" class="link"><span>경매 참여하기</span></a>
 								</div>
               </div>
             </div>
@@ -918,7 +920,17 @@
 			el: '.boxAuctionVisual .swiper-pagination',
 			clickable: true
 		},
+		on: {
+			slideChange: function(){
+				$(".boxAuctionVisual .swiper-slide-active").siblings().removeClass("swiper--off");
+				$(".boxAuctionVisual .swiper-slide-active").addClass("swiper--off");
+			}
+		}
 	});
+	setTimeouf(function(){
+		$(".boxAuctionVisual .swiper-slide-active").addClass("swiper--off");
+	}, 1000);
+	
 
 	var auctionSwiper = undefined;
 	var bidSwiper = undefined;

@@ -340,26 +340,48 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxLoginConnect.type--meta .btnGuide { display:inline-block; margin-top:43px; font-size:23px; font-weight:700; color:#000c2d; vertical-align:middle; }
 .boxLoginConnect.type--meta .btnGuide:after { content:''; width:11px; height:13px; margin-left:10px; display:inline-block; background:url('../images/common/iconMetaGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 
-.boxAuctionVisual .swiper-slide { height:800px; display:flex; align-items:center; background-position:center center; background-size:auto 100%; background-repeat:no-repeat; }
+.boxAuctionVisual .swiper-slide { height:800px; display:flex; align-items:center; background-position:center center; background-size:100% auto; background-repeat:no-repeat; }
 .boxAuctionVisual .swiper-slide.item1 { background-image:url('../images/content/imgAuctionVisual1.png'); }
 .boxAuctionVisual .swiper-slide.item2 { background-image:url('../images/content/imgAuctionVisual2.png'); }
 .boxAuctionVisual .swiper-slide.item3 { background-image:url('../images/content/imgAuctionVisual3.png'); }
 .boxAuctionVisual .swiper-slide.item4 { background-image:url('../images/content/imgAuctionVisual4.png'); }
 .boxAuctionVisual .swiper-slide .inBox { width:1256px; margin:0 auto; }
-.boxAuctionVisual .swiper-slide .txt { margin-bottom:13px; font-size:30px; font-weight:700; font-family:"SpoqaHanSansNeo"; color:#fff; }
+.boxAuctionVisual .swiper-slide .txt { margin-bottom:13px; position:relative; left:20px; font-size:30px; font-weight:700; font-family:"SpoqaHanSansNeo"; color:#fff; transition:all .5s .5s; opacity:0; }
 .boxAuctionVisual .swiper-slide .txt span { font-family:"Poppins"; }
-.boxAuctionVisual .swiper-slide .title { font-size:35px; font-weight:700; font-family:"SpoqaHanSansNeo"; color:#fff; }
-.boxAuctionVisual .swiper-slide .subject { margin-top:10px; margin-bottom:32px; font-size:20px; color:#fff; }
+.boxAuctionVisual .swiper-slide .title { position:relative; left:20px; font-size:35px; font-weight:700; font-family:"SpoqaHanSansNeo"; color:#fff; transition:all .5s .5s; opacity:0; }
+.boxAuctionVisual .swiper-slide .subject { position:relative; left:20px; margin-top:10px; margin-bottom:32px; font-size:20px; color:#fff; transition:all .5s 1s; opacity:0; }
 .boxAuctionVisual .swiper-slide .subject.nts { font-family:"SpoqaHanSansNeo"; }
 .boxAuctionVisual .swiper-slide .subject.bold { font-size:35px; font-weight:700; }
-.boxAuctionVisual .swiper-slide a.link { width:232px; height:50px; display:block; font-size:18px; color:#fff; font-weight:700; background:#000000; border-radius:7px; text-align:center; text-decoration:none; line-height:50px; }
-.boxAuctionVisual .swiper-slide a.link:after { content:''; width:10px; height:14px; margin-left:18px; display:inline-block; background:url('../images/common/btnTopLink.png') center center no-repeat; vertical-align:middle; }
+.boxAuctionVisual .swiper-slide .img { position:absolute; right:50%; transition:all .5s 2s; opacity:0; }
+.boxAuctionVisual .swiper-slide.item3 .img { top:137px; margin-right:-545px }
+.boxAuctionVisual .swiper-slide.item4 .img { top:153px; margin-right:-594px }
+.boxAuctionVisual .swiper-slide a.link { width:232px; height:50px; position:relative; left:20px; display:block; font-size:18px; color:#fff; font-weight:700; background:#000000; border-radius:7px; text-align:center; text-decoration:none; line-height:50px; transition:all .5s 1s; opacity:0; overflow:hidden; }
+.boxAuctionVisual .swiper-slide a.link span { position:relative; z-index:2; }
+.boxAuctionVisual .swiper-slide a.link:after { content:''; width:10px; height:14px; position:relative; margin-left:18px; display:inline-block; background:url('../images/common/btnTopLink.png') center center no-repeat; vertical-align:middle; z-index:2; }
+.boxAuctionVisual .swiper-slide a.link:before { content:''; width:100%; height:100%; position:absolute; left:0; top:100%; background:#FF00B5; z-index:1; transition:all .5s; }
+.boxAuctionVisual .swiper-slide a.link:hover:before { top:0; }
+.boxAuctionVisual .swiper-slide.item3 a.link,
+.boxAuctionVisual .swiper-slide.item4 a.link { transition-delay:1.5s }
 .boxAuctionVisual .swiper-container-horizontal>.swiper-pagination-bullets,
 .boxAuctionVisual .swiper-pagination-custom,
 .boxAuctionVisual .swiper-pagination-fraction { height:6px; bottom:46px; }
 .boxAuctionVisual .swiper-pagination-bullet { width:6px; height:6px; background:#ccc; opacity:1; border-radius:6px; vertical-align:top; }
 .boxAuctionVisual .swiper-pagination-bullet-active { width:22px; background:#fff; }
 .boxAuctionVisual .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin:0 2px; }
+
+.boxAuctionVisual .swiper-slide.swiper--off .txt,
+.boxAuctionVisual .swiper-slide.swiper--off .title,
+.boxAuctionVisual .swiper-slide.swiper--off .subject,
+.boxAuctionVisual .swiper-slide.swiper--off a.link,
+.boxAuctionVisual .swiper-slide.item3.swiper--off .img,
+.boxAuctionVisual .swiper-slide.item4.swiper--off .img { transition-delay:unset; transition-duration:unset; }
+
+.boxAuctionVisual .swiper-slide.swiper-slide-active .txt,
+.boxAuctionVisual .swiper-slide.swiper-slide-active .title,
+.boxAuctionVisual .swiper-slide.swiper-slide-active .subject,
+.boxAuctionVisual .swiper-slide.swiper-slide-active a.link { opacity:1; left:0; }
+.boxAuctionVisual .swiper-slide.item3.swiper-slide-active .img { top:117px; opacity:1; }
+.boxAuctionVisual .swiper-slide.item4.swiper-slide-active .img { top:133px; opacity:1; }
 
 .listNotifications ul { padding:0 23px; }
 .listNotifications ul li { position:relative; padding:22px 20px; background:#fff; border-radius:8px; overflow:hidden; }
