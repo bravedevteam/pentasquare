@@ -916,20 +916,21 @@
 <script type="text/javascript">
 	var swiper = new Swiper('.boxAuctionVisual .swiper-container', {
 		loop: true,
+		effect: 'fade',
+		autoplay: {
+			delay: 2000
+		},
+		speed: 1000,
 		pagination: {
 			el: '.boxAuctionVisual .swiper-pagination',
 			clickable: true
-		},
-		on: {
-			slideChange: function(){
-				$(".boxAuctionVisual .swiper-slide-active").siblings().removeClass("swiper--off");
-				$(".boxAuctionVisual .swiper-slide-active").addClass("swiper--off");
-			}
 		}
 	});
-	setTimeouf(function(){
-		$(".boxAuctionVisual .swiper-slide-active").addClass("swiper--off");
-	}, 1000);
+	$(".boxAuctionVisual .swiper-container a.link").hover(function() {
+		swiper.autoplay.stop();
+	}, function() {
+		swiper.autoplay.start();
+	});
 	
 
 	var auctionSwiper = undefined;
