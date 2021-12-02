@@ -1484,29 +1484,30 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	.popBasic.type--quantity .balanceArea .balance .input input::placeholder { font-size:13px; }
 
-	.popBasic.type--card { width:160px; height:auto; left:50%; top:50%; background:transparent; transform:translate(-50%, -50%); }
+	.popBasic.type--card { width:328px; height:auto; left:50%; top:50%; background:transparent; transform:translate(-50%, -50%); }
 	.popBasic.type--card .popCont { border-radius:15px; }
-	.popBasic.type--card .popCont .thumb { height:auto; }
-	.popBasic.type--card .popCont .cont { padding:10px 9px 54px; }
-	.popBasic.type--card .popCont .title { font-size:15px; }
+	.popBasic.type--card .popCont .thumb { height:205px; }
+	.popBasic.type--card .popCont .cont { padding:16px 16px 74px; }
+	.popBasic.type--card .popCont .title { margin-bottom:24px; font-size:15px; }
+	.popBasic.type--card .popCont .user { margin-bottom:10px; }
 	.popBasic.type--card .popCont .user .user_thumb { width:24px; height:24px; }
 	.popBasic.type--card .popCont .user .user_name { margin-left:27px; font-size:12px; line-height:24px; }
-	.popBasic.type--card .popCont .bid_tit { font-size:10px; }
-	.popBasic.type--card .popCont .bid { margin-bottom:0; font-size:13px; }
-	.popBasic.type--card .popCont .bid span { margin-left:3px; font-size:10px; }
+	.popBasic.type--card .popCont .bid_tit { font-size:12px; font-weight:500; }
+	.popBasic.type--card .popCont .bid { margin-bottom:0; font-size:17px; }
+	.popBasic.type--card .popCont .bid span { margin-left:3px; font-size:11px; }
 	.popBasic.type--card .popCont .btn { left:9px; right:9px; bottom:10px; }
-	.popBasic.type--card .popCont .btn button { height:34px; border-radius:9px; font-size:11px; }
+	.popBasic.type--card .popCont .btn button { height:44px; border-radius:9px; font-size:11px; }
 	.popBasic.type--card .popCont .detail { height:20px; right:0; top:10px; background-size:3px auto; }
 	.popBasic.type--card .close { width:16px; height:16px; top:-30px; }
 
 	.popBasic.type--preview { padding:42px 16px; background:transparent; }
 	.popBasic.type--preview .popCont { width:auto; border-radius:0; background:transparent; }
 	.popBasic.type--preview .boxDetailTop .cont { height:504px; position:relative; top:0; }
-	.popBasic.type--preview .boxDetailTop .cont img { max-height:none; }
+	.popBasic.type--preview .boxDetailTop .cont img { max-height:none; width:100%; }
 	.popBasic.type--preview .close { width:16px; height:16px; right:24px; top:13px; margin-right:0; }
 
 	.popBasic.type--preview .section.section--detail .inner.mo { padding:0; background:transparent; }
-	.popBasic.type--preview .section.section--detail .boxDetail { top:0; margin-top:-112px; }
+	.popBasic.type--preview .section.section--detail .boxDetail { top:0; margin-top:-20px; }
 
 	.boxConfirmLoading .bar { height:6px; }
 	.boxConfirmLoading .cont { height:50px; padding:0 20px; font-size:15px; }
