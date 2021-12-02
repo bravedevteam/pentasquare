@@ -27,6 +27,8 @@ $(function(){
     }
 
     $(".call--keyboard input[type='text']").attr("readonly", false);
+
+    $(".mainTabCont").removeClass("is--mobile");
   }
 
   var input_target;
@@ -44,7 +46,18 @@ $(function(){
       $("#popKeyboard").addClass("active");
       input_target = $(this).attr("id");
     });
+
+    $(".mainTabCont").addClass("is--mobile");
   }
+
+  $(".mainTab a").click(function(e){
+    e.preventDefault();
+
+    var target = $(this).attr("data-tab");
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".mainTabCont").removeClass("active");
+    $("#"+target).addClass("active");
+  });
 
   $("#popKeyboard .number button").click(function(){
     var _val = $(this).html();

@@ -20,9 +20,6 @@
 		<header id="header" class="type--white">
 			<div class="inner">
 				<h1>PENTASQUARE</h1>
-        <div class="search pc">
-          <input type="text" class="txtSearch" placeholder="Search..." />
-        </div>
 				<ul id="gnb">
 					<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
 					<li><a href="./market.html">Square Market</a></li>
@@ -665,15 +662,16 @@
 					<ul>
 						<li><a href="#">Owened(69)</a></li>
 						<li><a href="#">My Sale(79)</a></li>
-						<li><a href="#">Pre Created(4)</a></li>
-						<li><a href="#">Favorited(909)</a></li>
 						<li><a href="#">Bidding(3)</a></li>
+						<li><a href="#">Created(4)</a></li>
+						<li><a href="#">Favorited(909)</a></li>
+						<li><a href="#">Notifications</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="section">
 				<div class="inner typeA">
-					<div class="topArea">
+					<div class="topArea typeC">
 						<h3 class="title">Create item</h3>
 						<div class="subject">Select “Single” if you want to sell as a unique product, or select “Multiple” if you want to sell one product multiple times.</div>
 					</div>
@@ -705,17 +703,37 @@
 									</div>
 								</li>
 								<li>
-									<div class="th">External Link</div>
-									<div class="td"><input type="text" placeholder="" /></div>
+									<div class="th">Information URL</div>
+									<div class="td"><input type="text" placeholder="상품설명 링크가 있을 경우 입력해 주세요!(홈페이지 주소 등)" /></div>
 								</li>
 								<li>
 									<div class="th">More info</div>
 									<div class="td">
 										<div class="boxConfirm">
-                      <input type="text" placeholder="Enter your email">
-                      <button type="button">File upload</button>
+                      <input type="text" placeholder="상품 상세설명 이미지를 업로드 해주세요!">
+                      <button type="button">image upload</button>
                     </div>
 									</div>
+								</li>
+								<li>
+									<div class="th">Original Asset</div>
+									<div class="td"><input type="text" placeholder="원본 데이터의 URL이 있을 경우 입력해주세요!" /></div>
+								</li>
+								<li class="line">
+									<div class="th">Token symbol<span class="imp">*</span></div>
+									<div class="td"><input type="text" placeholder="토큰 약자를 입력해 주세요!" /></div>
+								</li>
+								<li>
+									<div class="th">issuer of NFT<span class="imp">*</span></div>
+									<div class="td"><input type="text" placeholder="발행자를 입력해 주세요!" /></div>
+								</li>
+								<li>
+									<div class="th">ownership<span class="imp">*</span></div>
+									<div class="td"><input type="text" placeholder="소유자 또는 저작권자를 입력해 주세요!" /></div>
+								</li>
+								<li>
+									<div class="th">guarantee of issue</div>
+									<div class="td"><input type="text" placeholder="발행 보증인이 있을 경우 입력해 주세요!" /></div>
 								</li>
 								<li class="line">
 									<div class="th mo_typeA">NFT Type</div>
@@ -773,10 +791,44 @@
 								<li>
 									<div class="th">description*</div>
 									<div class="td">
-										<textarea placeholder="Sample Text"></textarea>
+										<textarea class="with--count" placeholder="Sample Text"></textarea>
+										<div class="wordCount">0/400</div>
 									</div>
 								</li>
 								<li>
+									<div class="th">Information URL</div>
+									<div class="td"><input type="text" placeholder="상품설명 링크가 있을 경우 입력해 주세요!(홈페이지 주소 등)" /></div>
+								</li>
+								<li>
+									<div class="th">More info</div>
+									<div class="td">
+										<div class="boxConfirm">
+                      <input type="text" placeholder="상품 상세설명 이미지를 업로드 해주세요!">
+                      <button type="button">image upload</button>
+                    </div>
+									</div>
+								</li>
+								<li>
+									<div class="th">Original Asset</div>
+									<div class="td"><input type="text" placeholder="원본 데이터의 URL이 있을 경우 입력해주세요!" /></div>
+								</li>
+								<li class="line">
+									<div class="th">Token symbol<span class="imp">*</span></div>
+									<div class="td"><input type="text" placeholder="토큰 약자를 입력해 주세요!" /></div>
+								</li>
+								<li>
+									<div class="th">issuer of NFT<span class="imp">*</span></div>
+									<div class="td"><input type="text" placeholder="발행자를 입력해 주세요!" /></div>
+								</li>
+								<li>
+									<div class="th">ownership<span class="imp">*</span></div>
+									<div class="td"><input type="text" placeholder="소유자 또는 저작권자를 입력해 주세요!" /></div>
+								</li>
+								<li>
+									<div class="th">guarantee of issue</div>
+									<div class="td"><input type="text" placeholder="발행 보증인이 있을 경우 입력해 주세요!" /></div>
+								</li>
+								<li class="line">
 									<div class="th mo_typeA">NFT Type</div>
 									<div class="td">
 										<input type="radio" id="chkSell_1" name="chkSellSet1">
@@ -842,17 +894,10 @@
 				</div>
         <div class="sns">
           <a href="#" class="kakao">kakao</a>
-          <a href="#" class="telegram">telegram</a>
           <a href="#" class="polymath">polymath</a>
         </div>
         <h2>PENTASQUARE</h2>
-        <div class="copyright">
-          (주)엑스프라임 인터내셔널<br />
-					대표 : 소현중<br />
-					주소 : 서울특별시 강남구 테헤란로 501 브이플렉스<br />
-					사업자 번호 : 660-86-02202<br />
-					Xprime international Inc. All Rights Reserved.
-        </div>
+        <div class="copyright">Pentasquare Inc. All Rights Reserved.</div>
       </div>
 		</footer>
 	</section>
