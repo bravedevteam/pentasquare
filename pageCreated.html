@@ -176,7 +176,7 @@
 							</div>
 							<div class="row">
 								<div class="title">Amount</div>
-								<div class="input"><input type="text" placeholder="전송할 자산의 주량을 입력해 주세요!" /></div>
+								<div class="input"><input type="text" placeholder="전송할 자산의 수량을 입력해 주세요!" /></div>
 								<div class="ps">(Max 10,000)</div>
 							</div>
 						</div>
@@ -390,10 +390,6 @@
 					<!-- 로그인 후 -->
 					
 					<div class="boxWallet type--login">
-						<div class="topArea">
-							<div class="title">Wallet</div>
-							<div class="subject">Connect your wallet and join the Bid!</div>
-						</div>
 						<div class="inWallet">
 							<div class="wallet">
 								<!--
@@ -429,10 +425,12 @@
 								</div>
 								
 							</div>
+							<!--
 							<a href="#" class="btnPairing">
 								<span>Pre-pairing</span>
 								<div class="square">0 SQUARE</div>
 							</a>
+							-->
 							<a href="#" class="disconnect">Disconnect Wallet</a>
 						</div>
 						<!-- SNS 연결 전 -->
@@ -503,7 +501,7 @@
 							</div>
 							<div class="row">
 								<div class="title">Amount</div>
-								<div class="input"><input type="text" placeholder="전송할 자산의 주량을 입력해 주세요!" /></div>
+								<div class="input call--keyboard"><input type="text" id="input_2" placeholder="전송할 자산의 수량을 입력해 주세요!" /></div>
 								<div class="ps">(Max 10,000)</div>
 							</div>
 						</div>
@@ -698,8 +696,10 @@
 								<li>
 									<div class="th">description*</div>
 									<div class="td">
-										<textarea class="with--count" placeholder="Sample Text">Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailandsdfdfdfff</textarea>
-										<div class="wordCount">0/400</div>
+										<div class="boxTextarea with--count">
+											<textarea placeholder="Sample Text">Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailand.Pai is Bangkok based visionary artist. His distinct digital psychedelic style has seen him invited to work on large music festivals and collaborate with a host of international brands in Thailandsdfdfdfff</textarea>
+											<div class="wordCount">0/400</div>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -791,8 +791,11 @@
 								<li>
 									<div class="th">description*</div>
 									<div class="td">
-										<textarea class="with--count" placeholder="Sample Text"></textarea>
-										<div class="wordCount">0/400</div>
+										<div class="boxTextarea with--count">
+											<textarea class="with--count" placeholder="Sample Text"></textarea>
+											<div class="wordCount">0/400</div>
+										</div>
+										
 									</div>
 								</li>
 								<li>

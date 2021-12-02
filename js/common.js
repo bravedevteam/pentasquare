@@ -9,7 +9,7 @@ $(function(){
 
   $("body").click(function(event){
     var target = $(event.target);
-    if(!target.parents().hasClass("boxWallet") && !target.parents().hasClass("btnMypage") && !target.hasClass("back") && !target.parents().hasClass("boxSendNFT")){
+    if(!target.parents().hasClass("boxWallet") && !target.parents().hasClass("btnMypage") && !target.hasClass("back") && !target.parents().hasClass("boxSendNFT") && !target.hasClass("btnConnect")){
       if(767 < winW && $(".boxWallet").css("display") == "block" || 767 < winW && $(".boxSendNFT").css("display") == "block"){
         $(".boxWallet").fadeOut(500);
         $(".boxSendNFT").fadeOut(500);

@@ -79,8 +79,9 @@ input[type="radio"]:checked+label:after { background:#021343; }
 .input--size2 { width:153px !important; }
 .input--size3 { width:330px !important; }
 
-textarea { width:100%; height:120px; padding:15px; font-size:12px; color:#62668c; border:1px solid #c0c9d4; border-radius:4px; vertical-align:top; font-family:'SpoqaHanSansNeo', sans-serif; }
-textarea.with--count { padding-bottom:25px; }
+.boxTextarea { position:relative; border:1px solid #c0c9d4; border-radius:4px; }
+.boxTextarea.with--count { padding-bottom:28px; }
+textarea { width:100%; height:120px; padding:15px; font-size:12px; color:#62668c; border:0; vertical-align:top; font-family:'SpoqaHanSansNeo', sans-serif; }
 
 select { min-width:370px; height:40px; padding:0 25px 0 15px; border:1px solid #c0c9d4; background:url('../images/common/iconSelect.png') calc(100% - 15px) center no-repeat #fff; background-size:8px auto; border-radius:4px; font-size:14px; color:#3f3f3f; }
 select.size--coin { width:100px !important; min-width:min-content !important; }
@@ -968,7 +969,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	#header .section_gnb .btn.type--single a { flex:1; }
 
-	#header .boxWallet { width:auto; display:block; position:relative; padding-top:35px; right:auto; top:auto; background:#f4f6f9; }
+	#header .boxWallet { width:auto; display:block; position:relative; padding-top:14px; right:auto; top:auto; background:#f4f6f9; }
 	#header .boxWallet:before { display:none; }
 	#header .boxWallet .inWallet .wallet { height:204px; font-weight:500; }
 	#header .boxWallet .inWallet .wallet:before { margin-bottom:20px; }
@@ -983,11 +984,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	
 	#header .boxWallet.type--login { right:auto; }
 	#header .boxWallet.type--login .topArea:after { content:''; width:42px; height:40px; position:absolute; right:0; top:8px; background:url('../images/content/imgNoWallet.png') center center no-repeat; background-size:100% auto; }
-	#header .boxWallet.type--login .inWallet .wallet { padding:30px 20px 20px; }
-	#header .boxWallet.type--login .inWallet .walletCoin { margin:0 10px; }
+	#header .boxWallet.type--login .inWallet .wallet { padding:22px 16px 24px; }
 	#header .boxWallet.type--login .inWallet .walletCoin .coin.mark:before { margin-right:17px; }
-	#header .boxWallet.type--login .inWallet .walletCoin .coin+.coin { margin-top:13px; }
-	#header .boxWallet.type--login .inWallet .walletCoin .btnChange { top:auto; bottom:0; }
+	#header .boxWallet.type--login .inWallet .walletCoin .coin+.coin { margin-top:22px; }
+	#header .boxWallet.type--login .inWallet .walletCoin .btnChange { width:55px; height:32px; top:auto; bottom:0; background-image:url('../images/content/btnChange_m.png'); }
 	#header .boxWallet.type--login .inWallet .walletCoin.type--write .input input { font-weight:700; font-size:18px; }
 	#header .boxWallet.type--login .inWallet .disconnect { padding:17px 0 24px; font-size:15px; }
 	#header .boxWallet.type--login .inWallet .btnArea { margin-top:20px; }
@@ -998,7 +998,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxGnb_mo.is--login {  }
 	#header .boxGnb_mo.is--login .section_gnb { padding:23px 16px; }
 	#header .boxGnb_mo.is--login .section_gnb .topArea { margin-bottom:0; }
-	#header .boxGnb_mo.is--login .boxWallet { padding-top:20px; background:#fff; box-shadow:none; }
+	#header .boxGnb_mo.is--login .boxWallet { background:#fff; box-shadow:none; }
 	#header .boxGnb_mo.is--login .boxWallet .inWallet a.linkMetaGuide { margin-top:70px; }
 
 	#header .boxSendNFT { width:100%; lefT:0; right:0; top:0; border-radius:0; box-shadow:none; z-index:21; }
@@ -1437,6 +1437,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	.ps { font-size:10px; }
 
+	.boxConfirm>input[type="text"] { flex:1; }
 	.boxConfirm>button { min-width:92px; width:auto; font-size:11px; }
 	.boxConfirm+.ps { margin-top:3px; }
 
