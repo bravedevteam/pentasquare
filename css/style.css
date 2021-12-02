@@ -69,6 +69,7 @@ input[type="text"]:disabled,
 input[type="number"]:disabled,
 input[type="password"]:disabled { background:#eff0fd; }
 
+input[type="checkbox"],
 input[type="radio"] { position:absolute; left:-999999px; top:0; opacity:0; }
 input[type="radio"]+label { height:20px; position:relative; padding-left:28px; display:inline-block; margin-right:65px; cursor:pointer; line-height:20px; vertical-align:middle; }
 input[type="radio"]+label:before { content:''; width:20px; height:20px; position:absolute; left:0; top:50%; border-radius:50%; border:1px solid #e3e3e3; transform:translateY(-50%); box-sizing:border-box; }
@@ -639,7 +640,6 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxMypageTop .info .key a:hover:after { background-image:url('../images/content/iconWallet_on.png'); }
 .boxMypageTop .btn { position:absolute; right:26px; top:235px; z-index:10; }
 .boxMypageTop .btn:after { content:''; display:block; clear:both; visibility:visible; }
-.boxMypageTop .btn:before { content:'asdf'; position:absolute; left:0; top:0; color:#f00; }
 .boxMypageTop .btn a { width:38px; height:38px; position:relative; float:left; background-color:#fff; background-size:17px auto; background-position:center center; background-repeat:no-repeat; border:1px solid #e7e8ec; border-radius:4px; font-size:0; text-indent:-99999px; }
 .boxMypageTop .btn a+a { margin-left:6px; }
 .boxMypageTop .btn a.share { background-image:url('../images/content/iconMypageShare.png'); }
