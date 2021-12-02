@@ -911,19 +911,25 @@
 </body>
 
 <div id="popKeyboard" class="popKeyboard"><!-- 디자인 키보드 호출 시 active 클래스 추가 -->
-	<div class="number">
-		<button type="button">1</button>
-		<button type="button">2</button>
-		<button type="button">3</button>
-		<button type="button">4</button>
-		<button type="button">5</button>
-		<button type="button">6</button>
-		<button type="button">7</button>
-		<button type="button">8</button>
-		<button type="button">9</button>
-		<button type="button">.</button>
-		<button type="button">0</button>
-		<button type="button" class="remove">remove</button>
+	<div class="inBox">
+		<div class="focus">
+			<input type="text" id="inputFocus" placeholder="00.000" />
+			<button type="button" class="remove">삭제</button>
+		</div>
+		<div class="number">
+			<button type="button">1</button>
+			<button type="button">2</button>
+			<button type="button">3</button>
+			<button type="button">4</button>
+			<button type="button">5</button>
+			<button type="button">6</button>
+			<button type="button">7</button>
+			<button type="button">8</button>
+			<button type="button">9</button>
+			<button type="button">.</button>
+			<button type="button">0</button>
+			<button type="button" class="submit">확인</button>
+		</div>
 	</div>
 </div>
 

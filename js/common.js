@@ -33,6 +33,7 @@ $(function(){
 
   var input_target;
   var input_val = "";
+  var target_val = "";
 
   //Mobile
   function mobileEvent(){
@@ -43,8 +44,10 @@ $(function(){
     $(".call--keyboard input[type='text']").attr("readonly", true);
 
     $(".call--keyboard input[type='text']").click(function(){
-      $("#popKeyboard").addClass("active");
+      target_val = $(this).val();
       input_target = $(this).attr("id");
+      $("#popKeyboard").addClass("active");
+      $("#inputFocus").val(target_val);
     });
 
     $(".mainTabCont").addClass("is--mobile");
@@ -61,13 +64,22 @@ $(function(){
 
   $("#popKeyboard .number button").click(function(){
     var _val = $(this).html();
-    if(_val == "remove"){
-      input_val = input_val.slice(0, -1);
+    if($(this).hasClass("submit")){
+      $("#popKeyboard").removeClass("active");
     }else{
       input_val = input_val+_val;
     }
     $("#"+input_target).val(input_val);
+    $("#inputFocus").val(input_val);
   });
+
+  $("#popKeyboard button.remove").click(function(){
+    input_val = "";
+    target_val = "";
+    $("#"+input_target).val(input_val);
+    $("#inputFocus").val(input_val);
+  });
+
 
   $("#popKeyboard").click(function(event){
     var target = $(event.target).attr("id");

@@ -888,10 +888,15 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 .popKeyboard { width:100%; height:0; position:fixed; left:0; bottom:0; z-index:999; transition:all .5s; }
 .popKeyboard.active { height:100%; }
-.popKeyboard .number { width:100%; position:fixed; left:0; bottom:-100%; display:flex; flex-wrap:wrap; padding:15px 0 16px; background:#fff; border-top-left-radius:15px; border-top-right-radius:15px; box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.1); overflow:hidden; transition:all .5s; }
-.popKeyboard.active .number { bottom:0; }
-.popKeyboard .number button { width:33.3%; height:70px; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:500; color:#010d2d; }
-.popKeyboard .number button.remove { background:url('../images/common/btnRemove.png') center center no-repeat; background-size:33px auto; font-size:0; text-indent:-99999; }
+.popKeyboard .inBox { width:100%; position:fixed; left:0; bottom:-100%; padding-bottom:10px; background:#fff; box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.1); overflow:hidden; transition:all .5s; }
+.popKeyboard.active .inBox { bottom:0; }
+.popKeyboard .focus { position:relative; border-bottom:1px solid #e2eaf4; }
+.popKeyboard .focus input[type="text"] { width:100%; height:62px; padding:0 70px 0 35px; position:relative; border:0; color:#010d2d; font-size:18px; font-weight:500; z-index:1; }
+.popKeyboard .focus input[type="text"]::placeholder { color:rgba(1,13,45,0.1); }
+.popKeyboard .focus button.remove { width:70px; height:62px; position:absolute; right:0; top:0; background:url('../images/common/btnkeyRemove.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; z-index:2; }
+.popKeyboard .number { display:flex; flex-wrap:wrap; }
+.popKeyboard .number button { width:33.3%; height:60px; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:500; color:#010d2d; }
+.popKeyboard .number button.submit { font-size:15px; color:#1b44ef; font-weight:700; }
 
 .boxConfirmLoading { width:100%; position:fixed; left:0; bottom:-100%; background:#fff; box-shadow: 0 -5px 19px 0 rgba(0, 0, 0, 0.11); z-index:-1; }
 .boxConfirmLoading .bar { height:14px; position:relative; background: linear-gradient(270deg, #337aff, #ff00af); background-size: 400% 400%; animation: loadingBar 3s ease infinite; }
