@@ -295,6 +295,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section>img { max-width:1440px; position:relative; z-index:5; }
 .section>img.pc { display:inline-block !important; }
 
+.mainTabCont+.mainTabCont { margin-top:50px; }
+
 .mainTop { margin-bottom:80px; }
 .mainTop h4 { font-size:25px; font-weight:400; color:#021343; }
 .mainTop h3 { margin-top:4px; font-size:45px; color:#021343; font-weight:300; line-height:1; }
@@ -1239,9 +1241,11 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.mainTab a.active:before { display:inline-block; }
 	.mainTab a.auction:before { width:19px; height:14px; background-size:auto 100%; background-image:url('../images/content/titAuction.png'); }
 	.mainTab a.market:before { width:14px; height:19px; background-size:100% auto; background-image:url('../images/content/titHotBid.png'); }
+
 	.mainTabCont.is--mobile { display:none; }
 	.mainTabCont.is--mobile.active { display:block; }
 	.mainTabCont.is--mobile .topArea { display:none; }
+	.mainTabCont+.mainTabCont { margin-top:0; }
 
 	h3.title { font-size:17px; }
 	h3.title.icon {  }
