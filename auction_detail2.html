@@ -644,7 +644,7 @@
 				</div>
 				<div class="btnArea right">
 					<a href="#" class="btnLike">Term</a>
-					<a href="#" class="btnShare">Share</a>
+					<a href="#" class="btnShare open--alarm">Share</a>
 				</div>
       </div>
 			<div class="section section--detail">
@@ -698,8 +698,8 @@
 								<div class="title">Bidding</div>
 								<div class="opt">You can bid over <span>0.56</span> ETH</div>
 							</div>
-							<div class="balance">
-								<input type="text" value="1.0" placeholder="" />
+							<div class="balance call--keyboard">
+								<input type="text" id="input_2" value="1.0" placeholder="" />
 								<div class="type">ETH</div>
 							</div>
 						</div>
@@ -726,8 +726,8 @@
 								<div class="title">Quantity</div>
 								<div class="opt count">구매가능수량 (<span>30</span>/100)</div>
 							</div>
-							<div class="balance">
-								<input type="text" value="3" placeholder="" />
+							<div class="balance call--keyboard">
+								<input type="text" id="input_3" value="3" placeholder="" />
 								<div class="type dis">1.68 ETH</div>
 							</div>
 						</div>
@@ -735,7 +735,7 @@
 						<!-- //고정가 -->
 
             <div class="pidArea">
-							<button type="button" class="active">Place a bid</button>
+							<button type="button" class="active popup--open" data-pop="popBidding">Place a bid</button>
 							<!-- <button type="button">Not for sale</button> -->
 							<!-- <button type="button">waiting for bid</button> -->
 							<!-- <button type="button">Comming soon</button> -->
@@ -747,7 +747,10 @@
           </div>
 					<div class="boxDetailCont">
 						<div class="title">Detail</div>
-						<div class="cont"><img src="./images/content/imgDetailCont.png" alt="" /></div>
+						<div class="cont">
+							<img src="./images/content/imgDetailCont.png" alt="" />
+							<button type="button" class="btnDetail">자세히 보기</button>
+						</div>
 					</div>
 					<div class="boxDetailHistory">
 						<div class="title">History</div>
@@ -826,7 +829,7 @@
 						
 						<div class="btn">< !-- 2단으로 나뉘어 사용할때는 col2 클래스 추가 -- >
 							< !-- <a href="#">Not for sale</a> -- >
-							<a href="#" class="active">Buy now</a>
+							<a href="#" class="active popup--open" data-pop="popQuantity">Buy now</a>
 							< !-- <a href="#" class="active popup--open" data-pop="popBidding">Place a bid</a> -- >
 							< !-- <a href="#" class="active">Accept</a> -- >
 							< !-- <a href="#" class="end">End of Sale</a> -- >
@@ -869,7 +872,10 @@
 								<div class="row">
 									<div class="boxDetailCont">
 										<div class="title">Detail</div>
-										<div class="cont"><img src="./images/content/imgDetailCont.png" alt="" /></div>
+										<div class="cont">
+											<img src="./images/content/imgDetailCont.png" alt="" />
+											<button type="button" class="btnDetail">자세히 보기</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -996,13 +1002,65 @@
 	</div>
 </div>
 
+<div id="popQuantity" class="popBasic type--quantity">
+	<div class="popCont">
+		<div class="balanceArea">
+			<div class="title">Input Quantity</div>
+			<div class="balance">
+				<div class="input call--keyboard">
+					<input type="text" id="input_4" value="" placeholder="You enter at least 1." />
+				</div>
+				<div class="dollar">/ 10,000</div>
+			</div>
+			<div class="boxPrice">
+				<div class="row">
+					<div class="priceTitle">Current Price</div>
+					<div class="price">
+						<div class="left">0.56 ETH</div>
+						<div class="right">$941.50</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="priceTitle">Quantity Price</div>
+					<div class="price">
+						<div class="left">0.56 ETH</div>
+						<div class="right">$941.50</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bidArea">
+			<div class="detailArea">
+				<div class="row">
+					<div class="itemTitle">Your bidding balance</div>
+					<div class="value">1.0 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Your Quantity price</div>
+					<div class="value">32.234 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Service fees</div>
+					<div class="value">0.00147 ETH</div>
+				</div>
+				<div class="row">
+					<div class="itemTitle">Paying Result</div>
+					<div class="value">0.00833 ETH</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btnBid">Buy now</a>
+	</div>
+	<a href="#" class="close">close</a>
+</div>
+
 <div id="popBidding" class="popBasic">
 	<div class="popCont">
 		<div class="balanceArea">
 			<div class="title">Your bidding balance</div>
 			<div class="balance">
-				<div class="input">
-					<input type="text" value="1.0" placeholder="1.0" />
+				<div class="input call--keyboard">
+					<input type="text" id="input_5" value="1.0" placeholder="1.0" />
 				</div>
 				<div class="type">ETH</div>
 				<div class="dollar">$320.00</div>
@@ -1045,6 +1103,8 @@
 
 <div id="dim"></div>
 
+<div id="popAlarm" class="popAlarm">주소가 복사되었습니다.</div>
+
 <script type="text/javascript">
 	var swiper = new Swiper('.boxAuctionVisual .swiper-container', {
 		loop: true,
@@ -1054,7 +1114,42 @@
 		},
 	});
 
+	var detail_p = "1184px";
+	var detail_m = "386px";
+	var detail_h;
+
 	$(function(){
+		if(767 < winW){
+			detail_h = $(".boxDetailCont .cont img").outerHeight();
+    	$(".boxDetailCont .cont").css("height", detail_p);
+		}else if(winW < 768){
+			detail_h = $(".section.section--detail .boxInfoTab .boxDetailCont .cont img").outerHeight();
+			$(".boxDetailCont .cont").css("height", detail_m);
+		}
+		
+
+		$(".boxDetailCont .cont .btnDetail").click(function(){
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				if(767 < winW){
+					$(".boxDetailCont .cont").animate({
+						height: detail_p
+					}, 500);
+				}else if(winW < 768){
+					$(".boxDetailCont .cont").animate({
+						height: detail_m
+					}, 500);
+				}
+			}else{
+				$(this).addClass("active");
+				$(".boxDetailCont .cont").animate({
+					height: detail_h+"px"
+				}, 500);
+			}
+		});
+
+		
+
 		$(".boxInfoTab .tab a").click(function(e){
 			e.preventDefault();
 			var target = $(this).attr("data-tab");
@@ -1063,6 +1158,23 @@
 			$(".boxInfoTab .cont").removeClass("active");
 			$("#"+target).addClass("active");
 		});
+
+		var img_w = $(".boxDetailTop .cont img").width();
+		var img_h = $(".boxDetailTop .cont img").height();
+
+		if(img_w < img_h){
+			$(".boxDetailTop .cont").addClass("is--horizontal");
+		}else{
+			$(".boxDetailTop .cont").removeClass("is--horizontal");		
+		}
+	});
+
+	$(window).resize(function(){
+		if(767 < winW){
+    	$(".boxDetailCont .cont").css("height", detail_p);
+		}else if(winW < 768){
+			$(".boxDetailCont .cont").css("height", detail_m);
+		}
 	});
 
 	$(".like").click(function(e){

@@ -1,6 +1,6 @@
-$(function(){
-  var winW = $(window).outerWidth();
+var winW = $(window).outerWidth();
 
+$(function(){
   if(767 < winW){
     pcEvent();
   }else if(winW < 768){

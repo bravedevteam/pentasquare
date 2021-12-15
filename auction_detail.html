@@ -744,7 +744,10 @@
           </div>
 					<div class="boxDetailCont">
 						<div class="title">Detail</div>
-						<div class="cont"><img src="./images/content/imgDetailCont.png" alt="" /></div>
+						<div class="cont">
+							<img src="./images/content/imgDetailCont.png" alt="" />
+							<button type="button" class="btnDetail">자세히 보기</button>
+						</div>
 					</div>
 					<div class="boxDetailHistory">
 						<div class="title">History</div>
@@ -866,7 +869,10 @@
 								<div class="row">
 									<div class="boxDetailCont">
 										<div class="title">Detail</div>
-										<div class="cont"><img src="./images/content/imgDetailCont.png" alt="" /></div>
+										<div class="cont">
+											<img src="./images/content/imgDetailCont.png" alt="" />
+											<button type="button" class="btnDetail">자세히 보기</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1105,7 +1111,42 @@
 		},
 	});
 
+	var detail_p = "1184px";
+	var detail_m = "386px";
+	var detail_h;
+
 	$(function(){
+		if(767 < winW){
+			detail_h = $(".boxDetailCont .cont img").outerHeight();
+    	$(".boxDetailCont .cont").css("height", detail_p);
+		}else if(winW < 768){
+			detail_h = $(".section.section--detail .boxInfoTab .boxDetailCont .cont img").outerHeight();
+			$(".boxDetailCont .cont").css("height", detail_m);
+		}
+		
+
+		$(".boxDetailCont .cont .btnDetail").click(function(){
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				if(767 < winW){
+					$(".boxDetailCont .cont").animate({
+						height: detail_p
+					}, 500);
+				}else if(winW < 768){
+					$(".boxDetailCont .cont").animate({
+						height: detail_m
+					}, 500);
+				}
+			}else{
+				$(this).addClass("active");
+				$(".boxDetailCont .cont").animate({
+					height: detail_h+"px"
+				}, 500);
+			}
+		});
+
+		
+
 		$(".boxInfoTab .tab a").click(function(e){
 			e.preventDefault();
 			var target = $(this).attr("data-tab");
@@ -1122,6 +1163,14 @@
 			$(".boxDetailTop .cont").addClass("is--horizontal");
 		}else{
 			$(".boxDetailTop .cont").removeClass("is--horizontal");		
+		}
+	});
+
+	$(window).resize(function(){
+		if(767 < winW){
+    	$(".boxDetailCont .cont").css("height", detail_p);
+		}else if(winW < 768){
+			$(".boxDetailCont .cont").css("height", detail_m);
 		}
 	});
 
