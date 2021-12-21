@@ -85,6 +85,8 @@ input[type="radio"]+label:before { content:''; width:20px; height:20px; position
 input[type="radio"]+label:after { content:''; width:12px; height:12px; position:absolute; left:4px; top:50%; border-radius:50%; background:#d1d1d1; transform:translateY(-50%); }
 input[type="radio"]:checked+label:after { background:#021343; }
 
+.pt0 { padding-top:0 !important; }
+
 .input--size1 { width:77px !important; }
 .input--size2 { width:153px !important; }
 .input--size3 { width:330px !important; }
@@ -122,13 +124,15 @@ body.page--auction { background:#f4f6f9; }
 #header .opt>a.btnConnect { width:160px; background:#000; }
 #header .opt>a.btnCreat { width:96px; background-image: linear-gradient(to right, #ff00ba, #ff0080); }
 
-#header .boxWallet { width:300px; display:none; position:absolute; padding:23px 0 0; right:70px; top:80px; background:#fff; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16); border-radius:10px; }
+#header .boxWallet { width:300px; min-height:440px; display:none; position:absolute; padding:43px 0 0; right:70px; top:80px; background:#fff; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16); border-radius:10px; }
 #header .boxWallet:before { content:''; width:14px; height:10px; position:absolute; right:50px; top:-10px; background:url('../images/content/iconWalletEdge.png') center bottom no-repeat; background-size:100% auto; }
-#header .boxWallet .topArea { margin:0 17px 24px; position:relative; }
-#header .boxWallet .topArea .title { margin-bottom:5px; font-size:23px; color:#000c2d; font-weight:600; }
+#header .boxWallet .topArea { margin:0 17px 30px; position:relative; }
+#header .boxWallet .topArea .title { margin-bottom:3px; font-size:23px; color:#000c2d; font-weight:600; }
 #header .boxWallet .topArea .subject { font-size:13px; color:#000c2d; }
-#header .boxWallet .topArea .linkWallet { max-width:50%; height:auto; position:absolute; right:0; top:0; float:none; padding-right:26px; background:url('../images/content/iconWallet.png') right 8px no-repeat; background-size:17px auto; font-size:13px; color:#adadad; line-height:32px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#header .boxWallet .topArea .linkWallet { max-width:50%; height:auto; position:absolute; right:0; top:0; padding-right:26px; background:url('../images/content/iconWallet.png') right 8px no-repeat; background-size:17px auto; font-size:13px; color:#adadad; line-height:32px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 #header .boxWallet .topArea .linkWallet:hover { color:#1426b0; background-image:url('../images/content/iconWallet_on.png'); }
+#header .boxWallet .topArea.type--login { margin-bottom:15px; }
+#header .boxWallet .topArea.type--login .title { max-width:50%; float:left; }
 #header .boxWallet .inWallet { padding:0 17px 38px; }
 #header .boxWallet .inWallet .wallet { width:100%; height:165px; display:flex; border:1px dashed #707070; background:#f0f7ff; border-radius:13px; align-items:center; justify-content:center; font-size:10px; color:#500; color:#3f3f53; flex-direction:column; font-weight:700; }
 #header .boxWallet .inWallet .wallet:before { content:''; width:50px; height:45px; margin-bottom:10px; display:inline-block; background:url('../images/content/imgNoWallet.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
@@ -136,6 +140,18 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet .inWallet .wallet span { width:200px; margin:0 auto; display:block; font-weight:400; text-align:center; }
 #header .boxWallet .inWallet a.linkMetaGuide { display:block; margin-top:25px; font-size:17px; font-weight:700; color:#000c2d; text-align:center; }
 #header .boxWallet .inWallet a.linkMetaGuide:after { content:''; width:11px; height:13px; display:inline-block; margin-left:8px; background:url('../images/common/iconMetaGuide.png') center center no-repeat; background-size:100% auto; }
+#header .boxWallet .listWallet { padding:0 17px; }
+#header .boxWallet .listWallet a { display:block; height:62px; text-align:center; line-height:60px; font-size:14px; }
+#header .boxWallet .listWallet a+a { margin-top:10px; }
+#header .boxWallet .listWallet a.metamask { border:1px solid #e8e8e8; }
+#header .boxWallet .listWallet a.metamask:before { content:''; width:27px; height:25px; display:inline-block; margin-right:8px; background:url('../images/content/iconWallet_meta.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .boxWallet .listWallet a.klip { border:0; background:#fde500; line-height:62px; }
+#header .boxWallet .listWallet a.klip:before { content:''; width:36px; height:18px; display:inline-block; margin-right:10px; background:url('../images/content/iconWallet_klip.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .boxWallet .linkGuide { height:52px; display:block; margin:10px 17px 0; line-height:52px; text-align:center; font-size:13px; font-weight:500; color:#000c2d; }
+#header .boxWallet .linkGuide:before { content:''; width:19px; height:15px; display:inline-block; margin-right:8px; background:url('../images/content/iconGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .boxWallet .linkGuide:after { content:''; width:8px; height:13px; display:inline-block; margin-left:20px; background:url('../images/common/linkGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .boxWallet .linkGuide.type--bottom { height:65px; display:block; margin:0; padding:0 25px; position:relative; background:#f4f6f9; text-align:left; line-height:65px; }
+#header .boxWallet .linkGuide.type--bottom:after { position:absolute; right:25px; top:50%; transform:translateY(-50%); }
 #header .boxWallet .boxInsta { padding:24px 16px 18px 17px; border-top:1px solid #adadad; }
 #header .boxWallet .boxInsta .title { margin-bottom:6px; font-size:16px; font-weight:600; color:#000c2d; }
 #header .boxWallet .boxInsta .subject { margin-bottom:14px; font-size:13px; color:#adadad; }
@@ -155,15 +171,19 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet .boxInsta .btnBottom { padding:0; }
 #header .boxWallet .boxInsta .btnBottom a { margin-top:30px; }
 
-#header .boxWallet.type--login { right:70px; }
+#header .boxWallet.type--login { right:70px; padding-top:26px; }
+#header .boxWallet.type--login .topArea { margin-top:30px; }
+#header .boxWallet.type--login .topArea .linkWallet { position:relative; float:right; }
+#header .boxWallet.type--login .topArea.type--login { margin-top:0; }
 #header .boxWallet.type--login .inWallet { padding-bottom:5px; }
-#header .boxWallet.type--login .inWallet .wallet { height:auto; padding:18px 18px 20px; display:block; border:0; background:#000c2d; }
+#header .boxWallet.type--login .inWallet .wallet { height:auto; padding:0 18px; border:0; background:#000c2d; }
 #header .boxWallet.type--login .inWallet .wallet:before { display:none; }
-#header .boxWallet.type--login .inWallet .walletCoin { position:relative; }
+#header .boxWallet.type--login .inWallet .walletCoin { width:100%; height:130px; display:flex; justify-content:center; flex-direction:column; position:relative; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin { display:flex; align-items:center; position:relative; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin.mark:before { content:''; width:32px; height:32px; margin-right:6px; display:block; background-repeat:no-repeat; background-position:center center; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin.mark.mark--eth:before { background-image:url('../images/common/iconCoin_ETH.png'); }
 #header .boxWallet.type--login .inWallet .walletCoin .coin.mark.mark--weth:before { background-image:url('../images/common/iconCoin_WETH.png'); }
+#header .boxWallet.type--login .inWallet .walletCoin .coin.mark.mark--klay:before { background-image:url('../images/common/iconCoin_KLAY.png'); }
 #header .boxWallet.type--login .inWallet .walletCoin .coin+.coin { margin-top:16px; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin .value { display:flex; justify-content:center; flex-direction:column; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin .value .name { font-size:13px; color:#adadad; font-weight:500; }
@@ -171,13 +191,15 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin .value .price { font-size:16px; color:#fff; font-weight:600; }
 #header .boxWallet.type--login .inWallet .walletCoin .btnChange { width:32px; height:32px; position:absolute; right:0; top:32px; background:url('../images/content/btnChange.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #header .boxWallet.type--login .inWallet .walletCoin .coin>.btnChange { top:50%; transform:translateY(-50%); }
+#header .boxWallet.type--login .inWallet .walletCoin.type--write { height:auto; padding:16px 0; }
 #header .boxWallet.type--login .inWallet .walletCoin.type--write .max { font-size:13px; color:#adadad; font-weight:500; }
 #header .boxWallet.type--login .inWallet .walletCoin.type--write .max span { color:#fff; }
-#header .boxWallet.type--login .inWallet .walletCoin.type--write .input { margin-top:20px; margin-bottom:26px; display:flex; border-bottom:1px solid #f4f6f9; }
-#header .boxWallet.type--login .inWallet .walletCoin.type--write .input input { flex:1; height:36px; background:transparent; padding:0; border:0; font-size:15px; color:#ff00af; font-family:'Poppins'; line-height:36px; }
-#header .boxWallet.type--login .inWallet .walletCoin.type--write .input input::placeholder { font-size:12px; color:#62668c; }
+#header .boxWallet.type--login .inWallet .walletCoin.type--write .input { margin-top:24px; display:flex; border-bottom:1px solid #f4f6f9; }
+#header .boxWallet.type--login .inWallet .walletCoin.type--write .input input { flex:1; height:34px; background:transparent; padding:0; border:0; font-size:15px; color:#ff00af; font-family:'Poppins'; line-height:34px; font-weight:700; }
+#header .boxWallet.type--login .inWallet .walletCoin.type--write .input input::placeholder { font-size:12px; color:#62668c; font-weight:400; }
 #header .boxWallet.type--login .inWallet .walletCoin.type--write .input .trans { display:none; position:relative; font-weight:700; color:#fff; font-size:12px; }
 #header .boxWallet.type--login .inWallet .walletCoin.type--write .input .trans.on { display:block; }
+#header .boxWallet.type--login .inWallet .walletCoin.type--write .btnArea { margin-top:30px; }
 
 #header .boxWallet.type--login .inWallet .btnArea a { height:40px; padding:0 20px; flex:1; display:flex; align-items:center; justify-content:center; border-radius:20px; background:#fff; font-size:14px; color:#000; }
 #header .boxWallet.type--login .inWallet .btnArea a.convert:after { content:''; width:13px; height:16px; margin-left:10px; display:inline-block; vertical-align:middle; background:url('../images/common/iconTransCoin.png') center center no-repeat; background-size:100% auto; }
@@ -188,20 +210,20 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet.type--login .inWallet .btnPairing span { color:#021343; font-size:11px; font-weight:500; }
 #header .boxWallet.type--login .inWallet .btnPairing .square { font-size:16px; color:#021343; font-weight:600; }
 #header .boxWallet.type--login .inWallet .disconnect { height:auto; display:block; padding:20px 0; border-radius:0; text-align:center; font-size:12px; color:#adadad; line-height:1; }
-#header .boxWallet.type--login .boxInsta .infoTop { position:relative; }
-#header .boxWallet.type--login .boxInsta .infoTop .title { margin-bottom:16px; font-size:16px; color:#000c2d; font-weight:600; }
-#header .boxWallet.type--login .boxInsta .infoTop a.edit { padding-right:18px; position:absolute; right:0; top:0; background:url('../images/common/iconInfoEdit.png') right center no-repeat; background-size:10px auto; font-size:13px; color:#6e7984; line-height:24px; }
-#header .boxWallet.type--login .boxInsta .infoUser { width:100%; height:78px; padding:0 20px; display:flex; background:#fff; align-items:center; border:1px solid #d4d4d4; border-radius:13px; }
+#header .boxWallet.type--login .listWallet { padding-bottom:45px; }
+#header .boxWallet.type--login .boxInsta .infoUser { width:100%; display:flex; position:relative; align-items:center; }
 #header .boxWallet.type--login .boxInsta .infoUser .thumb { width:42px; height:42px; border-radius:50%; overflow:hidden; }
 #header .boxWallet.type--login .boxInsta .infoUser .thumb img { width:100%; position:relative; top:50%; transform:translateY(-50%); }
-#header .boxWallet.type--login .boxInsta .infoUser .name { margin-left:12px; font-size:16px; color:#000; font-weight:500; }
-#header .boxWallet.type--login .boxInsta .infoUser .name span { display:block; padding-left:16px; background:url('../images/content/iconInsta_gray.png') left center no-repeat; background-size:12px auto; font-size:11px; font-weight:400; color:#62668c; }
+#header .boxWallet.type--login .boxInsta .infoUser .name { margin-left:8px; font-size:17px; color:#000; font-weight:500; line-height:22px; }
+#header .boxWallet.type--login .boxInsta .infoUser .name span { display:block; font-size:13px; font-weight:400; color:rgba(0,12,45,.4); letter-spacing:-0.03em; }
+#header .boxWallet.type--login .boxInsta .infoUser a.edit { width:24px; height:24px; position:absolute; right:0; top:50%; background:url('../images/common/iconInfoEdit.png') center center no-repeat #f4f6f9; background-size:10px auto; border-radius:24px; font-size:0; text-indent:-99999px; transform:translateY(-50%); }
 #header .boxWallet.type--login .boxInsta .userLink { padding:24px 0 0; }
 #header .boxWallet.type--login .boxInsta .userLink>ul>li+li { margin-top:15px; }
 #header .boxWallet.type--login .boxInsta .userLink>ul>li a { position:relative; display:flex; justify-content:space-between; font-size:13px; color:#021343; }
 #header .boxWallet.type--login .boxInsta .userLink>ul>li .name { padding-left:12px; }
-#header .boxWallet.type--login .boxInsta .userLink>ul>li .num { height:20px; padding:0 11px; border-radius:10px; color:#c0c9d4; line-height:20px; text-align:right; } 
+#header .boxWallet.type--login .boxInsta .userLink>ul>li .num { width:28px; height:20px; position:relative; color:#c0c9d4; line-height:20px; text-align:center; } 
 #header .boxWallet.type--login .boxInsta .userLink>ul>li .num.on { background:#ff0000; color:#fff; font-size:10px; }
+#header .boxWallet.type--login .boxInsta .userLink>ul>li .num.new:after { width:100%; content:'new'; position:absolute; right:0; top:0; background:#fff; color:#f01847; font-size:13px; }
 #header .boxWallet.type--login .boxInsta .userLink>ul>li .listDepth { margin-top:15px; overflow:hidden; }
 #header .boxWallet.type--login .boxInsta .userLink>ul>li .listDepth li a { padding-left:10px; font-size:13px; color:#9ea0b4; }
 #header .boxWallet.type--login .boxInsta .userLink>ul>li .listDepth li a:before { content:''; width:8px; height:8px; position:absolute; left:10px; top:3px; background:url('../images/common/iconDepth.png') center center no-repeat; background-size:100% auto; }
@@ -215,9 +237,10 @@ body.page--auction { background:#f4f6f9; }
 #header .boxSendNFT .topArea .title { padding:22px 0 16px; text-align:center; font-size:18px; color:#010d2d; font-weight:400; }
 #header .boxSendNFT .boxForm { padding:12px 16px 19px; }
 #header .boxSendNFT .boxForm .row { position:relative; color:#021343; }
+#header .boxSendNFT .boxForm .row:after { content:''; display:block; clear:both; visibility:visible; }
 #header .boxSendNFT .boxForm .row+.row { margin-top:12px; }
-#header .boxSendNFT .boxForm .title { margin-bottom:5px; font-size:13px; }
-#header .boxSendNFT .boxForm .input { height:63px; display:flex; justify-content:center; flex-direction:column; position:relative; border:1px solid #c0c9d4; border-radius:13px; overflow:hidden; }
+#header .boxSendNFT .boxForm .title { float:left; margin-bottom:5px; font-size:13px; }
+#header .boxSendNFT .boxForm .input { height:63px; margin-left:43px; display:flex; justify-content:center; flex-direction:column; position:relative; border:1px solid #c0c9d4; border-radius:13px; }
 #header .boxSendNFT .boxForm .input .thumb { width:32px; height:32px; display:flex; align-items:center; justify-content:center; position:absolute; left:14px; top:50%; transform:translateY(-50%); overflow:hidden; border-radius:50%; }
 #header .boxSendNFT .boxForm .input .user { margin-left:53px; font-size:16px; font-weight:600; line-height:1; }
 #header .boxSendNFT .boxForm .input .key { margin-left:53px; font-size:11px; }
@@ -253,7 +276,6 @@ body.page--auction { background:#f4f6f9; }
 #header .boxSendNFT .listSendNFT dl dd { word-break:break-all; }
 #header .boxSendNFT .listSendNFT dl.amount { display:flex; }
 #header .boxSendNFT .listSendNFT dl.amount dt { margin-right:4px; }
-#header .boxSendNFT .listSendNFT+.btnBottom { background:#f4f6f9; }
 #header .boxSendNFT .btnBottom { padding:17px 16px 20px 17px; }
 #header .boxSendNFT .btnBottom a { height:56px; display:block; border-radius:13px; font-size:20px; color:#021343; border:1px solid #021343; background:#fff; line-height:54px; text-align:center; }
 #header .boxSendNFT .btnBottom a.active { border-color:#021343; background:#021343; color:#fff; }
@@ -460,14 +482,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxAuctionVisual .swiper-slide.item1 .img { top:113px; margin-right:-584px }
 .boxAuctionVisual .swiper-slide.item2 .img { top:110px; margin-right:-592px }
 .boxAuctionVisual .swiper-slide.item3 .img { top:116px; margin-right:-510px }
-.boxAuctionVisual .swiper-slide a.link { width:232px; height:50px; display:block; font-size:18px; color:#fff; font-weight:700; background:#000000; border-radius:7px; text-align:center; text-decoration:none; line-height:50px; transition:opacity .3s .5s, background .3s; opacity:0; overflow:hidden; }
+.boxAuctionVisual .swiper-slide a.link { width:186px; height:50px; display:block; font-size:18px; color:#fff; font-weight:700; background:#000000; border-radius:7px; text-align:center; text-decoration:none; line-height:50px; transition:opacity .3s .5s, background .3s; opacity:0; overflow:hidden; }
 .boxAuctionVisual .swiper-slide a.link span { position:relative; z-index:2; }
 .boxAuctionVisual .swiper-slide a.link:after { content:''; width:10px; height:14px; position:relative; margin-left:18px; display:inline-block; background:url('../images/common/btnTopLink.png') center center no-repeat; vertical-align:middle; z-index:2; }
 .boxAuctionVisual .swiper-slide a.link:hover { background:#333; }
-.boxAuctionVisual .swiper-slide.item2 a.link,
-.boxAuctionVisual .swiper-slide.item3 a.link { background-image: linear-gradient(120deg, #d842bb 42%, #8358f9 95%); }
-.boxAuctionVisual .swiper-slide.item2 a.link:hover,
-.boxAuctionVisual .swiper-slide.item3 a.link:hover { background-image: linear-gradient(120deg, #d842bb 32%, #8358f9 85%); }
 .boxAuctionVisual .swiper-container-horizontal>.swiper-pagination-bullets,
 .boxAuctionVisual .swiper-pagination-custom,
 .boxAuctionVisual .swiper-pagination-fraction { height:6px; bottom:46px; }
@@ -539,6 +557,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxList .list li .btn button.count span { color:#1b44ef; }
 .boxList .list li .btn button.cancel { background:#fff; border:1px solid #62668c; color:#62668c; }
 .boxList .list li .btn button.end { background:#d1d1d1; color:#fff; }
+.boxList .list li .btn button.dis { background:#f4f6f9; color:#acafc6; }
 .boxList .list li .btn button.active { background:#021343; }
 .boxList .list li .btn button.create { background:#ff00af; }
 .boxList .list li .btn button.freeze { background:#1b44ef; }
@@ -1073,13 +1092,20 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxGnb_mo { width:100%; height:100%; position:fixed; left:0; top:0; background:#fff; z-index:99; overflow-y:auto; }
 	
 
-	#header .section_gnb { padding:23px 16px 42px; }
-	#header .section_gnb .topArea { display:flex; padding-right:40px; }
-	#header .section_gnb .topArea .thumb { width:40px; height:40px; margin-right:14px; display:flex; align-items:center; justify-content:center; background:#adadad; border-radius:50%; overflow:hidden; }
-	#header .section_gnb .topArea .thumb img { width:100%; }
+	#header .section_gnb { padding:62px 16px 50px; }
+	#header .section_gnb .topArea { padding:0 10px; margin-bottom:30px; color:#000c2d; }
+	#header .section_gnb .topArea .title { margin-bottom:8px; font-size:23px; font-weight:600; }
+	#header .section_gnb .topArea .subject { font-size:13px; }
 	#header .section_gnb .topArea .info { flex:1; flex-direction:column; justify-content:center; display:flex; font-size:13px; color:#adadad; }
 	#header .section_gnb .topArea .name { font-size:18px; color:#010d2d; }
 	#header .section_gnb .topArea a:after { content:''; width:17px; height:14px; margin-left:10px; display:inline-block; background:url('../images/content/iconWallet.png') right center no-repeat; background-size:17px auto; vertical-align:middle; }
+	#header .section_gnb .listWallet {  }
+	#header .section_gnb .listWallet a { display:block; height:62px; text-align:center; line-height:60px; font-size:14px; }
+	#header .section_gnb .listWallet a+a { margin-top:10px; }
+	#header .section_gnb .listWallet a.metamask { border:1px solid #e8e8e8; }
+	#header .section_gnb .listWallet a.metamask:before { content:''; width:27px; height:25px; display:inline-block; margin-right:8px; background:url('../images/content/iconWallet_meta.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+	#header .section_gnb .listWallet a.klip { border:0; background:#fde500; line-height:62px; }
+	#header .section_gnb .listWallet a.klip:before { content:''; width:36px; height:18px; display:inline-block; margin-right:10px; background:url('../images/content/iconWallet_klip.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 	#header .section_gnb .list { margin-top:60px; }
 	#header .section_gnb .list li a { height:44px; position:relative; display:block; line-height:44px; font-size:18px; color:#010d2d; }
 	#header .section_gnb .list li a:after { content:''; width:7px; height:11px; position:absolute; right:0; top:50%; background:url('../images/common/iconGnbArrow_mo.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
@@ -1095,15 +1121,16 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxWallet .inWallet .wallet { height:204px; font-weight:500; }
 	#header .boxWallet .inWallet .wallet:before { margin-bottom:20px; }
 	#header .boxWallet .inWallet .title { margin-bottom:5px; font-size:15px; color:#3f3f3f; font-weight:500; }
-	#header .boxWallet .boxInsta { background:#f4f6f9; border-top:0; }
-	#header .boxWallet .boxInsta>a { border-radius:28px; background:#000c2d; }
-	#header .boxWallet .boxInsta .btnBottom { display:flex; }
-	#header .boxWallet .boxInsta .btnBottom a { flex:1; border:0; margin-top:50px; border-radius:56px; color:#fff; }
-	#header .boxWallet .boxInsta .btnBottom a+a { margin-left:8px; }
-	#header .boxWallet .boxInsta .btnBottom a.creat { background-image: linear-gradient(to right, #ff00ba, #ff0080); }
-	#header .boxWallet .boxInsta .btnBottom a.send { background:#021343; }
+	#header .boxWallet .boxInsta { padding-top:34px; background:#f4f6f9; border-top:0; }
+	#header .boxWallet .linkGuide { height:90px; margin:0 34px; padding:0 6px; position:relative; border-top:1px solid #e8e8e8; line-height:90px; text-align:left; font-size:17px; font-weight:500; }
+	#header .boxWallet .linkGuide:after { position:absolute; right:11px; top:50%; transform:translateY(-50%); }
+	#header .boxWallet .btnBottom { padding:0 16px 18px; }
+	#header .boxWallet .btnBottom a { height:66px; border:0; border-radius:14px; line-height:66px; color:#fff; }
+	#header .boxWallet .btnBottom a+a { margin-top:8px; }
+	#header .boxWallet .btnBottom a.creat { background-image: linear-gradient(to right, #ff00ba, #ff0080); }
+	#header .boxWallet .btnBottom a.send { border:1px solid #9ea0b4; background:#fff; color:#021343; }
 	
-	#header .boxWallet.type--login { right:auto; }
+	#header .boxWallet.type--login { right:auto; padding-top:0; }
 	#header .boxWallet.type--login .topArea:after { content:''; width:42px; height:40px; position:absolute; right:0; top:8px; background:url('../images/content/imgNoWallet.png') center center no-repeat; background-size:100% auto; }
 	#header .boxWallet.type--login .inWallet .wallet { padding:22px 16px 24px; }
 	#header .boxWallet.type--login .inWallet .walletCoin .coin.mark:before { margin-right:17px; }
@@ -1114,19 +1141,20 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxWallet.type--login .inWallet .btnArea { margin-top:20px; }
 	#header .boxWallet.type--login .inWallet .btnPairing { height:64px; padding-left:68px; margin-top:10px; }
 	#header .boxWallet.type--login .inWallet .btnPairing:before { left:20px; }
-	#header .boxWallet.type--login .boxInsta .userLink { padding:24px 16px 10px; }
+	#header .boxWallet.type--login .boxInsta .infoUser { padding:0 6px; }
+	#header .boxWallet.type--login .boxInsta .infoUser a.edit { width:32px; height:32px; right:16px; background-color:#fff; background-size:10px auto; border:1px solid #e8e8e8; }
+	#header .boxWallet.type--login .boxInsta .userLink { padding:43px 18px 22px; }
+	#header .boxWallet.type--login .boxInsta .userLink>ul>li+li { margin-top:26px; }
+	#header .boxWallet.type--login .boxInsta .userLink>ul>li a { font-size:15px; }
+	#header .boxWallet.type--login .boxInsta .userLink>ul>li .num.new:after { background:#f4f6f9; }
+	#header .boxWallet.type--login .boxInsta .userLink>ul>li .listDepth li a { font-size:15px; }
 		
-	#header .boxGnb_mo.is--login {  }
-	#header .boxGnb_mo.is--login .section_gnb { padding:23px 16px; }
-	#header .boxGnb_mo.is--login .section_gnb .topArea { margin-bottom:0; }
-	#header .boxGnb_mo.is--login .boxWallet { background:#fff; box-shadow:none; }
-	#header .boxGnb_mo.is--login .boxWallet .inWallet a.linkMetaGuide { margin-top:70px; }
-
 	#header .boxSendNFT { width:100%; lefT:0; right:0; top:0; border-radius:0; box-shadow:none; z-index:21; }
+	#header .boxSendNFT .boxForm { padding-bottom:50px; }
 	#header .boxSendNFT .boxForm .row { display:flex; align-items:center; }
 	#header .boxSendNFT .boxForm .title { width:70px; margin-bottom:0; }
 	#header .boxSendNFT .boxForm .title:after { content:':'; }
-	#header .boxSendNFT .boxForm .input { flex:1; }
+	#header .boxSendNFT .boxForm .input { flex:1; margin-left:0; }
 	#header .boxSendNFT .boxForm .ps { position:absolute; right:0; top:100%; font-size:12px; }
 	#header .boxSendNFT .boxList { border-top:0; background:#f4f6f9; }
 	#header .boxSendNFT .boxList .infoTop { overflow:hidden; }
@@ -1142,10 +1170,12 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxSendNFT .boxList .listNFT ul li input:disabled+label { background:#d1d1d1; opacity:.49; }
 	#header .boxSendNFT .boxList .listNFT ul li input+label:before,
 	#header .boxSendNFT .boxList .listNFT ul li input+label:after { display:none; }
+	#header .boxSendNFT .boxList .listNFT ul li .cont { display:block; padding:3px 0; }
 	#header .boxSendNFT .listSendNFT .title { margin-bottom:26px; font-size:16px; }
-	#header .boxSendNFT .listSendNFT dl { padding:18px 14px 24px 18px; }
-	#header .boxSendNFT .btnBottom { padding:18px 16px 22px; }
-	#header .boxSendNFT .btnBottom a { border-radius:56px; }
+	#header .boxSendNFT .listSendNFT dl { padding:18px 14px 24px 18px; font-size:13px; }
+	#header .boxSendNFT .btnBottom { padding:30px 16px 16px; background:#f4f6f9; }
+	#header .boxSendNFT .btnBottom a { height:66px; line-height:64px; }
+	
 	
 	
 	#header .close { width:16px; height:16px; position:absolute; right:16px; top:28px; background:url('../images/common/btnClose.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; z-index:20; }
@@ -1153,6 +1183,13 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#gnb { display:none; }
 
 	#container { padding-top:68px; }
+
+	.btnGoogle { width:296px; height:71px; margin:0 auto; }
+
+	.section.section--login { padding-top:100px; }
+	.section.section--login p { width:296px; margin:0 auto 36px; text-align:left; font-size:13px; }
+	.section.section--login p strong { display:block; margin-bottom:9px; font-weight:600; font-size:23px; }
+	.section.section--login .btnClose { width:16px; height:16px; position:absolute; right:16px; top:28px; background:url('../images/common/btnClose.png') center center no-repeat; background-size:100% auto; font-size:0; }
 
 	.section.section1 { padding-top:68px; }
 	.section.section1:before { height:441px; }
@@ -1255,6 +1292,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxAuctionVisual .swiper-pagination-fraction { display:inline-block; width:auto; left:30px; bottom:34px; }
 	.boxAuctionVisual .swiper-slide a.link { width:150px; height:56px; position:absolute; right:30px; bottom:8px; border-radius:56px; line-height:56px; font-size:14px; }
 	.boxAuctionVisual .swiper-slide a.link:after { width:8px; height:10px; margin-left:8px; background-size:100% auto; }
+	.boxAuctionVisual .swiper-slide a.link.coming { background:#acafc6; color:#fff; }
 	.boxAuctionVisual .swiper-pagination-bullet-active { background:#000; }
 
 	.mainTab { margin-bottom:30px; overflow:hidden; }
