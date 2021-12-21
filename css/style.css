@@ -476,11 +476,11 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxAuctionVisual .swiper-slide .subject { margin-top:15px; margin-bottom:50px; font-size:20px; color:#fff; transition:all .3s .5s; line-height:30px; opacity:0; }
 .boxAuctionVisual .swiper-slide .subject.nts { font-family:"SpoqaHanSansNeo"; }
 .boxAuctionVisual .swiper-slide .subject.bold { font-size:35px; font-weight:700; }
-.boxAuctionVisual .swiper-slide.item2 .subject { margin-bottom:46px; }
+.boxAuctionVisual .swiper-slide.item1 .subject { margin-bottom:46px; }
 .boxAuctionVisual .swiper-slide.item3 .subject { margin-top:38px; margin-bottom:52px; }
 .boxAuctionVisual .swiper-slide .img { position:absolute; right:50%; transition:all .3s .5s; opacity:0; }
-.boxAuctionVisual .swiper-slide.item1 .img { top:113px; margin-right:-584px }
-.boxAuctionVisual .swiper-slide.item2 .img { top:110px; margin-right:-592px }
+.boxAuctionVisual .swiper-slide.item1 .img { top:110px; margin-right:-592px }
+.boxAuctionVisual .swiper-slide.item2 .img { top:113px; margin-right:-584px }
 .boxAuctionVisual .swiper-slide.item3 .img { top:116px; margin-right:-510px }
 .boxAuctionVisual .swiper-slide a.link { width:186px; height:50px; display:block; font-size:18px; color:#fff; font-weight:700; background:#000000; border-radius:7px; text-align:center; text-decoration:none; line-height:50px; transition:opacity .3s .5s, background .3s; opacity:0; overflow:hidden; }
 .boxAuctionVisual .swiper-slide a.link span { position:relative; z-index:2; }
@@ -1282,8 +1282,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxAuctionVisual .swiper-slide .title { padding-left:55px; font-size:17px; color:#000; letter-spacing:-.05em; }
 	.boxAuctionVisual .swiper-slide.item1 .title { padding:0 30px; }
 	.boxAuctionVisual .swiper-slide .subject { padding:0 55px; color:#000; font-size:13px; line-height:19px; }
-	.boxAuctionVisual .swiper-slide.item1 .subject { margin-top:12px; margin-bottom:0; padding:0 30px; color:#989898; }
-	.boxAuctionVisual .swiper-slide.item2 .subject { margin-top:17px; margin-bottom:0; }
+	.boxAuctionVisual .swiper-slide.item1 .subject { margin-top:17px; margin-bottom:0; }
+	.boxAuctionVisual .swiper-slide.item2 .subject { margin-top:12px; margin-bottom:0; padding:0 30px; color:#989898; }
 	.boxAuctionVisual .swiper-slide.item3 .subject { margin-top:16px; margin-bottom:0; }
 	.boxAuctionVisual .swiper-slide .txt { margin-bottom:0; padding-left:30px; font-size:17px; color:#000; letter-spacing:-.05em; }
 
