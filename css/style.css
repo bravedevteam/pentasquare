@@ -576,6 +576,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxList .list li.addCreate a { height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#c0c9d4; color:#fff; font-size:24px; font-weight:500; }
 .boxList .list li.addCreate a:before { content:''; width:54px; height:54px; margin-bottom:16px; display:block; background:url('../images/common/iconAddCreate.png') center center no-repeat; background-size:100% auto; }
 
+.boxList .list li.noData { width:100%; height:213px; display:flex; float:none; justify-content:center; align-items:center; font-size:20px; color:#021343; font-weight:700; }
+.boxList .list li.noData:before { content:'COMMING SOON!'; width:39px; height:43px; margin-right:14px; display:inline-block; background:url('../images/common/iconNodata.png') center center no-repeat; background-size:39px auto; vertical-align:middle; font-size:0; }
+
 .boxList .more { width:180px; height:44px; display:block; margin:60px auto 0; border:1px solid rgba(192,201,212,0.3);; border-radius:44px; line-height:42px; text-align:center; font-size:14px; font-weight:500; color:#acafc6; }
 .boxList+.topArea { margin-top:95px; }
 
@@ -1363,6 +1366,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxList .list li .btn.col2 button:first-child { border-top-right-radius:0; border-bottom-right-radius:0; }
 	.boxList .list li .btn.col2 button:last-child { border-top-left-radius:0; border-bottom-left-radius:0; }
 	.boxList .list li .btn.col2 button+button { margin-left:0; }
+
+	.boxList .list li.noData { height:270px; margin-bottom:0; flex-direction:column; font-size:13px; color:#969ba1; font-weight:400; }
+	.boxList .list li.noData:before { width:auto; height:auto; display:block; padding-top:50px; margin-right:0; margin-bottom:22px; background-position:center top; font-size:13px; color:#021343; font-weight:700; }
 
 	.boxList .swiper-wrapper { display:flex; }
 	.boxList .swiper-slide { width:230px !important; padding-left:16px; margin-left:0; }
