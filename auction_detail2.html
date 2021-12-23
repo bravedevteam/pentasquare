@@ -320,9 +320,10 @@
 					<a href="#" class="btnGnb_mo">GNB</a>
 				</div>
 
-				<div class="boxGnb_mo"><!-- 지갑 연결 후 is--wallet 클래스 추가 -->
+				<div class="boxGnb_mo is--wallet"><!-- 지갑 연결 후 is--wallet 클래스 추가 -->
 					<div class="section_gnb">
 						<!-- 지갑 연결 전 -->
+						<!--
 						<div class="topArea">
 							<div class="title">Wallet</div>
 							<div class="subject">연결할 지갑을 선택해주세요.</div>
@@ -332,16 +333,17 @@
 							<a href="#" class="metamask">Metamask로 연결</a>
 							<a href="#" class="klip">카카오톡 클립(klip)으로 연결</a>
 						</div>
+						-->
 						<!-- //지갑 연결 전 -->
 
 						<!-- 지갑 연결 후 -->
-						<!--
+						
 						<div class="topArea">
 							<div class="wallet">
-								<a href="#" class="open--alarm">0x1effsa0x1effsa0x1effsa</a>
+								<a href="#" class="open--alarm" data-alarm="alarm1">0x1effsa0x1effsa0x1effsa</a>
 							</div>
 						</div>
-						-->
+						
 						<!-- //지갑 연결 후 -->
 
 						<!--
@@ -368,7 +370,89 @@
 						<!-- //로그인 후 -->
 					</div>
 
+					<!--
 					<div class="boxWallet type--login">
+						< !-- 로그인 후 -- >
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>dev@gmail.com</span></div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num new">15</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnGuide">
+							<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="creat">Creat NFT</a>
+							<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+						</div>
+						< !-- //로그인 후 -- >
+					</div>
+					-->
+
+					<!-- 로그인 후 -->
+					
+					<div class="boxWallet type--login">
+						<div class="inWallet">
+							<div class="wallet">
+								<!--
+								<div class="walletCoin">
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								-->
+								
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
+									<div class="input call--keyboard">
+										<input type="text" id="input_1" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+								</div>
+								<div class="btnArea">
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+								</div>
+								
+							</div>
+							<!--
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							-->
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+
 						<!-- 로그인 후 -->
 						<div class="boxInsta">
 							<div class="infoUser">
@@ -392,94 +476,15 @@
 								</ul>
 							</div>
 						</div>
-						<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+						<div class="btnGuide">
+							<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+						</div>
 						<div class="btnBottom">
 							<a href="#" class="creat">Creat NFT</a>
 							<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
 						</div>
 						<!-- //로그인 후 -->
 					</div>
-
-					<!-- 로그인 후 -->
-					<!--
-					<div class="boxWallet type--login">
-						<div class="inWallet">
-							<div class="wallet">
-								< !--
-								<div class="walletCoin">
-									<div class="coin">
-										<div class="value">
-											<div class="name">Your Balance</div>
-											<div class="price">0 ETH</div>
-										</div>
-										<a href="#" class="btnChange">change</a>
-									</div>
-									<div class="coin">
-										<div class="value">
-											<div class="name">Your Bidding Balance</div>
-											<div class="price">0 WETH</div>
-										</div>
-										<a href="#" class="btnChange">change</a>
-									</div>
-								</div>
-								-- >
-								
-								<div class="walletCoin type--write">
-									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
-									<div class="input call--keyboard">
-										<input type="text" id="input_1" placeholder="Enter an amount" />
-										<button type="button" class="trans eth on">ETH</button>
-										<button type="button" class="trans weth">WETH</button>
-									</div>
-								</div>
-								<div class="btnArea">
-									<a href="#" class="convert">Convert</a>
-									<a href="#" class="cancel">Cancel</a>
-								</div>
-								
-							</div>
-							< !--
-							<a href="#" class="btnPairing">
-								<span>Pre-pairing</span>
-								<div class="square">0 SQUARE</div>
-							</a>
-							-- >
-							<a href="#" class="disconnect">Disconnect Wallet</a>
-						</div>
-
-						< !-- 로그인 후 -- >
-						<div class="boxInsta">
-							<div class="infoTop">
-								<div class="title">My</div>
-								<a href="#" class="edit">Edit</a>
-							</div>
-							<div class="infoUser">
-								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
-								<div class="name">Linda Dounia<span>Linda0980</span></div>
-							</div>
-							<div class="userLink">
-								<ul>
-									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
-									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
-									<li>
-										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
-										<ul class="listDepth">
-											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
-										</ul>
-									</li>
-									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
-									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
-									<li><a href="#"><span class="name">Notifications</span><span class="num on">15</span></a></li>
-								</ul>
-							</div>
-							<div class="btnBottom">
-								<a href="#" class="creat">Creat NFT</a>
-								<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
-							</div>
-						</div>
-						< !-- //로그인 후 -- >
-					</div>
-					-->
 					<!-- //로그인 후 -->
 
 					<!-- Send NFT -->
@@ -650,7 +655,7 @@
 				</div>
 				<div class="btnArea right">
 					<a href="#" class="btnLike">Term</a>
-					<a href="#" class="btnShare open--alarm">Share</a>
+					<a href="#" class="btnShare open--alarm" data-alarm="alarm1">Share</a>
 				</div>
       </div>
 			<div class="section section--detail">
@@ -1109,7 +1114,8 @@
 
 <div id="dim"></div>
 
-<div id="popAlarm" class="popAlarm">주소가 복사되었습니다.</div>
+<div id="alarm1" class="popAlarm">주소가 복사되었습니다.</div>
+<div id="alarm2" class="popAlarm">준비중입니다.</div>
 
 <script type="text/javascript">
 	var swiper = new Swiper('.boxAuctionVisual .swiper-container', {

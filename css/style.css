@@ -156,11 +156,6 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet .listWallet a.metamask:before { content:''; width:27px; height:25px; display:inline-block; margin-right:8px; background:url('../images/content/iconWallet_meta.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 #header .boxWallet .listWallet a.klip { border:0; background:#fde500; line-height:62px; }
 #header .boxWallet .listWallet a.klip:before { content:''; width:36px; height:18px; display:inline-block; margin-right:10px; background:url('../images/content/iconWallet_klip.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
-#header .boxWallet .linkGuide { height:52px; display:block; margin:10px 17px 0; line-height:52px; text-align:center; font-size:13px; font-weight:500; color:#000c2d; }
-#header .boxWallet .linkGuide:before { content:''; width:19px; height:15px; display:inline-block; margin-right:8px; background:url('../images/content/iconGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
-#header .boxWallet .linkGuide:after { content:''; width:8px; height:13px; display:inline-block; margin-left:20px; background:url('../images/common/linkGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
-#header .boxWallet .linkGuide.type--bottom { height:65px; display:block; margin:0; padding:0 25px; position:relative; background:#f4f6f9; text-align:left; line-height:65px; }
-#header .boxWallet .linkGuide.type--bottom:after { position:absolute; right:25px; top:50%; transform:translateY(-50%); }
 #header .boxWallet .boxInsta { padding:24px 16px 18px 17px; border-top:1px solid #adadad; }
 #header .boxWallet .boxInsta .title { margin-bottom:6px; font-size:16px; font-weight:600; color:#000c2d; }
 #header .boxWallet .boxInsta .subject { margin-bottom:14px; font-size:13px; color:#adadad; }
@@ -171,7 +166,12 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet .boxInsta>a.btnSocial.google { border:1px solid #c0c9d4; background:url('../images/common/btnSocial_google.png') center center no-repeat #fff; }
 #header .boxWallet .boxInsta>a.btnSocial.kakao { background:url('../images/common/btnSocial_kakao.png') center center no-repeat #fee502; }
 
-
+#header .btnGuide { padding:10px 17px 0; }
+#header .linkGuide { height:52px; display:block; line-height:52px; text-align:center; font-size:13px; font-weight:500; color:#000c2d; }
+#header .linkGuide:before { content:''; width:19px; height:15px; display:inline-block; margin-right:8px; background:url('../images/content/iconGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .linkGuide:after { content:''; width:8px; height:13px; display:inline-block; margin-left:20px; background:url('../images/common/linkGuide.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+#header .linkGuide.type--bottom { height:65px; display:block; margin:0; padding:0 25px; position:relative; background:#f4f6f9; text-align:left; line-height:65px; }
+#header .linkGuide.type--bottom:after { position:absolute; right:25px; top:50%; transform:translateY(-50%); }
 
 #header .boxWallet .btnBottom { padding:20px 16px; }
 #header .boxWallet .btnBottom a { height:56px; display:block; border-radius:13px; font-size:20px; color:#021343; border:1px solid #021343; background:#fff; line-height:54px; text-align:center; }
@@ -1091,8 +1091,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.input--size2,
 	.input--size3 { width:100% !important; }
 	
-	#header { position:fixed; }
-	#header h1 { width:155px; height:28px; margin-left:0; }
+	#header { position:fixed; padding:17px 0; }
+	#header h1 { width:155px; height:34px; margin-left:0; }
 	#header .opt { right:15px; }
 	#header .opt>a { width:18px; height:28px; background-size:100% auto; background-repeat:no-repeat; background-position:center center; font-size:0; text-indent:-99999px; }
 	#header .opt>a.btnSearch_mo { background-image:url('../images/common/iconSearch_white.png'); }
@@ -1128,15 +1128,16 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	#header .section_gnb .btn.type--single a { flex:1; }
 
-	#header .boxWallet { width:auto; display:block; position:relative; padding-top:14px; right:auto; top:auto; background:#f4f6f9; }
+	#header .boxGnb_mo.is--wallet .section_gnb { padding:28px 16px; }
+	#header .boxGnb_mo.is--wallet .section_gnb .topArea { margin-bottom:0; }
+
+	#header .boxWallet { width:auto; display:block; position:relative; padding-top:14px; right:auto; top:auto; }
 	#header .boxWallet:before { display:none; }
 	#header .boxWallet .inWallet .wallet { height:204px; font-weight:500; }
 	#header .boxWallet .inWallet .wallet:before { margin-bottom:20px; }
 	#header .boxWallet .inWallet .title { margin-bottom:5px; font-size:15px; color:#3f3f3f; font-weight:500; }
 	#header .boxWallet .boxInsta { padding-top:34px; background:#f4f6f9; border-top:0; }
-	#header .boxWallet .linkGuide { height:90px; margin:0 34px; padding:0 6px; position:relative; border-top:1px solid #e8e8e8; line-height:90px; text-align:left; font-size:17px; font-weight:500; }
-	#header .boxWallet .linkGuide:after { position:absolute; right:11px; top:50%; transform:translateY(-50%); }
-	#header .boxWallet .btnBottom { padding:0 16px 18px; }
+	#header .boxWallet .btnBottom { padding:0 16px 18px; background:#f4f6f9; }
 	#header .boxWallet .btnBottom a { height:66px; border:0; border-radius:14px; line-height:66px; color:#fff; }
 	#header .boxWallet .btnBottom a+a { margin-top:8px; }
 	#header .boxWallet .btnBottom a.creat { background-image: linear-gradient(to right, #ff00ba, #ff0080); }
@@ -1161,6 +1162,15 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxWallet.type--login .boxInsta .userLink>ul>li .num.new:after { background:#f4f6f9; }
 	#header .boxWallet.type--login .boxInsta .userLink>ul>li .listDepth li a { font-size:15px; }
 		
+	#header .btnGuide { padding:0; }
+	#header .linkGuide { width:100%; height:90px; position:absolute; left:0; bottom:18px; padding:0 6px; line-height:90px; text-align:center; font-size:17px; font-weight:500; }
+	#header .linkGuide:after {  }
+
+	#header .boxWallet.type--login .btnGuide { padding:0 34px; }
+	#header .boxWallet.type--login .btnGuide { background:#f4f6f9; }
+	#header .boxWallet.type--login .linkGuide { width:auto; position:relative; bottom:0; border-top:1px solid #e8e8e8; text-align:left; }
+	#header .boxWallet.type--login .linkGuide:after { position:absolute; right:11px; top:50%; transform:translateY(-50%); }
+
 	#header .boxSendNFT { width:100%; lefT:0; right:0; top:0; border-radius:0; box-shadow:none; z-index:21; }
 	#header .boxSendNFT .boxForm { padding-bottom:50px; }
 	#header .boxSendNFT .boxForm .row { display:flex; align-items:center; }

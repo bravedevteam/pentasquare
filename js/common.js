@@ -166,9 +166,10 @@ $(function(){
 
   $(".open--alarm").click(function(e){
     e.preventDefault();
-    $("#popAlarm").fadeIn(500);
+    var target = $(this).attr("data-alarm");
+    $("#"+target).fadeIn(500);
     setTimeout(function(){
-      $("#popAlarm").fadeOut(500);
+      $("#"+target).fadeOut(500);
     }, 1500);
   });
 
