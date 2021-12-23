@@ -1319,7 +1319,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	.mainTabCont.is--mobile { display:none; }
 	.mainTabCont.is--mobile.active { display:block; }
-	.mainTabCont.is--mobile .topArea { display:none; }
+	.mainTabCont.is--mobile .topArea { margin-bottom:25px; }
+	.mainTabCont.is--mobile .topArea h3 { display:none; }
+	.mainTabCont.is--mobile .topArea .subject { font-size:13px; color:#62668c; }
 	.mainTabCont+.mainTabCont { margin-top:0; }
 
 	h3.title { font-size:17px; }
