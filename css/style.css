@@ -1110,7 +1110,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .section_gnb .topArea .subject { font-size:13px; }
 	#header .section_gnb .topArea .info { flex:1; flex-direction:column; justify-content:center; display:flex; font-size:13px; color:#adadad; }
 	#header .section_gnb .topArea .name { font-size:18px; color:#010d2d; }
-	#header .section_gnb .topArea a:after { content:''; width:17px; height:14px; margin-left:10px; display:inline-block; background:url('../images/content/iconWallet.png') right center no-repeat; background-size:17px auto; vertical-align:middle; }
+	#header .section_gnb .topArea a { line-height:25px; }
+	#header .section_gnb .topArea a:before { content:''; width:27px; height:25px; margin-right:8px; display:inline-block; background:url('../images/common/imgLogoMeta.png') center center no-repeat; background-size:27px auto; vertical-align:middle; }
 	#header .section_gnb .listWallet {  }
 	#header .section_gnb .listWallet a { display:block; height:62px; text-align:center; line-height:60px; font-size:14px; }
 	#header .section_gnb .listWallet a+a { margin-top:10px; }
@@ -1128,7 +1129,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	#header .section_gnb .btn.type--single a { flex:1; }
 
-	#header .boxGnb_mo.is--wallet .section_gnb { padding:28px 16px; }
+	#header .boxGnb_mo.is--wallet .section_gnb { padding:25px 16px; }
 	#header .boxGnb_mo.is--wallet .section_gnb .topArea { margin-bottom:0; }
 
 	#header .boxWallet { width:auto; display:block; position:relative; padding-top:14px; right:auto; top:auto; }
@@ -1136,6 +1137,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxWallet .inWallet .wallet { height:204px; font-weight:500; }
 	#header .boxWallet .inWallet .wallet:before { margin-bottom:20px; }
 	#header .boxWallet .inWallet .title { margin-bottom:5px; font-size:15px; color:#3f3f3f; font-weight:500; }
+	#header .boxWallet .inWallet .btnBottom { padding:0 0 30px; background:#fff; }
 	#header .boxWallet .boxInsta { padding-top:34px; background:#f4f6f9; border-top:0; }
 	#header .boxWallet .btnBottom { padding:0 16px 18px; background:#f4f6f9; }
 	#header .boxWallet .btnBottom a { height:66px; border:0; border-radius:14px; line-height:66px; color:#fff; }
@@ -1146,6 +1148,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header .boxWallet.type--login { right:auto; padding-top:0; }
 	#header .boxWallet.type--login .topArea:after { content:''; width:42px; height:40px; position:absolute; right:0; top:8px; background:url('../images/content/imgNoWallet.png') center center no-repeat; background-size:100% auto; }
 	#header .boxWallet.type--login .inWallet .wallet { padding:22px 16px 24px; }
+	#header .boxWallet.type--login .inWallet .walletCoin { height:auto; }
 	#header .boxWallet.type--login .inWallet .walletCoin .coin.mark:before { margin-right:17px; }
 	#header .boxWallet.type--login .inWallet .walletCoin .coin+.coin { margin-top:22px; }
 	#header .boxWallet.type--login .inWallet .walletCoin .btnChange { width:55px; height:32px; top:auto; bottom:0; background-image:url('../images/content/btnChange_m.png'); }
