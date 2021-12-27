@@ -650,7 +650,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 #bidSwiper .swiper-button-next,
 #bidSwiper .swiper-button-prev { display:none; }
 
-.boxDetailTop { padding:92px 0; position:relative; background:#f4f6f9; }
+.boxDetailTop { padding:46px 0; position:relative; background:#f4f6f9; }
 .boxDetailTop .cont { width:822px; margin:0 auto; display:flex; align-items:center; justify-content:center; border-radius:24px; overflow:hidden; }
 .boxDetailTop .cont img { width:100%; }
 .boxDetailTop .btnArea { position:absolute; bottom:22px; overflow:hidden; }
