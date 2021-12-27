@@ -530,6 +530,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxList .list { display:flex; flex-wrap:wrap; }
 .boxList .list li { width:calc(25% - 18px); position:relative; margin-left:24px; background:#fff; border-radius:15px; overflow:hidden; }
 .boxList .list li:nth-child(4n+1) { margin-left:0; }
+.boxList .list li:nth-child(1n+5) { margin-top:24px; }
 .boxList .list li .thumb { height:292px; display:flex; align-items:center; justify-content:center; position:relative; border-radius:15px; overflow:hidden; }
 .boxList .list li .thumb img { width:100%; }
 .boxList .list li .thumb .bedgeArea { position:absolute; right:0; top:0; z-index:2; }
@@ -1304,7 +1305,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxAuctionVisual .swiper-slide.item1 .img { top:0; margin-top:-16px; margin-bottom:-50px; margin-right:0; }
 	.boxAuctionVisual .swiper-slide.item2 .img,
 	.boxAuctionVisual .swiper-slide.item3 .img { top:0; margin-right:0; }
-	.boxAuctionVisual .swiper-slide .title { padding-left:55px; font-size:17px; color:#000; letter-spacing:-.05em; }
+	.boxAuctionVisual .swiper-slide .title { padding-left:55px; font-size:27px; color:#000; letter-spacing:-.05em; }
 	.boxAuctionVisual .swiper-slide.item1 .title { padding:0 30px 0 80px; color:#fff; font-size:27px; font-family:"SourceHanSerifK"; font-weight:700; }
 	.boxAuctionVisual .swiper-slide .subject { padding:0 55px; color:#000; font-size:13px; line-height:19px; }
 	.boxAuctionVisual .swiper-slide.item1 .subject { margin-top:25px; margin-bottom:0; padding:0 30px 0 80px; color:#bebebe; line-height:2em; font-family:"SourceHanSerifK"; font-weight:700; }
