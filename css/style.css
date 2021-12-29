@@ -792,7 +792,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 .boxCreate { margin-top:35px; margin-bottom:35px; }
 .boxCreate.type--profile { margin-bottom:30px; }
-.boxCreate.type--profile .boxWhite { padding-right:102px; }
+.boxCreate.type--profile .boxWhite {  }
 .boxCreate.type--profile .listTable>li>.th { padding-right:40px; }
 
 .tabArea { display:flex; }
@@ -817,9 +817,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .listTable>li.line { padding-top:32px; margin-top:40px; border-top:1px solid rgba(192,201,212,0.5); }
 .listTable>li+li { margin-top:15px; }
 .listTable>li:after { content:''; clear:both; display:block; visibility:visible; }
-.listTable>li>.th { width:150px; float:left; padding:10px 0; color:#3f3f3f; font-size:14px; font-weight:500; }
+.listTable>li>.th { width:170px; float:left; padding:10px 0; color:#3f3f3f; font-size:14px; font-weight:500; }
 .listTable>li>.th.royal { padding-left:30px; background:url('../images/content/iconRoyal.png') left center no-repeat; background-size:23px auto; color:#8358f9; }
-.listTable>li>.td { margin-left:150px; position:relative; line-height:40px; font-size:14px; color:#021343; line-height:40px; }
+.listTable>li>.td { margin-left:170px; position:relative; line-height:40px; font-size:14px; color:#021343; line-height:40px; }
 .listTable>li>.td>span { display:inline-block; font-size:12px; color:#c4c4c4; vertical-align:middle; line-height:1.4; }
 .listTable>li>.td>span.pc { display:inline-block !important; }
 .listTable>li>.th>span.imp { color:#ff00af; }
@@ -844,18 +844,20 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .listTable.type--wallet>li>.td { margin-left:230px; display:flex; align-items:center; justify-content:space-between; line-height:62px; }
 .listTable.type--wallet>li+li { margin-top:0; border-top:1px solid #acafc6; }
 .listTable.type--wallet>li>.td .val { font-size:12px; font-weight:700; color:#62668c; letter-spacing:-0.03em; }
-.listTable.type--wallet>li>.td .val.dis { opacity:.5; }
+.listTable.type--wallet>li>.td .val.dis { opacity:.5; font-weight:400; }
 .listTable.type--wallet>li>.td>a { width:250px; height:62px; display:block; border-radius:13px; border:1px solid #000; background:#f4f6f9; line-height:60px; text-align:center; }
 .listTable.type--wallet>li>.td>a.icon--klip:before { content:''; width:36px; height:18px; margin-right:6px; display:inline-block; background:url('../images/content/iconWallet_klip.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .listTable.type--wallet>li>.td>a.icon--meta:before { content:''; width:27px; height:25px; margin-right:12px; display:inline-block; background:url('../images/content/iconWallet_meta.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.listTable.type--wallet>li>.td>a.btn--google { width:194px; height:47px; background:url('../images/common/btnProfile_google.png') center center no-repeat; background-size:100% auto; border:0; border-radius:0; font-size:0; text-indent:-99999px; }
 
 .inTxt { padding:0 15px; font-size:12px; color:#62668c; }
 
-.boxConfirm { display:flex; align-items:center; }
+.boxConfirm { display:flex; align-items:center; justify-content:space-between; }
 .boxConfirm>.inTxt { width:calc(100% - 145px); }
 .boxConfirm>input[type="text"] { width:calc(100% - 145px); }
 .boxConfirm>button { width:145px; height:40px; display:flex; align-items:center; justify-content:center; margin-left:4px; border-radius:4px; background:#62668c; color:#fff; font-size:15px; }
 .boxConfirm>button.active { background:#1b44ef; }
+.boxConfirm>button.btn--google { width:194px; height:47px; background:url('../images/common/btnProfile_google.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .boxConfirm+.ps { margin-top:6px; }
 
 .ps { font-size:12px; color:#1b44ef; line-height:1.4; }
@@ -916,7 +918,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 #footer .agreement a { height:30px; padding:0 25px; display:flex; align-items:center; position:relative; font-size:16px; color:rgba(255,255,255,.8); }
 #footer .agreement a+a:before { content:''; width:1px; height:12px; position:absolute; left:0; top:50%; margin-top:-6px; background:rgba(255,255,255,0.5); }
 #footer h2 { width:206px; height:38px; margin-bottom:10px; display:block; background:url('../images/common/logo_f.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-#footer .copyright { font-size:15px; color:rgba(90,90,90,.7); font-weight:500; }
+#footer .copyright { font-size:15px; color:rgba(90,90,90,.7); font-weight:500; line-height:1.67; }
 #footer .sns { position:absolute; right:43px; top:54px; overflow:hidden; }
 #footer .sns a { width:40px; height:30px; float:left; background-repeat:no-repeat; background-position:center center; font-size:0; text-indent:-99999px; }
 #footer .sns a+a { margin-left:15px; }
@@ -1608,6 +1610,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.boxCreate { margin-top:40px; margin-bottom:38px; }
 	.boxCreate.type--profile .boxWhite { padding:20px 14px 46px; }
 	.boxCreate.type--profile .boxWhite.typeB { padding:15px 14px 22px; }
+	.boxCreate.type--profile .boxWhite.typeC { padding:0 14px; }
 	.boxCreate.type--profile .listTable>li>.th { padding-right:0; }
 
 	.tabArea a { flex:1; height:50px; border-top-left-radius:17px; border-top-right-radius:17px; font-size:15px; }
@@ -1642,6 +1645,14 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.listTable>li>.td a.more { display:none; }
 	.listTable>li>.td .chkVal { display:inline-block; padding-left:23px; position:relative; }
 	.listTable>li>.td .chkVal:before { content:''; width:8px; height:8px; border-radius:50%; position:absolute; left:0; top:50%; margin-top:-4px; background:#021343; }
+
+	.listTable.type--wallet>li {  }
+	.listTable.type--wallet>li>.th { width:auto; margin-bottom:8px; line-height:1.2; }
+	.listTable.type--wallet>li>.td { display:block; margin-left:0; line-height:1.4; font-size:13px; }
+	.listTable.type--wallet>li>.td>a { width:auto; height:40px; margin-top:10px; line-height:38px; font-size:12px; }
+	.listTable.type--wallet>li>.td>a.icon--klip:before { width:18px; height:9px; }
+	.listTable.type--wallet>li>.td>a.icon--meta:before { width:14px; height:13px; margin-right:6px; }
+	
 
 	.listTable>li>.td.typeA { padding-left:15px; padding-top:10px; }
 
