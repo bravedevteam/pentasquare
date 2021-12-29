@@ -1050,18 +1050,12 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .popKeyboard .number button { width:33.3%; height:60px; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:500; color:#010d2d; }
 .popKeyboard .number button.submit { font-size:15px; color:#1b44ef; font-weight:700; }
 
-.boxConfirmLoading { position:fixed; left:50%; top:50%; display:none; background:#fff; transform:translate(-50%, -50%); z-index:21; }
-.boxConfirmLoading .circle { width:56px; height:60px; margin:0 auto; position:relative; }
-.boxConfirmLoading .circle .symbol { width:8px; height:8px; position:absolute; animation:loadingCircle 3s ease infinite; background:#f0f3fe; border-radius:50%; transform:translate(-50%, -50%); }
-.boxConfirmLoading .circle .symbol.pos1 { left:51px; top:25px; }
-.boxConfirmLoading .circle .symbol.pos2 { left:45px; top:46px; animation-delay:.5s; }
-.boxConfirmLoading .circle .symbol.pos3 { left:22px; top:52px; animation-delay:1s; }
-.boxConfirmLoading .circle .symbol.pos4 { left:7px; top:37px; animation-delay:1.5s; }
-.boxConfirmLoading .circle .symbol.pos5 { left:12px; top:14px; animation-delay:2s; }
-.boxConfirmLoading .circle .symbol.pos6 { left:35px; top:7px; animation-delay:2.5s; }
-
-.boxConfirmLoading .cont { height:90px; padding:0 40px; justify-content:flex-end; display:flex; align-items:center; font-size:18px; color:#021343; }
-.boxConfirmLoading .btnCancel { width:100px; height:42px; margin-left:26px; border-radius:4px; border:1px solid #dadce0; font-size:15px; color:#62668c; text-align:center; line-height:40px; }
+.boxConfirmLoading { width:100%; max-width:350px; height:350px; display:none; position:fixed; left:50%; top:50%; padding:80px 0 0; border-radius:26px; background:#fff; transform:translate(-50%, -50%); z-index:21; }
+.boxConfirmLoading .circle { width:56px; height:60px; margin:0 auto 16px; position:relative; }
+.boxConfirmLoading .cont { color:#021343; text-align:center; }
+.boxConfirmLoading .proccess { font-size:18px; font-weight:500; }
+.boxConfirmLoading p { display:block; margin-top:12px; font-size:13px; }
+.boxConfirmLoading .btnCancel { width:100px; height:42px; display:block; margin:48px auto 0; border-radius:4px; border:1px solid #dadce0; font-size:15px; color:#62668c; text-align:center; line-height:40px; }
 
 .popAlarm { min-width:250px; max-width:90%; display:none; padding:24px; position:fixed; left:50%; top:50%; background:rgba(0,0,0,0.7); border-radius:17px; color:#fff; transform:translate(-50%, -50%); text-align:center; font-size:16px; z-index:30; }
 
@@ -1796,9 +1790,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.popBasic.type--preview .section.section--detail .inner.mo { padding:0; background:transparent; }
 	.popBasic.type--preview .section.section--detail .boxDetail { top:0; margin-top:-20px; }
 
-	.boxConfirmLoading .bar { height:6px; }
-	.boxConfirmLoading .cont { height:50px; padding:0 20px; font-size:15px; }
-	.boxConfirmLoading .btnCancel { width:80px; height:32px; margin-left:12px; font-size:12px; line-height:30px; }
+	.boxConfirmLoading { height:auto; padding:70px 0 33px; }
+	.boxConfirmLoading .cont { padding:0 20px; font-size:15px; }
+	.boxConfirmLoading .btnCancel { width:100px; height:42px; line-height:40px; }
 
 	
 }

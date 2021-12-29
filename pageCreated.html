@@ -925,16 +925,10 @@
 <div id="dim"></div>
 
 <div id="confirmLoading" class="boxConfirmLoading">
-	<div class="circle">
-		<div class="symbol pos1"></div>
-		<div class="symbol pos2"></div>
-		<div class="symbol pos3"></div>
-		<div class="symbol pos4"></div>
-		<div class="symbol pos5"></div>
-		<div class="symbol pos6"></div>
-	</div>
+	<div class="circle"><img src="./images/common/imgLoading.gif" alt="" /></div>
 	<div class="cont">
 		<div class="proccess">Item Freezing···</div>
+		<p>Please wait a moment.</p>
 		<a href="#" class="btnCancel">CANCEL</a>
 	</div>
 </div>
@@ -968,13 +962,13 @@
 <script type="text/javascript">
 $(function(){
 	$(".btnBasic.submit").click(function(){
-		$("#confirmLoading").addClass("active");
+		$("#confirmLoading").show();
 		dim_open();
 	});
 
 	$("#confirmLoading .btnCancel").click(function(e){
 		e.preventDefault();
-		$("#confirmLoading").removeClass("active");
+		$("#confirmLoading").hide();
 		dim_close();
 	});
 });
