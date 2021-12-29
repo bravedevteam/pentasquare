@@ -196,27 +196,6 @@ $(function(){
     });
   }
 
-  function loadingAction(){
-    var pos = $(this).scrollTop();
-    var winH = $(window).outerHeight();
-    var target = $("body").outerHeight();
-    var footer = $("#footer").outerHeight();
-    var footer_pos = (target - (winH + footer));
-
-    if(footer_pos <= pos){
-      var pos_t = pos - footer_pos;
-      $("#confirmLoading").css("bottom", pos_t);
-    }else{
-      $("#confirmLoading").css("bottom", 0);
-    }
-  }
-  loadingAction();
-
-  $(window).scroll(function(){
-    loadingAction();
-  });
-  
-
   $(window).resize(function(){
     winW = $(window).outerWidth();
 
@@ -259,13 +238,13 @@ $(function(){
     }
   });
 
-  function dim_open(){
-    $("#dim").fadeIn(300);
-    $("body").css("overflow", "hidden");
-  }
-
-  function dim_close(){
-    $("#dim").fadeOut(300);
-    $("body").css("overflow", "auto");
-  }
 });
+function dim_open(){
+  $("#dim").fadeIn(300);
+  $("body").css("overflow", "hidden");
+}
+
+function dim_close(){
+  $("#dim").fadeOut(300);
+  $("body").css("overflow", "auto");
+}
