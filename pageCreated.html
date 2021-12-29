@@ -913,21 +913,31 @@
         </div>
         <h2>PENTASQUARE</h2>
         <div class="copyright">
-					사업자등록번호 : 509-88-02347<br />
-					주소 : 서울특별시 분당구 매화로 54, 2층 205호 에이 166.   |    대표자 : 박진홍<br />
+					사업자등록번호 : 509-88-02347   |    대표자 : 박진홍<br />
+					주식회사 펜타스퀘어   |    주소 : 서울특별시 분당구 매화로 54, 2층 205호 에이 166.<br />
 					Pentasquare Inc. All Rights Reserved.
 				</div>
       </div>
 		</footer>
 	</section>
-	<div id="confirmLoading" class="boxConfirmLoading">
-		<div class="bar"></div>
-		<div class="cont">
-			<div class="proccess">Item Freezing···</div>
-			<a href="#" class="btnCancel">CANCEL</a>
-		</div>
-	</div>
 </body>
+
+<div id="dim"></div>
+
+<div id="confirmLoading" class="boxConfirmLoading">
+	<div class="circle">
+		<div class="symbol pos1"></div>
+		<div class="symbol pos2"></div>
+		<div class="symbol pos3"></div>
+		<div class="symbol pos4"></div>
+		<div class="symbol pos5"></div>
+		<div class="symbol pos6"></div>
+	</div>
+	<div class="cont">
+		<div class="proccess">Item Freezing···</div>
+		<a href="#" class="btnCancel">CANCEL</a>
+	</div>
+</div>
 
 <div id="alarm1" class="popAlarm">주소가 복사되었습니다.</div>
 <div id="alarm2" class="popAlarm">준비중입니다.</div>
@@ -957,16 +967,15 @@
 
 <script type="text/javascript">
 $(function(){
-	$("#confirmLoading").slideUp(0);
 	$(".btnBasic.submit").click(function(){
-		$("#confirmLoading").css("z-index", "100").slideDown(300);
+		$("#confirmLoading").addClass("active");
+		dim_open();
 	});
 
 	$("#confirmLoading .btnCancel").click(function(e){
 		e.preventDefault();
-		$("#confirmLoading").slideUp(300, function(){
-			$(this).css("z-index", "-1");
-		});
+		$("#confirmLoading").removeClass("active");
+		dim_close();
 	});
 });
 </script>

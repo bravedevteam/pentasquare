@@ -1050,24 +1050,28 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .popKeyboard .number button { width:33.3%; height:60px; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:500; color:#010d2d; }
 .popKeyboard .number button.submit { font-size:15px; color:#1b44ef; font-weight:700; }
 
-.boxConfirmLoading { width:100%; position:fixed; left:0; bottom:-100%; background:#fff; box-shadow: 0 -5px 19px 0 rgba(0, 0, 0, 0.11); z-index:-1; }
-.boxConfirmLoading .bar { height:14px; position:relative; background: linear-gradient(270deg, #337aff, #ff00af); background-size: 400% 400%; animation: loadingBar 3s ease infinite; }
-.boxConfirmLoading .bar:after { content:''; width:110px; height:100%; position:absolute; left:-110px; top:0; background: rgb(255,255,255); background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); animation:barTip 3s ease infinite; }
-.boxConfirmLoading .bar:before { content:''; width:110px; height:100%; position:absolute; left:-110px; top:0; background: rgb(255,255,255); background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); animation:barTip 3s ease 1.5s infinite; }
+.boxConfirmLoading { position:fixed; left:50%; top:50%; display:none; background:#fff; transform:translate(-50%, -50%); z-index:21; }
+.boxConfirmLoading .circle { width:56px; height:60px; margin:0 auto; position:relative; }
+.boxConfirmLoading .circle .symbol { width:8px; height:8px; position:absolute; animation:loadingCircle 3s ease infinite; background:#f0f3fe; border-radius:50%; transform:translate(-50%, -50%); }
+.boxConfirmLoading .circle .symbol.pos1 { left:51px; top:25px; }
+.boxConfirmLoading .circle .symbol.pos2 { left:45px; top:46px; animation-delay:.5s; }
+.boxConfirmLoading .circle .symbol.pos3 { left:22px; top:52px; animation-delay:1s; }
+.boxConfirmLoading .circle .symbol.pos4 { left:7px; top:37px; animation-delay:1.5s; }
+.boxConfirmLoading .circle .symbol.pos5 { left:12px; top:14px; animation-delay:2s; }
+.boxConfirmLoading .circle .symbol.pos6 { left:35px; top:7px; animation-delay:2.5s; }
+
 .boxConfirmLoading .cont { height:90px; padding:0 40px; justify-content:flex-end; display:flex; align-items:center; font-size:18px; color:#021343; }
 .boxConfirmLoading .btnCancel { width:100px; height:42px; margin-left:26px; border-radius:4px; border:1px solid #dadce0; font-size:15px; color:#62668c; text-align:center; line-height:40px; }
 
 .popAlarm { min-width:250px; max-width:90%; display:none; padding:24px; position:fixed; left:50%; top:50%; background:rgba(0,0,0,0.7); border-radius:17px; color:#fff; transform:translate(-50%, -50%); text-align:center; font-size:16px; z-index:30; }
 
-@keyframes loadingBar {
-	0%{background-position:0% 50%}
-	50%{background-position:100% 50%}
-	100%{background-position:0% 50%}
-}
-
-@keyframes barTip {
-	0%{ left:-110px; }
-	100%{ left: 100%; }
+@keyframes loadingCircle {
+	0%{ width:8px; height:8px; background:#f0f3fe; }
+	20%{ width:10px; height:10px; background:#d1dafc; }
+	40%{ width:11px; height:11px; background:#a4b4f9; }
+	60%{ width:12px; height:12px; background:#5f7cf4; }
+	8%{ width:13px; height:13px; background:#3100ff; }
+	100%{ width:14px; height:14px; background:#000; }
 }
 
 @media screen and (max-width:1439px) {
