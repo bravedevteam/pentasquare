@@ -1727,8 +1727,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#footer .agreement a { padding:0 26px; color:rgba(255,255,255,.8); font-size:13px; }
 	#footer .sns { display:inline-block; position:relative; top:0; right:0; margin-left:-6px; margin-bottom:25px; }
 	#footer .sns a+a { margin-left:10px; }
-	#footer .sns a.instagram { float:right; margin-left:10px; background-image:url('../images/common/iconSNS_instagram_m.png'); background-size:27px auto; }
-	#footer .sns a.kakao { margin-left:0; background-image:url('../images/common/iconSNS_kakao_m.png'); background-size:27px auto; }
+	#footer .sns a.instagram { background-image:url('../images/common/iconSNS_instagram_m.png'); background-size:27px auto; }
+	#footer .sns a.kakao { background-image:url('../images/common/iconSNS_kakao_m.png'); background-size:27px auto; }
 	#footer .sns a.polymath { background-image:url('../images/common/iconSNS_polymath_m.png'); background-size:24px auto; }
 	#footer h2 { width:120px; height:22px; margin-bottom:8px; background-image:url('../images/common/logo_f_m.png'); }
 	#footer .copyright { font-size:13px; color:rgba(255,255,255,.5); font-weight:300; }
