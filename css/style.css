@@ -1538,7 +1538,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .boxInfoTab .boxDetailCont { padding:0 0 20px; margin-top:0; border:0; }
 	.section.section--detail .boxInfoTab .boxDetailCont .title { margin-bottom:15px; color:#000; font-size:15px; font-weight:500; }
 	.section.section--detail .boxInfoTab .boxDetailCont .cont { display:block; border-radius:0; margin:0 -10px; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote { padding:30px 0 0; background:#fff; }
+	.section.section--detail .boxInfoTab .boxDetailCont .boxNote { padding:30px 0; background:#fff; }
 	.section.section--detail .boxInfoTab .boxDetailCont .boxNote .title { padding:0 10px; font-size:14px; }
 	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li { padding-left:10px; font-size:13px; line-height:23px; color:#606060; }
 	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li:before { top:10px; background:#606060; }
