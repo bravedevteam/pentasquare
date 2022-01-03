@@ -658,12 +658,20 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxDetailTop .btnArea.right { right:38px; }
 .boxDetailTop .btnArea a { height:48px; float:left; padding:0 24px; border:2px solid #e5e5e6; border-radius:48px; background:#fff; font-weight:500; font-size:16px; line-height:44px; }
 .boxDetailTop .btnArea a+a { margin-left:5px; }
+.boxDetailTop .btnArea a.btnDetail { width:76px; background:url('../images/common/iconDetailBlack.png') center center no-repeat #fff; background-size:26px auto; font-size:0; text-indent:-99999px; }
+.boxDetailTop .btnArea a.btnDetail:hover,
+.boxDetailTop .btnArea a.btnDetail.on { background-image:url('../images/common/iconDetailBlack_on.png'); }
 .boxDetailTop .btnArea a.btnLike { width:76px; background:url('../images/common/iconLikeBlack.png') center center no-repeat #fff; background-size:17px auto; font-size:0; text-indent:-99999px; }
 .boxDetailTop .btnArea a.btnLike:hover,
 .boxDetailTop .btnArea a.btnLike.on { background-image:url('../images/common/iconLikeBlack_on.png'); }
 .boxDetailTop .btnArea a.btnShare { width:76px; background:url('../images/common/iconShareBlack.png') center center no-repeat #fff; background-size:19px auto; font-size:0; text-indent:-99999px; }
 .boxDetailTop .btnArea a.btnShare:hover,
 .boxDetailTop .btnArea a.btnShare.on { background-image:url('../images/common/iconShareBlack_on.png'); }
+
+.btnInfoAlert { width:28px; height:28px; position:absolute; right:0; top:0; background:url('../images/common/iconInfoAlert.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+.btnInfoAlert .inAlert { width:250px; height:60px; display:none; position:absolute; right:-50px; bottom:50px; font-size:14px; color:#021343; line-height:60px; text-indent:0; white-space:nowrap; text-align:center; }
+.btnInfoAlert .inAlert:before { content:''; width:286px; height:108px; position:absolute; left:-18px; top:-15px; background:url('../images/common/bgInfoAlert.png') no-repeat; background-size:100% auto; z-index:-1; }
+.btnInfoAlert:hover .inAlert { display:block; }
 
 .section.section--detail .inner { padding:62px 21px 122px 22px; }
 .section.section--detail .leftArea { width:552px; float:left; margin-bottom:120px; }
