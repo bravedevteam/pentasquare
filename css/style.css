@@ -763,11 +763,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxDetailCont .cont { max-height:1250px; position:relative; text-align:center; overflow:hidden; transition:max-height 5s; }
 .boxDetailCont .cont img { position:relative; z-index:1; }
 .boxDetailCont .cont:after { content:''; width:100%; height:167px; position:absolute; left:0; bottom:0; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 89%); z-index:2; }
-.boxDetailCont .boxNote { padding:60px 70px 56px 40px; background:#f4f6f9; text-align:left; }
-.boxDetailCont .boxNote .title { margin-bottom:34px; font-size:16px; color:#393939; font-weight:700; }
-.boxDetailCont .boxNote ul li { padding-left:13px; position:relative; color:#393939; font-size:14px; line-height:34px; }
+.boxDetailCont .boxNote { margin-top:160px; padding:60px 70px 30px 40px; border-top:1px solid #c0c9d4; text-align:left; }
+.boxDetailCont .boxNote .title { margin-bottom:34px; font-size:20px; color:#393939; font-weight:700; }
+.boxDetailCont .boxNote ul li { padding-left:13px; position:relative; color:#62668c; font-size:14px; line-height:34px; }
 .boxDetailCont .boxNote ul li:before { content:''; width:3px; height:3px; position:absolute; left:0; top:16px; background:#393939; }
-.boxDetailCont .boxNote ul li.imp { font-weight:700; }
 .boxDetailCont .btnDetail { width:230px; height:66px; position:absolute; left:50%; bottom:50px; border-radius:66px; background:#fff; border:1px solid #000; text-align:center; line-height:64px; font-size:20px; font-weight:700; color:#000; z-index:10; transform:translateX(-50%); }
 
 .boxDetailCont .cont.active { max-height:99999px; }
@@ -1538,8 +1537,9 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	.section.section--detail .boxInfoTab .boxDetailCont { padding:0 0 20px; margin-top:0; border:0; }
 	.section.section--detail .boxInfoTab .boxDetailCont .title { margin-bottom:15px; color:#000; font-size:15px; font-weight:500; }
-	.section.section--detail .boxInfoTab .boxDetailCont .cont { display:block; border-radius:0; margin:0 -10px; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote { padding:30px 0; background:#fff; }
+	.section.section--detail .boxInfoTab .boxDetailCont .cont { max-height:386px; display:block; border-radius:0; margin:0 -10px; }
+	.section.section--detail .boxInfoTab .boxDetailCont .cont.active { max-height:99999px; }
+	.section.section--detail .boxInfoTab .boxDetailCont .boxNote { padding:30px 0; margin-top:0; border-top:0; }
 	.section.section--detail .boxInfoTab .boxDetailCont .boxNote .title { padding:0 10px; font-size:14px; }
 	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li { padding-left:10px; font-size:13px; line-height:23px; color:#606060; }
 	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li:before { top:10px; background:#606060; }
