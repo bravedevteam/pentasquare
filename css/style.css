@@ -1044,6 +1044,15 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .popBasic.type--quantity .bidArea { padding:0 16px; }
 .popBasic.type--quantity .detailArea { padding:35px 20px; border-top:0; }
 
+.popBasic.type--qr { width:486px; padding:60px 70px; background:#fff; text-align:center; overflow:visible; }
+.popBasic.type--qr h5 { display:inline-block; margin-bottom:56px; padding-left:68px; background:url('../images/content/iconWallet_klip.png') left center no-repeat; background-size:50px auto; font-size:22px; font-weight:500; color:#000; }
+.popBasic.type--qr .boxQR { margin-bottom:42px; }
+.popBasic.type--qr .boxQR .timer { margin-top:12px; font-size:13px; color:#b5b5b5; }
+.popBasic.type--qr .boxQR .timer span { color:#C18690; }
+.popBasic.type--qr .txt1 { font-size:16px; color:#000; font-weight:500; }
+.popBasic.type--qr .txt2 { margin-top:20px; font-size:14px; font-weight:500; color:rgba(0,0,0,.3); }
+.popBasic.type--qr .close { width:32px; height:32px; right:20px; top:-52px; background:url('../images/common/btnClose_white.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+
 #dim { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:rgba(0,0,0,0.5); z-index:20; }
 
 .popKeyboard { width:100%; height:0; position:fixed; left:0; bottom:0; z-index:999; transition:all .5s; }
@@ -1797,6 +1806,12 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 	.popBasic.type--preview .section.section--detail .inner.mo { padding:0; background:transparent; }
 	.popBasic.type--preview .section.section--detail .boxDetail { top:0; margin-top:-20px; }
+
+	.popBasic.type--qr { width:100%; padding:60px 20px; }
+	.popBasic.type--qr h5 { margin-bottom:28px; padding-left:46px; background-size:36px auto; font-size:15px; }
+	.popBasic.type--qr .boxQR { margin-bottom:20px; }
+	.popBasic.type--qr .txt1 { font-size:13px; }
+	.popBasic.type--qr .txt2 { margin-top:10px; font-size:12px; }
 
 	.boxConfirmLoading { height:auto; padding:70px 0 33px; }
 	.boxConfirmLoading .cont { padding:0 20px; font-size:15px; }
