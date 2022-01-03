@@ -133,7 +133,7 @@ body.page--auction { background:#f4f6f9; }
 #header .opt>a.btnConnect { width:160px; background:#000; }
 #header .opt>a.btnCreat { width:96px; background-image: linear-gradient(to right, #ff00ba, #ff0080); }
 
-#header .boxWallet { width:300px; min-height:440px; display:none; position:absolute; padding:43px 0 0; right:70px; top:80px; background:#fff; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16); border-radius:10px; }
+#header .boxWallet { width:300px; min-height:440px; position:absolute; padding:43px 0 0; right:70px; top:80px; background:#fff; box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16); border-radius:10px; }
 #header .boxWallet:before { content:''; width:14px; height:10px; position:absolute; right:50px; top:-10px; background:url('../images/content/iconWalletEdge.png') center bottom no-repeat; background-size:100% auto; }
 #header .boxWallet .topArea { margin:0 17px 30px; position:relative; }
 #header .boxWallet .topArea .title { margin-bottom:3px; font-size:23px; color:#000c2d; font-weight:600; }
@@ -146,7 +146,7 @@ body.page--auction { background:#f4f6f9; }
 #header .boxWallet .inWallet .wallet { width:100%; height:165px; display:flex; border:1px dashed #707070; background:#f0f7ff; border-radius:13px; align-items:center; justify-content:center; font-size:10px; color:#500; color:#3f3f53; flex-direction:column; font-weight:700; }
 #header .boxWallet .inWallet .wallet:before { content:''; width:50px; height:45px; margin-bottom:10px; display:inline-block; background:url('../images/content/imgNoWallet.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 #header .boxWallet .inWallet .wallet strong { display:block; margin-bottom:10px; font-size:15px; font-weight:500; color:#3f3f53; }
-#header .boxWallet .inWallet .wallet span { width:200px; margin:0 auto; display:block; font-weight:400; text-align:center; }
+#header .boxWallet .inWallet .wallet span { width:200px; margin:0 auto; font-weight:400; text-align:center; }
 #header .boxWallet .inWallet a.linkMetaGuide { display:block; margin-top:25px; font-size:17px; font-weight:700; color:#000c2d; text-align:center; }
 #header .boxWallet .inWallet a.linkMetaGuide:after { content:''; width:11px; height:13px; display:inline-block; margin-left:8px; background:url('../images/common/iconMetaGuide.png') center center no-repeat; background-size:100% auto; }
 #header .boxWallet .listWallet { padding:0 17px; }
@@ -763,15 +763,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxDetailCont .cont { position:relative; text-align:center; overflow:hidden; transition:all .5s; }
 .boxDetailCont .cont img { position:relative; z-index:1; }
 .boxDetailCont .cont:after { content:''; width:100%; height:167px; position:absolute; left:0; bottom:0; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 89%); z-index:2; }
-.boxDetailCont .boxNote { padding:60px 70px 56px 40px; background:#f4f6f9; text-align:left; }
-.boxDetailCont .boxNote .title { margin-bottom:34px; font-size:16px; color:#393939; font-weight:700; }
-.boxDetailCont .boxNote ul li { padding-left:13px; position:relative; color:#393939; font-size:14px; line-height:34px; }
-.boxDetailCont .boxNote ul li:before { content:''; width:3px; height:3px; position:absolute; left:0; top:16px; background:#393939; }
-.boxDetailCont .boxNote ul li.imp { font-weight:700; }
 .boxDetailCont .btnDetail { width:230px; height:66px; position:absolute; left:50%; bottom:50px; border-radius:66px; background:#fff; border:1px solid #000; text-align:center; line-height:64px; font-size:20px; font-weight:700; color:#000; z-index:10; transform:translateX(-50%); }
-
-.boxDetailCont .cont.active:after { display:none; }
-.boxDetailCont .cont.active .btnDetail { display:none; }
 
 .boxMypageTop { margin-bottom:36px; position:relative; text-align:center; }
 .boxMypageTop .visual { height:228px; position:relative; background-size:cover; background-image: linear-gradient(to bottom, #1b44ef, #0022b1); overflow:hidden; z-index:1; }
@@ -951,7 +943,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 
 .popup--open { cursor:pointer; }
-.popBasic { width:820px; display:none; position:fixed; left:50%; top:50%; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; border-radius:20px; transform:translate(-50%, -50%); z-index:22; }
+.popBasic { width:820px; position:fixed; left:50%; top:50%; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08); overflow:hidden; border-radius:20px; transform:translate(-50%, -50%); z-index:22; }
 .popBasic .popCont { overflow:auto; }
 .popBasic .balanceArea { padding:54px 34px 0; text-align:center; background:#fff; }
 .popBasic .balanceArea .title { margin-bottom:20px; font-size:25px; font-weight:600; color:#000; }
@@ -1538,17 +1530,12 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	.section.section--detail .boxInfoTab .boxDetailCont { padding:0 0 20px; margin-top:0; border:0; }
 	.section.section--detail .boxInfoTab .boxDetailCont .title { margin-bottom:15px; color:#000; font-size:15px; font-weight:500; }
 	.section.section--detail .boxInfoTab .boxDetailCont .cont { display:block; border-radius:0; margin:0 -10px; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote { padding:30px 0 0; background:#fff; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote .title { padding:0 10px; font-size:14px; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li { padding-left:10px; font-size:13px; line-height:23px; color:#606060; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li:before { top:10px; background:#606060; }
-	.section.section--detail .boxInfoTab .boxDetailCont .boxNote ul li.imp { font-weight:500; }
 
 	.section.section--detail .inBox { padding:50px 16px 88px; margin-top:-20px; }
 	.section.section--detail .boxInfoTab .tab { display:flex; }
 	.section.section--detail .boxInfoTab .tab a { height:50px; flex:1; display:flex; align-items:center; justify-content:center; font-size:15px; color:#8089a1; font-weight:700; }
 	.section.section--detail .boxInfoTab .tab a.active { background:#fff; border-top-left-radius:18px; border-top-right-radius:18px; color:#021343; }
-	.section.section--detail .boxInfoTab .cont { display:none; border-radius:18px; background:#fff; overflow:hidden; }
+	.section.section--detail .boxInfoTab .cont { border-radius:18px; background:#fff; overflow:hidden; }
 	.section.section--detail .boxInfoTab .cont.active { display:block; }
 	.section.section--detail .boxInfoTab .cont:after { height:60px; }
 	#tabInformation.cont.active { border-top-left-radius: 0; }
