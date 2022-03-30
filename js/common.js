@@ -37,6 +37,16 @@ $(function(){
 
   //Mobile
   function mobileEvent(){
+    // 헤더 액션 시작
+    $(window).on("scroll", function(){
+      var _top = $(this).scrollTop();
+      if(0 < _top){
+        $("#header").addClass("fixed");
+      }else{
+        $("#header").removeClass("fixed");
+      }
+    });
+    
     if($(".boxWallet").css("display") == "none"){
       $(".boxWallet").css("display","block");
     }
