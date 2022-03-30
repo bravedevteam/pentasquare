@@ -338,16 +338,16 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .btnCommunity { width:520px; height:116px; position:relative; padding-left:60px; display:flex; flex-direction:column; align-items:flex-start; justify-content:center; margin:100px auto 0; border:1px solid #000; }
 .btnCommunity:after { content:''; width:22px; height:15px; position:absolute; right:58px; top:50%; background:url('../images/main/iconOpenArrow.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
 .btnCommunity .title { font-size:21px; font-weight:700; color:#000; }
-.btnCommunity .title:after { content:''; width:24px; height:19px; display:inline-block; margin-left:14px; background:url('../images/main/iconCommunity.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.btnCommunity .title:after { content:''; width:24px; height:19px; display:inline-block; margin-left:14px; background:url('../images/content/iconCommunity.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .btnCommunity .subject { margin-top:7px; font-size:13px; color:#000; }
 
 .boxOpenCall { height:196px; display:flex; align-items:center; border-top:1px solid #000; background:#f4f4f4; }
 .boxOpenCall .inBox { width:1000px; margin:0 auto; position:relative; }
-.boxOpenCall .inBox:after { content:''; width:281px; height:73px; position:absolute; right:215px; top:50%; background:url('../images/main/iconOpenCall.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
+.boxOpenCall .inBox:after { content:''; width:281px; height:73px; position:absolute; right:215px; top:50%; background:url('../images/content/iconOpenCall.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
 .boxOpenCall .title { font-size:28px; font-weight:700; color:#000; }
 .boxOpenCall .subject { margin-top:5px; color:#000; font-size:16px; letter-spacing:-0.04em; }
 .boxOpenCall a { height:38px; position:absolute; right:0; top:50%; border-bottom:2px solid #000; transform:translateY(-50%); line-height:38px; font-size:15px; color:#000; }
-.boxOpenCall a:after { content:''; width:22px; height:15px; margin-left:20px; display:inline-block; vertical-align:middle; background:url('../images/main/iconOpenArrow.png') center center no-repeat; background-size:100% auto; }
+.boxOpenCall a:after { content:''; width:22px; height:15px; margin-left:20px; display:inline-block; vertical-align:middle; background:url('../images/content/iconOpenArrow.png') center center no-repeat; background-size:100% auto; }
 
 .mainTabCont+.mainTabCont { margin-top:50px; }
 
