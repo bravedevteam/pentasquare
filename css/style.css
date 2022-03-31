@@ -1155,9 +1155,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 	#header.type--white .opt>a.btnSearch_mo { background-image:url('../images/common/iconSearch_mo.png'); }
 	#header.type--white .opt>a.btnGnb_mo { margin-left:18px; background-image:url('../images/common/btnGnb.png'); }
 
-	#header.type--white.fixed { background:#fff; border-bottom:1px solid #000; }
-
 	#wrap.main #header.type--white { border-bottom:0; background:transparent; }
+	#wrap.main #header.type--white.fixed { background:#fff; border-bottom:1px solid #000; }
 
 	.boxGnb_mo { width:100%; height:100%; position:fixed; left:0; top:0; background:#fff; z-index:99; overflow-y:auto; }
 	
