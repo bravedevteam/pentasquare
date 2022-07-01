@@ -18,6 +18,19 @@ $(function(){
   });
   // PC
   function pcEvent(){
+    // 헤더 액션 시작
+    $(window).on("scroll", function(){
+      var _top = $(this).scrollTop();
+      if($("#header").hasClass("is--fixed")){
+        console.log("111")
+        if(0 < _top){
+          $("#header").addClass("fixed");
+        }else{
+          $("#header").removeClass("fixed");
+        }
+      }
+    });
+    
     if($(".boxGnb_mo").css("display") == "block"){
       $(".boxGnb_mo").css("display","none");
     }
