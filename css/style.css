@@ -1155,7 +1155,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 .boxFiveInfo { padding:88px 0 80px; text-align:center; color:#fff; }
 .boxFiveInfo h4 { width:346px; height:65px; margin:0 auto; display:block; background:url('../images/content/txtFiveInfo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-.boxFiveInfo p { margin-top:27px; font-size:15px; line-height:28px; color:rgba(255,255,255,.62); }
+.boxFiveInfo p { margin-top:27px; font-size:15px; line-height:28px; color:rgba(255,255,255,.62); font-family:'SpoqaHanSansNeo'; }
 .boxFiveInfo .sns { width:134px; margin:62px auto 0; overflow:hidden; }
 .boxFiveInfo .sns a { width:28px; height:28px; float:left; background-position:center center; background-repeat:no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .boxFiveInfo .sns a.instagram { background-image:url('../images/common/iconSNS_instagram_m.png'); }
@@ -1227,6 +1227,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxPressSlide .swiper-container-rtl .swiper-button-prev { right:auto; margin-left:8px; }
 
 .section.section--collection .topArea { position:absolute; left:50%; top:134px; margin-left:-576px; z-index:20; }
+#wrap.type--five .section.section--collection .topArea h3.title { line-height:62px; }
 
 .boxCollectionSlide .swiper-slide { height:800px; background-size:auto 100%; background-position:center center; background-repeat:no-repeat; }
 .boxCollectionSlide .swiper-button-next,
@@ -1243,12 +1244,17 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--contact .topArea { float:left; }
 
 .boxContact { float:right; }
-.boxContact a { width:370px; height:330px; padding:50px 60px; float:left; background:#fff; -webkit-box-shadow: 14px 20px 0px 0px #404040; box-shadow: 14px 20px 0px 0px #404040; }
-.boxContact a:hover { background:#00fd5c; }
+.boxContact a { width:370px; height:330px; position:relative; padding:50px 60px; float:left; background:#fff; -webkit-box-shadow: 14px 20px 0px 0px #404040; box-shadow: 14px 20px 0px 0px #404040; overflow:hidden; }
+.boxContact a:after { content:''; width:740px; height:660px; margin-left:-370px; margin-bottom:-700px; transform-origin:50% 48%; position:absolute; bottom:3%; left:50%; background:#00fd5c; border-radius: 43%; transition-duration: 0.75s; transition-property: margin-bottom; transition-timing-function: ease; z-index:1; }
+.boxContact a:hover:after { margin-bottom: -150px; animation: rotate 3000ms infinite linear; }
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
 .boxContact a+a { margin-left:54px; }
-.boxContact .title { font-size:25px; font-weight:900; color:#000; font-family:'Montserrat'; line-height:33px; }
-.boxContact .cont { margin-top:15px; font-size:16px; line-height:29px; color:#000; font-family:'Montserrat'; letter-spacing:-.08em; }
-.boxContact .link { font-family:'Montserrat'; font-size:15px; font-weight:500; color:#000; }
+.boxContact .title { position:relative; z-index:5; font-size:25px; font-weight:900; color:#000; font-family:'Montserrat'; line-height:33px; }
+.boxContact .cont { position:relative; z-index:5; margin-top:15px; font-size:16px; line-height:29px; color:#000; font-family:'Montserrat'; letter-spacing:-.08em; }
+.boxContact .link { position:relative; z-index:5; font-family:'Montserrat'; font-size:15px; font-weight:500; color:#000; }
 .boxContact .link.is--apply { margin-top:30px; display:inline-block; line-height:38px; border-bottom:2px solid #000; }
 .boxContact .link.is--apply:after { content:''; width:22px; height:15px; margin-top:-4px; margin-left:9px; display:inline-block; background:url('../images/content/iconOpenArrow.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxContact .link.is--discode { width:44px; height:44px; margin-top:25px; border:1px solid #c4c4c4; background:url('../images/content/iconCommunity.png') center center no-repeat #fff; background-size:24px auto; border-radius:50%; font-size:0; text-indent:-999999px; }
@@ -1261,6 +1267,8 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 #wrap.type--five { background:#000; }
 #wrap.type--five #header { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.36) 65%, rgba(0, 0, 0, 0)); border-bottom:1px solid rgba(255,255,255,.13); }
 #wrap.type--five #header h1 { width:52px; background-image:url('../images/common/logo_five.png'); }
+
+#wrap.type--five #header.fixed { position:fixed; background:transparent; }
 
 
 #wrap.type--five .section { }
