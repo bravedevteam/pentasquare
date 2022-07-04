@@ -316,7 +316,7 @@ body.page--auction { background:#f4f6f9; }
 #header>.inner { max-width:none; }
 
 .headerNotice { float:right; overflow:hidden; }
-.headerNotice h4 { float:left; color:#fff; font-family:"SourceHanSerifK"; font-weight:700; font-size:15px; line-height:40px; }
+.headerNotice h4 { float:left; color:#fff; font-family:"Noto Serif KR"; font-weight:700; font-size:15px; line-height:40px; }
 .headerNotice .swiper-container { height:40px; margin-left:60px; padding-right:95px; }
 .headerNotice .swiper-slide a { height:40px; display:flex; color:#fff; font-size:14px; align-items:center; }
 .headerNotice .swiper-slide a .date { margin-right:4px; }
@@ -1155,7 +1155,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 .boxFiveInfo { padding:88px 0 80px; text-align:center; color:#fff; }
 .boxFiveInfo h4 { width:346px; height:65px; margin:0 auto; display:block; background:url('../images/content/txtFiveInfo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-.boxFiveInfo p { margin-top:27px; font-size:15px; line-height:28px; color:rgba(255,255,255,.62); font-family:'SpoqaHanSansNeo'; }
+.boxFiveInfo p { margin-top:27px; font-size:15px; line-height:28px; color:rgba(255,255,255,.62); font-family:'Noto Serif KR'; }
 .boxFiveInfo .sns { width:134px; margin:62px auto 0; overflow:hidden; }
 .boxFiveInfo .sns a { width:28px; height:28px; float:left; background-position:center center; background-repeat:no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .boxFiveInfo .sns a.instagram { background-image:url('../images/common/iconSNS_instagram_m.png'); }
@@ -1206,7 +1206,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 
 .boxCurationTeam { margin-top:138px; display:flex; justify-content:space-between; }
 .boxCurationTeam .listArtist { padding-top:10px; color:#fff; font-size:20px; font-weight:400; letter-spacing:-.05em; }
-.boxCurationTeam .listArtist li { font-family:'SourceHanSerifK'; }
+.boxCurationTeam .listArtist li { font-family:'Noto Serif KR'; }
 .boxCurationTeam .listArtist li span { font-weight:900; }
 .boxCurationTeam .listArtist li+li { margin-top:30px; }
 
@@ -1265,10 +1265,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxPartners ul li:nth-child(1n+5) { margin-top:27px; }
 
 #wrap.type--five { background:#000; }
-#wrap.type--five #header { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.36) 65%, rgba(0, 0, 0, 0)); border-bottom:1px solid rgba(255,255,255,.13); }
+#wrap.type--five #header { background:transparent; border-bottom:1px solid rgba(255,255,255,.13); }
 #wrap.type--five #header h1 { width:52px; background-image:url('../images/common/logo_five.png'); }
 
-#wrap.type--five #header.fixed { position:fixed; background:transparent; }
+#wrap.type--five #header.fixed { position:fixed; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.36) 65%, rgba(0, 0, 0, 0)); }
 
 
 #wrap.type--five .section { }
