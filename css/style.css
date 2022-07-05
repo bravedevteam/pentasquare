@@ -1207,7 +1207,7 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxCurationTeam { margin-top:138px; display:flex; justify-content:space-between; }
 .boxCurationTeam .listArtist { padding-top:10px; color:#fff; font-size:20px; font-weight:400; letter-spacing:-.05em; }
 .boxCurationTeam .listArtist li { font-family:'Noto Serif KR'; }
-.boxCurationTeam .listArtist li span { font-weight:900; }
+.boxCurationTeam .listArtist li span { font-weight:900; font-family:'Noto Serif KR'; }
 .boxCurationTeam .listArtist li+li { margin-top:30px; }
 
 .boxPressSlide {  }
@@ -1265,10 +1265,10 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .boxPartners ul li:nth-child(1n+5) { margin-top:27px; }
 
 #wrap.type--five { background:#000; }
-#wrap.type--five #header { background:transparent; border-bottom:1px solid rgba(255,255,255,.13); }
+#wrap.type--five #header { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.36) 65%, rgba(0, 0, 0, 0)); border-bottom:1px solid rgba(255,255,255,.13); }
 #wrap.type--five #header h1 { width:52px; background-image:url('../images/common/logo_five.png'); }
 
-#wrap.type--five #header.fixed { position:fixed; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.36) 65%, rgba(0, 0, 0, 0)); }
+#wrap.type--five #header.fixed { position:fixed; background:#000; }
 
 
 #wrap.type--five .section { }
