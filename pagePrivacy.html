@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta property="og:url" content="https://bravedevteam.github.io/">
+	<meta property="og:title" content="PENTASQUARE">  
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://bravedevteam.github.io/pentasquare/images/share.png">
+	<meta property="og:description" content="PENTASQUARE">
+	<meta name="description" content="PENTASQUARE">
+	<title>PENTASQUARE</title>
+  <link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-ui-timepicker-addon.js"></script>
+  <script src="js/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body class="page--auction">
+	<section id="wrap">
+		<header id="header" class="type--white">
+			<div class="inner">
+				<h1>PENTASQUARE</h1>
+				<div class="opt pc">
+					<a href="#" class="btnLogout">Log in</a>
+				
+					<!-- 로그인 전 -->
+					<!--
+					<a href="#" class="btnConnect">Connect Wallet</a>
+					-->
+					<!-- //로그인 전 -->
+					<!-- 로그인 후 -->
+					
+					<a href="#" class="btnMypage"><!-- 신규 알림시 is--new 클래스 추가 -->
+						<!-- <img src="./images/common/iconNoname_white.png" alt="" /> -->
+						<img src="./images/content/imgUserThumb2.png" alt="" />
+					</a>
+					
+					<!-- //로그인 후 -->					
+					<a href="#" class="btnCreat">Creat</a>
+
+					<!-- 지갑 연결 & 로그인 전 -->
+					<!--
+					<div class="boxWallet">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">연결할 지갑을 선택해주세요.</div>
+						</div>						
+						
+						<div class="listWallet">
+							<a href="#" class="metamask">Metamask로 연결</a>
+							<a href="#" class="klip">카카오톡 클립(klip)으로 연결</a>
+						</div>
+						<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+					</div>
+					-->
+					<!-- //지갑 연결 & 로그인 전 -->
+
+					<!-- 지갑 연결 & 로그인 후 -->
+					
+					<div class="boxWallet type--login">
+						<!-- 지갑 연결 전 -->
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">연결할 지갑을 선택해주세요.</div>
+						</div>						
+						
+						<div class="listWallet">
+							<a href="#" class="metamask">Metamask로 연결</a>
+							<a href="#" class="klip">카카오톡 클립(klip)으로 연결</a>
+						</div>
+						<!-- //지갑 연결 전 -->
+
+						<!-- 지갑 연결 후 -->
+						<!--
+						<div class="topArea type--login">
+							<a href="#" class="linkWallet">0x1effsa0x1effsa0x1effsa</a>
+						</div>
+						
+						<div class="inWallet typeA">
+							<div class="wallet">								
+								<div class="walletCoin">
+									<div class="coin mark mark--eth">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin mark mark--weth">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								
+								< !--
+								<div class="walletCoin">
+									<div class="coin mark mark--klay">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 KLAY</div>
+										</div>
+									</div>
+								</div>
+								-- >
+																
+								< !--
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH)</div>
+									<div class="input">
+										<input type="text" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+									<div class="btnArea">
+										<a href="#" class="convert">Convert</a>
+										<a href="#" class="cancel">Cancel</a>
+									</div>
+								</div>
+								-- >
+							</div>
+							
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+						-->
+						<!-- //지갑 연결 후-->
+						
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>dev@gmail.com</span></div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num new">15</span></a></li>
+								</ul>
+							</div>
+							<div class="btnBottom">
+								<a href="#" id="btnNFTSend">Send NFT</a>
+							</div>
+						</div>
+						<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide type--bottom">Pentasquare Guide</a>
+					</div>
+					
+					<!-- //지갑 연결 & 로그인 후 -->
+
+					<!-- Send NFT -->
+					<div id="pageSendNFT" class="boxSendNFT">
+						<div class="topArea">
+							<a href="#" class="back">prev</a>
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="boxForm">
+							<div class="row">
+								<div class="title">From</div>
+								<div class="input">
+									<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+									<div class="user">Account 1</div>
+									<div class="key">0x1effsa…a67e</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="title">To</div>
+								<div class="input"><input type="text" placeholder="받을 지갑 주소(0x)를 입력해 주세요!" /></div>
+							</div>
+							<div class="row">
+								<div class="title">Qty</div>
+								<div class="input"><input type="text" placeholder="전송할 자산의 수량을 입력해 주세요!" /></div>
+								<div class="ps">(Max 10,000)</div>
+							</div>
+						</div>
+						<div class="boxList">
+							<div class="infoTop">
+								<div class="title">Select NFT</div>
+								<div class="subject"><span>*</span>거래중인 NFT는 전송되지 않습니다.</div>
+							</div>
+							<div class="listNFT">
+								<ul>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_1" />
+										<label for="chk_nft_1">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" checked="checked" name="chk_nft" id="chk_nft_2" />
+										<label for="chk_nft_2">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_3" />
+										<label for="chk_nft_3">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_4" />
+										<label for="chk_nft_4">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_5" />
+										<label for="chk_nft_5">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_6" />
+										<label for="chk_nft_6">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_7" />
+										<label for="chk_nft_7">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_8" />
+										<label for="chk_nft_8">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnBottom">
+							<a href="#" id="btnSendNFT" class="active">Send NFT</a>
+						</div>
+					</div>
+					<!-- //Send NFT -->
+
+					<!-- NFT Send List -->
+					<div id="pageNFTSend" class="boxSendNFT">
+						<div class="topArea">
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="listSendNFT">
+							<div class="title">Successful</div>
+							<dl>
+								<dt>From</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>To</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl class="amount">
+								<dt>Amount</dt>
+								<dd> : 10,500</dd>
+							</dl>
+							<dl>
+								<dt>Contract Address</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>Token ID</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="close active">Close</a>
+						</div>
+					</div>
+					<!-- //NFT Send List -->
+				</div>
+
+				<!-- Mobile -->
+				<div class="opt mo">
+					<a href="#" class="btnSearch_mo">search</a>
+					<a href="#" class="btnGnb_mo">GNB</a>
+				</div>
+
+				<div class="boxGnb_mo"><!-- 지갑 연결 후 is--wallet 클래스 추가 -->
+					<div class="section_gnb">
+						<!-- 지갑 연결 전 -->
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">연결할 지갑을 선택해주세요.</div>
+						</div>						
+						
+						<div class="listWallet">
+							<a href="#" class="metamask">Metamask로 연결</a>
+							<a href="#" class="klip open--alarm" data-alarm="alarm2">카카오톡 클립(klip)으로 연결</a>
+						</div>
+						<!-- //지갑 연결 전 -->
+
+						<!-- 지갑 연결 후 -->
+						<!--
+						<div class="topArea">
+							<div class="wallet">
+								<a href="#" class="open--alarm" data-alarm="alarm1">0x1effsa0x1effsa0x1effsa</a>
+							</div>
+						</div>
+						-->
+						<!-- //지갑 연결 후 -->
+
+						<!--
+						<ul class="list">
+							<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
+							<li><a href="./market.html">Square Market</a></li>
+						</ul>
+						-->
+						<!-- 로그인 전 -->
+						<!--
+						<div class="btn">
+							<a href="#" class="connect">Connect Wallet</a>
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 전 -->
+
+						<!-- 로그인 후 -->
+						<!--
+						<div class="btn type--single">
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 후 -->
+					</div>
+
+					<div class="boxWallet type--login">
+						<!-- 로그인 후 -->
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>dev@gmail.com</span></div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num new">15</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnGuide">
+							<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="creat">Creat NFT</a>
+							<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+						</div>
+						<!-- //로그인 후 -->
+					</div>
+
+					<!-- 로그인 후 -->
+					<!--
+					<div class="boxWallet type--login">
+						<div class="inWallet">
+							<div class="wallet">
+								< !--
+								<div class="walletCoin">
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								-- >
+								
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
+									<div class="input call--keyboard">
+										<input type="text" id="input_1" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+								</div>
+								<div class="btnArea">
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+								</div>
+								
+							</div>
+							< !--
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							-- >
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+							<div class="btnBottom">
+								<a href="#" class="creat">Creat NFT</a>
+								<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+							</div>
+						</div>
+
+						< !-- 로그인 후 -- >
+						<div class="boxInsta">
+							<div class="infoTop">
+								<div class="title">My</div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>Linda0980</span></div>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num on">15</span></a></li>
+								</ul>
+							</div>
+							<div class="btnBottom">
+								<a href="#" class="creat">Creat NFT</a>
+								<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+							</div>
+						</div>
+						< !-- //로그인 후 -- >
+					</div>
+					-->
+					<!-- //로그인 후 -->
+
+					<!-- Send NFT -->
+					<div id="pageSendNFT_mo" class="boxSendNFT">
+						<div class="topArea">
+							<a href="#" class="back close--sendNFT">prev</a>
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="boxForm">
+							<div class="row">
+								<div class="title">From</div>
+								<div class="input">
+									<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+									<div class="user">Account 1</div>
+									<div class="key">0x1effsa…a67e</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="title">To</div>
+								<div class="input"><input type="text" placeholder="받을 지갑 주소(0x)를 입력해 주세요!" /></div>
+							</div>
+							<div class="row">
+								<div class="title">Amount</div>
+								<div class="input call--keyboard"><input type="text" id="input_2" placeholder="전송할 자산의 수량을 입력해 주세요!" /></div>
+								<div class="ps">(Max 10,000)</div>
+							</div>
+						</div>
+						<div class="boxList">
+							<div class="infoTop">
+								<div class="title">Select NFT</div>
+								<div class="subject"><span>*</span>거래중인 NFT는 전송되지 않습니다.</div>
+							</div>
+							<div class="listNFT">
+								<ul>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m1" />
+										<label for="chk_nft_m1">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" checked="checked" name="chk_nft" id="chk_nft_m2" />
+										<label for="chk_nft_m2">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m3" disabled="disabled" />
+										<label for="chk_nft_m3">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m4" />
+										<label for="chk_nft_m4">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m5" />
+										<label for="chk_nft_m5">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m6" />
+										<label for="chk_nft_m6">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m7" />
+										<label for="chk_nft_m7">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m8" />
+										<label for="chk_nft_m8">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="active open--sendNFT" data-page="pageNFTSend_mo">Send NFT</a>
+						</div>
+					</div>
+					<!-- //Send NFT -->
+
+					<!-- NFT Send List -->
+					<div id="pageNFTSend_mo" class="boxSendNFT">
+						<div class="topArea">
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="listSendNFT">
+							<div class="title">Successful</div>
+							<dl>
+								<dt>From</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>To</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl class="amount">
+								<dt>Amount</dt>
+								<dd> : 10,500</dd>
+							</dl>
+							<dl>
+								<dt>Contract Address</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>Token ID</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="active close--sendNFT">Close</a>
+						</div>
+					</div>
+					<!-- //NFT Send List -->
+					
+					<a href="#" class="close">close</a>
+				</div>
+				<!-- //Mobile -->
+			</div>
+		</header>
+		<div id="container">
+			<div class="section">
+				<div class="boxPrivacy inner">
+					<h2>Pentasquare Privacy Policy</h2>
+					<p>Effective Date: 2022.11.1</p>
+					<ul>
+						<li><a href="#list1">1. Introduction</a></li>
+						<li><a href="#list2">2. Information We Collect</a></li>
+						<li><a href="#list3">3. Cookie and Related Technologies</a></li>
+						<li><a href="#list4">4. How We Use Your Information</a></li>
+						<li><a href="#list5">5. Sharing Your Information</a></li>
+						<li><a href="#list6">6. International Data Transfers</a></li>
+						<li><a href="#list7">7. Retaining and Deleting Personal Information</a></li>
+						<li><a href="#list8">8. Our Policy Concerning Children</a></li>
+						<li><a href="#list9">9. Links and Third-Party Services</a></li>
+						<li><a href="#list10">10. Security of Your Information</a></li>
+						<li><a href="#list11">11. Your Privacy Rights</a></li>
+						<li><a href="#list12">12. Amendments</a></li>
+						<li><a href="#list13">13. Contact Us</a></li>
+					</ul>
+
+					<div class="row" id="list1">
+						<h4>1. Introduction</h4>
+						<p>
+							Pentasquare, Inc. and/or its affiliates (“Pentasquare”, “we”, “Company” or “us”) collect and process information about you (“you”, “user”, or “player”). We provide mobile games (“Game(s)”), official sites (“Site(s)”) and services related to the Game (i.e. event, survey, or customer service) (“Service(s)”) to players. This Privacy Policy (“Policy”) describes how we collect, use, and share personal information about you during and after relationship with us in accordance with applicable data protection laws.<br />
+							It is important that you read this Policy, together with any other notice we will provide on specific occasions when we are collecting or processing personal information about you, so that you are aware of how and why we are using such personal information and what are your rights.
+						</p>
+					</div>
+
+					<div class="row" id="list2">
+						<h4>2. Information We Collect</h4>
+						<p>
+							We collect information about you and the Services that you use. This information may be required to enter into a contractual relationship with you, or to perform a contractual obligation with you (such as to provide the Service at your request), and failure to provide any information may result in our inability to provide the requested services. The information we collect falls into three different categories:<br />
+							1) Information collected directly from you<br />
+							You may provide us with the following information when playing our Game and/or using our Services. The information you provide to us may differ depending on the circumstances. We are collecting nicknames at the start of the games, however, nicknames can be duplicated. For example, these include:<br />
+							- Purchase history, device information, and records of the issues you experience, etc. (to provide, support, and operate the games)<br /><br />
+							2) Information collected automatically<br />
+							We automatically collect certain information when you are playing our Games and/or use our Services. The type of information that we automatically collect may vary, but generally includes:<br />
+							- Device information (including but not limited to, IP address, device ID, device model, network type, OS version, time zone settings, battery status, screen resolution, etc.),<br />
+							- Device event information, including crash reports and system activity details (e.g. whether you encountered an error using our services or lost internet access, etc.), and<br />
+							- Your browsing behavior while using our Site and/or Services.<br /><br />
+							3) Information collected from third-parties<br />
+							When you access our Games and/or Services using a third-party platform, we may receive certain information from your profile/account on third-party platform’s as permitted by the terms of the third-party platform and your privacy settings thereon. For example, if you are playing a Game using your Google/Apple/Facebook ID, we receive your account information from Google/Apple/Facebook to identify your Google/Apple/Facebook ID.
+						</p>
+					</div>
+
+					<div class="row" id="list3">
+						<h4>3. Cookie and Related Technologies</h4>
+						<p>
+							We use cookies, pixel and other technologies to recognize your browser or device, learn more about your interests, and provide you with essential features and services and for additional purposes. Approved third parties may also set cookies and related technologies when you use our site or games.<br /><br />
+							1) Cookies<br />
+							Cookies are small files downloaded to your computer (if your browser is enabled to accept cookies) to track movements within websites and to customize your experience within the website. Most Internet browsers will allow you to erase cookies from your computer hard drive, block acceptance of cookies, or receive a warning before a cookie is stored. You should refer to your browser instructions or “Help” screen to learn more about how to manage cookies. Please note, however, that if you block cookies, some portions of the Site may not function properly.<br />
+							We do not control cookies in third party ads, and you are encouraged to check the privacy policies of advertisers and/or ad services to learn about their use of cookies and other technology. The ads appearing on the Site may be delivered to you by third-party advertising companies. These companies may use information about your visits to this and other websites in order to provide advertisements on the Site and other sites about goods and services that may be of interest to you. <br /><br />
+							2) Website Analysis <br />
+							We use analysis services on this Site to allow us to record information on the use of this Site and to constantly improve our offering.  <br />
+							This Site uses Google® Analytics, a web analysis services offered by Google Inc. (“Google”). We may use the following advertising functions of Google® Analytics and collect personal information as provided by Google, and you may withdraw your consent by deactivating such functions in Google’s advertising settings: Remarketing by using Google® Analytics; Google® Display Network Exposure Report; Google® Analytics Demographics and Interests Report; and Integrated service allowing the collection of data through Google® Analytics by using advertising cookies and anonymous IDs.<br />
+							More information about Google’s own privacy policy can be found at https://www.google.com/policies/privacy.<br />
+							If you wish to opt-out from your information or data being used by Google Analytics, you may download the Google Analytics Opt-out Browser Add-on available here: https://tools.google.com/dlpage/gaoptout<br /><br />
+							3) Facebook Pixel<br />
+							We use tracking tools including the Facebook Pixel on this Site to better understand your preferences by analyzing your behavior on our Site and offer you services more in line with your interests.<br />
+							This Site uses Facebook Pixel. This allows user behavior to be tracked after they have clicked on a Facebook ad. This enables us to measure the effectiveness of our Facebook ads. The data provided to us is anonymized, i.e. we do not see the information of individual users. However, this data is stored and processed by Facebook. Facebook may link this information to your Facebook account and also use it for its own promotional purposes, in accordance with Facebook’s Data Usage Policy at https://www.facebook.com/about/privacy/. <br />
+							To opt-out of the collection and use of information for ad targeting on Facebook, please visit www.aboutads.info/choices. In the application you can opt-out of use of information for purposes of showing ads that are targeted to your interests.<br /><br />
+							4) Anti-Cheat and Fraud Prevention Technology <br />
+							We strive to provide a safe and fair gaming environment for all players. When you play the Game, we or third parties may use cookies and similar technologies, or collect data about your machine or device, for fraud prevention, security and authentication purposes. We also may use other anti-cheat technology with our services. 
+						</p>
+					</div>
+
+					<div class="row" id="list4">
+						<h4>4. How We Use Your Information</h4>
+						<p>
+							We use the collected information for a variety of purposes, primarily, to provide the Game and the Service (collectively, the “Game Service”) to players like you and to improve the quality of the Game Service. These include:<br />
+							- Operating and providing the Game Service,<br />
+							- Providing opportunities to participate on the events, or surveys that relating to the Game Service,<br />
+							- Providing customer service by collecting and responding to inquires,<br />
+							- Solving technical problems and improving the quality of the Game Service (for example, to provide realistic gaming environment to users),<br />
+							- Identification of individual players to provide the Game Service,<br />
+							- Technical protection against usage of unauthorized programs,<br />
+							- Preventing inappropriate gameplay that could harm other players,<br />
+							- Prevent, detect, identify, investigate, and respond to potential or actual claims, liabilities, prohibited behavior, and criminal activity.<br /><br />
+							In the majority of cases, our processing of your personal information is necessary to respond to you or process your request. We may also process your information to comply with a relevant legal obligation. From time to time, we may ask for your consent to use your information for certain specific reasons. You may withdraw your consent at any time without affecting the lawfulness of processing based on consent before its withdrawal by contacting us at the address provided in this Policy. 
+						</p>
+					</div>
+
+					<div class="row" id="list5">
+						<h4>5. Sharing Your Information</h4>
+						<p>
+							We give permission to third parties, including service providers which process personal information on behalf of us to provide customer support and to manage our community. Examples of these third parties include:<br />
+							– third party program restriction providers to block cheating tools and unauthorized programs, <br />
+							– cloud computing service providers to provide cloud storage services, <br />
+							– online survey service providers in order to improve the Game, <br />
+							- third party payment service providers (including but not limited to App Store, Google Play) to assist with payment for transactions or providing withdrawing service for sellers,  <br />
+							- customer service providers to answer users’ inquiries. <br /><br />
+							We may also share your information where such disclosure is essential to comply with a legal obligation or a lawful data access request, pursuant to a merger or acquisition, with our affiliates for the purposes described in this Policy, or where you have otherwise provided your consent or at your direction.
+						</p>
+					</div>
+
+					<div class="row" id="list6">
+						<h4>6. International Data Transfers</h4>
+						<p>
+							We operate globally and transfer your data to countries and other regions outside of where you are located. If your personal information is transferred, stored or processed by us, we will take reasonable steps to safeguard the privacy of personal information. For certain countries we process the data in certain regions (as set out in more detail below).
+						</p>
+					</div>
+
+					<div class="row" id="list7">
+						<h4>7. Retaining and Deleting Personal Information</h4>
+						<p>
+							In principle, we will remove your personal information without delay after the purpose of collecting personal information is achieved. Personal information stored in physical form will be shredded or incinerated, and personal information stored electronically will be removed using technical measures in a way that the information cannot be reproduced. However, we may retain your personal information even after you have closed your account with us or we have ceased providing Services to you, if retention of your personal information is reasonably necessary to comply with our legal obligations, meet regulatory requirements, resolve disputes, prevent fraud, cheating or abuse, or enforce this Policy or any other agreement we may have with a player.
+						</p>
+					</div>
+
+					<div class="row" id="list8">
+						<h4>8. Our Policy Concerning Children</h4>
+						<p>
+							We do not knowingly collect, use or share any information about children (generally considered to be under the age of 13 in the U.S. or depending on the country where you reside) without verifiable parental consent or as permitted by law. If you are a parent or guardian and you believe your child has provided us with information, you can contact us and request your child’s information to be deleted from our system.
+						</p>
+					</div>
+
+					<div class="row" id="list9">
+						<h4>9. Links and Third-Party Services</h4>
+						<p>
+							If you click on a link to a third-party website, including, without limitation, an advertisement, you will leave this website and go to the site you selected. Because we cannot control the activities of third parties, we do not have responsibility for any use of your personal information by such third parties, and we cannot guarantee that they will adhere to the same privacy and security practices as we do. We encourage you to review the privacy policies of any other service provider from whom you request services. If you visit a third-party website that is linked to the Site, you should consult that site’s privacy policy before providing any personal Information. 
+						</p>
+					</div>
+
+					<div class="row" id="list10">
+						<h4>10. Security of Your Information</h4>
+						<p>
+							We have put in place appropriate security measures, including encryption and de-identification, to prevent your personal information from being accidentally leaked, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to your personal information to those employees, agents, etc. who have a business need to know. They will only process your personal information on our instructions, and they are subject to a duty of confidentiality. We have put in place safety procedures to deal with any suspected data security breach and will notify you and any applicable regulator of a suspected breach where we are legally required to do so. However, we will not be responsible for any problems that may arise of despite those safety measures and procedures, such as your negligence or problems on the internet. Please note that no data transmission over the internet is 100% secure, and that complete security of any information we collect and use therefore cannot be guaranteed.
+						</p>
+					</div>
+
+					<div class="row" id="list11">
+						<h4>11. Your Privacy Rights</h4>
+						<p>
+							Subject to limitations in applicable law, you are entitled to object to or request the restriction of processing of your personal information, and to request access to, rectification, erasure, and portability of your own personal information. To make a request concerning your rights or if you have any other question, please contact us by sending an email to the address specified in the “13. Contact Us” section. We respond to all requests we receive from individuals wishing to exercise their data protection rights in accordance with applicable data protection laws. 
+						</p>
+					</div>
+
+					<div class="row" id="list12">
+						<h4>12. Amendments</h4>
+						<p>
+							We may amend, at our discretion, any portion of this Policy at any time by posting or displaying the amended this Policy on our Site. You will be deemed to have accepted such amendments by continuing to use the Service, so please review it frequently.
+						</p>
+					</div>
+
+					<div class="row" id="list13">
+						<h4>13. Contact Us </h4>
+						<p>
+							If you have any questions about this Policy, or your dealings with this Site, please contact us by using one of the following communication channels.  <br />
+							• Email: appstore@gravastar.co.kr<br />
+							• Address: 54, Maehwa-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea <br /><br />
+							This Privacy Policy has been translated into other languages for your convenience. In case of any discrepancies between the English version and the other versions, the English version shall prevail. However, Korean Privacy Policy shall prevail for Korean players. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+      <div class="inner">
+				<div class="agreement">
+					<a href="https://pentasquare.notion.site/Pentasquare-2095b61c3cd644d59817d8270c84d5a8" target="_blank">이용약관</a>
+					<a href="https://pentasquare.notion.site/5e633126c537414f9aaab3bb4af37a73" target="_blank">개인정보처리방침</a>
+				</div>
+        <div class="sns">
+					<a href="https://www.instagram.com/pentasquarenft/" target="_blank" class="instagram">instagram</a>
+          <a href="http://pf.kakao.com/_BxhSlb" target="_blank" class="kakao">kakao</a>
+          <a href="#" class="polymath">polymath</a>
+        </div>
+        <h2>PENTASQUARE</h2>
+        <div class="copyright">
+					사업자등록번호 : 509-88-02347<br />
+					주식회사 펜타스퀘어   |    주소 : 경기도 성남시 분당구 매화로 54, 2층 205호 에이 166.<br />
+					Pentasquare Inc. All Rights Reserved.
+				</div>
+      </div>
+		</footer>
+	</section>
+</body>
+</html>

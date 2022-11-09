@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta property="og:url" content="https://bravedevteam.github.io/">
+	<meta property="og:title" content="PENTASQUARE">  
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://bravedevteam.github.io/pentasquare/images/share.png">
+	<meta property="og:description" content="PENTASQUARE">
+	<meta name="description" content="PENTASQUARE">
+	<title>PENTASQUARE</title>
+  <link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-ui-timepicker-addon.js"></script>
+  <script src="js/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body class="page--auction">
+	<section id="wrap">
+		<header id="header" class="type--white">
+			<div class="inner">
+				<h1>PENTASQUARE</h1>
+				<div class="opt pc">
+					<a href="#" class="btnLogout">Log in</a>
+				
+					<!-- 로그인 전 -->
+					<!--
+					<a href="#" class="btnConnect">Connect Wallet</a>
+					-->
+					<!-- //로그인 전 -->
+					<!-- 로그인 후 -->
+					
+					<a href="#" class="btnMypage"><!-- 신규 알림시 is--new 클래스 추가 -->
+						<!-- <img src="./images/common/iconNoname_white.png" alt="" /> -->
+						<img src="./images/content/imgUserThumb2.png" alt="" />
+					</a>
+					
+					<!-- //로그인 후 -->					
+					<a href="#" class="btnCreat">Creat</a>
+
+					<!-- 지갑 연결 & 로그인 전 -->
+					<!--
+					<div class="boxWallet">
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">연결할 지갑을 선택해주세요.</div>
+						</div>						
+						
+						<div class="listWallet">
+							<a href="#" class="metamask">Metamask로 연결</a>
+							<a href="#" class="klip">카카오톡 클립(klip)으로 연결</a>
+						</div>
+						<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+					</div>
+					-->
+					<!-- //지갑 연결 & 로그인 전 -->
+
+					<!-- 지갑 연결 & 로그인 후 -->
+					
+					<div class="boxWallet type--login">
+						<!-- 지갑 연결 전 -->
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">연결할 지갑을 선택해주세요.</div>
+						</div>						
+						
+						<div class="listWallet">
+							<a href="#" class="metamask">Metamask로 연결</a>
+							<a href="#" class="klip">카카오톡 클립(klip)으로 연결</a>
+						</div>
+						<!-- //지갑 연결 전 -->
+
+						<!-- 지갑 연결 후 -->
+						<!--
+						<div class="topArea type--login">
+							<a href="#" class="linkWallet">0x1effsa0x1effsa0x1effsa</a>
+						</div>
+						
+						<div class="inWallet typeA">
+							<div class="wallet">								
+								<div class="walletCoin">
+									<div class="coin mark mark--eth">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin mark mark--weth">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								
+								< !--
+								<div class="walletCoin">
+									<div class="coin mark mark--klay">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 KLAY</div>
+										</div>
+									</div>
+								</div>
+								-- >
+																
+								< !--
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH)</div>
+									<div class="input">
+										<input type="text" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+									<div class="btnArea">
+										<a href="#" class="convert">Convert</a>
+										<a href="#" class="cancel">Cancel</a>
+									</div>
+								</div>
+								-- >
+							</div>
+							
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+						</div>
+						-->
+						<!-- //지갑 연결 후-->
+						
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>dev@gmail.com</span></div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num new">15</span></a></li>
+								</ul>
+							</div>
+							<div class="btnBottom">
+								<a href="#" id="btnNFTSend">Send NFT</a>
+							</div>
+						</div>
+						<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide type--bottom">Pentasquare Guide</a>
+					</div>
+					
+					<!-- //지갑 연결 & 로그인 후 -->
+
+					<!-- Send NFT -->
+					<div id="pageSendNFT" class="boxSendNFT">
+						<div class="topArea">
+							<a href="#" class="back">prev</a>
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="boxForm">
+							<div class="row">
+								<div class="title">From</div>
+								<div class="input">
+									<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+									<div class="user">Account 1</div>
+									<div class="key">0x1effsa…a67e</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="title">To</div>
+								<div class="input"><input type="text" placeholder="받을 지갑 주소(0x)를 입력해 주세요!" /></div>
+							</div>
+							<div class="row">
+								<div class="title">Qty</div>
+								<div class="input"><input type="text" placeholder="전송할 자산의 수량을 입력해 주세요!" /></div>
+								<div class="ps">(Max 10,000)</div>
+							</div>
+						</div>
+						<div class="boxList">
+							<div class="infoTop">
+								<div class="title">Select NFT</div>
+								<div class="subject"><span>*</span>거래중인 NFT는 전송되지 않습니다.</div>
+							</div>
+							<div class="listNFT">
+								<ul>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_1" />
+										<label for="chk_nft_1">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" checked="checked" name="chk_nft" id="chk_nft_2" />
+										<label for="chk_nft_2">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_3" />
+										<label for="chk_nft_3">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_4" />
+										<label for="chk_nft_4">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_5" />
+										<label for="chk_nft_5">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_6" />
+										<label for="chk_nft_6">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_7" />
+										<label for="chk_nft_7">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_8" />
+										<label for="chk_nft_8">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnBottom">
+							<a href="#" id="btnSendNFT" class="active">Send NFT</a>
+						</div>
+					</div>
+					<!-- //Send NFT -->
+
+					<!-- NFT Send List -->
+					<div id="pageNFTSend" class="boxSendNFT">
+						<div class="topArea">
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="listSendNFT">
+							<div class="title">Successful</div>
+							<dl>
+								<dt>From</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>To</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl class="amount">
+								<dt>Amount</dt>
+								<dd> : 10,500</dd>
+							</dl>
+							<dl>
+								<dt>Contract Address</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>Token ID</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="close active">Close</a>
+						</div>
+					</div>
+					<!-- //NFT Send List -->
+				</div>
+
+				<!-- Mobile -->
+				<div class="opt mo">
+					<a href="#" class="btnSearch_mo">search</a>
+					<a href="#" class="btnGnb_mo">GNB</a>
+				</div>
+
+				<div class="boxGnb_mo"><!-- 지갑 연결 후 is--wallet 클래스 추가 -->
+					<div class="section_gnb">
+						<!-- 지갑 연결 전 -->
+						<div class="topArea">
+							<div class="title">Wallet</div>
+							<div class="subject">연결할 지갑을 선택해주세요.</div>
+						</div>						
+						
+						<div class="listWallet">
+							<a href="#" class="metamask">Metamask로 연결</a>
+							<a href="#" class="klip open--alarm" data-alarm="alarm2">카카오톡 클립(klip)으로 연결</a>
+						</div>
+						<!-- //지갑 연결 전 -->
+
+						<!-- 지갑 연결 후 -->
+						<!--
+						<div class="topArea">
+							<div class="wallet">
+								<a href="#" class="open--alarm" data-alarm="alarm1">0x1effsa0x1effsa0x1effsa</a>
+							</div>
+						</div>
+						-->
+						<!-- //지갑 연결 후 -->
+
+						<!--
+						<ul class="list">
+							<li><a href="./auction.html" class="new">NFT AUCTION</a></li>
+							<li><a href="./market.html">Square Market</a></li>
+						</ul>
+						-->
+						<!-- 로그인 전 -->
+						<!--
+						<div class="btn">
+							<a href="#" class="connect">Connect Wallet</a>
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 전 -->
+
+						<!-- 로그인 후 -->
+						<!--
+						<div class="btn type--single">
+							<a href="#" class="creat">Creat</a>
+						</div>
+						-->
+						<!-- //로그인 후 -->
+					</div>
+
+					<div class="boxWallet type--login">
+						<!-- 로그인 후 -->
+						<div class="boxInsta">
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>dev@gmail.com</span></div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num new">15</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnGuide">
+							<a href="https://pentasquare.notion.site/1140db954c894b988b32c10e9d3e09c3" target="_blank" class="linkGuide">Pentasquare Guide</a>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="creat">Creat NFT</a>
+							<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+						</div>
+						<!-- //로그인 후 -->
+					</div>
+
+					<!-- 로그인 후 -->
+					<!--
+					<div class="boxWallet type--login">
+						<div class="inWallet">
+							<div class="wallet">
+								< !--
+								<div class="walletCoin">
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Balance</div>
+											<div class="price">0 ETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+									<div class="coin">
+										<div class="value">
+											<div class="name">Your Bidding Balance</div>
+											<div class="price">0 WETH</div>
+										</div>
+										<a href="#" class="btnChange">change</a>
+									</div>
+								</div>
+								-- >
+								
+								<div class="walletCoin type--write">
+									<div class="max">ETH -> WETH (Max 50.356 ETH) </div>
+									<div class="input call--keyboard">
+										<input type="text" id="input_1" placeholder="Enter an amount" />
+										<button type="button" class="trans eth on">ETH</button>
+										<button type="button" class="trans weth">WETH</button>
+									</div>
+								</div>
+								<div class="btnArea">
+									<a href="#" class="convert">Convert</a>
+									<a href="#" class="cancel">Cancel</a>
+								</div>
+								
+							</div>
+							< !--
+							<a href="#" class="btnPairing">
+								<span>Pre-pairing</span>
+								<div class="square">0 SQUARE</div>
+							</a>
+							-- >
+							<a href="#" class="disconnect">Disconnect Wallet</a>
+							<div class="btnBottom">
+								<a href="#" class="creat">Creat NFT</a>
+								<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+							</div>
+						</div>
+
+						< !-- 로그인 후 -- >
+						<div class="boxInsta">
+							<div class="infoTop">
+								<div class="title">My</div>
+								<a href="#" class="edit">Edit</a>
+							</div>
+							<div class="infoUser">
+								<div class="thumb"><img src="./images/content/imgUserThumb.png" alt="" /></div>
+								<div class="name">Linda Dounia<span>Linda0980</span></div>
+							</div>
+							<div class="userLink">
+								<ul>
+									<li><a href="#"><span class="name">Owened</span><span class="num">1</span></a></li>
+									<li><a href="#"><span class="name">My Sale</span><span class="num">3</span></a></li>
+									<li>
+										<a href="#" class="depth"><span class="name">Created</span><span class="num">4</span></a>
+										<ul class="listDepth">
+											<li><a href="#"><span class="name">Pre created</span><span class="num">2</span></a></li>
+										</ul>
+									</li>
+									<li><a href="#"><span class="name">Favorit</span><span class="num">2</span></a></li>
+									<li><a href="#"><span class="name">Bidding</span><span class="num">0</span></a></li>
+									<li><a href="#"><span class="name">Notifications</span><span class="num on">15</span></a></li>
+								</ul>
+							</div>
+							<div class="btnBottom">
+								<a href="#" class="creat">Creat NFT</a>
+								<a href="#" class="send open--sendNFT" data-page="pageSendNFT_mo">Send NFT</a>
+							</div>
+						</div>
+						< !-- //로그인 후 -- >
+					</div>
+					-->
+					<!-- //로그인 후 -->
+
+					<!-- Send NFT -->
+					<div id="pageSendNFT_mo" class="boxSendNFT">
+						<div class="topArea">
+							<a href="#" class="back close--sendNFT">prev</a>
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="boxForm">
+							<div class="row">
+								<div class="title">From</div>
+								<div class="input">
+									<div class="thumb"><img src="./images/content/imgBidThumb.png" alt="" /></div>
+									<div class="user">Account 1</div>
+									<div class="key">0x1effsa…a67e</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="title">To</div>
+								<div class="input"><input type="text" placeholder="받을 지갑 주소(0x)를 입력해 주세요!" /></div>
+							</div>
+							<div class="row">
+								<div class="title">Amount</div>
+								<div class="input call--keyboard"><input type="text" id="input_2" placeholder="전송할 자산의 수량을 입력해 주세요!" /></div>
+								<div class="ps">(Max 10,000)</div>
+							</div>
+						</div>
+						<div class="boxList">
+							<div class="infoTop">
+								<div class="title">Select NFT</div>
+								<div class="subject"><span>*</span>거래중인 NFT는 전송되지 않습니다.</div>
+							</div>
+							<div class="listNFT">
+								<ul>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m1" />
+										<label for="chk_nft_m1">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" checked="checked" name="chk_nft" id="chk_nft_m2" />
+										<label for="chk_nft_m2">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m3" disabled="disabled" />
+										<label for="chk_nft_m3">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m4" />
+										<label for="chk_nft_m4">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m5" />
+										<label for="chk_nft_m5">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m6" />
+										<label for="chk_nft_m6">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m7" />
+										<label for="chk_nft_m7">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+									<li>
+										<input type="checkbox" value="" name="chk_nft" id="chk_nft_m8" />
+										<label for="chk_nft_m8">
+											<div class="thumb"><img src="./images/content/imgThumb_nft.png" alt="" /></div>
+											<div class="cont">
+												<div class="title">Steve Jobs’ Job Application (1976)</div>
+												<div class="amount">Amount : 10,000</div>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="active open--sendNFT" data-page="pageNFTSend_mo">Send NFT</a>
+						</div>
+					</div>
+					<!-- //Send NFT -->
+
+					<!-- NFT Send List -->
+					<div id="pageNFTSend_mo" class="boxSendNFT">
+						<div class="topArea">
+							<div class="title">NFT Send</div>
+						</div>
+						<div class="listSendNFT">
+							<div class="title">Successful</div>
+							<dl>
+								<dt>From</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>To</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl class="amount">
+								<dt>Amount</dt>
+								<dd> : 10,500</dd>
+							</dl>
+							<dl>
+								<dt>Contract Address</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+							<dl>
+								<dt>Token ID</dt>
+								<dd>0xfb33F79915b1e67B875a1ed65Daf1b17E5AE70f3</dd>
+							</dl>
+						</div>
+						<div class="btnBottom">
+							<a href="#" class="active close--sendNFT">Close</a>
+						</div>
+					</div>
+					<!-- //NFT Send List -->
+					
+					<a href="#" class="close">close</a>
+				</div>
+				<!-- //Mobile -->
+			</div>
+		</header>
+		<div id="container">
+			<div class="section">
+				<div class="boxPrivacy inner">
+					<h2>Pentasquare Terms of Service</h2>
+					<p>Effective Date: [November of 1, 2022]</p>
+
+					<div class="row">
+            <p>
+              These Terms of Service (the “Terms”) applies to each of Our games available on the third party platforms including but not limited to Google Store and Apple App Store (the “Third party platforms”) (each, the “Game”).<br />
+              The Game comprises the game application (the “Game App”), the associated media, any application associated with the online mode of the game application (subject to any additional terms of service applicable to such online mode), any printed materials, manuals, any online or electronic documentation, and any and all copies of such application and materials (together, the “Game”) developed by Pentasquare. (“Company”, “we”, “our,” or “us”), 54, Maehwa-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea. Company provides game services, the official community website, and other game related services (Collectively, the “Service(s)”).<br />
+              “User”, “you”, or “player” means the person who uses the Game and/or Service and accepts and agrees to be bound and abide by these Terms by: (i) installing, copying or otherwise using the Game App; (ii) using the Game; or (iii) using the Services. Depending on your country of residence, if you are below 18 years old and you choose to use the Service, we may ask consent from your parent or legal guardian.<br />
+              IN ORDER TO USE THE GAME OR SERVICE ON SPECIFIC PLATFORMS OR DEVICES, YOU WILL ALSO BE REQUIRED TO ACCEPT AND COMPLY WITH ALL RULES OF EXTERNAL PLATFORMS OR DEVICES APPLICABLE TO THE SPECIFIC GAME, INCLUDING BUT NOT LIMITED TO THE THIRD PARTY PLATFORM’S TERMS OF SERVICE AND PRIVACY POLICY.<br />
+              IF YOU AGREE TO THE TERMS SET FORTH IN THIS AGREEMENT AND OUR PRIVACY POLICY, select “ACCEPT” to install the Game and to indicate your acceptance and understanding of these Terms and Privacy Policy.<br />
+              IF YOU DO NOT AGREE TO THE TERMS SET FORTH IN THIS AGREEMENT, select “DO NOT ACCEPT” and COMPANY shall not grant to you the License (defined below) to the Game and you must not use the Game or Service.<br />
+              PLEASE NOTE THE ARBITRATION PROVISION SET FORTH IN SECTION 12 BELOW, WHICH REQUIRES, EXCEPT WHERE AND TO THE EXTENT PROHIBITED BY LAW, YOU TO ARBITRATE ANY CLAIMS YOU MAY HAVE AGAINST THE COMPANY ON AN INDIVIDUAL BASIS. ARBITRATION ON AN INDIVIDUAL BASIS MEANS THAT YOU WILL NOT HAVE, AND YOU WAIVE, THE RIGHT FOR A JUDGE OR JURY TO DECIDE YOUR CLAIMS, AND THAT YOU MAY NOT PROCEED IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE CAPACITY.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>1. Limited License</h4>
+            <p>
+              The Company grants to you a non-exclusive, fully-revocable, limited right and license for the duration of the License Term to install and use one (1) copy of the applicable Game on one (1) device at any given time solely for your personal use (the “License”). Subject to section 3(e) (consent to account transfer), the License shall be non-transferrable. All rights not specifically granted under this License are hereby reserved by the Company and, as applicable, by its licensors. The Game is licensed to you, not sold. This License does not give you any title or ownership in the Game, and should not be construed as a sale or transfer of any intellectual property or other rights to the Game.<br />
+              Without prejudice to any other rights of the Company, the License shall remain in effect for as long as you use, operate or run the Game (“License Term”), or until otherwise determined by Company. The License shall terminate automatically if you fail to comply with these Terms. In such event, you must uninstall all copies of the Game and the Game App. You may also terminate the License at any time by uninstalling the Game App from your devices or hardware (including any archival copies).
+            </p>
+          </div>
+          <div class="row">
+            <h4>2. Amendments, Updates, and Patches</h4>
+            <p>
+              (a) These Terms can be found at any time on the Company’s official website.<br />
+              (b) The Company may change these Terms at its discretion, and at any time, to the extent that is consistent to applicable laws and regulations.<br />
+              (c) Any material changes to these Terms will be brought to your attention as Company may determine in its sole discretion. If any such future changes to these Terms are unacceptable to you or cause you to no longer be in compliance with these Terms, you may terminate these Terms in accordance with section 10 (Period and Termination) below. You are otherwise responsible to check this page regularly to make note of any changes. Your continued use of the Services means that you accept and agree to the changes of the Terms.<br />
+              (d) Company may provide updates, patches and other modifications to the Game that must be installed for the User to continue to play the Game properly or at all. Company may update, patch or modify the Game remotely and access the Game residing on your machine for such purpose, and you hereby grant to Company the right to deploy and apply such patches, updates and modifications. All provisions of these Terms that refer to the Game shall also include all such patches, updates and modifications.<br />
+              (e) Company may also upgrade, change, or terminate the Game or Game App or may discontinue offering either or both without notice to you.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>3. Prohibited Uses</h4>
+            <p>
+              Company provides the Game and the Service to Users only for personal, non-commercial and entertainment purposes, as limited by these Terms. You agree not to violate any of these Terms. Violation of any of these Terms may lead to temporary or permanent suspension of your any registration account that you create with us in relation to the Game and the Service (“Account”), your access to the Game, and/or your access to the Service, and some instances may also require an investigation by the Company, in accordance with these Terms. You agree to only use the Game and the Service, or any part of them, in a manner that is consistent with these Terms and the License and you SHALL NOT, AND NOT ATTEMPT TO:<br />
+              (a) without written permission from Company, use, advertise or exploit in any manner the Game or the Service (in each case in whole or in part) commercially, including but not limited to use at a gaming center or any other location;<br />
+              (b) use the Game in connection with unauthorized software, applications, services, or devices. Such use may be illegal, voids any warranty, and is a breach of these Terms;<br />
+              (c) without a separate, additional license from Company, use the applicable Game or the Service or permit the use of the applicable Game or the Service, on more than one computer, handheld device or PDA or similar device now known or hereafter devised, at the same time;<br />
+              (d) use the Game or the Service, or permit use of the Game or the Service, in a network, multi-user arrangement or remote access arrangement, including any online use, except as otherwise explicitly permitted by Company in writing;<br />
+              (e) make copies of the Game or the Service (in each case in whole or in part), except that you may make one (1) copy of the Game for backup or archival purposes, or make copies of the materials accompanying the Game for non-commercial backup and reference only;<br />
+              (f) sell, rent, lease, license, distribute, upload to any Internet server or web site, or otherwise transfer any portion of the Game or the Service or any copies without the express prior written consent of Company which may involve the payment of a fee (for the Account and, separately, any digital assets).<br />
+              (g) reverse engineer, derive source code, modify, decompile, disassemble, or create derivative works of the Game or the Service (in each case in whole or in part) or infringe any patent, trademark, copyright or other proprietary rights, except as the applicable law expressly permits, in which case all and any lawful modifications, adaptations, improvements, etc., and all copyrights therein, shall be deemed assigned to, and shall belong to, vest in and be the exclusive property of Company and/or its licensors on creation, in any event); and all moral rights (these include the right to be credited as the author of a work and the right to object to derogatory treatment of a work) therein shall be deemed waived (which means you will not be able to enforce your moral rights);<br />
+              (h) remove, disable or circumvent any security protections or any technical measures that control access to the Game or the Service;<br />
+              (i) upload, modify, share, display or publish any information that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer resource;<br />
+              (j) remove, modify, deface or circumvent any proprietary notices or labels contained on or within the Game or the Service;<br />
+              (k) export or re-export the Game or the Service any copy or adaptation of the Game or the Service in violation of any applicable laws or regulations;<br />
+              (l) create data or executable programs that mimic data or functionality in the Game or the Service;<br />
+              (m) steal and/or publish information belonging to others (including but not limited to personal information, non-personal information and payment information) without requisite consent or a license;<br />
+              (n) impersonate any person, including the Company, our affiliates, our designated partners, our designated representatives, or our employees;<br />
+              (o) harm the reputation of Company, our affiliates, our service providers or licensors, or the reputation of the Game or the Service;<br />
+              (p) post, link to, advertise, promote, or transmit anything that is illegal, invasive of privacy, harmful, threatening, abusive, blasphemous, harassing, tortious, disparaging, defamatory, vulgar, sexually explicit, pornographic, paedophilic, libelous, obscene, hateful, racially or ethnically offensive, or relating to or encouraging money laundering or gambling;<br />
+              (q) take advantage by exploiting, deceiving or misleading others in any way (as determined in our sole discretion);<br />
+              (r) use the Game or Service (in each case in whole or in part) in a manner that is related to illegal activities or any action that negatively impacts the delivery of the Game or Service;<br />
+              (s) exploit errors and bugs found while playing the Game or using the Service;<br />
+              (t) violate any applicable law, rule, or regulation in connection with your access or use of the Game or Services;<br />
+              (u) access or use the Game or the Service for any purpose that is beyond the scope of the Game’s or the Services’ intended use (in Company’s sole judgment);<br />
+              (v) use / develop / advertise / trade / distribute unauthorized programs, including but not limited to, any programs that intercept communication between a game and a game server; any unauthorized third party programs or hardware devices that may affect the game or normal game play, including but not limited to, mouse, hacks, cheats, helpers, bots, scripts, trainers, automatic programs, automatic mouse, mouse with macro function, programs that collect or modify game data by reading the game memory.<br />
+              (w) disrespect or use offensive words, symbols, or other communication (determined by context and in Company’s sole discretion) towards others, including based on their race, gender, nationality or otherwise;<br />
+              (x) create offensive nicknames or those that may provoke negative imagery;<br />
+              (y) intentionally team up between players or other teams in ways that the Company system does not presuppose in each game mode;<br />
+              (z) manipulate the results of the Game in an unfair way or otherwise access or use the Game or Services in a manner that confers unfair advantage or disadvantage to any payer including yourself;<br />
+              (aa) upload, modify, share, display or publish any information that is harmful to minors; or<br />
+              Any action which is not defined in these Terms that negatively impacts the delivery of the Game or the Service or negatively affects other players may be subject to warning and penalty, including termination of the License.<br />
+              Furthermore, you agree that you shall abide by any safety information, security instructions, required updates, or any other relevant notices contained in the manual or otherwise associated with the Game or Service.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>4. Accessing the Service</h4>
+            <p>
+              As a general rule, the Service is accessible for 24 hours a day throughout the whole year. However, the accessibility of the Service is subject to the Company shutting down the Service, in whole or in part, for any period the Company deems appropriate to enable the update or technical maintenance of the Service, or any other action that the Company determines in its sole discretion. The Company may make amendments to the Service or restrict access (including cancellation, termination, modification or suspension of a User’s Account or License) from all or specific Users without notice. Additionally, the Service may be unavailable depending on geographic location.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>5. Ownership</h4>
+            <p>
+              You agree and acknowledge that all rights, title, and interest, including intellectual property rights in and connected with the Game and the Service and any and all copies thereof (including but not limited to any derivative works, titles, computer code, themes, objects, characters, character names, stories, dialogs, catch phrases, locations, concepts, artwork, graphics, animation, sounds, musical compositions, audio-visual effects, text, screen displays, methods of operation, moral rights, “applets” incorporated into the Game, and any related documentation) (the “Game IP”), are owned by Company or its licensors. We do not provide you with any interest in the Game IP. Except as expressly authorized by us in writing, you may not create works based on the Game IP or modify, distribute, or transmit the Game IP. If you do not abide by the requirements of this section, we shall own all right, title, and interest in any works created, adapted, distributed, or transmitted via the Game or Services, or, in the alternative, have an unlimited license thereto.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>6. Player Created Content</h4>
+            <p>
+              1) As a User, you may submit content to the Company. Any and all content Users submit to the Company via the Game or the Service (“Player Content”), and any intellectual property rights in the Player Content belongs to the Company from the moment it is created. To the extent that Company is not permitted to own the Player Content as specified above for any reason (for example there may specific laws in your territory which impact these rights being automatically vested in the Company), you agree that any and all Player Content that you submit, or authorized to be submitted, is legally transferred and assigned to the Company, together with all intellectual property rights in the Player Content. If any of your Player Content cannot be legally transferred to the Company, you agree that the Company will be allowed, directly or indirectly, throughout the world and forever, to use the Player Content (including to modify, adapt, use, reproduce, license, publish, broadcast, perform, sell, translate, create derivative works from and distribute any Player Content for any purpose, commercial or otherwise, in any format  existing now or in the future), without payment or credit to you. You also give up any right to claim that any use by the Company of any Player Content infringes any of your rights, including but not limited to moral rights, rights of privacy, rights to publicity, proprietary or other rights, and/or rights to any credits for the material or ideas set forth therein.<br />
+              The Company has ownership rights and intellectual property rights to the Game and Service.<br />
+              - All Player Content must acknowledge and display the appropriate copyright and trademarks. Using third party intellectual property without the proper license or permission is not permitted.<br />
+              - All Player Content must not contain (or link to) other sources and/or advertisements containing any hacks, exploits, gold farming, illegal activities, content that would conflict with the Game’s global rating, if applicable, or any other inappropriate content, as determined by Company.<br />
+              - The Company does not commit to any monitoring or supervision of Player Content. However, there may be situations in which the Company does need to monitor, screen, edit, block or remove any Player Content, in whole or in part, sent through or appearing on the Service, for example if the Company considers the Player Content may be in breach of these Terms or otherwise may cause harm or otherwise if required of us under law.<br />
+              By making Player Content based on or inspired by the Company, you agree to these Terms and, the Privacy Policy of Company. Furthermore, you agree to indemnify Company from any legal claims or fees that arise in relation to your Player Content.<br />
+              The Game is protected by the copyright laws of the Republic of Korea, international copyright treaties and conventions, Korean and common law trademark laws, and other relevant laws. All rights are reserved worldwide. The Game contains certain materials licensed by Company from others, and Company and its licensors may protect their rights in the event of any violation of these Terms.<br />
+              2) The Company has the ownership, licensing rights and all other rights to all content related to the Game. You have the limited right to use in-game data (items, game currency, etc.) or similar content in the Game, solely in accordance with Terms. However, you do not own the copyrights and other rights in the in-game data you possess. You are not allowed to transfer, sell, donate, or attempt to trade virtual property outside of the Game. This is not permitted except with written approval from the Company.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>7. Disclaimers</h4>
+            <p>
+              Save as set out in section 9 (Limitation of Liability) below, the Company is not responsible for:<br />
+              (a) any interruption of the Service, use of the Game, the Service, or termination of an Account due to the User’s fault;<br />
+              (b) any action of a telecommunications provider to cease or fail to provide the telecommunication service;<br />
+              (c) any unavoidable reasons that caused Service failure, such as maintenance, replacement, regular inspection, construction, etc. save in respect of intentional or material negligence of the Company;<br />
+              (d) any problems caused by the User’s device or problems related to the network environment;<br />
+              (e) the information, data, facts, reliability, accuracy, etc. posted or transmitted by the User or a third party in the Service or on the official website of the Company;<br />
+              (f) your interactions with other Users and/or third parties when using the Service. (we may, at our sole discretion, attempt to mediate disputes between Users, but we are not obliged to become involved or become responsible in any way with such disputes.);<br />
+              (g) anything which is the responsibility of a third party (unless they are under the direction and control of the Company);<br />
+              (h) when Users fail to receive the results they expect of the in-Game items and the Company is not responsible for any loss involved when making selections or using the Service;<br />
+              (j) loss of the User’s in-Game assets (such as in-Game currency or in-Game items); or<br />
+              (k) circumstances in which the Company limits the use of Service from Users in accordance with the relevant laws and/or government policies.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>8. Further Disclaimers</h4>
+            <p>
+              Save as set out in section 9 (Limitation of Liability) below, the Company does not make any promises regarding your use of the Game and Service. The Game and Service are provided “as is” and “as available,” without warranty of any kind (including any implied warranty of merchantability, non-infringement, or fitness for a particular purpose), to the maximum extent permitted by law.  Use of the Game and Service is at your sole risk.<br />
+              Specifically, the Company does not make any promises that you will be able to enjoy continuous, error-free, secure or virus-free operation of the Game, Service or your Account.<br />
+              Please note that some jurisdictions do not allow the above warranty limitations, so these limitations may not apply to you.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>9. Limitation of Liability; Indemnification</h4>
+            <p>
+              The Company will not be responsible for any damage or loss caused to you where such damage or loss is not reasonably foreseeable to you and us when you use the Game or Service, including where the damage or loss results from our breach of these Terms.<br />
+              The Service may be suspended temporarily and without notice in the case of system failure, maintenance or repair or for reasons beyond our reasonable control. Except as set out elsewhere in these Terms we will not be liable to you or to any other person in the event that all or part of the Service is unavailable, discontinued, modified or changed in any way.<br />
+              The Company does not accept any responsibility for:<br />
+              (a) any damage or loss caused to you where you are not entering into these Terms as a consumer;<br />
+              (b) any failure, any suspension and/or any termination of access to the Game or the Service or any content in connection with or arising out of a force majeure event. In these Terms, a "force majeure" event shall include, without limitation, strikes, lock-outs or other industrial disputes, nuclear accident or acts of God, war or terrorist activity, riot, civil commotion, malicious damage, compliance with any law or government order, rule regulation or direction, accident or breakdown of plant or machinery, fire, flood, storm or default of suppliers, and where they are beyond our reasonable control, any other acts, events, omissions or accidents; and/or<br />
+              (c) any claims brought against you by a third party except as stated in these Terms.<br />
+              Nothing in these Terms will:<br />
+              (a) restrict your statutory rights as a consumer (including your rights to state or to receive a reasonable standard of service, to the extent applicable to you under relevant law); or<br />
+              (b) limit our liability for death or personal injury resulting from our negligence or for fraud.<br />
+              You agree that you will compensate (in legal terms this is often referred to as indemnifying) the Company, its partners, affiliates, contractors, licensors, officers, directors, employees, and will defend, protect, indemnify and hold harmless to Company from any claims, lawsuits, damages, losses, liabilities and expenses (including reasonable legal and attorneys’ fees) arising directly or indirectly out of or in conjunction with your acts or omissions including use, or misuse of the Game or Service and breach by you of these Terms. Company reserves the right to assume exclusive defense and control over all matters subject to indemnification by players.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>10. Period and Termination</h4>
+            <p>
+              These Terms are effective unless and until terminated by either you or the Company. The Company or the User may terminate these Terms at any time, for any reason or no reason at all, without prior notice. Termination by the Company will come into effect immediately upon the termination or deletion of your Account, which can occur at any time in the Company’s sole discretion. You may terminate these Terms by not using the Game, and you must stop using the Game and delete the Game App immediately upon termination of these Terms.  In so far as permitted by law, we have no obligation to reimburse any in-Game currency or in-Game goods or items lost due to such termination, whether voluntary or involuntary, and you also acknowledge that the Company is not liable to provide a refund for any reason, even if you terminate the Terms. You are fully responsible for any problem that may occur due to inaccurate information provided when registering an Account and you also acknowledge that the Company reserves the right to terminate your Account if the information that you have provided is inaccurate or not up to date. Under applicable laws, you may have a limited cancellation right in relation to any digital content you purchase.<br />
+              Sections 2 (Amendments, Updates, and Patches), 3 (Prohibited Uses), 5 (Ownership), 6 (Player Created Content), 7 (Disclaimers), 8 (Further Disclaimers), 9 (Limitation of Liability; Indemnification), 10 (Period and Termination), 12 (Grievance Handling and Dispute Resolution), 13 (Inadequacy of Damages) 14 (Governing Law and Disputes), 15 (Class Action Waiver) 17 (Refund Policy) 18 (Other Policies) and 19 (Miscellaneous) shall survive any termination of these Terms.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>11. Transfer of Terms and Conditions</h4>
+            <p>
+              Transfer of the Game can only occur as set out in these Terms.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>12. Grievance Handling and Dispute Resolution</h4>
+            <p>
+              a) The Company shall inform Users on the Company’s website about the ways that Users can present their opinions or complaints regarding any inconveniences experienced by the Users. The Company operates as a dedicated organization to handle such Users’ opinions and complaints. This does not exclude your rights to bring any legal claim or complaint to a regulator outside of this process.<br />
+              b) If a dispute arises between you and Company, our goal is to provide you with a neutral and cost-effective means of resolving the dispute quickly. Accordingly, except where and to the extent prohibited by law, by using the Game or Services, you and the Company agree to the use of arbitration on an individual basis through a mutually agreed arbitrator selected with the consent of the Company and you, where a claim is for less than the equivalent of $10,000 US Dollars. ARBITRATION ON AN INDIVIDUAL BASIS MEANS THAT YOU WILL NOT HAVE, AND YOU WAIVE, THE RIGHT FOR A JUDGE OR JURY TO DECIDE YOUR CLAIMS, AND THAT YOU MAY NOT PROCEED IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE CAPACITY. Other rights that you and we would otherwise have in court will not be available or will be more limited in arbitration, including discovery and appeal rights. All such disputes shall be exclusively submitted to the chosen arbitrator for binding arbitration under the arbitrator’s rules then in effect, before one arbitrator to be mutually agreed upon by both parties. If a dispute arises between the Company and the User, the Company shall faithfully demonstrate the measures taken in respect of the User, including any restrictions of usage, and will comply with result of any arbitration decision.<br />
+              c) The Company has the sole discretion on whether to, and to what extent to, but no obligation to, enforce any rights of Company or take any actions as stated in these Terms.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>13. Inadequacy of damages</h4>
+            <p>
+              Without prejudice to any other rights or remedies that Company may have, you acknowledge and agree that compensation by way of damages alone would not be an adequate remedy for any breach of these Terms by you, because Company would suffer irreparable losses if you breach these Terms. Accordingly, you agree that Company shall be entitled to the remedies of an injunction, specific performance or any other equitable remedy, in addition to any other remedies available to it under the applicable law. For the avoidance of doubt, Company shall be entitled to an injunction, specific performance or any other equitable remedy without bond, other security or proof of losses.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>14. Governing Law and Disputes</h4>
+            <p>
+              If a dispute arises between you and Company, our goal is to provide you with a neutral and cost-effective means of resolving the dispute quickly. These Terms shall be interpreted and governed by the laws of the Republic of Korea. All lawsuits related to these Terms are subject to the jurisdiction of the courts in Korea pursuant to relevant laws such as the Code of Civil Procedure. Other laws may apply if you use the Game outside of the Republic of Korea. In such event, the applicable local laws shall only affect these Terms to the extent required by the applicable jurisdiction, and these Terms shall be construed as to make their terms and conditions as effective as possible. You must comply with all local laws to the extent that applicable local law applies.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>15. Class Action Waiver</h4>
+            <p>
+              You agree not to participate in, including but not limited to, a class or representative action, private attorney general action, or collective arbitration related to the Game or Service or these Terms. You also agree not to seek to combine any action or arbitration related to the Game or Service or these Terms with any other action or arbitration without the consent of all parties to these Terms and all other actions or arbitrations.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>16. Copyright Notice</h4>
+            <p>
+              If you think any materials from the Company and/or the Company branded websites infringe your copyright-protected work under the copyright law, you may provide an infringement notice to the Company’s designated agent as set forth below. Also, to ensure your notice is effective, you must include the following information:<br />
+              (a) Sufficient details to enable us to identify the work claimed to be infringed;<br />
+              (b) Your contact information, including your address and email address;<br />
+              (c) A statement that you have a good faith belief that the disputed work is not authorized by the copyright owner, its agent, or the law;<br />
+              (d) A statement, under penalty of perjury, that the information in the notification is accurate and that you are authorized to act on behalf of the owner of an exclusive right in the work that is allegedly infringed; and<br />
+              (e) Your physical or electronic signature;<br />
+              The contact information of Company’s designated agent is as follows:<br />
+              Pentasquare<br />
+              54, Maehwa-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea<br />
+              Email: appstore@gravastar.co.kr
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>17. Refund Policy</h4>
+            <p>
+              In general, all sales for all paid contents are final and refunds are not permitted except with respect to any statutory warranties that are mandatory by law or the third party platform’s refund policy. In case of termination due to your breach of these Terms, you are not entitled to any refunds.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>18. Other policies</h4>
+            <p>
+              a) The Company may use the Privacy Policy and other policies to cover specific details that are not covered in these Terms in order to protect User interests and maintain order in the Game.<br />
+              b) By agreeing to these Terms, you also agree to be bound by the terms and conditions set out in the Rules of Conduct.<br />
+              c) Violation of the Rules of Conduct can result in termination of the License.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>19. Miscellaneous</h4>
+            <p>
+              If any provision of these Terms is held to be unenforceable for any reason, such provision shall be amended only to the extent necessary to make it enforceable, and the remaining provisions of these Terms shall remain in full force and effect. If you have any questions concerning these Terms or the License contained herein, you may contact Company at 54, Maehwa-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea, Attn. Legal Department.
+            </p>
+          </div>
+
+          <div class="row">
+            <h4>20. Closed beta testing</h4>
+            <p>
+              1. The Company may provide the game service as Closed Beta Testing. (hereinafter “CBT”)<br />
+              2. After the CBT period has ended, Company will reset all game data within the game, including but not limited to game progress, ranks, levels, and in-game currency. Also, Company shall not be responsible, or in any way liable for recovering any loss of game data that may occur during the CBT period.<br />
+              3. The Company may cease to provide CBT service at any time, at the Company’s sole discretion without prior notice to users.<br />
+              4. In case of any discrepancies between this article and any other article in this Terms of Service, this article shall prevail.<br /><br />
+              This Terms of Service has been translated into other languages for the convenience of the players. In case of any discrepancies between the English version and the other versions, the English version shall prevail. However, Korean Terms of Service shall prevail for Korean players.
+            </p>
+          </div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+      <div class="inner">
+				<div class="agreement">
+					<a href="https://pentasquare.notion.site/Pentasquare-2095b61c3cd644d59817d8270c84d5a8" target="_blank">이용약관</a>
+					<a href="https://pentasquare.notion.site/5e633126c537414f9aaab3bb4af37a73" target="_blank">개인정보처리방침</a>
+				</div>
+        <div class="sns">
+					<a href="https://www.instagram.com/pentasquarenft/" target="_blank" class="instagram">instagram</a>
+          <a href="http://pf.kakao.com/_BxhSlb" target="_blank" class="kakao">kakao</a>
+          <a href="#" class="polymath">polymath</a>
+        </div>
+        <h2>PENTASQUARE</h2>
+        <div class="copyright">
+					사업자등록번호 : 509-88-02347<br />
+					주식회사 펜타스퀘어   |    주소 : 경기도 성남시 분당구 매화로 54, 2층 205호 에이 166.<br />
+					Pentasquare Inc. All Rights Reserved.
+				</div>
+      </div>
+		</footer>
+	</section>
+</body>
+</html>

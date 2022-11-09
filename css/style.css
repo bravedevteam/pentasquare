@@ -1004,6 +1004,14 @@ h3.title.icon.icon--category:before { width:32px; height:43px; left:0; backgroun
 .section.section--about ul li { font-size:15px; line-height:37px; font-family:'Noto Serif KR'; }
 .section.section--about ul li span { font-family:'Noto Serif KR'; }
 
+.boxPrivacy { padding-top:50px; }
+.boxPrivacy h2 { margin-bottom:10px; font-size:24px; }
+.boxPrivacy h4 { margin-bottom:10px; font-size:18px; }
+.boxPrivacy p { font-size:14px; }
+.boxPrivacy h2+p { margin-bottom:20px; }
+.boxPrivacy ul li a { font-size:14px; }
+.boxPrivacy .row { margin-top:20px; }
+
 #footer { position:relative; background:#000; z-index:5; }
 #footer .inner { max-width:1440px; padding:48px 43px 54px; }
 #footer .agreement { display:flex; margin-left:-25px; margin-bottom:42px; }
